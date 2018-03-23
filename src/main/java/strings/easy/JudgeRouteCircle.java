@@ -21,6 +21,20 @@ public class JudgeRouteCircle {
 
         moves = moves.trim().toLowerCase();
 
+        int[] movesCount = new int[128];
+
+        for (char c : moves.toCharArray()) {
+            movesCount[c]++;
+        }
+
+        return movesCount['u'] == movesCount['d'] && movesCount['l'] == movesCount['r'];
+    }
+
+    public boolean judgeCircleSwitch(String moves) {
+        if (moves == null || moves.isEmpty()) return false;
+
+        moves = moves.trim().toLowerCase();
+
         int horizontal = 0, vertical = 0;
         for (char c : moves.toCharArray()) {
             switch (c) {
