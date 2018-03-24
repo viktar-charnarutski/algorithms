@@ -13,6 +13,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 4 | 24-Mar-2018 | [521. Longest Uncommon Subsequence I][4] | String | Easy | 1 |
 | 5 | 24-Mar-2018 | [520. Detect Capital][5] | String | Easy | 1 |
 | 6 | 24-Mar-2018 | [788. Rotated Digits][6] | String | Easy | 1 |
+| 7 | 24-Mar-2018 | [696. Count Binary Substrings][7] | String | Easy | 1 |
 
 
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -21,3 +22,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [4]: https://leetcode.com/problems/longest-uncommon-subsequence-i/
 [5]: https://leetcode.com/problems/detect-capital/
 [6]: https://leetcode.com/problems/rotated-digits/
+[7]: https://leetcode.com/problems/count-binary-substrings/
