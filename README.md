@@ -14,6 +14,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 5 | 24-Mar-2018 | [520. Detect Capital][5] | [String][0] | Easy |  |
 | 6 | 24-Mar-2018 | [788. Rotated Digits][6] | [String][0] | Easy | Y |
 | 7 | 24-Mar-2018 | [696. Count Binary Substrings][7] | [String][0] | Easy | Y |
+| 8 | 24-Mar-2018 | [13. Roman to Integer][8] | [String][0] | Easy | Y |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -24,3 +25,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [5]: https://leetcode.com/problems/detect-capital/
 [6]: https://leetcode.com/problems/rotated-digits/
 [7]: https://leetcode.com/problems/count-binary-substrings/
+[8]: https://leetcode.com/problems/roman-to-integer/
