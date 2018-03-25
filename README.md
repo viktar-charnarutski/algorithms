@@ -17,6 +17,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 8 | 24-Mar-2018 | [13. Roman to Integer][8] | [String][0] | Easy | Y |
 | 9 | 25-Mar-2018 | [383. Ransom Note][9] | [String][0] | Easy |  |
 | 10 | 25-Mar-2018 | [387. First Unique Character in a String][10] | [String][0] | Easy | Y |
+| 11 | 25-Mar-2018 | [551. Student Attendance Record I][11] | [String][0] | Easy | Y |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -30,3 +31,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [8]: https://leetcode.com/problems/roman-to-integer/
 [9]: https://leetcode.com/problems/ransom-note/
 [10]: https://leetcode.com/problems/first-unique-character-in-a-string/
+[11]: https://leetcode.com/problems/student-attendance-record-i/
