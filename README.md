@@ -15,6 +15,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 6 | 24-Mar-2018 | [788. Rotated Digits][6] | [String][0] | Easy | Y |
 | 7 | 24-Mar-2018 | [696. Count Binary Substrings][7] | [String][0] | Easy | Y |
 | 8 | 24-Mar-2018 | [13. Roman to Integer][8] | [String][0] | Easy | Y |
+| 9 | 25-Mar-2018 | [383. Ransom Note][9] | [String][0] | Easy |  |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -26,3 +27,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [6]: https://leetcode.com/problems/rotated-digits/
 [7]: https://leetcode.com/problems/count-binary-substrings/
 [8]: https://leetcode.com/problems/roman-to-integer/
+[9]: https://leetcode.com/problems/ransom-note/
