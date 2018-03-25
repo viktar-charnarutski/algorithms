@@ -8,7 +8,7 @@ public class FirstUniqueCharacterInString {
             letters[s.charAt(i) - 'a']++;
         }
 
-        for (int i = 0; i < letters.length; i++) {
+        for (int i = 0; i < s.length(); i++) {
             if (letters[s.charAt(i) - 'a'] == 1) {
                 return i;
             }
