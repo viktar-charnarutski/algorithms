@@ -21,6 +21,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 12 | 25-Mar-2018 | [541. Reverse String II][12] | [String][0] | Easy | Y |
 | 13 | 26-Mar-2018 | [345. Reverse Vowels of a String][13] | [String][0] | Easy | Y |
 | 14 | 26-Mar-2018 | [459. Repeated Substring Pattern][14] | [String][0] | Easy | Y |
+| 15 | 26-Mar-2018 | [434. Number of Segments in a String][15] | [String][0] | Easy | Y |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -38,3 +39,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [12]: https://leetcode.com/problems/reverse-string-ii/
 [13]: https://leetcode.com/problems/reverse-vowels-of-a-string/
 [14]: https://leetcode.com/problems/repeated-substring-pattern/
+[15]: https://leetcode.com/problems/number-of-segments-in-a-string/
