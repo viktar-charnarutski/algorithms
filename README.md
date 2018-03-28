@@ -23,8 +23,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 14 | 26-Mar-2018 | [459. Repeated Substring Pattern][14] | [String][0] | Easy | Y |
 | 15 | 26-Mar-2018 | [434. Number of Segments in a String][15] | [String][0] | Easy |  |
 | 16 | 27-Mar-2018 | [443. String Compression][16] | [String][0] | Easy |  |
-| 17 | 27-Mar-2018 | [20. Valid Parentheses][16] | [String][0] | Easy | Y |
-| 18 | 28-Mar-2018 | [67. Add Binary][17] | [String][0] | Easy | Y |
+| 17 | 27-Mar-2018 | [20. Valid Parentheses][17] | [String][0] | Easy | Y |
+| 18 | 28-Mar-2018 | [67. Add Binary][18] | [String][0] | Easy | Y |
+| 19 | 28-Mar-2018 | [686. Repeated String Match][19] | [String][0] | Easy | Y |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -46,3 +47,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [16]: https://leetcode.com/problems/string-compression/
 [17]: https://leetcode.com/problems/valid-parentheses/
 [18]: https://leetcode.com/problems/add-binary/
+[19]: https://leetcode.com/problems/repeated-string-match/
