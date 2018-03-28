@@ -12,18 +12,19 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 3 | 24-Mar-2018 | [557. Reverse Words in a String III][3] | [String][0] | Easy |  |
 | 4 | 24-Mar-2018 | [521. Longest Uncommon Subsequence I][4] | [String][0] | Easy |  |
 | 5 | 24-Mar-2018 | [520. Detect Capital][5] | [String][0] | Easy |  |
-| 6 | 24-Mar-2018 | [788. Rotated Digits][6] | [String][0] | Easy | Y |
+| 6 | 24-Mar-2018 | [788. Rotated Digits][6] | [String][0] | Easy |  |
 | 7 | 24-Mar-2018 | [696. Count Binary Substrings][7] | [String][0] | Easy | Y |
-| 8 | 24-Mar-2018 | [13. Roman to Integer][8] | [String][0] | Easy | Y |
+| 8 | 24-Mar-2018 | [13. Roman to Integer][8] | [String][0] | Easy |  |
 | 9 | 25-Mar-2018 | [383. Ransom Note][9] | [String][0] | Easy |  |
-| 10 | 25-Mar-2018 | [387. First Unique Character in a String][10] | [String][0] | Easy | Y |
-| 11 | 25-Mar-2018 | [551. Student Attendance Record I][11] | [String][0] | Easy | Y |
-| 12 | 25-Mar-2018 | [541. Reverse String II][12] | [String][0] | Easy | Y |
+| 10 | 25-Mar-2018 | [387. First Unique Character in a String][10] | [String][0] | Easy |  |
+| 11 | 25-Mar-2018 | [551. Student Attendance Record I][11] | [String][0] | Easy |  |
+| 12 | 25-Mar-2018 | [541. Reverse String II][12] | [String][0] | Easy |  |
 | 13 | 26-Mar-2018 | [345. Reverse Vowels of a String][13] | [String][0] | Easy | Y |
 | 14 | 26-Mar-2018 | [459. Repeated Substring Pattern][14] | [String][0] | Easy | Y |
-| 15 | 26-Mar-2018 | [434. Number of Segments in a String][15] | [String][0] | Easy | Y |
-| 16 | 27-Mar-2018 | [443. String Compression][16] | [String][0] | Easy | Y |
+| 15 | 26-Mar-2018 | [434. Number of Segments in a String][15] | [String][0] | Easy |  |
+| 16 | 27-Mar-2018 | [443. String Compression][16] | [String][0] | Easy |  |
 | 17 | 27-Mar-2018 | [20. Valid Parentheses][16] | [String][0] | Easy | Y |
+| 18 | 28-Mar-2018 | [67. Add Binary][17] | [String][0] | Easy | Y |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -44,3 +45,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [15]: https://leetcode.com/problems/number-of-segments-in-a-string/
 [16]: https://leetcode.com/problems/string-compression/
 [17]: https://leetcode.com/problems/valid-parentheses/
+[18]: https://leetcode.com/problems/add-binary/
