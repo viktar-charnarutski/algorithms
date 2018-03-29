@@ -27,6 +27,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 18 | 28-Mar-2018 | [67. Add Binary][18] | [String][0] | Easy | Y |
 | 19 | 28-Mar-2018 | [686. Repeated String Match][19] | [String][0] | Easy | Y |
 | 20 | 28-Mar-2018 | [680. Valid Palindrome II][20] | [String][0] | Easy | Y |
+| 21 | 28-Mar-2018 | [58. Length of Last Word][21] | [String][0] | Easy | Y |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -50,3 +51,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [18]: https://leetcode.com/problems/add-binary/
 [19]: https://leetcode.com/problems/repeated-string-match/
 [20]: https://leetcode.com/problems/valid-palindrome-ii/
+[21]: https://leetcode.com/problems/length-of-last-word/
