@@ -30,7 +30,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 21 | 28-Mar-2018 | [58. Length of Last Word][21] | [String][0] | Easy | Y |
 | 22 | 28-Mar-2018 | [14. Longest Common Prefix][22] | [String][0] | Easy | Y |
 | 23 | 29-Mar-2018 | [28. Implement strStr()][23] | [String][0] | Easy |  |
-
+| 24 | 29-Mar-2018 | [125. Valid Palindrome][24] | [String][0] | Easy |  |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -55,4 +55,5 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [20]: https://leetcode.com/problems/valid-palindrome-ii/
 [21]: https://leetcode.com/problems/length-of-last-word/
 [22]: https://leetcode.com/problems/longest-common-prefix/
-[22]: https://leetcode.com/problems/implement-strstr/
+[23]: https://leetcode.com/problems/implement-strstr/
+[24]: https://leetcode.com/problems/valid-palindrome/
