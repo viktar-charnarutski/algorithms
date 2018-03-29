@@ -26,6 +26,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 17 | 27-Mar-2018 | [20. Valid Parentheses][17] | [String][0] | Easy | Y |
 | 18 | 28-Mar-2018 | [67. Add Binary][18] | [String][0] | Easy | Y |
 | 19 | 28-Mar-2018 | [686. Repeated String Match][19] | [String][0] | Easy | Y |
+| 20 | 28-Mar-2018 | [680. Valid Palindrome II][20] | [String][0] | Easy | Y |
 
 
 [0]: https://leetcode.com/tag/string/
@@ -48,3 +49,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [17]: https://leetcode.com/problems/valid-parentheses/
 [18]: https://leetcode.com/problems/add-binary/
 [19]: https://leetcode.com/problems/repeated-string-match/
+[20]: https://leetcode.com/problems/valid-palindrome-ii/
