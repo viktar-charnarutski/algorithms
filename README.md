@@ -31,6 +31,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 22 | 28-Mar-2018 | [14. Longest Common Prefix][22] | [String][0] | Easy | Y |
 | 23 | 29-Mar-2018 | [28. Implement strStr()][23] | [String][0] | Easy |  |
 | 24 | 29-Mar-2018 | [125. Valid Palindrome][24] | [String][0] | Easy |  |
+| 25 | 29-Mar-2018 | [771. Jewels and Stones][25] | [String][0] | Easy |  |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -57,3 +58,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [22]: https://leetcode.com/problems/longest-common-prefix/
 [23]: https://leetcode.com/problems/implement-strstr/
 [24]: https://leetcode.com/problems/valid-palindrome/
+[25]: https://leetcode.com/problems/jewels-and-stones/
