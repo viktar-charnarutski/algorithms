@@ -7,6 +7,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | # | Date | Algorithm | Type |
 |:-:|:----:|:---------|:----:|
 | 1 | 29-Mar-2018 | Quick Sort | Sorting |
+| 2 | 30-Mar-2018 | Merge Sort | Sorting |
 
 ## LeetCode
 
