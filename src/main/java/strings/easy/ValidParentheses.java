@@ -31,6 +31,6 @@ public class ValidParentheses {
                     }
             }
         }
-        return pars.empty();
+            return true;
     }
 }
