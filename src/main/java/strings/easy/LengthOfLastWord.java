@@ -29,9 +29,4 @@ public class LengthOfLastWord {
         }
         return curLength > 0 ? curLength : result;
     }
-
-    public int lengthOfLastWordSimple(String s) {
-        String[] words = s.split("\\s+");
-        return words.length > 0 ? words[words.length - 1].length() : 0;
-    }
 }
