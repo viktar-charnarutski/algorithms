@@ -15,6 +15,7 @@ import java.util.*;
  * You may assume the input string will only contain letters of alphabet.
  */
 public class KeyboardRow {
+
     public String[] findWords(String[] words) {
         if (words == null || words.length < 1) return new String[0];
 
@@ -49,7 +50,7 @@ public class KeyboardRow {
 
     private static boolean composedByRow(String w, Set<Character> row) {
         for (char c : w.toCharArray()) {
-            if (!row.contains(Character.toLowerCase(c)))
+            if (!row.contains(c))
                 return false;
         }
         return true;
@@ -70,6 +71,16 @@ public class KeyboardRow {
         FIRST_ROW.add('i');
         FIRST_ROW.add('o');
         FIRST_ROW.add('p');
+        FIRST_ROW.add('Q');
+        FIRST_ROW.add('W');
+        FIRST_ROW.add('E');
+        FIRST_ROW.add('R');
+        FIRST_ROW.add('T');
+        FIRST_ROW.add('Y');
+        FIRST_ROW.add('U');
+        FIRST_ROW.add('I');
+        FIRST_ROW.add('O');
+        FIRST_ROW.add('P');
         SECOND_ROW.add('a');
         SECOND_ROW.add('s');
         SECOND_ROW.add('d');
@@ -79,6 +90,15 @@ public class KeyboardRow {
         SECOND_ROW.add('j');
         SECOND_ROW.add('k');
         SECOND_ROW.add('l');
+        SECOND_ROW.add('A');
+        SECOND_ROW.add('S');
+        SECOND_ROW.add('D');
+        SECOND_ROW.add('F');
+        SECOND_ROW.add('G');
+        SECOND_ROW.add('H');
+        SECOND_ROW.add('J');
+        SECOND_ROW.add('K');
+        SECOND_ROW.add('L');
         THIRD_ROW.add('z');
         THIRD_ROW.add('x');
         THIRD_ROW.add('c');
@@ -86,5 +106,12 @@ public class KeyboardRow {
         THIRD_ROW.add('b');
         THIRD_ROW.add('n');
         THIRD_ROW.add('m');
+        THIRD_ROW.add('Z');
+        THIRD_ROW.add('X');
+        THIRD_ROW.add('C');
+        THIRD_ROW.add('V');
+        THIRD_ROW.add('B');
+        THIRD_ROW.add('N');
+        THIRD_ROW.add('M');
     }
 }
