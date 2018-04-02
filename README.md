@@ -42,6 +42,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 27 | 30-Mar-2018 | [806. Number of Lines To Write String][27] | [String][0] | Easy |  |
 | 28 | 30-Mar-2018 | [728. Self Dividing Numbers][28] | [String][0] | Easy |  |
 | 29 | 2-Apr-2018 | [412. Fizz Buzz][29] | [String][0] | Easy |  |
+| 30 | 2-Apr-2018 | [500. Keyboard Row][30] | [String][0] | Easy |  |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -73,3 +74,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [27]: https://leetcode.com/problems/number-of-lines-to-write-string/
 [28]: https://leetcode.com/problems/self-dividing-numbers/
 [29]: https://leetcode.com/problems/fizz-buzz/
+[30]: https://leetcode.com/problems/keyboard-row/
