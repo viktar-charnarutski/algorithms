@@ -44,6 +44,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 29 | 2-Apr-2018 | [412. Fizz Buzz][29] | [String][0] | Easy |  |
 | 30 | 2-Apr-2018 | [500. Keyboard Row][30] | [String][0] | Easy |  |
 | 31 | 2-Apr-2018 | [682. Baseball Game][31] | [String][0] | Easy |  |
+| 32 | 2-Apr-2018 | [575. Distribute Candies][32] | [String][0] | Easy |  |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -77,3 +78,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [29]: https://leetcode.com/problems/fizz-buzz/
 [30]: https://leetcode.com/problems/keyboard-row/
 [31]: https://leetcode.com/problems/baseball-game
+[32]: https://leetcode.com/problems/distribute-candies/
