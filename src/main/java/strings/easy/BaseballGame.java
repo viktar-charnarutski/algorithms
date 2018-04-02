@@ -1,6 +1,7 @@
 package strings.easy;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 
 /**
  * 682. Baseball Game
@@ -20,29 +21,28 @@ import java.util.HashMap;
 public class BaseballGame {
     public int calPoints(String[] ops) {
         int score = 0;
-        int round = 1;
 
-        final HashMap<Integer, Integer> stat = new HashMap<>();
+        final LinkedList<Integer> stat = new LinkedList<>();
 
         for (String op : ops) {
             int currScore;
             switch (op) {
                 case "C":
-                    score -= stat.get(--round);
+                    score -= stat.removeLast();
                     break;
                 case "+":
-                    currScore = stat.get(round - 1) + stat.get(round - 2);
-                    stat.put(round++, currScore);
+                    currScore = stat.peekLast() + stat.get(stat.size() - 2);
+                    stat.add(currScore);
                     score += currScore;
                     break;
                 case "D":
-                    currScore = stat.get(round - 1) * 2;
-                    stat.put(round++, currScore);
+                    currScore = stat.peekLast() * 2;
+                    stat.add(currScore);
                     score += currScore;
                     break;
                 default:
                     currScore = Integer.valueOf(op);
-                    stat.put(round++, currScore);
+                    stat.add(currScore);
                     score += currScore;
                     break;
             }
