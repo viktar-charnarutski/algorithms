@@ -1,6 +1,7 @@
 package strings.easy;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 /**
  * 500. Keyboard Row
@@ -34,6 +35,10 @@ public class KeyboardRow {
             }
         }
         return res.toArray(new String[res.size()]);
+    }
+
+    public String[] findWordsSlow(String[] words) {
+        return Stream.of(words).filter(s -> composedByFirstRow(s) || composedBySecondRow(s) || composedByThirdRow(s)).toArray(String[]::new);
     }
 
     private static boolean composedByFirstRow(String w) {
