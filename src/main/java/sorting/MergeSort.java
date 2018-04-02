@@ -9,7 +9,7 @@ public class MergeSort {
         mergeSort(arr, new int[arr.length], 0, arr.length - 1);
     }
 
-    private void mergeSort(int[] arr, int[] tmp, int leftStart, int rightEnd) {
+    private static void mergeSort(int[] arr, int[] tmp, int leftStart, int rightEnd) {
 
         if (leftStart < rightEnd) {
 
@@ -22,7 +22,7 @@ public class MergeSort {
 
     }
 
-    private void merge(int[] arr, int[] tmp, int leftStart, int rightEnd) {
+    private static void merge(int[] arr, int[] tmp, int leftStart, int rightEnd) {
         int leftEnd = (leftStart + rightEnd) / 2;
         int rightStart = leftEnd + 1;
         int size = (rightEnd - leftStart) + 1;
@@ -47,5 +47,4 @@ public class MergeSort {
         System.arraycopy(arr, right, tmp, index, rightEnd - right + 1);
         System.arraycopy(tmp, leftStart, arr, leftStart, size);
     }
-
 }
