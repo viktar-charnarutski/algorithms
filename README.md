@@ -41,6 +41,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 26 | 29-Mar-2018 | [804. Unique Morse Code Words][26] | [String][0] | Easy |  |
 | 27 | 30-Mar-2018 | [806. Number of Lines To Write String][27] | [String][0] | Easy |  |
 | 28 | 30-Mar-2018 | [728. Self Dividing Numbers][28] | [String][0] | Easy |  |
+| 29 | 2-Apr-2018 | [412. Fizz Buzz][29] | [String][0] | Easy |  |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -71,3 +72,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [26]: https://leetcode.com/problems/unique-morse-code-words/
 [27]: https://leetcode.com/problems/number-of-lines-to-write-string/
 [28]: https://leetcode.com/problems/self-dividing-numbers/
+[29]: https://leetcode.com/problems/fizz-buzz/
