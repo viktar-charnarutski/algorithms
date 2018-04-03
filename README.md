@@ -48,6 +48,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 33 | 2-Apr-2018 | [463. Island Perimeter][33] | [String][0] | Easy |  |
 | 34 | 2-Apr-2018 | [766. Toeplitz Matrix][34] | [String][0] | Easy |  |
 | 35 | 3-Apr-2018 | [566. Reshape the Matrix][35] | [String][0] | Easy | Y |
+| 36 | 3-Apr-2018 | [796. Rotate String][36] | [String][0] | Easy | Y |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -85,3 +86,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [33]: https://leetcode.com/problems/island-perimeter/
 [34]: https://leetcode.com/problems/toeplitz-matrix/
 [35]: https://leetcode.com/problems/reshape-the-matrix/
+[36]: https://leetcode.com/problems/rotate-string/
