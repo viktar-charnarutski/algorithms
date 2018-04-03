@@ -11,6 +11,10 @@ package strings.easy;
  */
 public class RotateString {
     public boolean rotateString(String A, String B) {
+        return A.length() == B.length() && (A + A).contains(B);
+    }
+
+    public boolean rotateStringSlow(String A, String B) {
         if (A.isEmpty() && B.isEmpty()) return true;
 
         StringBuilder sb = new StringBuilder(A);
