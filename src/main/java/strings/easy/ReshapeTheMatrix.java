@@ -16,7 +16,21 @@ package strings.easy;
  * output the original matrix.
  */
 public class ReshapeTheMatrix {
+
     public int[][] matrixReshape(int[][] nums, int r, int c) {
+        int length = nums.length;
+        int wide = nums[0].length;
+        if (length * wide != r * c) return nums;
+
+        int[][] reshaped = new int[r][c];
+
+        for (int i = 0; i < r * c; i++) {
+            reshaped[i / c][i % c] = nums[i / wide] [i % wide];
+        }
+        return reshaped;
+    }
+
+    public int[][] matrixReshape2(int[][] nums, int r, int c) {
 
         if (nums.length * nums[0].length != r * c) return nums;
 

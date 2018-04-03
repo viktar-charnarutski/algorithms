@@ -47,7 +47,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 32 | 2-Apr-2018 | [575. Distribute Candies][32] | [String][0] | Easy |  |
 | 33 | 2-Apr-2018 | [463. Island Perimeter][33] | [String][0] | Easy |  |
 | 34 | 2-Apr-2018 | [766. Toeplitz Matrix][34] | [String][0] | Easy |  |
-| 35 | 3-Apr-2018 | [566. Reshape the Matrix][35] | [String][0] | Easy |  |
+| 35 | 3-Apr-2018 | [566. Reshape the Matrix][35] | [String][0] | Easy | Y |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
