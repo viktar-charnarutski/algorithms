@@ -12,6 +12,26 @@ package strings.easy;
  */
 public class IslandPerimeter {
     public int islandPerimeter(int[][] grid) {
+        int lands = 0;
+        int neighbors = 0;
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 1) {
+                    lands++;
+                    if (i < grid.length - 1 && grid[i + 1][j] == 1) {
+                        neighbors++;
+                    }
+                    if (j < grid[i].length - 1 && grid[i][j + 1] == 1) {
+                        neighbors++;
+                    }
+                }
+            }
+        }
+        return lands * 4 - neighbors * 2;
+    }
+
+    public int islandPerimeterSlow(int[][] grid) {
         int res = 0;
 
         for (int i = 0; i < grid.length; i++) {
