@@ -53,6 +53,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 38 | 3-Apr-2018 | [136. Single Number][38] | [String][0] | Easy | Y |
 | 39 | 3-Apr-2018 | [292. Nim Game][39] | [String][0] | Easy |  |
 | 40 | 3-Apr-2018 | [485. Max Consecutive Ones][40] | [String][0] | Easy |  |
+| 41 | 4-Apr-2018 | [695. Max Area of Island][41] | [String][0] | Easy | Y |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -95,3 +96,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [38]: https://leetcode.com/problems/single-number/
 [39]: https://leetcode.com/problems/nim-game/
 [40]: https://leetcode.com/problems/max-consecutive-ones/
+[41]: https://leetcode.com/problems/max-area-of-island/
