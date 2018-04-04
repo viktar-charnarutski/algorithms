@@ -51,6 +51,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 36 | 3-Apr-2018 | [796. Rotate String][36] | [String][0] | Easy | Y |
 | 37 | 3-Apr-2018 | [496. Next Greater Element I][37] | [String][0] | Easy | Y |
 | 38 | 3-Apr-2018 | [136. Single Number][38] | [String][0] | Easy | Y |
+| 39 | 3-Apr-2018 | [292. Nim Game][39] | [String][0] | Easy |  |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -91,3 +92,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [36]: https://leetcode.com/problems/rotate-string/
 [37]: https://leetcode.com/problems/next-greater-element-i/
 [38]: https://leetcode.com/problems/single-number/
+[39]: https://leetcode.com/problems/nim-game/
