@@ -50,6 +50,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 35 | 3-Apr-2018 | [566. Reshape the Matrix][35] | [String][0] | Easy | Y |
 | 36 | 3-Apr-2018 | [796. Rotate String][36] | [String][0] | Easy | Y |
 | 37 | 3-Apr-2018 | [496. Next Greater Element I][37] | [String][0] | Easy | Y |
+| 38 | 3-Apr-2018 | [136. Single Number][38] | [String][0] | Easy | Y |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -89,3 +90,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [35]: https://leetcode.com/problems/reshape-the-matrix/
 [36]: https://leetcode.com/problems/rotate-string/
 [37]: https://leetcode.com/problems/next-greater-element-i/
+[38]: https://leetcode.com/problems/single-number/
