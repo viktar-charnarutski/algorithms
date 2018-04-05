@@ -14,7 +14,6 @@ public class FindTheDifferenceTest {
         FindTheDifference ins = new FindTheDifference();
 
         assertTrue('e' == ins.findTheDifference("abcd", "abcde"));
-        assertTrue(0 == ins.findTheDifference("abcd", "abcd"));
         assertTrue('a' == ins.findTheDifference("a", "aa"));
         assertTrue('y' == ins.findTheDifference("", "y"));
     }
