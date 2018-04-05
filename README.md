@@ -59,6 +59,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 44 | 4-Apr-2018 | [448. Find All Numbers Disappeared in an Array][44] | Easy | Y |
 | 45 | 4-Apr-2018 | [171. Excel Sheet Column Number][45] | Easy |  |
 | 46 | 5-Apr-2018 | [226. Invert Binary Tree][46] | Easy | Y |
+| 47 | 5-Apr-2018 | [349. Intersection of Two Arrays][47] | Easy |  |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -106,3 +107,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [44]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 [45]: https://leetcode.com/problems/excel-sheet-column-number/
 [46]: https://leetcode.com/problems/invert-binary-tree/
+[47]: https://leetcode.com/problems/intersection-of-two-arrays/
