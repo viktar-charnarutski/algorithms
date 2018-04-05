@@ -55,6 +55,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 40 | 3-Apr-2018 | [485. Max Consecutive Ones][40] | [String][0] | Easy |  |
 | 41 | 4-Apr-2018 | [695. Max Area of Island][41] | [String][0] | Easy | Y |
 | 42 | 4-Apr-2018 | [283. Move Zeroes][42] | [String][0] | Easy | Y |
+| 43 | 4-Apr-2018 | [389. Find the Difference][43] | [String][0] | Easy | Y |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -99,3 +100,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [40]: https://leetcode.com/problems/max-consecutive-ones/
 [41]: https://leetcode.com/problems/max-area-of-island/
 [42]: https://leetcode.com/problems/move-zeroes/
+[43]: https://leetcode.com/problems/find-the-difference/
