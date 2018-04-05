@@ -57,6 +57,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 42 | 4-Apr-2018 | [283. Move Zeroes][42] | [String][0] | Easy | Y |
 | 43 | 4-Apr-2018 | [389. Find the Difference][43] | [String][0] | Easy | Y |
 | 44 | 4-Apr-2018 | [448. Find All Numbers Disappeared in an Array][44] | [String][0] | Easy | Y |
+| 45 | 4-Apr-2018 | [171. Excel Sheet Column Number][45] | [String][0] | Easy |  |
 
 [0]: https://leetcode.com/tag/string/
 [1]: https://leetcode.com/problems/judge-route-circle/
@@ -103,3 +104,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [42]: https://leetcode.com/problems/move-zeroes/
 [43]: https://leetcode.com/problems/find-the-difference/
 [44]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+[45]: https://leetcode.com/problems/excel-sheet-column-number/
