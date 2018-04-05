@@ -58,7 +58,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 43 | 4-Apr-2018 | [389. Find the Difference][43] | Easy | Y |
 | 44 | 4-Apr-2018 | [448. Find All Numbers Disappeared in an Array][44] | Easy | Y |
 | 45 | 4-Apr-2018 | [171. Excel Sheet Column Number][45] | Easy |  |
-| 46 | 5-Apr-2018 | [226. Invert Binary Tree][46] | Easy |  |
+| 46 | 5-Apr-2018 | [226. Invert Binary Tree][46] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
