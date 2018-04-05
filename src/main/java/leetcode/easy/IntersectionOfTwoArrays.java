@@ -28,6 +28,12 @@ public class IntersectionOfTwoArrays {
                 ints.add(num);
             }
         }
-        return ints.stream().mapToInt(i -> i).toArray();
+
+        int[] res = new int[ints.size()];
+        int indx = 0;
+        for (int num : ints) {
+            res[indx++] = num;
+        }
+        return res;
     }
 }
