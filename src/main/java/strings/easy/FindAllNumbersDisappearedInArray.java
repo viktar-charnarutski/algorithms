@@ -13,7 +13,26 @@ import java.util.List;
  * Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
  */
 public class FindAllNumbersDisappearedInArray {
+
     public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> dis = new ArrayList<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int val = Math.abs(nums[i]) - 1;
+            if (nums[val] > 0) {
+                nums[val] = -nums[val];
+            }
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                dis.add(i + 1);
+            }
+        }
+        return dis;
+    }
+
+    public List<Integer> findDisappearedNumbersSlow(int[] nums) {
 
         List<Integer> dis = new ArrayList<>();
 
