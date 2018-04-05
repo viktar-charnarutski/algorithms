@@ -22,7 +22,18 @@ import java.util.LinkedList;
  * 9   6 3   1
  */
 class InvertBinaryTree {
+
     public TreeNode invertTree(TreeNode root) {
+        if (root == null || root.left == null && root.right == null) return root;
+
+        TreeNode tmp = root.left;
+        root.left = invertTree(root.right);
+        root.right = invertTree(tmp);
+
+        return root;
+    }
+
+    public TreeNode invertTreeSlow(TreeNode root) {
         if (root == null || root.left == null && root.right == null) return root;
 
         LinkedList<TreeNode> nodesToRevert = new LinkedList<>();
