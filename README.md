@@ -61,6 +61,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 46 | 5-Apr-2018 | [226. Invert Binary Tree][46] | Easy | Y |
 | 47 | 5-Apr-2018 | [349. Intersection of Two Arrays][47] | Easy |  |
 | 48 | 5-Apr-2018 | [690. Employee Importance][48] | Easy |  |
+| 49 | 5-Apr-2018 | [653. Two Sum IV - Input is a BST][49] | Easy |  |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -110,3 +111,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [46]: https://leetcode.com/problems/invert-binary-tree/
 [47]: https://leetcode.com/problems/intersection-of-two-arrays/
 [48]: https://leetcode.com/problems/employee-importance/
+[49]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
