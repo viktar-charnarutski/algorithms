@@ -11,7 +11,24 @@ import java.util.Set;
  * in the BST such that their sum is equal to the given target.
  */
 public class TwoSumIV {
+
     public boolean findTarget(TreeNode root, int k) {
+        Set<Integer> wanted = new HashSet<>();
+        return bfs(root, k, wanted);
+    }
+
+    private boolean bfs(TreeNode node, int k, Set<Integer> wanted) {
+        if (node == null) {
+            return false;
+        }
+        if (wanted.contains(k - node.val)) {
+            return true;
+        }
+        wanted.add(node.val);
+        return bfs(node.left, k, wanted) || bfs(node.right, k, wanted);
+    }
+
+    public boolean findTargetLinkedList(TreeNode root, int k) {
         Set<Integer> wanted = new HashSet<>();
 
         LinkedList<TreeNode> toCheck = new LinkedList<>();
