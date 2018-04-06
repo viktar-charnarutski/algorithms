@@ -13,7 +13,6 @@ import java.util.Set;
 public class TwoSumIV {
     public boolean findTarget(TreeNode root, int k) {
         Set<Integer> wanted = new HashSet<>();
-        Set<Integer> seen = new HashSet<>();
 
         LinkedList<TreeNode> toCheck = new LinkedList<>();
         toCheck.add(root);
@@ -21,10 +20,9 @@ public class TwoSumIV {
         while (!toCheck.isEmpty()) {
             TreeNode currNode = toCheck.remove();
 
-            if (currNode == null || seen.contains(currNode.val)) {
+            if (currNode == null) {
                 continue;
             }
-            seen.add(currNode.val);
 
             if (wanted.contains(currNode.val)) {
                 return true;
