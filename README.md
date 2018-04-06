@@ -8,6 +8,8 @@ Solutions for algorithm questions which could be asked on a technical interview.
 |:-:|:----:|:---------|:----:|
 | 1 | 29-Mar-2018 | Quick Sort | Sorting |
 | 2 | 30-Mar-2018 | Merge Sort | Sorting |
+| 3 | 5-Apr-2018 | Depth First Search (DFS) | Graph |
+| 4 | 5-Apr-2018 | Breadth First Search (BFS) | Graph |
 
 ## LeetCode
 
