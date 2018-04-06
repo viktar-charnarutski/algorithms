@@ -1,5 +1,6 @@
 package leetcode.easy;
 
+import leetcode.easy.InvertBinaryTree.TreeNode;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +9,7 @@ import static org.junit.Assert.assertSame;
 
 public class InvertBinaryTreeTest {
 
-    private TreeNode root;
+    private InvertBinaryTree.TreeNode root;
     private TreeNode node1;
     private TreeNode node2;
     private TreeNode node3;
