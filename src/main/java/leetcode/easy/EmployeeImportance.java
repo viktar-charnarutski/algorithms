@@ -20,10 +20,10 @@ import java.util.List;
  */
 class EmployeeImportance {
     public int getImportance(List<Employee> employees, int id) {
-
         HashMap<Integer, Employee> empMap = new HashMap<>();
-        employees.forEach(e -> empMap.put(e.id, e));
-
+        for (Employee e : employees) {
+            empMap.put(e.id, e);
+        }
         return getImportanceForEmployee(empMap, id);
 
     }
