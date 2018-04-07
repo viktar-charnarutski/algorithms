@@ -68,6 +68,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 51 | 6-Apr-2018 | [100. Same Tree][51] | Easy |  |
 | 52 | 6-Apr-2018 | [617. Merge Two Binary Trees][52] | Easy |  |
 | 53 | 6-Apr-2018 | [811. Subdomain Visit Count][53] | Easy |  |
+| 54 | 6-Apr-2018 | [637. Average of Levels in Binary Tree][54] | Easy |  |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -122,3 +123,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [51]: https://leetcode.com/problems/same-tree/
 [52]: https://leetcode.com/problems/merge-two-binary-trees/
 [53]: https://leetcode.com/problems/subdomain-visit-count/
+[54]: https://leetcode.com/problems/average-of-levels-in-binary-tree/
