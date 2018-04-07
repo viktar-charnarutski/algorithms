@@ -55,14 +55,4 @@ public class TwoSumIV {
         }
         return false;
     }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

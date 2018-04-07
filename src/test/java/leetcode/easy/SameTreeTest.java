@@ -3,7 +3,6 @@ package leetcode.easy;
 import org.junit.Before;
 import org.junit.Test;
 
-import static leetcode.easy.SameTree.TreeNode;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

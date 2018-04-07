@@ -48,14 +48,4 @@ public class SameTree {
 
         return true;
     }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

@@ -3,16 +3,12 @@ package leetcode.easy;
 import org.junit.Before;
 import org.junit.Test;
 
-import static leetcode.easy.TwoSumIV.TreeNode;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-/**
- *
- */
 public class TwoSumIVTest {
 
-    private TwoSumIV.TreeNode root;
+    private TreeNode root;
     private TreeNode node1;
     private TreeNode node2;
     private TreeNode node3;
