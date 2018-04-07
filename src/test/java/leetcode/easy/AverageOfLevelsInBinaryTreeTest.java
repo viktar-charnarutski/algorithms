@@ -127,5 +127,16 @@ public class AverageOfLevelsInBinaryTreeTest {
 
         List<Double> output3 = ins.averageOfLevels(root);
         assertEquals(expected3, output3);
+
+        //2147483647.0,2147483647.0
+        List<Double> expected4 = new ArrayList<>();
+        expected4.add(1.0);
+
+        root.val = 1;
+        root.left = null;
+        root.right= null;
+
+        List<Double> output4 = ins.averageOfLevels(root);
+        assertEquals(expected4, output4);
     }
 }

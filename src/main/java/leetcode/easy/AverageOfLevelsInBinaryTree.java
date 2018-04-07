@@ -15,29 +15,24 @@ public class AverageOfLevelsInBinaryTree {
         averages.add((double) root.val);
 
         LinkedList<TreeNode> checkList = new LinkedList<>();
-        checkList.add(root.left);
-        checkList.add(root.right);
+        if (root.left != null) checkList.add(root.left);
+        if (root.right != null) checkList.add(root.right);
 
         while (!checkList.isEmpty()) {
 
-            LinkedList<TreeNode> childCheckList = new LinkedList<>();
-
-            int count = 0;
+            int size = checkList.size();
             long sum = 0;
-            while (!checkList.isEmpty()) {
+            for (int i = 0; i < size; i++) {
                 TreeNode node = checkList.remove();
                 if (node == null) continue;
                 sum += node.val;
-                childCheckList.add(node.left);
-                childCheckList.add(node.right);
-                count++;
+                if (node.left != null) checkList.add(node.left);
+                if (node.right != null) checkList.add(node.right);
             }
 
-            if (count != 0) {
-                double avg = ((double) sum) / count;
-                averages.add(avg);
-                checkList.addAll(childCheckList);
-            }
+
+            double avg = ((double) sum) / size;
+            averages.add(avg);
         }
 
         return averages;
