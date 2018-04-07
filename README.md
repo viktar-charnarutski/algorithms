@@ -69,7 +69,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 52 | 6-Apr-2018 | [617. Merge Two Binary Trees][52] | Easy |  |
 | 53 | 6-Apr-2018 | [811. Subdomain Visit Count][53] | Easy |  |
 | 54 | 6-Apr-2018 | [637. Average of Levels in Binary Tree][54] | Easy |  |
-| 55 | 7-Apr-2018 | [784. Letter Case Permutation][55] | Easy |  |
+| 55 | 7-Apr-2018 | [784. Letter Case Permutation][55] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
