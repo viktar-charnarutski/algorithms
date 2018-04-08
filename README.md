@@ -73,6 +73,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 56 | 7-Apr-2018 | [733. Flood Fill][56] | Easy |  |
 | 57 | 7-Apr-2018 | [404. Sum of Left Leaves][57] | Easy |  |
 | 58 | 7-Apr-2018 | [242. Valid Anagram][58] | Easy |  |
+| 59 | 7-Apr-2018 | [530. Minimum Absolute Difference in BST][59] | Easy |  |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -132,3 +133,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [56]: https://leetcode.com/problems/flood-fill/
 [57]: https://leetcode.com/problems/sum-of-left-leaves/
 [58]: https://leetcode.com/problems/valid-anagram/
+[59]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
