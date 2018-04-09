@@ -76,6 +76,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 59 | 7-Apr-2018 | [530. Minimum Absolute Difference in BST][59] | Easy | Y |
 | 60 | 8-Apr-2018 | [783. Minimum Distance Between BST Nodes][59] | Easy | Y |
 | 61 | 8-Apr-2018 | [206. Reverse Linked List][60] | Easy | Y |
+| 62 | 9-Apr-2018 | [599. Minimum Index Sum of Two Lists][69] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -138,3 +139,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [59]: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 [60]: https://leetcode.com/problems/minimum-distance-between-bst-nodes/
 [61]: https://leetcode.com/problems/reverse-linked-list/
+[62]: https://leetcode.com/problems/minimum-index-sum-of-two-lists/
