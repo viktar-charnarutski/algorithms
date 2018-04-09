@@ -74,9 +74,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 57 | 7-Apr-2018 | [404. Sum of Left Leaves][57] | Easy |  |
 | 58 | 7-Apr-2018 | [242. Valid Anagram][58] | Easy |  |
 | 59 | 7-Apr-2018 | [530. Minimum Absolute Difference in BST][59] | Easy | Y |
-| 60 | 8-Apr-2018 | [783. Minimum Distance Between BST Nodes][59] | Easy | Y |
-| 61 | 8-Apr-2018 | [206. Reverse Linked List][60] | Easy | Y |
-| 62 | 9-Apr-2018 | [599. Minimum Index Sum of Two Lists][69] | Easy | |
+| 60 | 8-Apr-2018 | [783. Minimum Distance Between BST Nodes][60] | Easy | Y |
+| 61 | 8-Apr-2018 | [206. Reverse Linked List][61] | Easy | Y |
+| 62 | 9-Apr-2018 | [599. Minimum Index Sum of Two Lists][62] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
