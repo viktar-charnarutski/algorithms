@@ -34,6 +34,11 @@ public class MinimumIndexSumOfTwoLists {
                 }
             }
         }
-        return result.toArray(new String[result.size()]);
+
+        String[] output = new String[result.size()];
+        for (int i = 0; i < result.size(); i++) {
+            output[i] = result.get(i);
+        }
+        return output;
     }
 }
