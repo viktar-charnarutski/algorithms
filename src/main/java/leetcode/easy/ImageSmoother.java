@@ -10,18 +10,17 @@ package leetcode.easy;
 public class ImageSmoother {
 
     public int[][] imageSmoother(int[][] M) {
-        if (M == null || (M.length == 1 && M[0].length == 1)) return M;
         int length = M.length;
         int width = M[0].length;
 
         int[][] res = new int[length][width];
-
+        int sum, count;
 
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < width; j++) {
 
-                int sum = M[i][j];
-                int count = 1;
+                sum = M[i][j];
+                count = 1;
 
                 if (isValid(i - 1, j, length, width)) {
                     sum += M[i - 1][j];
@@ -63,7 +62,7 @@ public class ImageSmoother {
                     count++;
                 }
 
-                res[i][j] = (int) Math.floor(sum / count);
+                res[i][j] = sum / count;
             }
         }
         return res;
