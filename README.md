@@ -79,6 +79,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 62 | 9-Apr-2018 | [599. Minimum Index Sum of Two Lists][62] | Easy | |
 | 63 | 9-Apr-2018 | [661. Image Smoother][63] | Easy | |
 | 64 | 10-Apr-2018 | [409. Longest Palindrome][64] | Easy | |
+| 65 | 11-Apr-2018 | [543. Diameter of Binary Tree][65] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -144,3 +145,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [62]: https://leetcode.com/problems/minimum-index-sum-of-two-lists/
 [63]: https://leetcode.com/problems/image-smoother/
 [64]: https://leetcode.com/problems/longest-palindrome/
+[65]: https://leetcode.com/problems/diameter-of-binary-tree/
