@@ -80,6 +80,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 63 | 9-Apr-2018 | [661. Image Smoother][63] | Easy | |
 | 64 | 10-Apr-2018 | [409. Longest Palindrome][64] | Easy | |
 | 65 | 11-Apr-2018 | [543. Diameter of Binary Tree][65] | Easy | |
+| 66 | 11-Apr-2018 | [628. Maximum Product of Three Numbers][66] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -146,3 +147,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [63]: https://leetcode.com/problems/image-smoother/
 [64]: https://leetcode.com/problems/longest-palindrome/
 [65]: https://leetcode.com/problems/diameter-of-binary-tree/
+[66]: https://leetcode.com/problems/maximum-product-of-three-numbers/
