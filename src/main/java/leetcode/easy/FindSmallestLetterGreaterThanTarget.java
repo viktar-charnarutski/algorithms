@@ -9,7 +9,15 @@ package leetcode.easy;
  * Letters also wrap around. For example, if the target is target = 'z' and letters = ['a', 'b'], the answer is 'a'.
  */
 public class FindSmallestLetterGreaterThanTarget {
+
     public char nextGreatestLetter(char[] letters, char target) {
+        for (char c : letters) {
+            if (c > target) return c;
+        }
+        return letters[0];
+    }
+
+    public char nextGreatestLetterSlow(char[] letters, char target) {
         boolean[] occurrences = new boolean[26];
 
         for (char c : letters) {
