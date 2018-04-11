@@ -82,6 +82,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 65 | 11-Apr-2018 | [543. Diameter of Binary Tree][65] | Easy | |
 | 66 | 11-Apr-2018 | [628. Maximum Product of Three Numbers][66] | Easy | Y |
 | 67 | 11-Apr-2018 | [350. Intersection of Two Arrays II][67] | Easy | |
+| 68 | 11-Apr-2018 | [744. Find Smallest Letter Greater Than Target][68] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -150,3 +151,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [65]: https://leetcode.com/problems/diameter-of-binary-tree/
 [66]: https://leetcode.com/problems/maximum-product-of-three-numbers/
 [67]: https://leetcode.com/problems/intersection-of-two-arrays-ii/
+[68]: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
