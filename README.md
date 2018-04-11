@@ -79,10 +79,11 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 62 | 9-Apr-2018 | [599. Minimum Index Sum of Two Lists][62] | Easy | |
 | 63 | 9-Apr-2018 | [661. Image Smoother][63] | Easy | |
 | 64 | 10-Apr-2018 | [409. Longest Palindrome][64] | Easy | |
-| 65 | 11-Apr-2018 | [543. Diameter of Binary Tree][65] | Easy | |
-| 66 | 11-Apr-2018 | [628. Maximum Product of Three Numbers][66] | Easy | Y |
-| 67 | 11-Apr-2018 | [350. Intersection of Two Arrays II][67] | Easy | |
-| 68 | 11-Apr-2018 | [744. Find Smallest Letter Greater Than Target][68] | Easy | |
+| 65 | 10-Apr-2018 | [543. Diameter of Binary Tree][65] | Easy | |
+| 66 | 10-Apr-2018 | [628. Maximum Product of Three Numbers][66] | Easy | Y |
+| 67 | 10-Apr-2018 | [350. Intersection of Two Arrays II][67] | Easy | |
+| 68 | 10-Apr-2018 | [744. Find Smallest Letter Greater Than Target][68] | Easy | |
+| 69 | 11-Apr-2018 | [674. Longest Continuous Increasing Subsequence][69] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -152,3 +153,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [66]: https://leetcode.com/problems/maximum-product-of-three-numbers/
 [67]: https://leetcode.com/problems/intersection-of-two-arrays-ii/
 [68]: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
+[69]: https://leetcode.com/problems/longest-continuous-increasing-subsequence/
