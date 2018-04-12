@@ -84,6 +84,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 67 | 10-Apr-2018 | [350. Intersection of Two Arrays II][67] | Easy | |
 | 68 | 10-Apr-2018 | [744. Find Smallest Letter Greater Than Target][68] | Easy | |
 | 69 | 11-Apr-2018 | [674. Longest Continuous Increasing Subsequence][69] | Easy | |
+| 70 | 11-Apr-2018 | [697. Degree of an Array][70] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -154,3 +155,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [67]: https://leetcode.com/problems/intersection-of-two-arrays-ii/
 [68]: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 [69]: https://leetcode.com/problems/longest-continuous-increasing-subsequence/
+[70]: https://leetcode.com/problems/degree-of-an-array/
