@@ -28,14 +28,14 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 11 | 25-Mar-2018 | [551. Student Attendance Record I][11] | Easy |  |
 | 12 | 25-Mar-2018 | [541. Reverse String II][12] | Easy |  |
 | 13 | 26-Mar-2018 | [345. Reverse Vowels of a String][13] | Easy | Y |
-| 14 | 26-Mar-2018 | [459. Repeated Substring Pattern][14] | Easy | Y |
+| 14 | 26-Mar-2018 | [459. Repeated Substring Pattern][14] | Easy | |
 | 15 | 26-Mar-2018 | [434. Number of Segments in a String][15] | Easy |  |
 | 16 | 27-Mar-2018 | [443. String Compression][16] | Easy |  |
-| 17 | 27-Mar-2018 | [20. Valid Parentheses][17] | Easy | Y |
+| 17 | 27-Mar-2018 | [20. Valid Parentheses][17] | Easy | |
 | 18 | 28-Mar-2018 | [67. Add Binary][18] | Easy | Y |
-| 19 | 28-Mar-2018 | [686. Repeated String Match][19] | Easy | Y |
-| 20 | 28-Mar-2018 | [680. Valid Palindrome II][20] | Easy | Y |
-| 21 | 28-Mar-2018 | [58. Length of Last Word][21] | Easy | Y |
+| 19 | 28-Mar-2018 | [686. Repeated String Match][19] | Easy | |
+| 20 | 28-Mar-2018 | [680. Valid Palindrome II][20] | Easy | |
+| 21 | 28-Mar-2018 | [58. Length of Last Word][21] | Easy | |
 | 22 | 28-Mar-2018 | [14. Longest Common Prefix][22] | Easy | Y |
 | 23 | 29-Mar-2018 | [28. Implement strStr()][23] | Easy |  |
 | 24 | 29-Mar-2018 | [125. Valid Palindrome][24] | Easy |  |
@@ -52,11 +52,11 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 35 | 3-Apr-2018 | [566. Reshape the Matrix][35] | Easy | Y |
 | 36 | 3-Apr-2018 | [796. Rotate String][36] | Easy | Y |
 | 37 | 3-Apr-2018 | [496. Next Greater Element I][37] | Easy | Y |
-| 38 | 3-Apr-2018 | [136. Single Number][38] | Easy | Y |
+| 38 | 3-Apr-2018 | [136. Single Number][38] | Easy | |
 | 39 | 3-Apr-2018 | [292. Nim Game][39] | Easy |  |
 | 40 | 3-Apr-2018 | [485. Max Consecutive Ones][40] | Easy |  |
-| 41 | 4-Apr-2018 | [695. Max Area of Island][41] | Easy | Y |
-| 42 | 4-Apr-2018 | [283. Move Zeroes][42] | Easy | Y |
+| 41 | 4-Apr-2018 | [695. Max Area of Island][41] | Easy | |
+| 42 | 4-Apr-2018 | [283. Move Zeroes][42] | Easy | |
 | 43 | 4-Apr-2018 | [389. Find the Difference][43] | Easy | Y |
 | 44 | 4-Apr-2018 | [448. Find All Numbers Disappeared in an Array][44] | Easy | Y |
 | 45 | 4-Apr-2018 | [171. Excel Sheet Column Number][45] | Easy |  |
