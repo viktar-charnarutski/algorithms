@@ -87,6 +87,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 70 | 11-Apr-2018 | [697. Degree of an Array][70] | Easy | |
 | 71 | 12-Apr-2018 | [107. Binary Tree Level Order Traversal II][71] | Easy | Y |
 | 72 | 13-Apr-2018 | [506. Relative Ranks][72] | Easy | |
+| 73 | 13-Apr-2018 | [237. Delete Node in a Linked List][73] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -160,3 +161,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [70]: https://leetcode.com/problems/degree-of-an-array/
 [71]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 [72]: https://leetcode.com/problems/relative-ranks/
+[73]: https://leetcode.com/problems/delete-node-in-a-linked-list/
