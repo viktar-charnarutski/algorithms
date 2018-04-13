@@ -85,6 +85,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 68 | 10-Apr-2018 | [744. Find Smallest Letter Greater Than Target][68] | Easy | |
 | 69 | 11-Apr-2018 | [674. Longest Continuous Increasing Subsequence][69] | Easy | |
 | 70 | 11-Apr-2018 | [697. Degree of an Array][70] | Easy | |
+| 71 | 12-Apr-2018 | [107. Binary Tree Level Order Traversal II][71] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -156,3 +157,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [68]: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 [69]: https://leetcode.com/problems/longest-continuous-increasing-subsequence/
 [70]: https://leetcode.com/problems/degree-of-an-array/
+[71]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
