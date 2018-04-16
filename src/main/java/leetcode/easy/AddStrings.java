@@ -15,7 +15,7 @@ package leetcode.easy;
 public class AddStrings {
     public String addStrings(String num1, String num2) {
         StringBuilder res = new StringBuilder();
-        boolean remained = false;
+        int remained = 0;
 
         int n1Length = num1.length() - 1;
         int n2Length = num2.length() - 1;
@@ -24,19 +24,15 @@ public class AddStrings {
                 int iNum1 = n1Length >= 0 ? num1.charAt(n1Length--) - '0' : 0;
                 int iNum2 = n2Length >= 0 ? num2.charAt(n2Length--) - '0' : 0;
 
-                int currRes = iNum1 + iNum2;
+                int currRes = iNum1 + iNum2 + remained;
 
-                if (remained) {
-                    currRes += 1;
-                }
-
-                res.insert(0, currRes % 10);
-                remained = currRes > 9;
+                res.append(currRes % 10);
+                remained = currRes > 9 ? 1 : 0;
             }
 
-        if (remained) {
-            res.insert(0, 1);
+        if (remained > 0) {
+            res.append(1);
         }
-        return res.toString();
+        return res.reverse().toString();
     }
 }
