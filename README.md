@@ -92,6 +92,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 75 | 15-Apr-2018 | [606. Construct String from Binary Tree][75] | Easy | |
 | 76 | 16-Apr-2018 | [746. Min Cost Climbing Stairs][76] | Easy | Y |
 | 77 | 16-Apr-2018 | [747. Largest Number At Least Twice of Others][77] | Easy | Y |
+| 78 | 16-Apr-2018 | [671. Second Minimum Node In a Binary Tree][78] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -170,3 +171,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [75]: https://leetcode.com/problems/construct-string-from-binary-tree/
 [76]: https://leetcode.com/problems/min-cost-climbing-stairs/
 [77]: https://leetcode.com/problems/largest-number-at-least-twice-of-others/
+[78]: https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
