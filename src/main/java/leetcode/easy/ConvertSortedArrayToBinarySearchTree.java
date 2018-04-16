@@ -10,27 +10,17 @@ package leetcode.easy;
  */
 public class ConvertSortedArrayToBinarySearchTree {
     public TreeNode sortedArrayToBST(int[] nums) {
-        int midIndex = nums.length / 2;
-        TreeNode root = new TreeNode(nums[midIndex]);
-        appendLeftNodes(root, midIndex - 1, nums);
-        appendRightNodes(root, midIndex + 1, nums);
-
-        return root;
+        if (nums == null || nums.length < 1) return null;
+        return append(nums, 0, nums.length - 1);
     }
 
-    private void appendLeftNodes(TreeNode node, int index, int[] nums) {
-        if (index < 0) return;
+    private static TreeNode append(int[] nums, int left, int right) {
+        if (left > right) return null;
 
-        TreeNode childNode = new TreeNode(nums[index]);
-        node.left = childNode;
-        appendLeftNodes(childNode, --index, nums);
-    }
-
-    private void appendRightNodes(TreeNode node, int index, int[] nums) {
-        if (index == nums.length) return;
-
-        TreeNode childNode = new TreeNode(nums[index]);
-        node.right = childNode;
-        appendRightNodes(childNode, ++index, nums);
+        int midIndex = left + (right - left) / 2;
+        TreeNode node = new TreeNode(nums[midIndex]);
+        node.left = append(nums, left, midIndex - 1);
+        node.right = append(nums, midIndex + 1, right);
+        return node;
     }
 }
