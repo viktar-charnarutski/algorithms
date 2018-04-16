@@ -16,8 +16,27 @@ import java.util.LinkedList;
  * If no such second minimum value exists, output -1 instead.
  */
 public class SecondMinimumNodeInABinaryTree {
+    private int min1;
+    private int min2 = Integer.MAX_VALUE;
 
     public int findSecondMinimumValue(TreeNode root) {
+        min1 = root.val;
+        find(root);
+        return min2 < Integer.MAX_VALUE ? min2 : -1;
+    }
+
+    private void find(TreeNode node) {
+        if (node == null) return;
+
+        if (node.val > min1 && node.val < min2) {
+            min2 = node.val;
+        } else if (node.val == min1) {
+            find(node.left);
+            find(node.right);
+        }
+    }
+
+    public int findSecondMinimumValueBrutForce(TreeNode root) {
         if (root == null || (root.left == null && root.right == null)) return -1;
 
         int min = root.val;

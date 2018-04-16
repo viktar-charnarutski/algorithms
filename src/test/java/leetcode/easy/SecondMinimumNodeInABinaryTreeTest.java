@@ -29,8 +29,11 @@ public class SecondMinimumNodeInABinaryTreeTest {
         n6.left = n7;
         n6.right= n8;
 
-        assertSame(-1, ins.findSecondMinimumValue(n6));
-        assertSame(-1, ins.findSecondMinimumValue(new TreeNode(1)));
+        SecondMinimumNodeInABinaryTree ins1 = new SecondMinimumNodeInABinaryTree();
+        assertSame(-1, ins1.findSecondMinimumValue(n6));
+
+        SecondMinimumNodeInABinaryTree ins2 = new SecondMinimumNodeInABinaryTree();
+        assertSame(-1, ins2.findSecondMinimumValue(new TreeNode(1)));
 
         TreeNode n9 = new TreeNode(1);
         TreeNode n10 = new TreeNode(1);
@@ -47,6 +50,7 @@ public class SecondMinimumNodeInABinaryTreeTest {
         n11.left = n14;
         n11.right = n15;
 
-        assertSame(2, ins.findSecondMinimumValue(n9));
+        SecondMinimumNodeInABinaryTree ins3 = new SecondMinimumNodeInABinaryTree();
+        assertSame(2, ins3.findSecondMinimumValue(n9));
     }
 }
