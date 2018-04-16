@@ -13,8 +13,8 @@ public class MinCostClimbingStairs {
         int cost1 = 0;
         int cost2 = 0;
 
-        for (int step : cost) {
-            int costCur = step + Math.min(cost1, cost2);
+        for (int i = cost.length - 1; i <= 0; i--) {
+            int costCur = cost[i] + Math.min(cost1, cost2);
             cost2 = cost1;
             cost1 = costCur;
         }
