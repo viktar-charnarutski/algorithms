@@ -15,6 +15,25 @@ import java.util.HashMap;
 public class LargestNumberAtLeastTwiceOfOthers {
     public int dominantIndex(int[] nums) {
         if (nums.length == 1) return 0;
+        int ind = 0;
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > nums[ind]) {
+                ind = i;
+            }
+        }
+
+        for (int num : nums) {
+            if (num < nums[ind] && (num * 2) > nums[ind]) {
+                return -1;
+            }
+        }
+
+        return ind;
+    }
+
+    public int dominantIndexHAshMap(int[] nums) {
+        if (nums.length == 1) return 0;
 
         HashMap<Integer, Integer> pos = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
