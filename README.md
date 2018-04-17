@@ -95,6 +95,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 78 | 16-Apr-2018 | [671. Second Minimum Node In a Binary Tree][78] | Easy | |
 | 79 | 16-Apr-2018 | [415. Add Strings][79] | Easy | |
 | 80 | 16-Apr-2018 | [257. Binary Tree Paths][80] | Easy | |
+| 81 | 17-Apr-2018 | [70. Climbing Stairs][81] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -176,3 +177,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [78]: https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
 [79]: https://leetcode.com/problems/add-strings/
 [80]: https://leetcode.com/problems/binary-tree-paths/
+[81]: https://leetcode.com/problems/climbing-stairs/
