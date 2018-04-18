@@ -96,6 +96,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 79 | 16-Apr-2018 | [415. Add Strings][79] | Easy | |
 | 80 | 16-Apr-2018 | [257. Binary Tree Paths][80] | Easy | |
 | 81 | 17-Apr-2018 | [70. Climbing Stairs][81] | Easy | |
+| 82 | 17-Apr-2018 | [202. Happy Number][82] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -178,3 +179,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [79]: https://leetcode.com/problems/add-strings/
 [80]: https://leetcode.com/problems/binary-tree-paths/
 [81]: https://leetcode.com/problems/climbing-stairs/
+[82]: https://leetcode.com/problems/happy-number/
