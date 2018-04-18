@@ -100,6 +100,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 83 | 17-Apr-2018 | [21. Merge Two Sorted Lists][83] | Easy | Y |
 | 84 | 17-Apr-2018 | [594. Longest Harmonious Subsequence][84] | Easy | |
 | 85 | 17-Apr-2018 | [27. Remove Element][85] | Easy | |
+| 86 | 18-Apr-2018 | [231. Power of Two][86] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -186,3 +187,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [83]: https://leetcode.com/problems/merge-two-sorted-lists/
 [84]: https://leetcode.com/problems/longest-harmonious-subsequence/
 [84]: https://leetcode.com/problems/remove-element/
+[86]: https://leetcode.com/problems/power-of-two/
