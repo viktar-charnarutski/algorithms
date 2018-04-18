@@ -1,6 +1,5 @@
 package leetcode.easy;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -25,13 +24,14 @@ public class LongestHarmoniousSubsequence {
             }
         }
 
-        Arrays.sort(nums);
-
         int res = 0;
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] - nums[i - 1] == 1) {
-                res = Math.max(occ.get(nums[i]) + occ.get(nums[i - 1]), res);
+
+        for (int num : occ.keySet()) {
+
+            if (occ.containsKey(num + 1)) {
+                res = Math.max(occ.get(num) + occ.get(num + 1), res);
             }
+
         }
 
         return res;
