@@ -98,6 +98,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 81 | 17-Apr-2018 | [70. Climbing Stairs][81] | Easy | |
 | 82 | 17-Apr-2018 | [202. Happy Number][82] | Easy | |
 | 83 | 17-Apr-2018 | [21. Merge Two Sorted Lists][83] | Easy | Y |
+| 84 | 17-Apr-2018 | [594. Longest Harmonious Subsequence][84] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -182,3 +183,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [81]: https://leetcode.com/problems/climbing-stairs/
 [82]: https://leetcode.com/problems/happy-number/
 [83]: https://leetcode.com/problems/merge-two-sorted-lists/
+[84]: https://leetcode.com/problems/longest-harmonious-subsequence/
