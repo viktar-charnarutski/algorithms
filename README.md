@@ -102,6 +102,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 85 | 17-Apr-2018 | [27. Remove Element][85] | Easy | |
 | 86 | 18-Apr-2018 | [231. Power of Two][86] | Easy | |
 | 87 | 18-Apr-2018 | [326. Power of Three][87] | Easy | |
+| 88 | 18-Apr-2018 | [101. Symmetric Tree][88] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -190,3 +191,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [84]: https://leetcode.com/problems/remove-element/
 [86]: https://leetcode.com/problems/power-of-two/
 [87]: https://leetcode.com/problems/power-of-three/
+[88]: https://leetcode.com/problems/symmetric-tree/
