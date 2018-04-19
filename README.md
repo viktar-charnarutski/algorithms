@@ -106,6 +106,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 89 | 18-Apr-2018 | [53. Maximum Subarray][89] | Easy | |
 | 90 | 18-Apr-2018 | [83. Remove Duplicates from Sorted List][90] | Easy | |
 | 91 | 18-Apr-2018 | [669. Trim a Binary Search Tree][91] | Easy | Y |
+| 92 | 19-Apr-2018 | [572. Subtree of Another Tree][92] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -191,10 +192,11 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [82]: https://leetcode.com/problems/happy-number/
 [83]: https://leetcode.com/problems/merge-two-sorted-lists/
 [84]: https://leetcode.com/problems/longest-harmonious-subsequence/
-[84]: https://leetcode.com/problems/remove-element/
+[85]: https://leetcode.com/problems/remove-element/
 [86]: https://leetcode.com/problems/power-of-two/
 [87]: https://leetcode.com/problems/power-of-three/
 [88]: https://leetcode.com/problems/symmetric-tree/
 [89]: https://leetcode.com/problems/maximum-subarray/
 [90]: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 [91]: https://leetcode.com/problems/trim-a-binary-search-tree/
+[92]: https://leetcode.com/problems/subtree-of-another-tree/
