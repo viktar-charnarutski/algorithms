@@ -103,7 +103,8 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 86 | 18-Apr-2018 | [231. Power of Two][86] | Easy | |
 | 87 | 18-Apr-2018 | [326. Power of Three][87] | Easy | |
 | 88 | 18-Apr-2018 | [101. Symmetric Tree][88] | Easy | Y |
-| 89 | 18-Apr-2018 | [53. Maximum Subarray][88] | Easy | |
+| 89 | 18-Apr-2018 | [53. Maximum Subarray][89] | Easy | |
+| 90 | 18-Apr-2018 | [83. Remove Duplicates from Sorted List][90] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -194,3 +195,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [87]: https://leetcode.com/problems/power-of-three/
 [88]: https://leetcode.com/problems/symmetric-tree/
 [89]: https://leetcode.com/problems/maximum-subarray/
+[90]: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
