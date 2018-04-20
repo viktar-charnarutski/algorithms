@@ -11,6 +11,13 @@ package leetcode.easy;
 public class LowestCommonAncestorOfBST {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        while ((root.val - p.val) * (root.val - q.val) > 0) {
+            root = p.val < root.val ? root.left : root.right;
+        }
+        return root;
+    }
+
+    public TreeNode lowestCommonAncestor1(TreeNode root, TreeNode p, TreeNode q) {
         if (root.val > p.val && root.val > q.val) {
             return lowestCommonAncestor(root.left, p, q);
 
