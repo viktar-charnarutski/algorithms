@@ -110,6 +110,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 93 | 19-Apr-2018 | [437. Path Sum III][93] | Easy | Y |
 | 94 | 19-Apr-2018 | [35. Search Insert Position][94] | Easy | |
 | 95 | 19-Apr-2018 | [198. House Robber][95] | Easy | Y |
+| 96 | 20-Apr-2018 | [235. Lowest Common Ancestor of a Binary Search Tree][96] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -206,3 +207,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [93]: https://leetcode.com/problems/path-sum-iii/
 [94]: https://leetcode.com/problems/search-insert-position/
 [95]: https://leetcode.com/problems/house-robber/
+[96]: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
