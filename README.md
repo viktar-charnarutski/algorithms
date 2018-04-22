@@ -115,6 +115,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 98 | 20-Apr-2018 | [645. Set Mismatch][98] | Easy | Y |
 | 99 | 20-Apr-2018 | [110. Balanced Binary Tree][99] | Easy | Y |
 | 100 | 21-Apr-2018 | [501. Find Mode in Binary Search Tree][100] | Easy | Y |
+| 101 | 21-Apr-2018 | [643. Maximum Average Subarray I][101] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -216,3 +217,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [98]: https://leetcode.com/problems/set-mismatch/
 [99]: https://leetcode.com/problems/balanced-binary-tree/
 [100]: https://leetcode.com/problems/find-mode-in-binary-search-tree/
+[101]: https://leetcode.com/problems/maximum-average-subarray-i/
