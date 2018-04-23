@@ -117,6 +117,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 100 | 21-Apr-2018 | [501. Find Mode in Binary Search Tree][100] | Easy | Y |
 | 101 | 21-Apr-2018 | [643. Maximum Average Subarray I][101] | Easy | Y |
 | 102 | 22-Apr-2018 | [441. Arranging Coins][102] | Easy | Y |
+| 103 | 22-Apr-2018 | [367. Valid Perfect Square][103] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -220,3 +221,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [100]: https://leetcode.com/problems/find-mode-in-binary-search-tree/
 [101]: https://leetcode.com/problems/maximum-average-subarray-i/
 [102]: https://leetcode.com/problems/maximum-average-subarray-i/
+[103]: https://leetcode.com/problems/valid-perfect-square/
