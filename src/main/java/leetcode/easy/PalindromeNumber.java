@@ -8,14 +8,16 @@ package leetcode.easy;
  */
 public class PalindromeNumber {
     public boolean isPalindrome(int x) {
-        long reX = 0;
-        int i = x;
+        if (x < 0 || (x != 0 && x % 10 == 0))
+            return false;
 
-        while (i > 0) {
-            reX = (reX * 10) + (i % 10);
-            i /= 10;
+        int reX = 0;
+
+        while (x > reX) {
+            reX = (reX * 10) + (x % 10);
+            x /= 10;
         }
 
-        return reX <= Integer.MAX_VALUE && reX == x;
+        return x == reX || x == (reX / 10);
     }
 }
