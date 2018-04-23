@@ -11,16 +11,11 @@ package leetcode.easy;
 public class PathSum {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) return false;
-        return pathSum(root, sum);
-    }
 
-    private boolean pathSum(TreeNode node, int sum) {
-        if (node == null) return false;
-
-        if (node.left == null && node.right == null) {
-            return node.val == sum;
+        if (root.left == null && root.right == null) {
+            return root.val == sum;
         }
 
-        return pathSum(node.left, sum - node.val) || pathSum(node.right, sum - node.val);
+        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
 }
