@@ -33,7 +33,7 @@ public class ListNode {
     @Override
     public int hashCode() {
         int result = val;
-        result = 31 * result + (next != null ? next.hashCode() : 0);
+        result = 31 * result;
         return result;
     }
 }
