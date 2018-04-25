@@ -48,4 +48,10 @@ public class ContainsDuplicateIITest {
         int[] input = {0, 0};
         assertTrue(new ContainsDuplicateII().containsNearbyDuplicate(input, 3));
     }
+
+    @Test
+    public void containsNearbyDuplicate_target_is_two() {
+        int[] input = {0, 1, 0};
+        assertFalse(new ContainsDuplicateII().containsNearbyDuplicate(input, 1));
+    }
 }

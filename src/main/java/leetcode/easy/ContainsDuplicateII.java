@@ -1,6 +1,7 @@
 package leetcode.easy;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * 219. Contains Duplicate II
@@ -9,7 +10,24 @@ import java.util.HashMap;
  * such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
  */
 public class ContainsDuplicateII {
+
     public boolean containsNearbyDuplicate(int[] nums, int k) {
+        if (nums == null) return false;
+
+        HashSet<Integer> uniqNums = new HashSet<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            if (!uniqNums.add(nums[i])) return true;
+
+            if (uniqNums.size() > k) {
+                uniqNums.remove(nums[i - k]);
+            }
+        }
+
+        return false;
+    }
+
+    public boolean containsNearbyDuplicateHashMap(int[] nums, int k) {
         if (nums == null) return false;
 
         HashMap<Integer, Integer> pos = new HashMap<>();
