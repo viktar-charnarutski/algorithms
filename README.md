@@ -127,6 +127,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 110 | 24-Apr-2018 | [203. Remove Linked List Elements][110] | Easy | |
 | 111 | 24-Apr-2018 | [724. Find Pivot Index][111] | Easy | Y |
 | 112 | 24-Apr-2018 | [234. Palindrome Linked List][112] | Easy | Y |
+| 113 | 24-Apr-2018 | [687. Longest Univalue Path][113] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -240,3 +241,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [110]: https://leetcode.com/problems/remove-linked-list-elements/
 [111]: https://leetcode.com/problems/find-pivot-index/
 [112]: https://leetcode.com/problems/palindrome-linked-list/
+[113]: https://leetcode.com/problems/longest-univalue-path/
