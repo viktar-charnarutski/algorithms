@@ -14,29 +14,20 @@ public class LongestUnivaluePath {
 
     public int longestUnivaluePath(TreeNode root) {
         if (root == null) return 0;
-        path(root);
+        path(root, root.val);
         return max;
     }
 
-    private int path(TreeNode root) {
+    private int path(TreeNode root, int val) {
         if (root == null) return 0;
 
-        int left = path(root.left);
-        int right = path(root.right);
+        int left = path(root.left, root.val);
+        int right = path(root.right, root.val);
 
-        int arrowLeft = 0;
-        int arrowRight = 0;
+        max = Math.max(left + right, max);
 
-        if (root.left != null && root.left.val == root.val) {
-            arrowLeft += left + 1;
-        }
+        if (root.val == val) return Math.max(left, right) + 1;
 
-        if (root.right != null && root.right.val == root.val) {
-            arrowRight += right + 1;
-        }
-
-        max = Math.max(arrowLeft + arrowRight, max);
-
-        return Math.max(arrowLeft, arrowRight);
+        return 0;
     }
 }
