@@ -130,6 +130,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 113 | 24-Apr-2018 | [687. Longest Univalue Path][113] | Easy | Y |
 | 114 | 25-Apr-2018 | [219. Contains Duplicate II][114] | Easy | |
 | 115 | 25-Apr-2018 | [507. Perfect Number][115] | Easy | |
+| 116 | 25-Apr-2018 | [303. Range Sum Query - Immutable][116] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -246,3 +247,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [113]: https://leetcode.com/problems/longest-univalue-path/
 [114]: https://leetcode.com/problems/contains-duplicate-ii/
 [115]: https://leetcode.com/problems/perfect-number/
+[116]: https://leetcode.com/problems/range-sum-query-immutable/
