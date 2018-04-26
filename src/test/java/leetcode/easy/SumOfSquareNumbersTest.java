@@ -10,5 +10,6 @@ public class SumOfSquareNumbersTest {
     public void judgeSquareSum_true() {
         SumOfSquareNumbers ins = new SumOfSquareNumbers();
         assertTrue(ins.judgeSquareSum(5));
+        assertTrue(ins.judgeSquareSum(8));
     }
 }
