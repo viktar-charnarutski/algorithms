@@ -132,6 +132,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 115 | 25-Apr-2018 | [507. Perfect Number][115] | Easy | |
 | 116 | 25-Apr-2018 | [303. Range Sum Query - Immutable][116] | Easy | |
 | 117 | 25-Apr-2018 | [633. Sum of Square Numbers][117] | Easy | Y |
+| 118 | 25-Apr-2018 | [88. Merge Sorted Array][118] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -250,3 +251,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [115]: https://leetcode.com/problems/perfect-number/
 [116]: https://leetcode.com/problems/range-sum-query-immutable/
 [117]: https://leetcode.com/problems/sum-of-square-numbers/
+[117]: https://leetcode.com/problems/merge-sorted-array/
