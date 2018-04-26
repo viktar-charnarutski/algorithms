@@ -1,7 +1,5 @@
 package leetcode.easy;
 
-import javafx.util.Pair;
-
 import java.util.HashMap;
 
 /**
@@ -11,19 +9,19 @@ import java.util.HashMap;
  */
 public class NumArray {
 
-    private HashMap<Pair<Integer, Integer>, Integer> sum = new HashMap<>();
+    private HashMap<String, Integer> sum = new HashMap<>();
 
     public NumArray(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             int currSum = 0;
             for (int j = i; j < nums.length; j++) {
                 currSum += nums[j];
-                sum.put(new Pair<>(i, j), currSum);
+                sum.put("" + i + j, currSum);
             }
         }
     }
 
     public int sumRange(int i, int j) {
-        return sum.get(new Pair<>(i, j));
+        return sum.get("" + i + j);
     }
 }
