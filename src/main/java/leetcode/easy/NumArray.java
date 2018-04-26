@@ -1,7 +1,5 @@
 package leetcode.easy;
 
-import java.util.HashMap;
-
 /**
  * 303. Range Sum Query - Immutable
  * <p>
@@ -9,19 +7,17 @@ import java.util.HashMap;
  */
 public class NumArray {
 
-    private HashMap<String, Integer> sum = new HashMap<>();
+    private int[] nums;
 
     public NumArray(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            int currSum = 0;
-            for (int j = i; j < nums.length; j++) {
-                currSum += nums[j];
-                sum.put("" + i + j, currSum);
-            }
+        this.nums = nums;
+        for (int i = 1; i < nums.length; i++) {
+            nums[i] += nums[i - 1];
         }
     }
 
     public int sumRange(int i, int j) {
-        return sum.get("" + i + j);
+        if (i == 0) return nums[j];
+        return nums[j] - nums[i - 1];
     }
 }
