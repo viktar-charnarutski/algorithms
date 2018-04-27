@@ -19,7 +19,7 @@ public class CanPlaceFlowers {
                     && (i == flowerbed.length - 1 || flowerbed[i + 1] == 0)) {
 
                 flowerbed[i] = 1;
-                freeSpots++;
+                if (++freeSpots == n) return true;
             }
         }
         return freeSpots >= n;
