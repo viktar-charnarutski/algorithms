@@ -136,6 +136,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 119 | 26-Apr-2018 | [160. Intersection of Two Linked Lists][119] | Easy | Y |
 | 120 | 26-Apr-2018 | [400. Nth Digit][120] | Easy | Y |
 | 121 | 26-Apr-2018 | [605. Can Place Flower][121] | Easy | |
+| 122 | 27-Apr-2018 | [475. Heaters][122] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -258,3 +259,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [119]: https://leetcode.com/problems/intersection-of-two-linked-lists/
 [120]: https://leetcode.com/problems/nth-digit/
 [121]: https://leetcode.com/problems/can-place-flowers/
+[122]: https://leetcode.com/problems/heaters/
