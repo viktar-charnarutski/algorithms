@@ -35,4 +35,10 @@ public class ShortestUnsortedContinuousSubarrayTest {
         ShortestUnsortedContinuousSubarray ins = new ShortestUnsortedContinuousSubarray();
         assertSame(0, ins.findUnsortedSubarray(new int[]{1, 2, 3, 3, 3}));
     }
+
+    @Test
+    public void findUnsortedSubarray_all_elements_are_the_same() {
+        ShortestUnsortedContinuousSubarray ins = new ShortestUnsortedContinuousSubarray();
+        assertSame(0, ins.findUnsortedSubarray(new int[]{1, 1, 1, 1, 1}));
+    }
 }
