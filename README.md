@@ -138,8 +138,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 121 | 26-Apr-2018 | [605. Can Place Flower][121] | Easy | |
 | 122 | 27-Apr-2018 | [475. Heaters][122] | Easy | |
 | 123 | 27-Apr-2018 | [581. Shortest Unsorted Continuous Subarray][123] | Easy | |
-| 124 | 28-Apr-2018 | [414. Third Maximum Number][124] | Easy | |
-| 125 | 28-Apr-2018 | [204. Count Primes][125] | Easy | Y |
+| 124 | 29-Apr-2018 | [414. Third Maximum Number][124] | Easy | |
+| 125 | 29-Apr-2018 | [204. Count Primes][125] | Easy | Y |
+| 126 | 30-Apr-2018 | [278. First Bad Version][126] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -266,3 +267,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [123]: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 [124]: https://leetcode.com/problems/third-maximum-number/
 [125]: https://leetcode.com/problems/count-primes/
+[126]: https://leetcode.com/problems/first-bad-version/
