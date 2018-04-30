@@ -9,16 +9,16 @@ package leetcode.easy;
 public class CountPrimes {
     public int countPrimes(int n) {
         int count = 0;
+        boolean[] nonPrimes = new boolean[n];
         for (int i = 2; i < n; i++) {
-            if(isPrime(i)) count++;
+
+            if(!nonPrimes[i]) {
+                for (int j = 2; i * j < n; j++) {
+                    nonPrimes[i * j] = true;
+                }
+                count++;
+            }
         }
         return count;
-    }
-
-    private static boolean isPrime(int n) {
-        for (int i = 2; i < n; i++) {
-            if (n % i == 0) return false;
-        }
-        return true;
     }
 }
