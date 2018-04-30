@@ -6,12 +6,11 @@ package leetcode.easy;
  * Given an array, rotate the array to the right by k steps, where k is non-negative.
  */
 public class RotateArray {
+
     public void rotate(int[] nums, int k) {
         if (nums == null || nums.length == 1 || k == nums.length) return;
 
-        if (k > nums.length) {
-            k -= nums.length;
-        }
+        k %= nums.length;
 
         int[] rotated = new int[nums.length];
         System.arraycopy(nums, nums.length - k, rotated, 0, k);
