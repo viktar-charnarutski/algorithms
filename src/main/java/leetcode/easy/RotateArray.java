@@ -7,7 +7,11 @@ package leetcode.easy;
  */
 public class RotateArray {
     public void rotate(int[] nums, int k) {
-        if (nums == null || nums.length == 1 || k < 1 || k >= nums.length) return;
+        if (nums == null || nums.length == 1 || k == nums.length) return;
+
+        if (k > nums.length) {
+            k -= nums.length;
+        }
 
         int[] rotated = new int[nums.length];
         System.arraycopy(nums, nums.length - k, rotated, 0, k);
