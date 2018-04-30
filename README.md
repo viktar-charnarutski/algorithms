@@ -141,6 +141,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 124 | 29-Apr-2018 | [414. Third Maximum Number][124] | Easy | |
 | 125 | 29-Apr-2018 | [204. Count Primes][125] | Easy | Y |
 | 126 | 30-Apr-2018 | [278. First Bad Version][126] | Easy | Y |
+| 127 | 30-Apr-2018 | [189. Rotate Array][127] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -268,3 +269,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [124]: https://leetcode.com/problems/third-maximum-number/
 [125]: https://leetcode.com/problems/count-primes/
 [126]: https://leetcode.com/problems/first-bad-version/
+[127]: https://leetcode.com/problems/rotate-array/
