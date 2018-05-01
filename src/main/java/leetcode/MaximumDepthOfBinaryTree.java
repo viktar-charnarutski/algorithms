@@ -22,14 +22,4 @@ public class MaximumDepthOfBinaryTree {
         depth++;
         return Math.max(bsf(node.left, depth), bsf(node.right, depth));
     }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }
