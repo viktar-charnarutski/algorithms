@@ -11,40 +11,17 @@ package leetcode;
  */
 public class BinaryTreePruning {
     public TreeNode pruneTree(TreeNode root) {
-
-        if (shouldBePruned(root)) {
+        if (root == null) {
             return null;
         }
 
-        if (shouldBePruned(root.left)) {
-            root.left = null;
-        } else {
-            root.left = pruneTree(root.left);
-        }
+        root.left = pruneTree(root.left);
+        root.right = pruneTree(root.right);
 
-        if (shouldBePruned(root.right)) {
-            root.right = null;
-        } else {
-            root.right = pruneTree(root.right);
+        if (root.left == null && root.right == null && root.val == 0) {
+            return null;
         }
 
         return root;
-    }
-
-    private static boolean shouldBePruned(TreeNode node) {
-        return node == null || nodeHasZeroVal(node) &&
-                (nodeHasNoChildren(node) || nodeHasChildrenWithZeroVal(node));
-    }
-
-    private static boolean nodeHasChildrenWithZeroVal(TreeNode node) {
-        return nodeHasZeroVal(node.left) && nodeHasZeroVal(node.right);
-    }
-
-    private static boolean nodeHasZeroVal(TreeNode node) {
-        return node != null && node.val == 0;
-    }
-
-    private static boolean nodeHasNoChildren(TreeNode node) {
-        return node.right == null && node.left == null;
     }
 }
