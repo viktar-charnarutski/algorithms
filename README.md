@@ -143,7 +143,8 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 126 | 30-Apr-2018 | [278. First Bad Version][126] | Easy | Y |
 | 127 | 30-Apr-2018 | [189. Rotate Array][127] | Easy | |
 | 128 | 30-Apr-2018 | [7. Reverse Integer][128] | Easy | |
-| 129 | 30-Apr-2018 | [665. Non-decreasing Array][128] | Easy | |
+| 129 | 30-Apr-2018 | [665. Non-decreasing Array][129] | Easy | |
+| 130 | 30-Apr-2018 | [807. Max Increase to Keep City Skyline][130] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -274,3 +275,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [127]: https://leetcode.com/problems/rotate-array/
 [128]: https://leetcode.com/problems/reverse-integer/
 [129]: https://leetcode.com/problems/non-decreasing-array/
+[130]: https://leetcode.com/problems/max-increase-to-keep-city-skyline/
