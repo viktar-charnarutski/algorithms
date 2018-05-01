@@ -146,6 +146,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 129 | 30-Apr-2018 | [665. Non-decreasing Array][129] | Easy | |
 | 130 | 30-Apr-2018 | [807. Max Increase to Keep City Skyline][130] | Easy | |
 | 131 | 1-May-2018 | [535. Encode and Decode TinyURL][131] | Medium | |
+| 132 | 1-May-2018 | [814. Binary Tree Pruning][132] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -278,3 +279,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [129]: https://leetcode.com/problems/non-decreasing-array/
 [130]: https://leetcode.com/problems/max-increase-to-keep-city-skyline/
 [131]: https://leetcode.com/problems/encode-and-decode-tinyurl/
+[132]: https://leetcode.com/problems/binary-tree-pruning/
