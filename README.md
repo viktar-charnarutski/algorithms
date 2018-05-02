@@ -148,6 +148,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 131 | 1-May-2018 | [535. Encode and Decode TinyURL][131] | Medium | |
 | 132 | 1-May-2018 | [814. Binary Tree Pruning][132] | Medium | |
 | 133 | 1-May-2018 | [654. Maximum Binary Tree][133] | Medium | |
+| 134 | 1-May-2018 | [763. Partition Labels][134] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -282,3 +283,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [131]: https://leetcode.com/problems/encode-and-decode-tinyurl/
 [132]: https://leetcode.com/problems/binary-tree-pruning/
 [133]: https://leetcode.com/problems/maximum-binary-tree/
+[134]: https://leetcode.com/problems/partition-labels/
