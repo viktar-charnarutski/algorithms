@@ -1,7 +1,6 @@
 package leetcode;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -17,10 +16,13 @@ import java.util.List;
 public class FindAllDuplicatesInAnArray {
     public List<Integer> findDuplicates(int[] nums) {
         ArrayList<Integer> res = new ArrayList<>();
-        HashSet<Integer> uniqs = new HashSet<>();
-
-        for (int n : nums) {
-            if (!uniqs.add(n)) res.add(n);
+        for (int i = 0; i < nums.length; i++) {
+            int num = Math.abs(nums[i]);
+            if (nums[num - 1] < 0) {
+                res.add(num);
+            } else {
+                nums[num - 1] = -nums[num - 1];
+            }
         }
         return res;
     }
