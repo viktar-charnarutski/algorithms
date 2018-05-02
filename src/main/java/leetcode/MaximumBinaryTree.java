@@ -16,6 +16,31 @@ import java.util.LinkedList;
  */
 public class MaximumBinaryTree {
     public TreeNode constructMaximumBinaryTree(int[] nums) {
+        return construct(nums, 0, nums.length);
+    }
+
+    private TreeNode construct(int[] nums, int left, int right) {
+        TreeNode node = null;
+        if (left < right) {
+            int maxInd = maxInd(nums, left, right);
+            node = new TreeNode(nums[maxInd]);
+            node.left = construct(nums, left, maxInd);
+            node.right = construct(nums, maxInd + 1, right);
+        }
+        return node;
+    }
+
+    private int maxInd(int[] nums, int left, int right) {
+        int maxInd = left;
+        for (int i = left + 1; i < right; i++) {
+            if (nums[i] > nums[maxInd]) {
+                maxInd = i;
+            }
+        }
+        return maxInd;
+    }
+
+    public TreeNode constructMaximumBinaryTreeOrig(int[] nums) {
         HashMap<Integer, Integer> indexes = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             indexes.put(nums[i], i);
