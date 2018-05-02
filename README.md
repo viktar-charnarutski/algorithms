@@ -149,6 +149,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 132 | 1-May-2018 | [814. Binary Tree Pruning][132] | Medium | |
 | 133 | 1-May-2018 | [654. Maximum Binary Tree][133] | Medium | |
 | 134 | 1-May-2018 | [763. Partition Labels][134] | Medium | Y |
+| 135 | 2-May-2018 | [419. Battleships in a Board][135] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -284,3 +285,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [132]: https://leetcode.com/problems/binary-tree-pruning/
 [133]: https://leetcode.com/problems/maximum-binary-tree/
 [134]: https://leetcode.com/problems/partition-labels/
+[135]: https://leetcode.com/problems/battleships-in-a-board/
