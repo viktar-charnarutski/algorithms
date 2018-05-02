@@ -17,30 +17,12 @@ public class BattleshipsInABoard {
         int count = 0;
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[0].length; col++) {
-                if (board[row][col] == 'X') {
-                    markBattleship(board, row, col);
-                    count++;
-                }
+                if (board[row][col] == '.') continue;
+                if (row - 1 >= 0 && board[row - 1][col] == 'X') continue;
+                if (col - 1 >= 0 && board[row][col - 1] == 'X') continue;
+                count++;
             }
         }
         return count;
-    }
-
-    private void markBattleship(char[][] board, int row, int col) {
-        for (int i = row + 1; i < board.length; i++) {
-            if (board[i][col] == 'X') {
-                board[i][col] = 'x';
-            } else {
-                break;
-            }
-        }
-
-        for (int i = col + 1; i < board[0].length; i++) {
-            if (board[row][i] == 'X') {
-                board[row][i] = 'x';
-            } else {
-                break;
-            }
-        }
     }
 }
