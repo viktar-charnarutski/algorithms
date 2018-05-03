@@ -1,12 +1,16 @@
 package search;
 
+import java.util.Arrays;
+
 /**
  * Binary Search implementation.
  */
 public class BinarySearch {
 
     public boolean binarySearch(int[] arr, int target) {
-        return binarySearch(arr, target, 0, arr.length - 1);
+        int[] clone = arr.clone();
+        Arrays.sort(clone);
+        return binarySearch(clone, target, 0, clone.length - 1);
     }
 
     private boolean binarySearch(int[] arr, int target, int left, int right) {
