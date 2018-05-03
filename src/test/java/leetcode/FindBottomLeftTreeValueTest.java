@@ -26,4 +26,16 @@ public class FindBottomLeftTreeValueTest {
         FindBottomLeftTreeValue ins = new FindBottomLeftTreeValue();
         assertEquals(7, ins.findBottomLeftValue(n1));
     }
+
+    @Test
+    public void findBottomLeftValue_only_right_child() {
+        TreeNode n1 = new TreeNode(0);
+        TreeNode n2 = new TreeNode(-1);
+
+        n1.right = n2;
+
+
+        FindBottomLeftTreeValue ins = new FindBottomLeftTreeValue();
+        assertEquals(-1, ins.findBottomLeftValue(n1));
+    }
 }
