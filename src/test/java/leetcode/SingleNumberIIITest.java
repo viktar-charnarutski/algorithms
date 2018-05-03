@@ -9,6 +9,7 @@ public class SingleNumberIIITest {
     @Test
     public void singleNumber() {
         SingleNumberIII ins = new SingleNumberIII();
-        assertArrayEquals(new int[]{3, 5}, ins.singleNumber(new int[]{1, 2, 1, 3, 2, 5}));
+        int[] actuals = ins.singleNumber(new int[]{1, 2, 1, 3, 2, 5});
+        assertArrayEquals(new int[]{5, 3}, actuals);
     }
 }

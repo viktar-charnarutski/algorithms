@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.HashMap;
-
 /**
  * 260. Single Number III
  * <p>
@@ -14,21 +12,23 @@ import java.util.HashMap;
  */
 public class SingleNumberIII {
     public int[] singleNumber(int[] nums) {
-
-        int[] resarr = new int[2];
-        HashMap<Integer, Integer> nummap = new HashMap<>();
+        int[] diff = {0, 0};
+        int xor = 0;
 
         for (int num : nums) {
-            nummap.put(num, nummap.getOrDefault(num, 0) + 1);
+            xor ^= num;
         }
 
-        int j = 0;
-        for (int num : nummap.keySet()) {
-            if (nummap.get(num) == 1) {
-                resarr[j++] = num;
+        // getting the last different bit
+        xor &= -xor;
+
+        for (int num : nums) {
+            if ((xor & num) == 0) {
+                diff[0] ^= num;
+            } else {
+                diff[1] ^= num;
             }
         }
-
-        return resarr;
+        return diff;
     }
 }
