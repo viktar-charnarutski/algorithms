@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Stack;
+
 /**
  * 739. Daily Temperatures
  * <p>
@@ -18,13 +20,13 @@ public class DailyTemperatures {
     public int[] dailyTemperatures(int[] temperatures) {
         int[] res = new int[temperatures.length];
 
+        Stack<Integer> ts = new Stack<>();
         for (int i = 0; i < temperatures.length; i++) {
-            for (int j = i + 1, k = 1; j < temperatures.length; j++, k++) {
-                if (temperatures[j] > temperatures[i]) {
-                    res[i] = k;
-                    break;
-                }
+            while (!ts.isEmpty() && temperatures[i] > temperatures[ts.peek()]) {
+                int idx = ts.pop();
+                res[idx] = i - idx;
             }
+            ts.push(i);
         }
         return res;
     }
