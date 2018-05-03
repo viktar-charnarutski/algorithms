@@ -16,7 +16,7 @@ public class BinarySearch {
     private boolean binarySearch(int[] arr, int target, int left, int right) {
         if (left > right) return false;
 
-        int mid = (right + left) / 2;
+        int mid = left + (right - left) / 2;
 
         if (arr[mid] == target) {
             return true;
@@ -26,5 +26,4 @@ public class BinarySearch {
             return binarySearch(arr, target, mid + 1, right);
         }
     }
-
 }
