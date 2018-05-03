@@ -151,7 +151,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 134 | 1-May-2018 | [763. Partition Labels][134] | Medium | Y |
 | 135 | 2-May-2018 | [419. Battleships in a Board][135] | Medium | Y |
 | 136 | 2-May-2018 | [791. Custom Sort String][136] | Medium | Y |
-| 137 | 2-May-2018 | [442. Find All Duplicates in an Array][137] | Medium | |
+| 137 | 2-May-2018 | [442. Find All Duplicates in an Array][137] | Medium | Y |
 | 138 | 2-May-2018 | [513. Find Bottom Left Tree Value][138] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
