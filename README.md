@@ -155,6 +155,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 138 | 2-May-2018 | [513. Find Bottom Left Tree Value][138] | Medium | Y |
 | 139 | 3-May-2018 | [540. Single Element in a Sorted Array][139] | Medium | |
 | 140 | 3-May-2018 | [515. Find Largest Value in Each Tree Row][140] | Medium | |
+| 141 | 3-May-2018 | [553. Optimal Division][141] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -296,3 +297,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [138]: https://leetcode.com/problems/find-bottom-left-tree-value/
 [139]: https://leetcode.com/problems/single-element-in-a-sorted-array/
 [140]: https://leetcode.com/problems/find-largest-value-in-each-tree-row/
+[141]: https://leetcode.com/problems/optimal-division/
