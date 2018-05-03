@@ -9,17 +9,23 @@ package leetcode;
  * substrings even they consist of same characters.
  */
 public class PalindromicSubstrings {
+    private int count = 0;
+
     public int countSubstrings(String s) {
-        int count = 0;
-        for (int i = 0; i < s.length() * 2; i++) {
-            int left = i / 2;
-            int right = left + i % 2;
-            while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
-                count++;
-                left--;
-                right++;
-            }
+
+        for (int i = 0; i < s.length(); i++) {
+            checkPalindrome(s, i, i);
+            checkPalindrome(s, i, i + 1);
         }
         return count;
+    }
+
+    private void checkPalindrome(String s, int left, int right) {
+        if (left < 0 || right >= s.length()) return;
+
+        if (s.charAt(left) == s.charAt(right)) {
+            count++;
+            checkPalindrome(s, left - 1, right + 1);
+        }
     }
 }
