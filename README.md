@@ -157,6 +157,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 140 | 3-May-2018 | [515. Find Largest Value in Each Tree Row][140] | Medium | |
 | 141 | 3-May-2018 | [553. Optimal Division][141] | Medium | |
 | 142 | 3-May-2018 | [647. Palindromic Substrings][142] | Medium | Y |
+| 143 | 3-May-2018 | [413. Arithmetic Slices][143] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -300,3 +301,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [140]: https://leetcode.com/problems/find-largest-value-in-each-tree-row/
 [141]: https://leetcode.com/problems/optimal-division/
 [142]: https://leetcode.com/problems/palindromic-substrings/
+[143]: https://leetcode.com/problems/arithmetic-slices/
