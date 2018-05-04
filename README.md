@@ -160,6 +160,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 143 | 3-May-2018 | [413. Arithmetic Slices][143] | Medium | |
 | 144 | 3-May-2018 | [260. Single Number III][144] | Medium | Y |
 | 145 | 3-May-2018 | [739. Daily Temperatures][145] | Medium | |
+| 146 | 3-May-2018 | [451. Sort Characters By Frequency][146] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -306,3 +307,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [143]: https://leetcode.com/problems/arithmetic-slices/
 [144]: https://leetcode.com/problems/single-number-iii/
 [145]: https://leetcode.com/problems/daily-temperatures/
+[146]: https://leetcode.com/problems/sort-characters-by-frequency/
