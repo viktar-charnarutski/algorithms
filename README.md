@@ -162,6 +162,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 145 | 3-May-2018 | [739. Daily Temperatures][145] | Medium | |
 | 146 | 3-May-2018 | [451. Sort Characters By Frequency][146] | Medium | Y |
 | 147 | 4-May-2018 | [462. Minimum Moves to Equal Array Elements II][147] | Medium | Y |
+| 148 | 4-May-2018 | [677. Map Sum Pairs][148] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -310,3 +311,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [145]: https://leetcode.com/problems/daily-temperatures/
 [146]: https://leetcode.com/problems/sort-characters-by-frequency/
 [147]: https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/
+[148]: https://leetcode.com/problems/map-sum-pairs/
