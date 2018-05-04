@@ -12,6 +12,20 @@ import java.util.Arrays;
  */
 public class MinimumMovesToEqualArrayElementsII {
     public int minMoves2(int[] nums) {
+        if(nums.length < 2) {return 0;}
+
+        Arrays.sort(nums);
+        int mid = nums[nums.length / 2];
+        int steps = 0;
+
+        for (int num : nums) {
+            steps += Math.abs(mid - num);
+        }
+
+        return steps;
+    }
+
+    public int minMoves2Orig(int[] nums) {
         Arrays.sort(nums);
         int left = 0;
         int right = nums.length - 1;
