@@ -166,6 +166,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 149 | 4-May-2018 | [748. Shortest Completing Word][149] | Medium | |
 | 150 | 5-May-2018 | [712. Minimum ASCII Delete Sum for Two Strings][150] | Medium | Y |
 | 151 | 5-May-2018 | [238. Product of Array Except Self][151] | Medium | Y |
+| 152 | 5-May-2018 | [94. Binary Tree Inorder Traversal][152] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -318,3 +319,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [149]: https://leetcode.com/problems/shortest-completing-word/
 [150]: https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
 [151]: https://leetcode.com/problems/product-of-array-except-self/
+[152]: https://leetcode.com/problems/binary-tree-inorder-traversal/
