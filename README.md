@@ -169,6 +169,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 152 | 5-May-2018 | [94. Binary Tree Inorder Traversal][152] | Medium | |
 | 153 | 6-May-2018 | [817. Linked List Components][153] | Medium | |
 | 154 | 7-May-2018 | [347. Top K Frequent Elements][154] | Medium | Y |
+| 155 | 7-May-2018 | [672. Bulb Switcher II][155] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -324,3 +325,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [152]: https://leetcode.com/problems/binary-tree-inorder-traversal/
 [153]: https://leetcode.com/problems/linked-list-components/
 [154]: https://leetcode.com/problems/top-k-frequent-elements/
+[155]: https://leetcode.com/problems/bulb-switcher-ii/
