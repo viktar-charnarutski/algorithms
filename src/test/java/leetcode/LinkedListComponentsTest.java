@@ -44,4 +44,15 @@ public class LinkedListComponentsTest {
         LinkedListComponents ins = new LinkedListComponents();
         assertEquals(2, ins.numComponents(n1, new int[]{0, 2}));
     }
+
+    @Test
+    public void numComponents3() {
+        ListNode n1 = new ListNode(0);
+        ListNode n2 = new ListNode(1);
+        ListNode n3 = new ListNode(2);
+        n1.next = n2;
+        n2.next = n3;
+        LinkedListComponents ins = new LinkedListComponents();
+        assertEquals(1, ins.numComponents(n1, new int[]{1, 0}));
+    }
 }
