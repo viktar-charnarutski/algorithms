@@ -173,6 +173,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 156 | 7-May-2018 | [565. Array Nesting][156] | Medium | Y |
 | 157 | 7-May-2018 | [547. Friend Circles][157] | Medium | |
 | 158 | 8-May-2018 | [676. Implement Magic Dictionary][158] | Medium | |
+| 159 | 8-May-2018 | [769. Max Chunks To Make Sorted][159] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -332,3 +333,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [156]: https://leetcode.com/problems/array-nesting/
 [157]: https://leetcode.com/problems/friend-circles/
 [158]: https://leetcode.com/problems/implement-magic-dictionary/
+[159]: https://leetcode.com/problems/max-chunks-to-make-sorted/
