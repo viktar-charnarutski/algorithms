@@ -17,6 +17,64 @@ import java.util.List;
  */
 public class ReplaceWords {
     public String replaceWords(List<String> dict, String sentence) {
+        TrieNode trie = buildTrie(dict);
+        String[] words = sentence.split("\\s+");
+        return replaceWords(words, trie);
+    }
+
+    private String replaceWords(String[] words, TrieNode trie) {
+        StringBuilder sb = new StringBuilder();
+        for (String w : words) {
+            sb.append(getRoot(w, trie)).append(" ");
+        }
+        return sb.toString().trim();
+    }
+
+    private String getRoot(String word, TrieNode trie) {
+        TrieNode tmp = trie;
+        StringBuilder sb = new StringBuilder();
+        for (char c : word.toCharArray()) {
+            sb.append(c);
+            TrieNode child = tmp.children[c - 'a'];
+            if (child != null) {
+                if (child.isWorld)
+                    return sb.toString();
+            } else {
+                break;
+            }
+            tmp = child;
+        }
+        return word;
+    }
+
+    private TrieNode buildTrie(List<String> dict) {
+        TrieNode root = new TrieNode(' ');
+        for (String w : dict) {
+            TrieNode tmp = root;
+            for (char c : w.toCharArray()) {
+                if (tmp.children[c - 'a'] == null) {
+                    tmp.children[c - 'a'] = new TrieNode(c);
+                }
+                tmp = tmp.children[c - 'a'];
+            }
+            tmp.isWorld = true;
+        }
+        return root;
+    }
+
+    private class TrieNode {
+        char val;
+        TrieNode[] children;
+        boolean isWorld;
+
+        TrieNode(char val) {
+            this.val = val;
+            this.children = new TrieNode[26];
+            this.isWorld = false;
+        }
+    }
+
+    public String replaceWordsString(List<String> dict, String sentence) {
         HashSet<String> set = new HashSet<>(dict);
         StringBuilder sb = new StringBuilder();
 
