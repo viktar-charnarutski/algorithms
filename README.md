@@ -175,7 +175,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 158 | 8-May-2018 | [676. Implement Magic Dictionary][158] | Medium | |
 | 159 | 8-May-2018 | [769. Max Chunks To Make Sorted][159] | Medium | |
 | 160 | 9-May-2018 | [503. Next Greater Element II][160] | Medium | |
-| 161 | 9-May-2018 | [648. Replace Words][161] | Medium | |
+| 161 | 9-May-2018 | [648. Replace Words][161] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
