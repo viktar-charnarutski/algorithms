@@ -18,19 +18,13 @@ public class NextGreaterElementII {
         int[] res = new int[nums.length];
         Stack<Integer> stack = new Stack<>();
 
-        for (int i = 0; i < nums.length; i++) {
-            while (!stack.isEmpty() && nums[i] > nums[stack.peek()]) {
-                int j = stack.pop();
-                res[j] = nums[i];
-            }
-            stack.push(i);
-        }
-
-        for (int num : nums) {
+        for (int i = 0; i < nums.length * 2; i++) {
+            int num = nums[i % nums.length];
             while (!stack.isEmpty() && num > nums[stack.peek()]) {
                 int j = stack.pop();
                 res[j] = num;
             }
+            if (i < nums.length) stack.push(i);
         }
 
         while (!stack.isEmpty()) {
