@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * 646. Maximum Length of Pair Chain
  * <p>
@@ -13,6 +16,15 @@ package leetcode;
  */
 public class MaximumLengthOfPairChain {
     public int findLongestChain(int[][] pairs) {
-        return -1;
+        Arrays.sort(pairs, Comparator.comparingInt(a -> a[1]));
+        int count = 0;
+        int curr = Integer.MIN_VALUE;
+        for (int[] pair : pairs) {
+            if (pair[0] > curr) {
+                curr = pair[1];
+                count++;
+            }
+        }
+        return count;
     }
 }
