@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -24,22 +22,20 @@ public class ShuffleAnArray {
 
     /** Returns a random shuffling of the array. */
     public int[] shuffle() {
-        List<Integer> numsList = arrayAsList();
-        int[] res = new int[nums.length];
-
+        int[] res = nums.clone();
         for (int i = 0; i < res.length; i++) {
-            int randInx = this.rand.nextInt(numsList.size());
-            res[i] = numsList.get(randInx);
-            numsList.remove(randInx);
+            swap(i, randInd(i, this.nums.length));
         }
         return res;
     }
 
-    private List<Integer> arrayAsList() {
-        ArrayList<Integer> numsList = new ArrayList<>();
-        for (int num : this.nums) {
-            numsList.add(num);
-        }
-        return numsList;
+    private void swap(int left, int right) {
+        int tmp = this.nums[left];
+        this.nums[left] = this.nums[right];
+        this.nums[right] = tmp;
+    }
+
+    private int randInd(int min, int max) {
+        return this.rand.nextInt(max - min) + min;
     }
 }
