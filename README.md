@@ -180,6 +180,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 163 | 10-May-2018 | [646. Maximum Length of Pair Chain][163] | Medium | Y |
 | 164 | 11-May-2018 | [384. Shuffle an Array][164] | Medium | |
 | 165 | 13-May-2018 | [725. Split Linked List in Parts][165] | Medium | |
+| 166 | 13-May-2018 | [343. Integer Break][166] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -346,3 +347,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [163]: https://leetcode.com/problems/maximum-length-of-pair-chain/
 [164]: https://leetcode.com/problems/shuffle-an-array/
 [165]: https://leetcode.com/problems/split-linked-list-in-parts/
+[166]: https://leetcode.com/problems/integer-break/
