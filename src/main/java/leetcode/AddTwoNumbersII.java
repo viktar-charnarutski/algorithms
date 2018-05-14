@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Stack;
+
 /**
  * 445. Add Two Numbers II
  * <p>
@@ -8,63 +10,47 @@ package leetcode;
  * Add the two numbers and return it as a linked list.
  * <p>
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+ * <p>
+ * Follow up:
+ * What if you cannot modify the input lists? In other words, reversing the lists is not allowed.
  */
 public class AddTwoNumbersII {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-        ListNode curr1 = l1;
-        ListNode curr2 = l2;
-        int length1 = length(l1);
-        int length2 = length(l2);
-
-        curr1 = reverse(curr1);
-        curr2 = reverse(curr2);
-
-        ListNode res = length1 > length2 ? curr1 : curr2;
-        ListNode currRes = res;
+        Stack<Integer> stack1 = listValuesToStack(l1);
+        Stack<Integer> stack2 = listValuesToStack(l2);
 
         boolean carry = false;
 
-        while (curr1 != null || curr2 != null) {
-            int val1 = curr1 != null ? curr1.val : 0;
-            int val2 = curr2 != null ? curr2.val : 0;
-            int sum = val1 + val2 + (carry ? 1 : 0);
+        ListNode curr = null;
+        ListNode prev;
+        while (!stack1.isEmpty() || !stack2.isEmpty()) {
+            prev = curr;
+
+            int n1 = stack1.isEmpty() ? 0 : stack1.pop();
+            int n2 = stack2.isEmpty() ? 0 : stack2.pop();
+            int sum = n1 + n2 + (carry ? 1 : 0);
             carry = sum >= 10;
-            currRes.val = sum % 10;
 
-            curr1 = curr1 != null ? curr1.next : curr1;
-            curr2 = curr2 != null ? curr2.next : curr2;
-            currRes = currRes.next;
+            curr = new ListNode(sum % 10);
+            curr.next = prev;
         }
-
-        res = reverse(res);
 
         if (carry) {
             ListNode node = new ListNode(1);
-            node.next = res;
-            res = node;
+            node.next = curr;
+            curr = node;
         }
 
-        return res;
+        return curr;
     }
 
-    private ListNode reverse(ListNode node) {
-        ListNode prev = null;
-        while (node != null) {
-            ListNode next = node.next;
-            node.next = prev;
-            prev = node;
-            node = next;
+    private Stack<Integer> listValuesToStack(ListNode n) {
+        Stack<Integer> stack = new Stack<>();
+        ListNode curr = n;
+        while (curr != null) {
+            stack.push(curr.val);
+            curr = curr.next;
         }
-        return prev;
-    }
-
-    private int length(ListNode node) {
-        int res = 0;
-        while (node != null) {
-            node = node.next;
-            res++;
-        }
-        return res;
+        return stack;
     }
 }
