@@ -186,6 +186,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 169 | 14-May-2018 | [357. Count Numbers with Unique Digits][169] | Medium | Y |
 | 170 | 14-May-2018 | [121. Best Time to Buy and Sell Stock][170] | Easy | |
 | 171 | 14-May-2018 | [714. Best Time to Buy and Sell Stock with Transaction Fee][171] | Medium | Y |
+| 172 | 15-May-2018 | [122. Best Time to Buy and Sell Stock II][172] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -358,3 +359,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [169]: https://leetcode.com/problems/count-numbers-with-unique-digits/
 [170]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 [171]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+[172]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
