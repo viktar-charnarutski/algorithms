@@ -20,18 +20,20 @@ public class AddOneRowToTree {
         Queue<TreeNode> queue = getNodesOfLevel(root, d);
 
         while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
-
-            TreeNode left = node.left;
-            node.left = new TreeNode(v);
-            node.left.left = left;
-
-            TreeNode right = node.right;
-            node.right = new TreeNode(v);
-            node.right.right = right;
+            insertNewNodeWithValue(v, queue.poll());
         }
 
         return root;
+    }
+
+    private void insertNewNodeWithValue(int v, TreeNode node) {
+        TreeNode left = node.left;
+        node.left = new TreeNode(v);
+        node.left.left = left;
+
+        TreeNode right = node.right;
+        node.right = new TreeNode(v);
+        node.right.right = right;
     }
 
     private Queue<TreeNode> getNodesOfLevel(TreeNode root, int d) {
