@@ -190,7 +190,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 173 | 15-May-2018 | [623. Add One Row to Tree][173] | Medium | Y |
 | 174 | 16-May-2018 | [539. Minimum Time Difference][174] | Medium | |
 | 175 | 16-May-2018 | [123. Best Time to Buy and Sell Stock III][175] | Medium | Y |
-| 176 | 16-May-2018 | [123. Best Time to Buy and Sell Stock III][175] | Medium | Y |
+| 176 | 16-May-2018 | [318. Maximum Product of Word Lengths][176] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -366,4 +366,5 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [172]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [173]: https://leetcode.com/problems/add-one-row-to-tree/
 [174]: https://leetcode.com/problems/minimum-time-difference/
-[175]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
+[175]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+[176]: https://leetcode.com/problems/maximum-product-of-word-lengths/
