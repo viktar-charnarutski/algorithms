@@ -194,6 +194,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 177 | 17-May-2018 | [309. Best Time to Buy and Sell Stock with Cooldown][177] | Medium | Y |
 | 178 | 17-May-2018 | [554. Brick Wall][178] | Medium | Y+ |
 | 179 | 18-May-2018 | [230. Kth Smallest Element in a BST][179] | Medium | Y |
+| 180 | 18-May-2018 | [378. Kth Smallest Element in a Sorted Matrix][180] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -374,3 +375,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [177]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 [178]: https://leetcode.com/problems/brick-wall/
 [179]: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+[180]: https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
