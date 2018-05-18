@@ -1,6 +1,5 @@
 package leetcode;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 /**
@@ -13,18 +12,18 @@ import java.util.Stack;
  */
 public class KthSmallestElementInBst {
     public int kthSmallest(TreeNode root, int k) {
-        ArrayList<Integer> vals = new ArrayList<>();
         TreeNode curr = root;
         Stack<TreeNode> stack = new Stack<>();
+        int count = 0;
         while (!stack.isEmpty() || curr != null) {
             while (curr != null) {
                 stack.add(curr);
                 curr = curr.left;
             }
             curr = stack.pop();
-            vals.add(curr.val);
+            if (++count == k) return curr.val;
             curr = curr.right;
         }
-        return vals.get(k - 1);
+        return 0;
     }
 }
