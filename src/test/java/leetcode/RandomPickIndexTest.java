@@ -3,6 +3,7 @@ package leetcode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class RandomPickIndexTest {
 
@@ -20,6 +21,7 @@ public class RandomPickIndexTest {
     @Test
     public void pick3() {
         RandomPickIndex ins = new RandomPickIndex(new int[]{1, 2, 3, 3, 3});
-        assertEquals(2, ins.pick(3));
+        assertNotEquals(0, ins.pick(3));
+        assertNotEquals(1, ins.pick(3));
     }
 }

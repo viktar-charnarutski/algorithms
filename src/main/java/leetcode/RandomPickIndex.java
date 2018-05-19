@@ -1,5 +1,10 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
+
 /**
  * 398. Random Pick Index
  * <p>
@@ -9,11 +14,24 @@ package leetcode;
  */
 public class RandomPickIndex {
 
-    public RandomPickIndex(int[] nums) {
+    private HashMap<Integer, List<Integer>> map;
+    private Random rand;
 
+    public RandomPickIndex(int[] nums) {
+        this.rand = new Random();
+        this.map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            if (!this.map.containsKey(nums[i])) {
+                map.put(nums[i], new ArrayList<>());
+            }
+            map.get(nums[i]).add(i);
+        }
     }
 
     public int pick(int target) {
-        return 0;
+        List<Integer> list = this.map.get(target);
+        int i = rand.nextInt(list.size());
+        return list.get(i);
     }
 }

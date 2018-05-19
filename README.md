@@ -196,6 +196,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 179 | 18-May-2018 | [230. Kth Smallest Element in a BST][179] | Medium | Y |
 | 180 | 18-May-2018 | [378. Kth Smallest Element in a Sorted Matrix][180] | Medium | Y |
 | 181 | 18-May-2018 | [78. Subsets][181] | Medium | Y |
+| 182 | 18-May-2018 | [398. Random Pick Index][182] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -378,3 +379,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [179]: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 [180]: https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 [181]: https://leetcode.com/problems/subsets/
+[182]: https://leetcode.com/problems/random-pick-index/
