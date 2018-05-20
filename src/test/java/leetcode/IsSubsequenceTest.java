@@ -31,4 +31,9 @@ public class IsSubsequenceTest {
     public void isSubsequence5() {
         assertFalse(new IsSubsequence().isSubsequence("a", "qbcde"));
     }
+
+    @Test
+    public void isSubsequence6() {
+        assertTrue(new IsSubsequence().isSubsequence("", "qbcde"));
+    }
 }

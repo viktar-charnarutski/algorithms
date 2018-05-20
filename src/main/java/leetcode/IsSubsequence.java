@@ -15,13 +15,15 @@ package leetcode;
  */
 public class IsSubsequence {
     public boolean isSubsequence(String s, String t) {
+        if (s.length() == 0) return true;
         int sP = 0, tP = 0;
         while (tP < t.length() && sP < s.length()) {
             if (s.charAt(sP) == t.charAt(tP)) {
                 sP++;
+                if (sP == s.length()) return true;
             }
             tP++;
         }
-        return sP == s.length();
+        return false;
     }
 }
