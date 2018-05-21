@@ -199,6 +199,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 182 | 19-May-2018 | [398. Random Pick Index][182] | Medium | |
 | 183 | 20-May-2018 | [392. Is Subsequence][183] | Medium | |
 | 184 | 20-May-2018 | [583. Delete Operation for Two Strings][184] | Medium | Y |
+| 185 | 21-May-2018 | [287. Find the Duplicate Number][185] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -384,3 +385,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [182]: https://leetcode.com/problems/random-pick-index/
 [183]: https://leetcode.com/problems/is-subsequence/
 [184]: https://leetcode.com/problems/delete-operation-for-two-strings/
+[185]: https://leetcode.com/problems/find-the-duplicate-number/
