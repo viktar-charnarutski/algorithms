@@ -9,23 +9,32 @@ package leetcode;
  * Find out how many ways to assign symbols to make sum of integers equal to target S.
  */
 public class TargetSum {
-    private int count;
-
     public int findTargetSumWays(int[] nums, int S) {
-        count(nums, S, 0, 0);
-        return count;
+        int[][] memo = new int[nums.length][2001];
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < 2001; j++) {
+                memo[i][j] = Integer.MIN_VALUE;
+            }
+        }
+        return count(nums, S, 0, 0, memo);
     }
 
-    private void count(int[] nums, int targetSum, int i, int currSumm) {
+    private int count(int[] nums, int targetSum, int i, int currSumm, int[][] memo) {
         if (i == nums.length) {
             if (currSumm == targetSum) {
-                count++;
+                return 1;
             }
-            return;
+            return 0;
         }
 
-        count(nums, targetSum, i + 1, currSumm + nums[i]);
-        count(nums, targetSum, i + 1, currSumm - nums[i]);
+        if (memo[i][currSumm + 1000] != Integer.MIN_VALUE) {
+            return memo[i][currSumm + 1000];
+        }
 
+        int plus = count(nums, targetSum, i + 1, currSumm + nums[i], memo);
+        int minus = count(nums, targetSum, i + 1, currSumm - nums[i], memo);
+        memo[i][currSumm + 1000] = plus + minus;
+
+        return memo[i][currSumm + 1000];
     }
 }
