@@ -16,6 +16,17 @@ public class DeleteAndEarn {
         int[] values = new int[range];
         for (int num : nums) values[num] += num;
 
+        for (int i = 2; i < range; i++) {
+            values[i] = Math.max(values[i - 1], values[i - 2] + values[i]);
+        }
+        return values[range - 1];
+    }
+
+    public int deleteAndEarn1(int[] nums) {
+        int range = 10001;
+        int[] values = new int[range];
+        for (int num : nums) values[num] += num;
+
         int take = 0;
         int skip = 0;
         for (int i = 0; i < range; i++) {
