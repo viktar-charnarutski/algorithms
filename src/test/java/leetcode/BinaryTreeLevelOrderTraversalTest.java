@@ -37,4 +37,8 @@ public class BinaryTreeLevelOrderTraversalTest {
 
         assertEquals(expected, new BinaryTreeLevelOrderTraversal().levelOrder(n1));
     }
+    @Test
+    public void levelOrder1() {
+        assertEquals(new ArrayList<>(), new BinaryTreeLevelOrderTraversal().levelOrder(null));
+    }
 }

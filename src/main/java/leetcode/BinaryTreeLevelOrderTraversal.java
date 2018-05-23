@@ -15,7 +15,7 @@ public class BinaryTreeLevelOrderTraversal {
         List<List<Integer>> res = new ArrayList<>();
 
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        if (root != null) queue.offer(root);
         while (!queue.isEmpty()) {
             List<Integer> row = new ArrayList<>();
             int size = queue.size();
