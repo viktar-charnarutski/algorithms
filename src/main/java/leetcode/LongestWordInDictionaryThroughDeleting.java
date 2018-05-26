@@ -25,7 +25,7 @@ public class LongestWordInDictionaryThroughDeleting {
         return res;
     }
 
-    private int[] occurrence(String str) {
+    int[] occurrence(String str) {
         int[] chars = new int[CHARS_COUNT];
         for (char c : str.toCharArray()) {
             chars[c - 'a']++;
@@ -33,7 +33,7 @@ public class LongestWordInDictionaryThroughDeleting {
         return chars;
     }
 
-    private boolean check(String word, int[] target) {
+    boolean check(String word, int[] target) {
         int[] chars = occurrence(word);
         for (int i = 0; i < CHARS_COUNT; i++) {
             if (chars[i] < target[i]) return false;
