@@ -25,6 +25,6 @@ public class LongestWordInDictionaryThroughDeletingTest {
         list.add("a");
         list.add("b");
         list.add("c");
-        assertEquals("a", new LongestWordInDictionaryThroughDeleting().findLongestWord("abpcplea", list);
+        assertEquals("a", new LongestWordInDictionaryThroughDeleting().findLongestWord("abpcplea", list));
     }
 }
