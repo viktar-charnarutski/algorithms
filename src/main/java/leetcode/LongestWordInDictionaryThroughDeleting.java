@@ -36,7 +36,7 @@ public class LongestWordInDictionaryThroughDeleting {
     boolean check(String word, int[] target) {
         int[] chars = occurrence(word);
         for (int i = 0; i < CHARS_COUNT; i++) {
-            if (chars[i] < target[i]) return false;
+            if (target[i] < chars[i]) return false;
         }
         return true;
     }
