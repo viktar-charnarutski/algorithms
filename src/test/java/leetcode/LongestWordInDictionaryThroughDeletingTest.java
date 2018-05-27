@@ -5,8 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class LongestWordInDictionaryThroughDeletingTest {
 
@@ -36,7 +35,16 @@ public class LongestWordInDictionaryThroughDeletingTest {
         occ[1] = 3;
         occ[2] = 4;
         occ[4] = 5;
-
         assertArrayEquals(occ, new LongestWordInDictionaryThroughDeleting().occurrence("aabbbcccceeeee"));
+    }
+
+    @Test
+    public void check() {
+        int[] occ = new int[26];
+        occ[0] = 2;
+        occ[1] = 3;
+        occ[2] = 4;
+        occ[4] = 5;
+        assertTrue(new LongestWordInDictionaryThroughDeleting().check("aarbbbrccccreeeeer", occ));
     }
 }
