@@ -208,6 +208,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 191 | 23-May-2018 | [341. Flatten Nested List Iterator][191] | Medium | |
 | 192 | 28-May-2018 | [524. Longest Word in Dictionary through Deleting][192] | Medium | Y |
 | 193 | 29-May-2018 | [105. Construct Binary Tree from Preorder and Inorder Traversal][193] | Medium | Y |
+| 194 | 29-May-2018 | [449. Serialize and Deserialize BST][194] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -402,3 +403,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [191]: https://leetcode.com/problems/flatten-nested-list-iterator/
 [192]: https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
 [193]: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+[193]: https://leetcode.com/problems/serialize-and-deserialize-bst/
