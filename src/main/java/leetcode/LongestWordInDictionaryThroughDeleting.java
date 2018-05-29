@@ -12,38 +12,17 @@ import java.util.List;
  */
 public class LongestWordInDictionaryThroughDeleting {
 
-    private static final int CHARS_COUNT = 26;
-
     public String findLongestWord(String s, List<String> d) {
-        String res = "";
+        d.sort((a, b) -> a.length() != b.length() ? -Integer.compare(a.length(), b.length()) : a.compareTo(b));
         for (String str : d) {
-            if (check(s, str)) {
-                if (str.length() > res.length()) {
-                    res = str;
-                } else if (str.length() == res.length()) {
-                    res = smallestLexicoOrder(str, res);
+            int i = 0;
+            for (char c : s.toCharArray()) {
+                if (i < str.length() && c == str.charAt(i)) {
+                    i++;
                 }
             }
+            if (i == str.length()) return str;
         }
-        return res;
+        return "";
     }
-
-    String smallestLexicoOrder(String str1, String str2) {
-        for (int i = 0; i < str1.length(); i++) {
-            if (str1.charAt(i) < str2.charAt(i)) return str1;
-            if (str1.charAt(i) > str2.charAt(i)) return str2;
-        }
-        return str1;
-    }
-
-    boolean check(String str, String target) {
-        int j = 0;
-        for (int i = 0; i < str.length() && j < target.length(); i++) {
-            if (str.charAt(i) == target.charAt(j)) {
-                j++;
-            }
-        }
-        return j == target.length();
-    }
-
 }
