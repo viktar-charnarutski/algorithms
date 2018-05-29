@@ -5,7 +5,8 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class LongestWordInDictionaryThroughDeletingTest {
 
@@ -56,30 +57,20 @@ public class LongestWordInDictionaryThroughDeletingTest {
     }
 
     @Test
-    public void occurrence() {
-        int[] occ = new int[26];
-        occ[0] = 2;
-        occ[1] = 3;
-        occ[2] = 4;
-        occ[4] = 5;
-        assertArrayEquals(occ, new LongestWordInDictionaryThroughDeleting().occurrence("aabbbcccceeeee"));
+    public void findLongestWord5() {
+        List<String> list = new ArrayList<>();
+        list.add("ewaf");
+        list.add("apple");
+        list.add("awefawfwaf");
+        list.add("awef");
+        list.add("awefe");
+        list.add("ewafeffewafewf");
+        assertEquals("ewaf", new LongestWordInDictionaryThroughDeleting().findLongestWord("aewfafwafjlwajflwajflwafj", list));
     }
 
     @Test
     public void check() {
-        int[] target = new int[26];
-        target[0] = 2;
-        target[1] = 3;
-        target[2] = 4;
-        target[4] = 5;
-        target[6] = 10;
-
-        int[] variant = new int[26];
-        variant[0] = 2;
-        variant[1] = 3;
-        variant[2] = 4;
-        variant[4] = 5;
-        assertTrue(new LongestWordInDictionaryThroughDeleting().check(variant, target));
+        assertTrue(new LongestWordInDictionaryThroughDeleting().check("aewfafwafjlwajflwajflwafj", "ewaf"));
     }
 
     @Test

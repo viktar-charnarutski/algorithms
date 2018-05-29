@@ -16,10 +16,8 @@ public class LongestWordInDictionaryThroughDeleting {
 
     public String findLongestWord(String s, List<String> d) {
         String res = "";
-        int[] target = occurrence(s);
         for (String str : d) {
-            int[] curr = occurrence(str);
-            if (check(curr, target)) {
+            if (check(s, str)) {
                 if (str.length() > res.length()) {
                     res = str;
                 } else if (str.length() == res.length()) {
@@ -38,18 +36,14 @@ public class LongestWordInDictionaryThroughDeleting {
         return str1;
     }
 
-    int[] occurrence(String str) {
-        int[] chars = new int[CHARS_COUNT];
-        for (char c : str.toCharArray()) {
-            chars[c - 'a']++;
+    boolean check(String str, String target) {
+        int j = 0;
+        for (int i = 0; i < str.length() && j < target.length(); i++) {
+            if (str.charAt(i) == target.charAt(j)) {
+                j++;
+            }
         }
-        return chars;
+        return j == target.length();
     }
 
-    boolean check(int[] curr, int[] target) {
-        for (int i = 0; i < CHARS_COUNT; i++) {
-            if (target[i] < curr[i]) return false;
-        }
-        return true;
-    }
 }
