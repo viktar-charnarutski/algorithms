@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class LongestWordInDictionaryThroughDeletingTest {
 
@@ -66,15 +65,5 @@ public class LongestWordInDictionaryThroughDeletingTest {
         list.add("awefe");
         list.add("ewafeffewafewf");
         assertEquals("ewaf", new LongestWordInDictionaryThroughDeleting().findLongestWord("aewfafwafjlwajflwajflwafj", list));
-    }
-
-    @Test
-    public void check() {
-        assertTrue(new LongestWordInDictionaryThroughDeleting().check("aewfafwafjlwajflwajflwafj", "ewaf"));
-    }
-
-    @Test
-    public void smallestLexicoOrder() {
-        assertEquals("abcd", new LongestWordInDictionaryThroughDeleting().smallestLexicoOrder("abcd", "abce"));
     }
 }
