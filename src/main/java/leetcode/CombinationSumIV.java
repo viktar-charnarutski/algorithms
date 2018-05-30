@@ -11,14 +11,13 @@ import java.util.Arrays;
 public class CombinationSumIV {
 
     public int combinationSum4(int[] nums, int target) {
-        int[] res = new int[target + 1];
         Arrays.sort(nums);
+        int[] res = new int[target + 1];
+        res[0] = 1;
         for (int i = 0; i < res.length; i++) {
             for (int num : nums) {
                 if (num > i) {
                     break;
-                } else if (num == i) {
-                    res[i]++;
                 } else {
                     res[i] += res[i - num];
                 }
