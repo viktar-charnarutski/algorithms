@@ -210,6 +210,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 193 | 29-May-2018 | [105. Construct Binary Tree from Preorder and Inorder Traversal][193] | Medium | Y |
 | 194 | 29-May-2018 | [449. Serialize and Deserialize BST][194] | Medium | Y |
 | 195 | 29-May-2018 | [516. Longest Palindromic Subsequence][195] | Medium | Y |
+| 196 | 30-May-2018 | [199. Binary Tree Right Side View][196] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -406,3 +407,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [193]: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 [194]: https://leetcode.com/problems/serialize-and-deserialize-bst/
 [195]: https://leetcode.com/problems/longest-palindromic-subsequence/
+[196]: https://leetcode.com/problems/binary-tree-right-side-view/
