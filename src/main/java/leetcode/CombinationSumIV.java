@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /**
  * 377. Combination Sum IV
  * <p>
@@ -8,21 +10,20 @@ package leetcode;
  */
 public class CombinationSumIV {
 
-    private Integer[] memo;
-
     public int combinationSum4(int[] nums, int target) {
-        memo = new Integer[target + 1];
-        memo[0] = 1;
-        return combination(nums, target);
-    }
-
-    public int combination(int[] nums, int target) {
-        if (memo[target] != null) return memo[target];
-        int count = 0;
-        for (int num : nums) {
-            if (num <= target)
-                count += combination(nums, target - num);
+        int[] res = new int[target + 1];
+        Arrays.sort(nums);
+        for (int i = 0; i < res.length; i++) {
+            for (int num : nums) {
+                if (num > i) {
+                    break;
+                } else if (num == i) {
+                    res[i]++;
+                } else {
+                    res[i] += res[i - num];
+                }
+            }
         }
-        return count;
+        return res[target];
     }
 }
