@@ -8,16 +8,20 @@ package leetcode;
  */
 public class CombinationSumIV {
 
+    private Integer[] memo;
+
     public int combinationSum4(int[] nums, int target) {
-        return combinationSum4(nums, target, new Integer[target + 1][nums.length + 1]);
+        memo = new Integer[target + 1];
+        memo[0] = 1;
+        return combination(nums, target);
     }
 
-    public int combinationSum4(int[] nums, int target, Integer[][] memo) {
-        if (target == 0) return 1;
+    public int combination(int[] nums, int target) {
+        if (memo[target] != null) return memo[target];
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] <= target)
-                count += memo[target][i] != null ? memo[target][i] : combinationSum4(nums, target - nums[i]);
+        for (int num : nums) {
+            if (num <= target)
+                count += combination(nums, target - num);
         }
         return count;
     }
