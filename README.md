@@ -213,6 +213,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 196 | 30-May-2018 | [199. Binary Tree Right Side View][196] | Medium | |
 | 197 | 30-May-2018 | [377. Combination Sum IV][197] | Medium | |
 | 198 | 31-May-2018 | [424. Longest Repeating Character Replacement][198] | Medium | Y |
+| 199 | 31-May-2018 | [386. Lexicographical Numbers][199] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -412,3 +413,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [196]: https://leetcode.com/problems/binary-tree-right-side-view/
 [197]: https://leetcode.com/problems/combination-sum-iv/
 [198]: https://leetcode.com/problems/longest-repeating-character-replacement/
+[199]: https://leetcode.com/problems/lexicographical-numbers/
