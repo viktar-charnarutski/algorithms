@@ -1,7 +1,6 @@
 package leetcode;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -15,14 +14,20 @@ import java.util.List;
  */
 public class LexicographicalNumbers {
     public List<Integer> lexicalOrder(int n) {
-        ArrayList<String> strs = new ArrayList<>();
-        for (int i = 1; i <= n; i++) {
-            strs.add(String.valueOf(i));
-        }
-        Collections.sort(strs);
         ArrayList<Integer> res = new ArrayList<>();
-        for (String s : strs) {
-            res.add(Integer.parseInt(s));
+        int curr = 1;
+        for (int i = 1; i <= n; i++) {
+            res.add(curr);
+            if (curr * 10 <= n) {
+                curr *= 10;
+            } else if (curr % 10 != 9 && curr + 1 <= n) {
+                curr++;
+            } else {
+                while ((curr / 10) % 10 == 9) {
+                    curr /= 10;
+                }
+                curr = curr / 10 + 1;
+            }
         }
         return res;
     }
