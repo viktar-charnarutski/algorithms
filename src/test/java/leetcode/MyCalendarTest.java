@@ -37,7 +37,7 @@ public class MyCalendarTest {
     public void book6() {
         MyCalendar cal = new MyCalendar();
         assertTrue(cal.book(10, 20));
-        assertFalse(cal.book(5, 10));
+        assertTrue(cal.book(5, 10));
     }
 
     @Test
@@ -62,7 +62,7 @@ public class MyCalendarTest {
         assertFalse(cal.book(39, 45));
         assertFalse(cal.book(33, 42));
         assertTrue(cal.book(25, 32));
-        assertFalse(cal.book(19, 25));
+        assertTrue(cal.book(19, 25));
         assertTrue(cal.book(3, 8));
         assertTrue(cal.book(8, 13));
         assertFalse(cal.book(18, 27));
