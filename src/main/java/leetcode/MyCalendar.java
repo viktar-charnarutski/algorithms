@@ -1,7 +1,6 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.TreeMap;
 
 /**
  * 729. My Calendar I
@@ -22,26 +21,20 @@ import java.util.List;
  */
 public class MyCalendar {
 
-    private List<int[]> cal;
+    private TreeMap<Integer, Integer> cal;
 
     public MyCalendar() {
-        cal = new ArrayList<>();
+        cal = new TreeMap<>();
     }
 
     public boolean book(int start, int end) {
-        if (checkAllEvents(start, end)) {
-            cal.add(new int[]{start, end});
+        Integer prev = cal.floorKey(start);
+        Integer next = cal.ceilingKey(start);
+        if ((prev == null || cal.get(prev) <= start)
+                && (next == null || end < next)) {
+            cal.put(start, end);
             return true;
         }
         return false;
-    }
-
-    private boolean checkAllEvents(int start, int end) {
-        for (int[] event : cal) {
-            if (event[0] <= end && start < event[1]) {
-                return false;
-            }
-        }
-        return true;
     }
 }
