@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Stack;
+
 /**
  * 394. Decode String
  * <p>
@@ -14,25 +16,34 @@ package leetcode;
  * for those repeat numbers, k. For example, there won't be input like 3a or 2[4].
  */
 public class DecodeString {
-    // 3[a]2[bc] --> aaabcbc
-    // 3[a2[c]]  --> accaccacc
     public String decodeString(String s) {
         StringBuilder res = new StringBuilder();
-        int i = 1;
+        Stack<Integer> reps = new Stack<>();
+        Stack<String> strs = new Stack<>();
+        int i = 0;
         while (i < s.length()) {
-            if (s.charAt(i) == '[') {
-                StringBuilder sb = new StringBuilder();
-                int n = Character.getNumericValue(s.charAt(i - 1));
-                int k = i + 1;
-                while (s.charAt(k) != ']') {
-                    sb.append(s.charAt(k++));
+            if (Character.isDigit(s.charAt(i))) {
+                int d = 0;
+                while (Character.isDigit(s.charAt(i))) {
+                    d = d * 10 + Character.getNumericValue(s.charAt(i));
+                    i++;
                 }
-                for (int j = 0; j < n; j++) {
-                    res.append(sb);
+                reps.push(d);
+            } else if (s.charAt(i) == '[') {
+                strs.push(res.toString());
+                res.setLength(0);
+                i++;
+            } else if (s.charAt(i) == ']') {
+                StringBuilder sb = new StringBuilder(strs.pop());
+                int rep = reps.pop();
+                for (int j = 0; j < rep; j++) {
+                    sb.append(res);
                 }
-                i = k;
+                res = sb;
+                i++;
+            } else {
+                res.append(s.charAt(i++));
             }
-            i++;
         }
         return res.toString();
     }

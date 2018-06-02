@@ -216,6 +216,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 199 | 31-May-2018 | [386. Lexicographical Numbers][199] | Medium | Y |
 | 200 | 31-May-2018 | [729. My Calendar I][200] | Medium | Y |
 | 201 | 1-Jun-2018 | [621. Task Scheduler][201] | Medium | |
+| 202 | 2-Jun-2018 | [394. Decode String][202] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -418,3 +419,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [199]: https://leetcode.com/problems/lexicographical-numbers/
 [200]: https://leetcode.com/problems/my-calendar-i/
 [201]: https://leetcode.com/problems/task-scheduler/
+[202]: https://leetcode.com/problems/decode-string/
