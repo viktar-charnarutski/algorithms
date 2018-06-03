@@ -8,16 +8,16 @@ package leetcode;
 public class ContiguousArray {
     public int findMaxLength(int[] nums) {
         int max = 0;
-        int[][] memo = new int[nums.length][2];
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == 0) {
-                memo[i][0] = i > 0 ? memo[i - 1][0] + 1 : 1;
-                memo[i][1] = i > 0 ? memo[i - 1][1] : 0;
-            } else {
-                memo[i][0] = i > 0 ? memo[i - 1][0] : 0;
-                memo[i][1] = i > 0 ? memo[i - 1][1] + 1 : 1;
+            int zeros = 0, ones = 0;
+            for (int j = i; j < nums.length; j++) {
+                if (nums[j] == 0) {
+                    zeros++;
+                } else {
+                    ones++;
+                }
+                max = zeros == ones ? Math.max(j - i + 1, max) : max;
             }
-            max = memo[i][0] == memo[i][1] ? memo[i][0] * 2 : max;
         }
         return max;
     }
