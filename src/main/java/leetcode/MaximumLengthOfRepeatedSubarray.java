@@ -15,23 +15,15 @@ package leetcode;
 public class MaximumLengthOfRepeatedSubarray {
     public int findLength(int[] A, int[] B) {
         int max = 0;
+        int[][] memo = new int[A.length + 1][B.length + 1];
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < B.length; j++) {
                 if (A[i] == B[j]) {
-                    max = Math.max(count(A, B, i, j), max);
+                    memo[i + 1][j + 1] = Math.max(memo[i][j] + 1, memo[i + 1][j + 1]);
+                    max = Math.max(memo[i + 1][j + 1], max);
                 }
             }
         }
         return max;
-    }
-
-    private static int count(int[] A, int[] B, int i, int j) {
-        int count = 0;
-        while (i < A.length && j < B.length && A[i] == B[j]) {
-            count++;
-            i++;
-            j++;
-        }
-        return count;
     }
 }
