@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.HashMap;
+
 /**
  * 525. Contiguous Array
  * <p>
@@ -7,16 +9,19 @@ package leetcode;
  */
 public class ContiguousArray {
     public int findMaxLength(int[] nums) {
-        int max = 0;
+        int max = 0, count = 0;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
         for (int i = 0; i < nums.length; i++) {
-            int zeros = 0, ones = 0;
-            for (int j = i; j < nums.length; j++) {
-                if (nums[j] == 0) {
-                    zeros++;
-                } else {
-                    ones++;
-                }
-                max = zeros == ones ? Math.max(j - i + 1, max) : max;
+            if (nums[i] == 0) {
+                count++;
+            } else {
+                count--;
+            }
+            if (map.containsKey(count)) {
+                max = Math.max(i - map.get(count), max);
+            } else {
+                map.put(count, i);
             }
         }
         return max;
