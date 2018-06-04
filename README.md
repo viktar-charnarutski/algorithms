@@ -219,6 +219,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 202 | 2-Jun-2018 | [394. Decode String][202] | Medium | Y |
 | 203 | 3-Jun-2018 | [718. Maximum Length of Repeated Subarray][203] | Medium | Y |
 | 204 | 3-Jun-2018 | [525. Contiguous Array][204] | Medium | Y |
+| 205 | 4-Jun-2018 | [64. Minimum Path Sum][205] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -424,3 +425,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [202]: https://leetcode.com/problems/decode-string/
 [203]: https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 [204]: https://leetcode.com/problems/contiguous-array/
+[205]: https://leetcode.com/problems/minimum-path-sum/
