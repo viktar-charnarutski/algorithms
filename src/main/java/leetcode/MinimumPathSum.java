@@ -23,16 +23,16 @@ public class MinimumPathSum {
     public int minPathSum(int[][] grid) {
         int[][] res = new int[grid.length][grid[0].length];
 
-        for (int j = 0; j < grid.length; j++) {
-            res[0][j] = j > 0 ? grid[0][j] + res[0][j - 1] : grid[0][j];
+        for (int row = 0; row < grid.length; row++) {
+            res[row][0] = row > 0 ? grid[row][0] + res[row - 1][0] : grid[row][0];
         }
-        for (int j = 0; j < grid[0].length; j++) {
-            res[j][0] = j > 0 ? grid[j][0] + res[j - 1][0] : grid[j][0];
+        for (int col = 0; col < grid[0].length; col++) {
+            res[0][col] = col > 0 ? grid[0][col] + res[0][col - 1] : grid[0][col];
         }
 
-        for (int i = 1; i < grid.length; i++) {
-            for (int j = 1; j < grid[0].length; j++) {
-                res[i][j] = Math.min(res[i][j - 1] + grid[i][j], res[i - 1][j] + grid[i][j]);
+        for (int row = 1; row < grid.length; row++) {
+            for (int col = 1; col < grid[0].length; col++) {
+                res[row][col] = Math.min(res[row][col - 1] + grid[row][col], res[row - 1][col] + grid[row][col]);
             }
         }
         return res[res.length - 1][res[0].length - 1];
