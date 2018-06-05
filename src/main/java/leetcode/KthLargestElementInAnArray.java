@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /**
  * 215. Kth Largest Element in an Array
  * <p>
@@ -8,6 +10,7 @@ package leetcode;
  */
 public class KthLargestElementInAnArray {
     public int findKthLargest(int[] nums, int k) {
-        return -1;
+        Arrays.sort(nums);
+        return nums[nums.length - k];
     }
 }
