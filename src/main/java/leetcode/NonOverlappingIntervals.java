@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * 435. Non-overlapping Intervals
  * <p>
@@ -11,6 +14,17 @@ package leetcode;
  */
 public class NonOverlappingIntervals {
     public int eraseOverlapIntervals(Interval[] intervals) {
-        return -1;
+
+        Arrays.sort(intervals, Comparator.comparingInt(i -> i.end));
+        int end = intervals[0].end;
+        int count = 1;
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[i].start >= end) {
+                count++;
+                end = intervals[i].end;
+            }
+        }
+
+        return intervals.length - count;
     }
 }
