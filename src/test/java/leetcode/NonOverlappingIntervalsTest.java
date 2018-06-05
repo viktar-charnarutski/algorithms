@@ -45,4 +45,8 @@ public class NonOverlappingIntervalsTest {
         Interval[] is = new Interval[]{i1, i2, i3, i4};
         assertEquals(1, new NonOverlappingIntervals().eraseOverlapIntervals(is));
     }
+    @Test
+    public void eraseOverlapIntervals5() {
+        assertEquals(0, new NonOverlappingIntervals().eraseOverlapIntervals(new Interval[]{}));
+    }
 }

@@ -14,6 +14,7 @@ import java.util.Comparator;
  */
 public class NonOverlappingIntervals {
     public int eraseOverlapIntervals(Interval[] intervals) {
+        if (intervals == null || intervals.length == 0) return 0;
 
         Arrays.sort(intervals, Comparator.comparingInt(i -> i.end));
         int end = intervals[0].end;
