@@ -10,6 +10,18 @@ package leetcode;
  */
 public class NumberOfSubarraysWithBoundedMaximum {
     public int numSubarrayBoundedMax(int[] A, int L, int R) {
-        return -1;
+        int j = 0, count = 0, sum = 0;
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] >= L && A[i] <= R) {
+                sum += i - j + 1;
+                count = i - j + 1;
+            } else if (A[i] >= L) {
+                sum += count;
+            } else {
+                j = i + 1;
+                count = 0;
+            }
+        }
+        return sum;
     }
 }

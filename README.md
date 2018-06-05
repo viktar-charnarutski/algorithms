@@ -222,6 +222,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 205 | 4-Jun-2018 | [64. Minimum Path Sum][205] | Medium | Y |
 | 206 | 4-Jun-2018 | [435. Non-overlapping Intervals][206] | Medium | Y |
 | 207 | 5-Jun-2018 | [215. Kth Largest Element in an Array][207] | Medium | Y |
+| 208 | 5-Jun-2018 | [795. Number of Subarrays with Bounded Maximum][208] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -430,3 +431,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [205]: https://leetcode.com/problems/minimum-path-sum/
 [206]: https://leetcode.com/problems/non-overlapping-intervals/
 [207]: https://leetcode.com/problems/kth-largest-element-in-an-array/
+[208]: https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
