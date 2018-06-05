@@ -15,7 +15,7 @@ public class NumberOfSubarraysWithBoundedMaximum {
             if (A[i] >= L && A[i] <= R) {
                 sum += i - j + 1;
                 count = i - j + 1;
-            } else if (A[i] >= L) {
+            } else if (A[i] < L) {
                 sum += count;
             } else {
                 j = i + 1;
