@@ -1,6 +1,6 @@
 package leetcode;
 
-import java.util.Arrays;
+import java.util.PriorityQueue;
 
 /**
  * 846. Hand of Straights
@@ -14,10 +14,12 @@ import java.util.Arrays;
 public class HandOfStraights {
     public boolean isNStraightHand(int[] hand, int W) {
         if (hand == null || hand.length % W != 0) return false;
-        Arrays.sort(hand);
-        for (int i = 1; i < hand.length; i += W) {
-            for (int j = i; j < W - 1; j++) {
-                if (hand[j] - hand[j - 1] != 1) return false;
+        PriorityQueue<Integer> q = new PriorityQueue<>();
+        for(int i : hand) q.offer(i);
+        while (q.size() != 0) {
+            int c = q.poll();
+            for (int i = 1; i < W; i++) {
+                if (!q.remove(c + i)) return false;
             }
         }
         return true;
