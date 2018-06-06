@@ -12,14 +12,8 @@ package leetcode;
  * Given binary tree [3,9,20,null,null,15,7],
  */
 public class MaximumDepthOfBinaryTree {
-
     public int maxDepth(TreeNode root) {
-        return bsf(root, 0);
-    }
-
-    private static int bsf(TreeNode node, int depth) {
-        if (node == null) return depth;
-        depth++;
-        return Math.max(bsf(node.left, depth), bsf(node.right, depth));
+        if (root == null) return 0;
+        return Math.max(maxDepth(root.left) + 1, maxDepth(root.right) + 1);
     }
 }
