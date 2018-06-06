@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 104. Maximum Depth of Binary Tree
  * <p>
@@ -15,5 +18,22 @@ public class MaximumDepthOfBinaryTree {
     public int maxDepth(TreeNode root) {
         if (root == null) return 0;
         return Math.max(maxDepth(root.left) + 1, maxDepth(root.right) + 1);
+    }
+
+    public int maxDepth1(TreeNode root) {
+        if (root == null) return 0;
+        int count = 0;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        while (!q.isEmpty()) {
+            int size = q.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode n = q.poll();
+                if (n.left != null) q.offer(n.left);
+                if (n.right != null) q.offer(n.right);
+            }
+            count++;
+        }
+        return count;
     }
 }
