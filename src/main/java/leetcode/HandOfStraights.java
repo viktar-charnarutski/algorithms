@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /**
  * 846. Hand of Straights
  * <p>
@@ -11,6 +13,13 @@ package leetcode;
  */
 public class HandOfStraights {
     public boolean isNStraightHand(int[] hand, int W) {
-        return false;
+        if (hand == null || hand.length % W != 0) return false;
+        Arrays.sort(hand);
+        for (int i = 1; i < hand.length; i += W) {
+            for (int j = i; j < W - 1; j++) {
+                if (hand[j] - hand[j - 1] != 1) return false;
+            }
+        }
+        return true;
     }
 }
