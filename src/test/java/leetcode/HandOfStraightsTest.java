@@ -26,4 +26,9 @@ public class HandOfStraightsTest {
     public void isNStraightHand4() {
         assertTrue(new HandOfStraights().isNStraightHand(new int[]{4, 2, 3, 1}, 1));
     }
+
+    @Test
+    public void isNStraightHand5() {
+        assertTrue(new HandOfStraights().isNStraightHand(new int[]{5, 1}, 2));
+    }
 }
