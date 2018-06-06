@@ -14,6 +14,21 @@ package leetcode;
  */
 public class FindMinimumInRotatedSortedArray {
     public int findMin(int[] nums) {
+        int l = 0, r = nums.length - 1;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if (nums[r] < nums[mid]) {
+                l = mid + 1;
+            } else if (nums[r] < nums[mid]){
+                r = mid;
+            } else {
+                r--;
+            }
+        }
+        return nums[l];
+    }
+
+    public int findMinIterative(int[] nums) {
         int min = nums[0];
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] < min) return nums[i];
