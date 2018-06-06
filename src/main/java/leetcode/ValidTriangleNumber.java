@@ -7,7 +7,21 @@ package leetcode;
  * the array that can make triangles if we take them as side lengths of a triangle.
  */
 public class ValidTriangleNumber {
+
     public int triangleNumber(int[] nums) {
-        return -1;
+        if (nums == null || nums.length < 3) return 0;
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                for (int k = j + 1; k < nums.length; k++) {
+                    if (isValidTriangle(nums[i], nums[j], nums[k])) count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    private boolean isValidTriangle(int i1, int i2, int i3) {
+        return i1 + i2 > i3 && i1 + i3 > i2 && i2 + i3 > i1;
     }
 }
