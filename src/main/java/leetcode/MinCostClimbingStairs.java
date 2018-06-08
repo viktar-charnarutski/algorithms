@@ -11,15 +11,15 @@ package leetcode;
 public class MinCostClimbingStairs {
 
     public int minCostClimbingStairs(int[] cost) {
-        int cost1 = 0;
-        int cost2 = 0;
+        int prev = 0;
+        int preprev = 0;
 
         for (int curr : cost) {
-            int costCur = curr + Math.min(cost1, cost2);
-            cost2 = cost1;
-            cost1 = costCur;
+            int tmp = prev;
+            prev = curr + Math.min(prev, preprev);
+            preprev = tmp;
         }
 
-        return Math.min(cost1, cost2);
+        return Math.min(prev, preprev);
     }
 }
