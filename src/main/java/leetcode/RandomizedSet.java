@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.*;
+
 /**
  * 380. Insert Delete GetRandom O(1)
  * <p>
@@ -11,18 +13,37 @@ package leetcode;
  * Each element must have the same probability of being returned.
  */
 public class RandomizedSet {
+    private Map<Integer, Integer> map;
+    private List<Integer> list;
+    private Random rand;
 
-    public void insert(int val) {
-        return;
+    public RandomizedSet() {
+        map = new HashMap<>();
+        list = new ArrayList<>();
+        rand = new Random();
     }
 
-    public void remove(int val) {
-        return;
+    public boolean insert(int val) {
+        if (map.containsKey(val)) return false;
+        map.put(val, list.size());
+        list.add(val);
+        return true;
+    }
+
+    public boolean remove(int val) {
+        if (!map.containsKey(val)) return false;
+        int currIndex = map.get(val);
+        if (currIndex < list.size() - 1) {
+            int lastElement = list.get(list.size() - 1);
+            list.set(currIndex, lastElement);
+            map.put(lastElement, currIndex);
+        }
+        map.remove(val);
+        list.remove(list.size() - 1);
+        return true;
     }
 
     public int getRandom() {
-        return -1;
+        return list.get(rand.nextInt(list.size()));
     }
-
-
 }
