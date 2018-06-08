@@ -223,7 +223,8 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 206 | 4-Jun-2018 | [435. Non-overlapping Intervals][206] | Medium | Y |
 | 207 | 5-Jun-2018 | [215. Kth Largest Element in an Array][207] | Medium | Y |
 | 208 | 5-Jun-2018 | [795. Number of Subarrays with Bounded Maximum][208] | Medium | Y |
-| 209 | 6-Jun-2018 | [611. Valid Triangle Number][208] | Medium | Y |
+| 209 | 6-Jun-2018 | [611. Valid Triangle Number][209] | Medium | Y |
+| 210 | 7-Jun-2018 | [813. Largest Sum of Averages][209] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -434,3 +435,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [207]: https://leetcode.com/problems/kth-largest-element-in-an-array/
 [208]: https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
 [209]: https://leetcode.com/problems/valid-triangle-number/
+[210]: https://leetcode.com/problems/largest-sum-of-averages/
