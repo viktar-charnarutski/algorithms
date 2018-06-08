@@ -9,11 +9,12 @@ package leetcode;
  * the floor, and you can either start from the step with index 0, or the step with index 1.
  */
 public class MinCostClimbingStairs {
+
     public int minCostClimbingStairs(int[] cost) {
         int cost1 = 0;
         int cost2 = 0;
 
-        for (int i = cost.length - 1; i <= 0; i--) {
+        for (int i = cost.length - 1; i >= 0; i--) {
             int costCur = cost[i] + Math.min(cost1, cost2);
             cost2 = cost1;
             cost1 = costCur;
