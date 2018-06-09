@@ -228,6 +228,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 211 | 7-Jun-2018 | [838. Push Dominoes][211] | Medium | Y |
 | 212 | 8-Jun-2018 | [380. Insert Delete GetRandom O(1)][212] | Medium | Y |
 | 213 | 8-Jun-2018 | [593. Valid Square][213] | Medium | Y |
+| 214 | 9-Jun-2018 | [48. Rotate Image][215] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -442,3 +443,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [211]: https://leetcode.com/problems/push-dominoes/
 [212]: https://leetcode.com/problems/insert-delete-getrandom-o1/
 [213]: https://leetcode.com/problems/valid-square/
+[214]: https://leetcode.com/problems/rotate-image/
