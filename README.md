@@ -226,6 +226,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 209 | 6-Jun-2018 | [611. Valid Triangle Number][209] | Medium | Y |
 | 210 | 7-Jun-2018 | [813. Largest Sum of Averages][210] | Medium | Y |
 | 211 | 7-Jun-2018 | [838. Push Dominoes][211] | Medium | Y |
+| 212 | 8-Jun-2018 | [380. Insert Delete GetRandom O(1)][212] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -438,3 +439,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [209]: https://leetcode.com/problems/valid-triangle-number/
 [210]: https://leetcode.com/problems/largest-sum-of-averages/
 [211]: https://leetcode.com/problems/push-dominoes/
+[212]: https://leetcode.com/problems/insert-delete-getrandom-o1/
