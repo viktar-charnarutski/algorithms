@@ -13,9 +13,22 @@ package leetcode;
  * The length of the array is in range [1, 20,000].
  * <p>
  * The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
+ * <p>
+ * 1, 1, 1
  */
 public class SubarraySumEqualsK {
+
     public int subarraySum(int[] nums, int k) {
-        return -1;
+        int count = 0;
+        for (int start = 0; start < nums.length; start++) {
+            int sum = 0;
+            for (int end = start; end < nums.length; end++) {
+                sum += nums[end];
+                if (sum == k) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }
