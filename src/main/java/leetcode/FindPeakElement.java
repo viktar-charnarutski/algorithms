@@ -13,6 +13,14 @@ package leetcode;
  */
 public class FindPeakElement {
     public int findPeakElement(int[] nums) {
+        if (nums == null || nums.length < 3) return -1;
+        int l = 0, c = 1, r = 2;
+        while (r < nums.length) {
+            if (nums[l] < nums[c] && nums[c] > nums[r]) return c;
+            l++;
+            c++;
+            r++;
+        }
         return -1;
     }
 }
