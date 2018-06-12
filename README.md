@@ -422,7 +422,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [187]: https://leetcode.com/problems/delete-and-earn/
 [188]: https://leetcode.com/problems/target-sum/
 [189]: https://leetcode.com/problems/binary-search-tree-iterator/
-[190]: https://leetcode.com/problems/binary-search-tree-iterator/
+[190]: https://leetcode.com/problems/binary-tree-level-order-traversal/
 [191]: https://leetcode.com/problems/flatten-nested-list-iterator/
 [192]: https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
 [193]: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
