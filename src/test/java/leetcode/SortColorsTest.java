@@ -19,4 +19,11 @@ public class SortColorsTest {
         new SortColors().sortColors(arr);
         assertArrayEquals(new int[]{0, 1, 2}, arr);
     }
+
+    @Test
+    public void sortColors3() {
+        int[] arr = {2, 2};
+        new SortColors().sortColors(arr);
+        assertArrayEquals(new int[]{2, 2}, arr);
+    }
 }
