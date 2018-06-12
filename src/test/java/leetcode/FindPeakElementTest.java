@@ -30,4 +30,9 @@ public class FindPeakElementTest {
     public void findPeakElement5() {
         assertEquals(1, new FindPeakElement().findPeakElement(new int[]{1, 2}));
     }
+
+    @Test
+    public void findPeakElement6() {
+        assertEquals(1, new FindPeakElement().findPeakElement(new int[]{1, 3, 2, 1}));
+    }
 }
