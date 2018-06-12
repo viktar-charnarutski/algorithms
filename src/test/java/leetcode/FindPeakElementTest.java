@@ -13,7 +13,7 @@ public class FindPeakElementTest {
 
     @Test
     public void findPeakElement2() {
-        assertEquals(5, new FindPeakElement().findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4}));
+        assertEquals(1, new FindPeakElement().findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4}));
     }
 
     @Test
