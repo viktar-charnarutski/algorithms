@@ -17,6 +17,20 @@ package leetcode;
  */
 public class SortColors {
     public void sortColors(int[] nums) {
-
+        int red = 0, white = 0;
+        for (int n : nums) {
+            switch (n) {
+                case 0: {
+                    red++;
+                    break;
+                }
+                case 1: {
+                    white++;
+                }
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = red-- > 0 ? 0 : white-- > 0 ? 1 : 2;
+        }
     }
 }
