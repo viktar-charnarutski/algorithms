@@ -230,6 +230,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 213 | 8-Jun-2018 | [593. Valid Square][213] | Medium | Y |
 | 214 | 9-Jun-2018 | [48. Rotate Image][214] | Medium | Y |
 | 215 | 10-Jun-2018 | [24. Swap Nodes in Pairs][215] | Medium | Y |
+| 216 | 11-Jun-2018 | [162.  Find Peak Element][216] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -446,3 +447,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [213]: https://leetcode.com/problems/valid-square/
 [214]: https://leetcode.com/problems/rotate-image/
 [215]: https://leetcode.com/problems/swap-nodes-in-pairs/
+[216]: https://leetcode.com/problems/find-peak-element/

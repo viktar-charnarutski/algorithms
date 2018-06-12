@@ -17,12 +17,12 @@ public class FindPeakElement {
         int l = 0, r = nums.length - 1;
         while (l < r) {
             int m = l + (r - l) / 2;
-            if (nums[l] < nums[m]) {
+            if (nums[l] < nums[m + 1]) {
                 l = m + 1;
             } else {
                 r = m;
             }
         }
-        return l;
+        return nums[l] > nums[l + 1] ? l : r;
     }
 }
