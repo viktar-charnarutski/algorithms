@@ -1,5 +1,9 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 452. Minimum Number of Arrows to Burst Balloons
  * <p>
@@ -15,6 +19,20 @@ package leetcode;
  */
 public class MinimumNumberOfArrowsToBurstBalloons {
     public int findMinArrowShots(int[][] points) {
-        return 0;
+        if (points == null || points.length == 0) return 0;
+
+        List<int[]> list = new ArrayList<>(Arrays.asList(points));
+        list.sort((p1, p2) -> (p1[1] - p2[1]));
+
+        int intercepts = 0;
+        int end = list.get(0)[1];
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i)[0] <= end) {
+                intercepts++;
+            } else {
+                end = list.get(i)[1];
+            }
+        }
+        return list.size() - intercepts;
     }
 }
