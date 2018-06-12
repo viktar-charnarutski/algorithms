@@ -17,6 +17,26 @@ package leetcode;
  */
 public class SortColors {
     public void sortColors(int[] nums) {
+        partition(nums, 0);
+        partition(nums, 1);
+    }
+
+    private void partition(int[] nums, int pivot) {
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            while (left < right && nums[left] <= pivot) left++;
+            while (left < right && nums[right] > pivot) right--;
+            if (left < right) {
+                int tmp = nums[left];
+                nums[left] = nums[right];
+                nums[right] = tmp;
+            }
+            left++;
+            right--;
+        }
+    }
+
+    public void sortColors1(int[] nums) {
         int red = 0, white = 0;
         for (int n : nums) {
             switch (n) {
