@@ -14,9 +14,15 @@ package leetcode;
 public class FindPeakElement {
     public int findPeakElement(int[] nums) {
         if (nums == null || nums.length < 3) return -1;
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] > nums[i + 1]) return i;
+        int l = 0, r = nums.length - 1;
+        while (l < r) {
+            int m = l + (r - l) / 2;
+            if (nums[l] < nums[m]) {
+                l = m + 1;
+            } else {
+                r = m;
+            }
         }
-        return -1;
+        return l;
     }
 }
