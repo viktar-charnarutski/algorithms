@@ -232,6 +232,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 215 | 10-Jun-2018 | [24. Swap Nodes in Pairs][215] | Medium | Y |
 | 216 | 11-Jun-2018 | [162.  Find Peak Element][216] | Medium | |
 | 217 | 12-Jun-2018 | [452. Minimum Number of Arrows to Burst Balloons][217] | Medium | |
+| 218 | 13-Jun-2018 | [334. Increasing Triplet Subsequence][218] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -450,3 +451,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [215]: https://leetcode.com/problems/swap-nodes-in-pairs/
 [216]: https://leetcode.com/problems/find-peak-element/
 [217]: https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+[218]: https://leetcode.com/problems/increasing-triplet-subsequence/
