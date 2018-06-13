@@ -3,11 +3,20 @@ Solutions for algorithm questions which could be asked on a technical interview.
 
 # Materials
 
+## Articles
+ - [x] MTU [How to Prepare Yourself for an Interview with Google](https://www.mtu.edu/career/students/networking/interviews/prepare.pdf)
+ - [x] Larysa Aharkava [Want to Work in Google *In Russian*](http://larrr.com/wp-content/uploads/2016/10/InterviewPreparationGuide.pdf)
+ - [x] Sergey Sema [How to get in Google: Preparation Instruction *In Russian*](https://dou.ua/lenta/articles/google-interview/)
+
+## Books
+ - [ ] Gayle McDowell [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1528866608&sr=8-1&keywords=CRACKING+the+CODING+INTERVIEW)
+ - [ ] Mongan J., Kindler N., Giguere E. [Programming Interviews Exposed](https://www.amazon.com/Programming-Interviews-Exposed-Through-Interview/dp/111941847X/ref=sr_1_1?s=books&ie=UTF8&qid=1528866738&sr=1-1&keywords=Programming+Interviews+Exposed)
+
 ## Dynamic Programming
 ### Videos
- - [x] [HakerRank](https://www.youtube.com/channel/UCOf7UPMHBjAavgD0Qw5q5ww/videos): [Algorithms: Solve 'Coin Change' Using Memoization and DP](https://www.youtube.com/watch?v=sn0DWI-JdNA)
- - [ ] [MIT OpenCourseWare](https://www.youtube.com/channel/UCEBb1b_L6zDS3xTUrIALZOw): [19. Dynamic Programming I: Fibonacci, Shortest Paths](https://www.youtube.com/watch?v=OQ5jsbhAv_M&t=605s)
- - [x] [CS Dojo](https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A): [Dynamic Programming Interview Question #1 - Find Sets Of Numbers That Add Up To 16](https://www.youtube.com/watch?v=nqlNzOcnCfs&t=9s)
+ - [x] HakerRank: [Algorithms: Solve 'Coin Change' Using Memoization and DP](https://www.youtube.com/watch?v=sn0DWI-JdNA)
+ - [ ] MIT OpenCourseWare: [19. Dynamic Programming I: Fibonacci, Shortest Paths](https://www.youtube.com/watch?v=OQ5jsbhAv_M&t=605s)
+ - [x] CS Dojo: [Dynamic Programming Interview Question #1 - Find Sets Of Numbers That Add Up To 16](https://www.youtube.com/watch?v=nqlNzOcnCfs&t=9s)
 
 ### Reading
  - [ ] [Dynamic Programming - *In Russian*](http://awpris.blogspot.com/2012/02/blog-post.html)
