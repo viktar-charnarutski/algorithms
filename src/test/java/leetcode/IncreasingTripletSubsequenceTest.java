@@ -16,4 +16,9 @@ public class IncreasingTripletSubsequenceTest {
     public void increasingTriplet2() {
         assertFalse(new IncreasingTripletSubsequence().increasingTriplet(new int[]{5, 4, 3, 2, 1}));
     }
+
+    @Test
+    public void increasingTriplet3() {
+        assertTrue(new IncreasingTripletSubsequence().increasingTriplet(new int[]{12, 10, 13, 4, 15}));
+    }
 }
