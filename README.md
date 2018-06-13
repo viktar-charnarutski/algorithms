@@ -24,7 +24,10 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - [ ] Breadth First Search (BFS)
 
 ## Recursion
- - [ ] Fibonacci Numbers
+ - [x] Fibonacci Numbers
+
+## Dynamic Programming
+ - [x] Fibonacci Numbers (*memoization*)
 
 ## LeetCode Practice
 
