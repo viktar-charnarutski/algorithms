@@ -20,7 +20,7 @@ public class CoinChange {
         int min = Integer.MAX_VALUE;
         for (int c : coins) {
             int res = coinChange(coins, amount - c, memo);
-            if (res >= 0) {
+            if (res >= 0 && res < min) {
                 min = 1 + res;
             }
         }
