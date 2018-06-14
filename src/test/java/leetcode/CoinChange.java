@@ -9,13 +9,13 @@ package leetcode;
  */
 public class CoinChange {
     public int coinChange(int[] coins, int amount) {
-        return coinChange(coins, amount, new int[amount]);
+        return coinChange(coins, amount, new int[amount + 1]);
     }
 
     private int coinChange(int[] coins, int amount, int[] memo) {
         if (amount < 0) return -1;
         if (amount == 0) return 0;
-        if (memo[amount - 1] != 0) return memo[amount - 1];
+        if (memo[amount] != 0) return memo[amount];
 
         int min = Integer.MAX_VALUE;
         for (int c : coins) {
@@ -24,7 +24,7 @@ public class CoinChange {
                 min = 1 + res;
             }
         }
-        memo[amount - 1] = min != Integer.MAX_VALUE ? min : -1;
-        return memo[amount - 1];
+        memo[amount] = min != Integer.MAX_VALUE ? min : -1;
+        return memo[amount];
     }
 }
