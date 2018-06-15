@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 567. Permutation in String
  * <p>
@@ -8,7 +11,15 @@ package leetcode;
  */
 public class PermutationInString {
     public boolean checkInclusion(String s1, String s2) {
+        if (s1.length() == 0) return true;
+
+        Set<Character> uniqChars = new HashSet<>();
+        for (char c : s1.toCharArray()) uniqChars.add(c);
+
         for (int i = 0; i <= s2.length() - s1.length(); i++) {
+
+            if (!uniqChars.contains(s2.charAt(i))) continue;
+
             String window = s2.substring(i, i + s1.length());
             if (isPermutation(window, s1)) return true;
         }

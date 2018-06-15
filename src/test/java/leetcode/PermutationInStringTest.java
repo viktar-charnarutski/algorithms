@@ -16,10 +16,12 @@ public class PermutationInStringTest {
     public void checkInclusion2() {
         assertFalse(new PermutationInString().checkInclusion("ab", "eidboaoo"));
     }
+
     @Test
     public void checkInclusion3() {
         assertTrue(new PermutationInString().checkInclusion("", "eidboaoo"));
     }
+
     @Test
     public void checkInclusion4() {
         assertFalse(new PermutationInString().checkInclusion("ab", ""));
