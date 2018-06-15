@@ -23,20 +23,32 @@ Solutions for algorithm questions which could be asked on a technical interview.
 
 # My Statistics
 
-## Sorting
- - [x] Quick Sort
- - [ ] Merge Sort
+## Data Structures
+- [ ] Linked Lists
+- [ ] Trees
+- [ ] Tries
+- [ ] Graphs
+- [ ] Stacks
+- [ ] Queues
+- [ ] Heaps
+- [ ] Vectors / Arraylists
+- [ ] Heaps
+- [ ] Hash Tables
 
-## Search
- - [ ] Binary Search
- - [ ] Depth First Search (DFS)
- - [ ] Breadth First Search (BFS)
+## Algorithms
+- [ ] Breadth-First Search
+- [ ] Depth-First Search
+- [x] Quick Sort
+- [ ] Merge Sort
+- [ ] Quick Sort
 
-## Recursion
- - [x] Fibonacci Numbers
-
-## Dynamic Programming
- - [x] Fibonacci Numbers (*memoization*)
+## Concepts
+- [ ] Bit Manipulation
+- [ ] Memory (Stack vs. Heap)
+- [x] Recursion
+- [ ] Merge Sort
+- [ ] Dynamic Programming
+- [x] Big O Time and Space
 
 ## LeetCode Practice
 
