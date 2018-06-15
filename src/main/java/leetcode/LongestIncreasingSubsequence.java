@@ -7,18 +7,19 @@ package leetcode;
  */
 public class LongestIncreasingSubsequence {
     public int lengthOfLIS(int[] nums) {
-        return lengthOfLIS(nums, Integer.MIN_VALUE, 0);
-    }
-
-    private int lengthOfLIS(int[] nums, int prev, int i) {
-        if (i == nums.length) return 0;
-
-        int taken = 0;
-        if (nums[i] > prev) {
-            taken = 1 + lengthOfLIS(nums, nums[i], i + 1);
+        int[] dp = new int[nums.length];
+        dp[0] = 1;
+        int count = 1;
+        for (int i = 1; i < dp.length; i++) {
+            int max = 0;
+            for (int j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) {
+                    max = Math.max(dp[j], max);
+                }
+            }
+            dp[i] = 1 + max;
+            count = Math.max(dp[i], count);
         }
-
-        int nottaken = lengthOfLIS(nums, prev, i + 1);
-        return Math.max(taken, nottaken);
+        return count;
     }
 }
