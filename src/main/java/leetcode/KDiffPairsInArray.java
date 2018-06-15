@@ -1,9 +1,7 @@
 package leetcode;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * 532. K-diff Pairs in an Array
@@ -17,24 +15,19 @@ public class KDiffPairsInArray {
         if (nums == null || nums.length < 2 || k < 0) return 0;
         int count = 0;
 
-        Map<Integer, Set<Integer>> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            Set<Integer> indexes = map.get(nums[i]);
-            if (indexes == null) {
-                indexes = new HashSet<>();
-            }
-            indexes.add(i);
-            map.put(nums[i], indexes);
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
         for (int firstNum : map.keySet()) {
             int secondNum = firstNum - k;
-            if (k == 0) {
-                Set<Integer> indexes = map.get(secondNum);
-                if (indexes.size() > 1) count++;
-            } else {
-                if (map.containsKey(secondNum)) {
+            if (map.containsKey(secondNum)) {
+                if (k == 0) {
+                    if (map.get(secondNum) > 1) count++;
+                } else {
                     count++;
+
                 }
             }
         }
