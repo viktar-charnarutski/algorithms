@@ -274,6 +274,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 218 | 13-Jun-2018 | [334. Increasing Triplet Subsequence][218] | Medium | Y |
 | 219 | 14-Jun-2018 | [322. Coin Change][219] | Medium | Y |
 | 220 | 15-Jun-2018 | [300. Longest Increasing Subsequence][220] | Medium | Y |
+| 221 | 15-Jun-2018 | [532. K-diff Pairs in an Array][221] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -495,3 +496,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [218]: https://leetcode.com/problems/increasing-triplet-subsequence/
 [219]: https://leetcode.com/problems/coin-change/
 [220]: https://leetcode.com/problems/longest-increasing-subsequence/
+[221]: https://leetcode.com/problems/k-diff-pairs-in-an-array/
