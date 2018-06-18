@@ -276,7 +276,8 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 220 | 15-Jun-2018 | [300. Longest Increasing Subsequence][220] | Medium | Y |
 | 221 | 15-Jun-2018 | [532. K-diff Pairs in an Array][221] | Easy | Y |
 | 222 | 16-Jun-2018 | [567. Permutation in String][222] | Easy | Y |
-| 223 | 17-Jun-2018 | [46. Permutations][223] | Medium | Y |
+| 223 | 16-Jun-2018 | [46. Permutations][223] | Medium | Y |
+| 224 | 17-Jun-2018 | [47. Permutations II][223] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -501,3 +502,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [221]: https://leetcode.com/problems/k-diff-pairs-in-an-array/
 [222]: https://leetcode.com/problems/permutation-in-string/
 [223]: https://leetcode.com/problems/permutations/
+[224]: https://leetcode.com/problems/permutations-ii/
