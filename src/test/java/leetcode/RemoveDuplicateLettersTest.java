@@ -8,11 +8,11 @@ public class RemoveDuplicateLettersTest {
 
     @Test
     public void removeDuplicateLetters1() {
-        assertEquals("abc", "bcabc");
+        assertEquals("abc", new RemoveDuplicateLetters().removeDuplicateLetters("bcabc"));
     }
 
     @Test
     public void removeDuplicateLetters2() {
-        assertEquals("acdb", "cbacdcbc");
+        assertEquals("acdb", new RemoveDuplicateLetters().removeDuplicateLetters("cbacdcbc"));
     }
 }
