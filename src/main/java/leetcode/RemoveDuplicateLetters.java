@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 316. Remove Duplicate Letters
  * <p>
@@ -14,19 +17,40 @@ public class RemoveDuplicateLetters {
     public String removeDuplicateLetters(String s) {
         if (s == null || s.isEmpty()) return s;
 
-        int[] charsAmount = new int[26];
-        for (char c : s.toCharArray()) {
-            charsAmount[c - 'a']++;
+        HashMap<Character, Integer> posMap = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            posMap.put(s.charAt(i), i);
         }
 
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < charsAmount.length; i++) {
-            if (charsAmount[i] != 0) {
-                sb.append(Character.toChars(i + 'a'));
-                charsAmount[i] = 0;
+        char[] res = new char[posMap.size()];
+        int start = 0, end = minPos(posMap);
+
+        for (int i = 0; i < res.length; i++) {
+            char minChar = 'z' + 1;
+            for (int j = start; j <= end; j++) {
+                if (posMap.containsKey(s.charAt(j)) && s.charAt(j) < minChar) {
+                    minChar = s.charAt(j);
+                    start = j + 1;
+
+                }
+            }
+            res[i] = minChar;
+            if (i == res.length - 1) break;
+
+            posMap.remove(minChar);
+            if (s.charAt(end) == minChar) {
+                end = minPos(posMap);
             }
         }
 
-        return sb.toString();
+        return new String(res);
+    }
+
+    private int minPos(Map<Character, Integer> posMap) {
+        int min = Integer.MAX_VALUE;
+        for (int i : posMap.values()) {
+            min = Math.min(i, min);
+        }
+        return min;
     }
 }
