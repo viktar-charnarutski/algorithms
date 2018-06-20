@@ -11,12 +11,11 @@ public class PalindromePermutation {
     public boolean isPalindrome(String s) {
         if (s == null || s.length() == 0) return false;
         int[] charsCount = new int[26];
-        for (char c : s.toCharArray()) {
-            if (Character.isLetter(c)) charsCount[c - 'a']++;
-        }
         int count = 0;
-        for (int i : charsCount) {
-            count += i % 2;
+        for (char c : s.toCharArray()) {
+            if (!Character.isLetter(c)) continue;
+            charsCount[c - 'a']++;
+            count = charsCount[c - 'a'] % 2 == 0 ? --count : ++count;
         }
         return count <= 1;
     }
