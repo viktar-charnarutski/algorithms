@@ -281,7 +281,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 225 | 18-Jun-2018 | [316. Remove Duplicate Letters][225] | Hard | Y |
 | 226 | 19-Jun-2018 | [URLify][226] | Easy | |
 | 227 | 19-Jun-2018 | [266. Palindrome Permutation][227] | Easy | |
-| 228 | 19-Jun-2018 | [161. One Edit Distance][227] | Easy | Y |
+| 228 | 19-Jun-2018 | [161. One Edit Distance][228] | Easy | Y |
+| 229 | 20-Jun-2018 | [73. Set Matrix Zeroes][229] | Medium | |
+| 230 | 20-Jun-2018 | [82. Remove Duplicates from Sorted List II][230] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -511,3 +513,5 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [226]: http://www.crackingthecodinginterview.com/
 [227]: https://leetcode.com/articles/palindrome-permutation/
 [228]: https://leetcode.com/problems/one-edit-distance/
+[229]: https://leetcode.com/problems/set-matrix-zeroes/
+[230]: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
