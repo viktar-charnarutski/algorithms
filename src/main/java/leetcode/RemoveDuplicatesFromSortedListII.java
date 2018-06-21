@@ -13,15 +13,18 @@ public class RemoveDuplicatesFromSortedListII {
         ListNode fakeHead = new ListNode(0);
         fakeHead.next = head;
         ListNode prev = fakeHead;
+        ListNode curr = head;
 
-        while (prev != null) {
-            ListNode curr = prev.next;
-            while (curr != null && curr.next != null
-                    && curr.val == curr.next.val) {
-                curr = curr.next.next;
+        while (curr != null) {
+            while (curr.next != null && curr.val == curr.next.val) {
+                curr = curr.next;
             }
-            prev.next = curr;
-            prev = curr;
+            if (prev.next == curr) {
+                prev = prev.next;
+            } else {
+                prev.next = curr.next;
+            }
+            curr = curr.next;
         }
 
         return fakeHead.next;
