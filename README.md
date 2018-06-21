@@ -284,6 +284,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 228 | 19-Jun-2018 | [161. One Edit Distance][228] | Easy | Y |
 | 229 | 20-Jun-2018 | [73. Set Matrix Zeroes][229] | Medium | |
 | 230 | 20-Jun-2018 | [82. Remove Duplicates from Sorted List II][230] | Medium | |
+| 231 | 21-Jun-2018 | [Remove Duplicates from Unsorted List][231] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -515,3 +516,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [228]: https://leetcode.com/problems/one-edit-distance/
 [229]: https://leetcode.com/problems/set-matrix-zeroes/
 [230]: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+[231]: https://algorithms.tutorialhorizon.com/remove-duplicates-from-an-unsorted-linked-list/
