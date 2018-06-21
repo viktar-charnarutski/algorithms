@@ -7,7 +7,7 @@ package leetcode;
  * column are set to 0.
  */
 public class ZeroMatrix {
-    public void zeroMatrix(int[][] m) {
+    public void setZeroes(int[][] m) {
         int[][] n = copyMatrix(m);
 
         for (int c = 0; c < m.length; c++) {
@@ -27,10 +27,10 @@ public class ZeroMatrix {
 
     private void mark(int[][] m, int c, int r) {
         for (int i = 0; i < m.length; i++) {
-            m[c][i] = 0;
+            m[i][r] = 0;
         }
         for (int i = 0; i < m[0].length; i++) {
-            m[i][r] = 0;
+            m[c][i] = 0;
         }
     }
 }
