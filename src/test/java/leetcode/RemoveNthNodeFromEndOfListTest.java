@@ -59,11 +59,6 @@ public class RemoveNthNodeFromEndOfListTest {
     }
 
     @Test
-    public void removeNthFromEnd_target_is_zero() {
-        assertEquals(k1, ins.removeNthFromEnd(n1, 0));
-    }
-
-    @Test
     public void removeNthFromEnd_one_node_target_is_one() {
         assertNull(ins.removeNthFromEnd(l1, 1));
     }
@@ -71,10 +66,5 @@ public class RemoveNthNodeFromEndOfListTest {
     @Test
     public void removeNthFromEnd_removing_head() {
         assertEquals(new ListNode(2), ins.removeNthFromEnd(v1, 2));
-    }
-
-    @Test
-    public void count() {
-        assertEquals(5, ins.countNodes(n1));
     }
 }
