@@ -12,6 +12,7 @@ public class RemoveNthNodeFromEndOfListTest {
     private ListNode k1;
     private ListNode m1;
     private ListNode l1;
+    private ListNode v1;
     private RemoveNthNodeFromEndOfList ins;
 
     @Before
@@ -45,6 +46,10 @@ public class RemoveNthNodeFromEndOfListTest {
         m3.next = m5;
 
         l1 = new ListNode(1);
+
+        v1 = new ListNode(1);
+        v1.next = new ListNode(2);
+
         ins = new RemoveNthNodeFromEndOfList();
     }
 
@@ -61,6 +66,11 @@ public class RemoveNthNodeFromEndOfListTest {
     @Test
     public void removeNthFromEnd_one_node_target_is_one() {
         assertNull(ins.removeNthFromEnd(l1, 1));
+    }
+
+    @Test
+    public void removeNthFromEnd_removing_head() {
+        assertEquals(new ListNode(2), ins.removeNthFromEnd(v1, 2));
     }
 
     @Test
