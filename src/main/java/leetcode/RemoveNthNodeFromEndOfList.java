@@ -11,20 +11,21 @@ public class RemoveNthNodeFromEndOfList {
         if (head == null || n < 0) return head;
 
         int nodeNumToRemove = countNodes(head) - n;
-        if (nodeNumToRemove == 0) return null;
 
         int currCount = 0;
-        ListNode prev = head;
+        ListNode fakeHead = new ListNode(0);
+        fakeHead.next = head;
+        ListNode prev = fakeHead;
         while (prev != null) {
             ListNode curr = prev.next;
-            if (curr != null && ++currCount == nodeNumToRemove) {
+            if (curr != null && currCount++ == nodeNumToRemove) {
                 prev.next = curr.next;
                 break;
             }
             prev = curr;
         }
 
-        return head;
+        return fakeHead.next;
     }
 
     int countNodes(ListNode head) {
