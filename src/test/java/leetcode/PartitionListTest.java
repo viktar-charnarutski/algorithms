@@ -28,9 +28,9 @@ public class PartitionListTest {
         ListNode m5 = new ListNode(5);
         m1.next = m2;
         m2.next = m22;
-        m22.next = m3;
-        m3.next = m4;
-        m4.next = m5;
+        m22.next = m4;
+        m4.next = m3;
+        m3.next = m5;
 
         assertEquals(m1, new PartitionList().partition(n1, 3));
     }
