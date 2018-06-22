@@ -8,33 +8,22 @@ package leetcode;
 public class RemoveNthNodeFromEndOfList {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        if (head == null || n < 0) return head;
-
-        int nodeNumToRemove = countNodes(head) - n;
-
-        int currCount = 0;
         ListNode fakeHead = new ListNode(0);
         fakeHead.next = head;
-        ListNode prev = fakeHead;
-        while (prev != null) {
-            ListNode curr = prev.next;
-            if (curr != null && currCount++ == nodeNumToRemove) {
-                prev.next = curr.next;
-                break;
-            }
-            prev = curr;
+
+        ListNode first = fakeHead;
+        ListNode second = fakeHead;
+
+        for (int i = 1; i <= n + 1; i++) {
+            first = first.next;
         }
 
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
+
+        second.next = second.next.next;
         return fakeHead.next;
-    }
-
-    int countNodes(ListNode head) {
-        ListNode curr = head;
-        int count = 0;
-        while (curr != null) {
-            curr = curr.next;
-            count++;
-        }
-        return count;
     }
 }
