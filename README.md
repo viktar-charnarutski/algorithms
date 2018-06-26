@@ -50,7 +50,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 - [ ] Dynamic Programming
 - [x] Big O Time and Space
 
-## Practice
+## Problems
 
 | # | Date | Question | Difficulty | Review Required |
 |:-:|:----:|:---------|:----------:|:--------------:|
