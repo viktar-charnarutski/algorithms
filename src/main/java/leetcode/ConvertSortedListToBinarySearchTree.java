@@ -10,41 +10,42 @@ package leetcode;
  */
 public class ConvertSortedListToBinarySearchTree {
     public TreeNode sortedListToBST(ListNode head) {
+        if (head == null) return null;
+
         ListNode reversed = reverseList(head);
-        ListNode mid = findMiddleNode(head);
+        ListNode mid = findMiddleNode(reversed);
 
         TreeNode treeNodeHead = new TreeNode(mid.val);
 
         ListNode currListNode = reversed;
         TreeNode currTreeNode = treeNodeHead;
         while (currListNode != mid) {
-            currTreeNode.left = new TreeNode(currListNode.val);
+            currTreeNode.right = new TreeNode(currListNode.val);
 
-            currTreeNode = treeNodeHead.left;
+            currTreeNode = treeNodeHead.right;
             currListNode = currListNode.next;
         }
 
         currListNode = currListNode.next;
         currTreeNode = treeNodeHead;
         while (currListNode != null) {
-            treeNodeHead.right = new TreeNode(currListNode.val);
+            currTreeNode.left = new TreeNode(currListNode.val);
 
-            treeNodeHead = treeNodeHead.right;
+            currTreeNode = treeNodeHead.left;
             currListNode = currListNode.next;
         }
-        return currTreeNode;
+        return treeNodeHead;
     }
 
     ListNode reverseList(ListNode head) {
         ListNode curr = head, prev = null;
         while (curr != null) {
             ListNode next = curr.next;
-            next.next = curr;
             curr.next = prev;
             prev = curr;
             curr = next;
         }
-        return curr;
+        return prev;
     }
 
     ListNode findMiddleNode(ListNode head) {
