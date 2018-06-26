@@ -16,4 +16,8 @@ public class LengthLinkedList {
         }
         return size;
     }
+    public int lengthLinkedListRecursive(ListNode head) {
+        if (head == null) return 0;
+        return lengthLinkedListRecursive(head.next) + 1;
+    }
 }

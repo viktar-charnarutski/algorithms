@@ -40,4 +40,19 @@ public class LengthLinkedListTest {
     public void lengthLinkedListIterative_length_of_5_iterative() {
         assertEquals(5, this.ins.lengthLinkedListIterative(this.head));
     }
+
+    @Test
+    public void lengthLinkedListIterative_length_of_0_recursive() {
+        assertEquals(0, this.ins.lengthLinkedListRecursive(null));
+    }
+
+    @Test
+    public void lengthLinkedListIterative_length_of_1_recursive() {
+        assertEquals(1, this.ins.lengthLinkedListRecursive(new ListNode(0)));
+    }
+
+    @Test
+    public void lengthLinkedListIterative_length_of_5_recursive() {
+        assertEquals(5, this.ins.lengthLinkedListRecursive(this.head));
+    }
 }
