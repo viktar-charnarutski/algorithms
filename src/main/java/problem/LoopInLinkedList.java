@@ -11,18 +11,10 @@ public class LoopInLinkedList {
 
         ListNode slow = head;
         ListNode fast = head;
-        while (true) {
-            fast = fast.next;
-            if (fast == null) break;
-            if (fast.equals(slow)) return true;
-
-            fast = fast.next;
-            if (fast == null) break;
-            if (fast.equals(slow)) return true;
-
+        while (slow != null && fast.next != null) {
+            fast = fast.next.next;
             slow = slow.next;
-            if (slow == null) break;
-            if (slow.equals(fast)) return true;
+            if (fast.equals(slow)) return true;
         }
         return false;
     }
