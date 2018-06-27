@@ -292,6 +292,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 236 | 25-Jun-2018 | [109. Convert Sorted List to Binary Search Tree][236] | Medium | Y |
 | 237 | 26-Jun-2018 | [Delete a Linked List][237] | Easy | |
 | 238 | 26-Jun-2018 | [Find Length of a Linked List (Iterative and Recursive)][238] | Easy | |
+| 239 | 26-Jun-2018 | [147. Insertion Sort List][239] | Medium | |
+| 240 | 26-Jun-2018 | [Find the middle of a given linked list][240] | Medium | Y |
+| 241 | 27-Jun-2018 | [Detect loop in a linked list][241] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -531,3 +534,5 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [236]: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
 [237]: https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/
 [238]: https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/
+[239]: https://leetcode.com/problems/insertion-sort-list/
+[240]: https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/
