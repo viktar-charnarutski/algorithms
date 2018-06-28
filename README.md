@@ -297,6 +297,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 241 | 27-Jun-2018 | [Detect loop in a linked list][241] | Easy | |
 | 242 | 27-Jun-2018 | [Swap Nodes][242] | Easy | |
 | 243 | 27-Jun-2018 | [Pairwise swap][243] | Easy | |
+| 244 | 27-Jun-2018 | [Move last element to front of a given Linked List][244] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -541,3 +542,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [241]: https://www.geeksforgeeks.org/write-a-c-function-to-detect-loop-in-a-linked-list/
 [242]: https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/
 [243]: https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/
+[244]: https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/
