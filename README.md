@@ -24,7 +24,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 # My Statistics
 
 ## Data Structures
-- [ ] Linked Lists
+- [x] Linked Lists
 - [ ] Trees
 - [ ] Tries
 - [ ] Graphs
