@@ -301,6 +301,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 245 | 27-Jun-2018 | [Intersection of two Sorted Linked Lists][245] | Easy | |
 | 246 | 28-Jun-2018 | [Intersection Point][246] | Medium | |
 | 247 | 28-Jun-2018 | [Two Stacks in an Array][247] | Easy | |
+| 248 | 29-Jun-2018 | [155. Min Stack][248] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -549,3 +550,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [245]: https://www.geeksforgeeks.org/intersection-of-two-sorted-linked-lists/
 [246]: https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
 [247]: https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/
+[248]: https://leetcode.com/problems/min-stack/
