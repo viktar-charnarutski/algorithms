@@ -12,8 +12,6 @@ public class StackOfPlatesTest {
         for (int i = 0; i < 100; i++) {
             stack.push(i);
         }
-        System.out.println(stack);
         assertEquals(99, stack.pop());
-
     }
 }

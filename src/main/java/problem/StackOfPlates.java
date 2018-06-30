@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -19,19 +21,19 @@ import java.util.Stack;
  */
 public class StackOfPlates {
 
-    private Stack<Stack<Integer>> stacks;
+    private List<Stack<Integer>> stacks;
     private Stack<Integer> currStack;
     private int threshold;
 
     public StackOfPlates(int threshold) {
         this.threshold = threshold;
-        stacks = new Stack<>();
+        stacks = new ArrayList<>();
         currStack = new Stack<>();
     }
 
     public int push(int n) {
         if (currStack.size() == threshold) {
-            stacks.push(currStack);
+            stacks.add(currStack);
             currStack = new Stack<>();
         }
         return currStack.push(n);
@@ -39,7 +41,8 @@ public class StackOfPlates {
 
     public int pop() {
         if (currStack.size() == 0) {
-            currStack = stacks.pop();
+            currStack = stacks.get(stacks.size() - 1);
+            stacks.remove(stacks.size() - 1);
         }
         return currStack.pop();
     }
