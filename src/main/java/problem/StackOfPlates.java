@@ -2,20 +2,21 @@ package problem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Stack;
 
 /**
  * Stack of Plates
  * <p>
  * Imagine a (literal) stack of plates.
- *
+ * <p>
  * If the stack gets too high, it might topple.
  * Therefore, in real life, we would likely start a new stack when the previous stack exceeds some
  * threshold.
- *
+ * <p>
  * Implement a data structure SetOfStacks that mimics this. SetOfStacks should be
  * composed of several stacks and should create a new stack once the previous one exceeds capacity.
- *
+ * <p>
  * SetOfStacks.push() and SetOfStacks.pop() should behave identically to a single stack
  * (that is, pop () should return the same values as it would if there were just a single stack).
  */
@@ -45,6 +46,14 @@ public class StackOfPlates {
             stacks.remove(stacks.size() - 1);
         }
         return currStack.pop();
+    }
+
+    public int popAt(int index) {
+        if (stacks.size() < index) {
+            throw new NoSuchElementException();
+        }
+        Stack<Integer> stack = stacks.get(index - 1);
+        return stack.pop();
     }
 }
 

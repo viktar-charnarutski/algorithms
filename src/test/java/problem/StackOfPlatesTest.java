@@ -14,4 +14,13 @@ public class StackOfPlatesTest {
         }
         assertEquals(99, stack.pop());
     }
+
+    @Test
+    public void popAt() {
+        StackOfPlates stack = new StackOfPlates(5);
+        for (int i = 0; i < 15; i++) {
+            stack.push(i);
+        }
+        assertEquals(9, stack.popAt(2));
+    }
 }
