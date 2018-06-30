@@ -21,14 +21,35 @@ Solutions for algorithm questions which could be asked on a technical interview.
 ### Reading
  - [ ] [Dynamic Programming - *In Russian*](http://awpris.blogspot.com/2012/02/blog-post.html)
 
+## Notices
+### Interview
+ - Listen carefully
+ - Ask clarifying questions
+ - Write down all the details
+ - All the details metter
+ - Draw an example (long enough and meaningful)
+ - Think in loud
+ - **Do not try to recall a solution you've seen before for a similar problem**, let your brain to come up with a logical one
+ - Start with a simple possible solution, like a *brute-fource* one
+ - Come up with a pseudo code and then ask if you could star with real codding
+ - Split the solution's functionality into separate fuctions
+
+### Linked List
+ - Check for _null_
+ - If your head node might be changed - use a *fake* head node
+ - If it's required to change an order - keep tracking a *previous* node
+ - Use *two pointers* if you need to find a cycle or count from the end (*middle*)
+ - To reverse a list you just need to re-map links to next nodes
+ - To arrange the list's nodes use two (*or mode* brand new lists), so then you can combine it for a list-result
+
 # My Statistics
 
 ## Data Structures
-- [x] Linked Lists
+- [x] [Linked Lists][1000]
 - [ ] Trees
 - [ ] Tries
 - [ ] Graphs
-- [ ] Stacks
+- [ ] *Stacks* - in progress
 - [ ] Queues
 - [ ] Heaps
 - [ ] Vectors / Arraylists
@@ -553,3 +574,5 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [247]: https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/
 [248]: https://leetcode.com/problems/min-stack/
 [249]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2003.%20Stacks%20and%20Queues/Q3_03_Stack_of_Plates
+
+[1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
