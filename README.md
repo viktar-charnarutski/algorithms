@@ -302,6 +302,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 246 | 28-Jun-2018 | [Intersection Point][246] | Medium | |
 | 247 | 28-Jun-2018 | [Two Stacks in an Array][247] | Easy | |
 | 248 | 29-Jun-2018 | [155. Min Stack][248] | Easy | Y |
+| 249 | 29-Jun-2018 | [Stack of Plates][249] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -551,3 +552,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [246]: https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
 [247]: https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/
 [248]: https://leetcode.com/problems/min-stack/
+[249]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2003.%20Stacks%20and%20Queues/Q3_03_Stack_of_Plates
