@@ -18,15 +18,17 @@ public class SortStack {
     }
 
     public void sort() {
-        Stack<Integer> tmpStack = new Stack<>();
+        Stack<Integer> orderedStack = new Stack<>();
         while (!stack.isEmpty()) {
-            Integer tmp = stack.pop();
-            while (!tmpStack.isEmpty() && tmpStack.peek() < tmp) {
-                stack.push(tmpStack.pop());
+            int value = stack.pop();
+            // if ordered stack has last element greater than the current value
+            // push it back to the original stack
+            while (!orderedStack.isEmpty() && orderedStack.peek() < value) {
+                stack.push(orderedStack.pop());
             }
-            tmpStack.push(tmp);
+            orderedStack.push(value);
         }
-        stack = tmpStack;
+        stack = orderedStack;
     }
 
     public void push(int value) {
