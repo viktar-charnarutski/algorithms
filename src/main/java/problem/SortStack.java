@@ -23,7 +23,7 @@ public class SortStack {
             int value = stack.pop();
             // if ordered stack has last element greater than the current value
             // push it back to the original stack
-            while (!orderedStack.isEmpty() && orderedStack.peek() < value) {
+            while (!orderedStack.isEmpty() && orderedStack.peek() > value) {
                 stack.push(orderedStack.pop());
             }
             orderedStack.push(value);
