@@ -18,11 +18,11 @@ public class SortStackTest {
 
         stack.sort();
 
-        assertEquals(3, stack.pop());
-        assertEquals(23, stack.pop());
-        assertEquals(31, stack.pop());
-        assertEquals(34, stack.pop());
-        assertEquals(92, stack.pop());
         assertEquals(98, stack.pop());
+        assertEquals(92, stack.pop());
+        assertEquals(34, stack.pop());
+        assertEquals(31, stack.pop());
+        assertEquals(23, stack.pop());
+        assertEquals(3, stack.pop());
     }
 }
