@@ -6,8 +6,6 @@ import java.util.Stack;
  * Queue via Stacks
  * <p>
  * Implement a QueueViaStacks class which implements a queue using two stacks.
- * 1 2 3 4 5
- *
  */
 public class QueueViaStacks<T> {
 
