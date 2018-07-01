@@ -31,16 +31,22 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - Think in loud
  - **Do not try to recall a solution you've seen before for a similar problem**, let your brain to come up with a logical one
  - Start with a simple possible solution, like a *brute-fource* one
- - Come up with a pseudo code and then ask if you could star with real codding
+ - Explain time and memory complexicty and ask yourself: **can we do metter?**
+ - Come up with a pseudo code and then ask if you could start with real codding
  - Split the solution's functionality into separate fuctions
+ - Test your code with an example **different from the one you already have**
 
 ### Linked List
  - Check for _null_
  - If your head node might be changed - use a *fake* head node
  - If it's required to change an order - keep tracking a *previous* node
- - Use *two pointers* if you need to find a cycle or count from the end (*middle*)
- - To reverse a list you just need to re-map links to next nodes
- - To arrange the list's nodes use two (*or mode* brand new lists), so then you can combine it for a list-result
+ - Use *two pointers* if you need to find a cycle or count from the end (like a *middle* one)
+ - To reverse a list you just need to *re-map* links to next node
+ - To *arrange* the list's nodes in a *particular order* use two (*or mode* brand new lists), so then you can combine it for a single result
+
+### Stack
+ - **FILO** First In, Last Out (*like a stack of plates*)
+ - For FIFO implementation (queue) you can use two stacks: _newNodes_ and _oldNodes_
 
 # My Statistics
 
