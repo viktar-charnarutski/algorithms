@@ -48,11 +48,11 @@ public class AnimalShelter {
     }
 
     public Optional<Animal> dequeueCat() {
-        return cats.size() > 0 ? Optional.of(cats.pollFirst()) : Optional.empty();
+        return cats.size() > 0 ? Optional.of(cats.pollLast()) : Optional.empty();
     }
 
     public Optional<Animal> dequeueDog() {
-        return dogs.size() > 0 ? Optional.of(dogs.pollFirst()) : Optional.empty();
+        return dogs.size() > 0 ? Optional.of(dogs.pollLast()) : Optional.empty();
     }
 
     interface Animal {

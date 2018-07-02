@@ -29,18 +29,18 @@ public class AnimalShelterTest {
     @Test
     public void dequeueAny() {
         AnimalShelter.Animal animal = shelter.dequeueAny().get();
-        assertEquals("dog3", animal.name());
+        assertEquals("dog1", animal.name());
     }
 
     @Test
     public void dequeueCat() {
         AnimalShelter.Animal animal = shelter.dequeueCat().get();
-        assertEquals("cat3", animal.name());
+        assertEquals("cat1", animal.name());
     }
 
     @Test
     public void dequeueDog() {
         AnimalShelter.Animal animal = shelter.dequeueDog().get();
-        assertEquals("dog3", animal.name());
+        assertEquals("dog1", animal.name());
     }
 }
