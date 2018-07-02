@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.LinkedList;
+import java.util.Optional;
+
 /**
  * Animal Shelter
  * <p>
@@ -21,31 +24,65 @@ package problem;
  * You may use the built-in Linked list data structure.
  */
 public class AnimalShelter {
-    interface Animal {
 
-    }
+    private LinkedList<Cat> cats;
+    private LinkedList<Dog> dogs;
 
-    public class Cat implements Animal {
-
-    }
-
-    public class Dog implements Animal {
-
+    public AnimalShelter() {
+        cats = new LinkedList<>();
+        dogs = new LinkedList<>();
     }
 
     public void enqueue(Animal animal) {
-
+        if (animal instanceof Cat) {
+            cats.push((Cat) animal);
+        } else if (animal instanceof Dog) {
+            dogs.push((Dog) animal);
+        } else {
+            throw new IllegalArgumentException("Unknown animal " + animal);
+        }
     }
 
-    public Animal dequeueAny() {
-        return null;
+    public Optional<Animal> dequeueAny() {
+        return cats.size() > dogs.size() ? dequeueCat() : dequeueDog();
     }
 
-    public Cat dequeueCat() {
-        return null;
+    public Optional<Animal> dequeueCat() {
+        return cats.size() > 0 ? Optional.of(cats.pollFirst()) : Optional.empty();
     }
 
-    public Dog dequeueDog() {
-        return null;
+    public Optional<Animal> dequeueDog() {
+        return dogs.size() > 0 ? Optional.of(dogs.pollFirst()) : Optional.empty();
+    }
+
+    interface Animal {
+        String name();
+    }
+
+    public static class Cat implements Animal {
+
+        private String name;
+
+        public Cat(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String name() {
+            return name;
+        }
+    }
+
+    public static class Dog implements Animal {
+        private String name;
+
+        public Dog(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String name() {
+            return name;
+        }
     }
 }
