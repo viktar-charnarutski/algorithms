@@ -22,6 +22,10 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - [ ] [Dynamic Programming - *In Russian*](http://awpris.blogspot.com/2012/02/blog-post.html)
 
 ## Notices
+
+### Big O
+ - Don't use *N* for time / memory complexity estimation, use different letters like: _L_ - letters; _W_ - words, etc.
+
 ### Interview
  - Listen carefully
  - Ask clarifying questions
@@ -75,7 +79,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 - [x] Recursion
 - [ ] Merge Sort
 - [ ] Dynamic Programming
-- [x] Big O Time and Space
+- [x] [Big O Time and Space][1001]
 
 ## Problems
 
@@ -586,3 +590,4 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [251]: https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
+[1001]: http://bigocheatsheet.com/
