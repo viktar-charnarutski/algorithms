@@ -28,7 +28,9 @@ public class SortStack {
             }
             orderedStack.push(value);
         }
-        stack = orderedStack;
+        while (!orderedStack.isEmpty()) {
+            stack.push(orderedStack.pop());
+        }
     }
 
     public void push(int value) {
