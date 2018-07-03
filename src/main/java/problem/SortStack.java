@@ -17,6 +17,45 @@ public class SortStack {
         stack = new Stack<>();
     }
 
+    public void mergeSort() {
+        stack = mergeSort(stack);
+    }
+
+    public Stack<Integer> mergeSort(Stack<Integer> stack) {
+        if (stack.size() <= 1) return stack;
+
+        Stack<Integer> left = new Stack<>();
+        Stack<Integer> right = new Stack<>();
+
+        while (!stack.isEmpty()) {
+            if (stack.size() % 2 == 0) {
+                left.push(stack.pop());
+            } else {
+                right.push(stack.pop());
+            }
+        }
+
+        left = mergeSort(left);
+        right = mergeSort(right);
+
+        while (left.size() > 0 || right.size() > 0) {
+            if (left.size() == 0) {
+                stack.push(right.pop());
+            } else if (right.size() == 0) {
+                stack.push(left.pop());
+            } else {
+                stack.push(left.peek().compareTo(right.peek()) >= 0 ? left.pop() : right.pop());
+            }
+        }
+
+
+        Stack<Integer> reversedStack = new Stack<>();
+        while (!stack.isEmpty()) {
+            reversedStack.push(stack.pop());
+        }
+        return reversedStack;
+    }
+
     public void sort() {
         Stack<Integer> orderedStack = new Stack<>();
         while (!stack.isEmpty()) {
