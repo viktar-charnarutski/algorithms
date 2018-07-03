@@ -57,9 +57,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
 ## Data Structures
 - [x] [Linked Lists][1000]
 - [ ] Trees
-- [ ] Tries
-- [ ] Graphs
-- [ ] *Stacks* - in progress
+- [ ] *Tries* - in progress
+- [ ] *Graphs* - in progress
+- [x] Stacks
 - [ ] Queues
 - [ ] Heaps
 - [ ] Vectors / Arraylists
