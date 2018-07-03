@@ -336,6 +336,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 249 | 29-Jun-2018 | [Stack of Plates][249] | Easy | |
 | 250 | 1-Jul-2018 | [Queue Via Stacks][250] | Easy | |
 | 251 | 1-Jul-2018 | [Sort Stack][251] | Easy | |
+| 252 | 2-Jul-2018 | [Animal Shelter][252] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -588,6 +589,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [249]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2003.%20Stacks%20and%20Queues/Q3_03_Stack_of_Plates
 [250]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2003.%20Stacks%20and%20Queues/Q3_04_Queue_via_Stacks/MyQueue.java
 [251]: https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/
+[252]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2003.%20Stacks%20and%20Queues/Q3_06_Animal_Shelter/AnimalQueue.java
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
