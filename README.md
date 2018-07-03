@@ -50,7 +50,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 
 ### Stack
  - **FILO** First In, Last Out (*like a stack of plates*)
- - For FIFO implementation (queue) you can use two stacks: _newNodes_ and _oldNodes_
+ - For *FIFO* functionality (*queue*) you can just revert the stack with help of an additional stack: ```stack2.push(stack1.pop());```
 
 # My Statistics
 
