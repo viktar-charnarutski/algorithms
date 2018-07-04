@@ -41,16 +41,110 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - Test your code with an example **different from the one you already have**
 
 ### Linked List
- - Check for _null_
+ - Always check for ```null```
  - If your head node might be changed - use a *fake* head node
- - If it's required to change an order - keep tracking a *previous* node
- - Use *two pointers* if you need to find a cycle or count from the end (like a *middle* one)
- - To reverse a list you just need to *re-map* links to next node
+ - If it's required to change an order - keep tracking a *previous* node. For head node it could be ```null``` or your *fake node*
  - To *arrange* the list's nodes in a *particular order* use two (*or mode* brand new lists), so then you can combine it for a single result
+ - Use *two pointers* if you need to find a cycle or count from the end (like a *middle* one)
+ - To reverse a list you just need to *re-map* links to the *next* node pointing it to the *previous* one
 
 ### Stack
  - **FILO** First In, Last Out (*like a stack of plates*)
- - For *FIFO* functionality (*queue*) you can just revert the stack with help of an additional stack: ```stack2.push(stack1.pop());```
+ - For *FIFO* functionality (*queue*) you can just revert the stack with help of an additional one: ```stack2.push(stack1.pop());```
+ - For tracking a min or max value of the stack you can store your min/max value right before you got a new min/max.
+
+### Trees
+ - Trees (*not binary thees*) could be used for storing, for example, a bunch of phone numbers with each node having up to 10 children - one for each digit
+ - A node is called a *leaf node* if it has no children
+ - A *Binary Search Tree* is a binary tree in which every node fits a specific ordering property: *all left descendents <= n < all right descendents*
+ - Clarify with your interviewer if your *BST* could have duplicates. If so, clarify on what side should they go
+ - Do not assume that your tree is *BST*, it should be clarified
+ - If the binary tree is balanced, you could expect ```O(log n)``` times for *insert* and *find* operations
+ - A **complete binary tree** is a binary tree in which every level of the tree is *fully filled*, except for perhaps the last level
+ - A **full binary tree** is a binary tree in which every node has either *zero or two* children
+ - A **perfect binary tree** is one that is both *full* and *complete* with ```2^k - 1``` nodes (where ```k``` is the number of levels)
+
+### Trees' Search
+ - **In-Order tarversal** means to *visit* left node, then head, then - right one:
+ ```
+ public void inOrderTraversal(TreeNode node) {
+    if (node == null) return;
+    inorderTraversal(node.left);
+    visit(node);
+    inorderTraversal(node.right);
+ }
+ ```
+  If we have *BST*, its elements will be visited in *ascending* order
+
+ - **Pre-Order Traversal** means to *visit* a head first and then its children:
+ ```
+ public void preOrderTraversal(TreeNode node) {
+    if (node == null) return;
+    visit(node);
+    preOrderTraversal(node.left);
+    preOrderTraversal(node.right);
+ }
+ ```
+ - **Post-Order Traversal** means to *visit* head's children first, and then the head itself:
+ ```
+ public void postOrderTraversal(TreeNode node) {
+    if (node == null) return;
+    postOrderTraverse(node.left);
+    postOrderTraverse(node.right);
+    visit(node);
+ }
+ ```
+
+### Tries
+ - A trie is a variant of an *n-ary tree* in which characters are stored at each node. Each path down the tree may represent a word
+ - A trie can check if a string is a valid prefix in ```O(K)``` time, where ```K``` is the length of the string
+
+### Graph Search
+ - In **Depth-First Search** (DFS) we start at the root and explore each branch completely before moving on to the next branch. Recursive implementation:
+ ```
+ public boolen dfs(Node node, int valueToFind) {
+    if (node == null || node.visited()) return false;
+
+    node.markAsVisited();  // to avoid inifinite loop if the graph is cycled
+
+    boolean isFound = false;
+    if (node.value() == valueToFind) {
+        isFound = true;
+    } else {
+        for (TreeNode child : node.children()) {
+            isFound = dfs(child, checkForValue);
+        }
+    }
+    return isFound;
+ }
+ ```
+ If we want to find the shortest path between two nodes, *BFS* is generally better
+ - In **Breadth-First Search** (BFS) we exploring all the heighbors before moving to its children. Iterative implementation based on ```Queue```:
+ ```
+ public boolean bfs(Node node, int valueToFind) {
+    if (node == null) return false;
+
+    Queue<Node> nodesToCheck = new LinkedList<>();
+    nodesToCheck.push(node);
+
+    boolean isFound = false;
+    while (!nodesToCheck.isEmpty() || isFound) {
+        Node currentNode = nodesToCheck.poll();
+
+        currentNode.markAsVisited(); // to avoid inifinite loop if the graph is cycled
+
+        if (currentNode.value() == valueToFind) {
+            isFound = true;
+        } else {
+            for (Node child : currentNode.children()) {
+                nodesToCheck.push(child);
+            }
+        }
+    }
+    return isFound;
+ }
+ ```
+*DFS* is often preferred if we want to visit *every node* in the graph
 
 # My Statistics
 
