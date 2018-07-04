@@ -22,14 +22,14 @@ public class LemonadeChange {
         for (int bill : bills) {
             switch (bill) {
                 case 5: {
-                    change.put(5, change.getOrDefault(5, 0) + 1);
+                    keepChangeFor(5, change.getOrDefault(5, 0) + 1, change);
                     break;
                 }
                 case 10: {
                     int bill5Amount = change.getOrDefault(5, 0);
                     if (bill5Amount > 0) {
-                        change.put(5, --bill5Amount);
-                        change.put(10, change.getOrDefault(10, 0) + 1);
+                        keepChangeFor(5, --bill5Amount, change);
+                        keepChangeFor(10, change.getOrDefault(10, 0) + 1, change);
                     } else {
                         return false;
                     }
@@ -42,14 +42,14 @@ public class LemonadeChange {
                     if (bill10Amount > 0) {
                         // checking 3x5
                         if (bill5Amount > 0) {
-                            change.put(5, --bill5Amount);
-                            change.put(10, --bill10Amount);
+                            keepChangeFor(5, --bill5Amount, change);
+                            keepChangeFor(10, --bill10Amount, change);
                         } else {
                             return false;
                         }
                     } else {
                         if (bill5Amount >= 3) {
-                            change.put(5, bill5Amount - 3);
+                            keepChangeFor(5, bill5Amount - 3, change);
                         } else {
                             return false;
                         }
@@ -58,5 +58,9 @@ public class LemonadeChange {
             }
         }
         return true;
+    }
+
+    private void keepChangeFor(int bill, int amount, HashMap<Integer, Integer> change) {
+        change.put(bill, amount);
     }
 }
