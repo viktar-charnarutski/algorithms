@@ -432,6 +432,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 251 | 1-Jul-2018 | [Sort Stack][251] | Easy | |
 | 252 | 2-Jul-2018 | [Animal Shelter][252] | Easy | |
 | 253 | 3-Jul-2018 | [Route Between Nodes][253] | Easy | |
+| 254 | 3-Jul-2018 | [Minimal Tree][254] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -686,6 +687,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [251]: https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/
 [252]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2003.%20Stacks%20and%20Queues/Q3_06_Animal_Shelter/AnimalQueue.java
 [253]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_01_Route_Between_Nodes
+[254]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/CtCILibrary/CtCILibrary/TreeNode.java
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
