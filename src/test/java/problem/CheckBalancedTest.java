@@ -26,7 +26,7 @@ public class CheckBalancedTest {
         n6.left = n5;
         n6.right = n7;
 
-        assertTrue(new CheckBalanced().isBalanced(n1));
+        assertTrue(new CheckBalanced().isBalanced(n4));
     }
 
     @Test
@@ -39,6 +39,7 @@ public class CheckBalancedTest {
         TreeNode n6 = new TreeNode(6);
         TreeNode n7 = new TreeNode(7);
         TreeNode n8 = new TreeNode(8);
+        TreeNode n9 = new TreeNode(9);
 
         n4.left = n2;
         n4.right = n6;
@@ -49,8 +50,10 @@ public class CheckBalancedTest {
         n6.left = n5;
         n6.right = n7;
 
-        n7.left = n8;
+        n7.right = n8;
 
-        assertFalse(new CheckBalanced().isBalanced(n1));
+        n8.right = n9;
+
+        assertFalse(new CheckBalanced().isBalanced(n4));
     }
 }
