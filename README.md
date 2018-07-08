@@ -435,6 +435,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 254 | 3-Jul-2018 | [Minimal Tree][254] | Easy | |
 | 255 | 3-Jul-2018 | [860. Lemonade Change][255] | Easy | |
 | 256 | 6-Jul-2018 | [List of Depths][256] | Easy | |
+| 257 | 8-Jul-2018 | [Check Balanced][257] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -692,6 +693,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [254]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/CtCILibrary/CtCILibrary/TreeNode.java
 [255]: https://leetcode.com/problems/lemonade-change/
 [256]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs
+[257]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
