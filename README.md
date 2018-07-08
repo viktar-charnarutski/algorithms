@@ -693,7 +693,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [254]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/CtCILibrary/CtCILibrary/TreeNode.java
 [255]: https://leetcode.com/problems/lemonade-change/
 [256]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs
-[257]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs
+[257]: http://www.growingwiththeweb.com/2015/11/check-if-a-binary-tree-is-balanced.html
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
