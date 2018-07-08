@@ -44,7 +44,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - Always check for ```null```
  - If your head node might be changed - use a *fake* head node
  - If it's required to change an order - keep tracking a *previous* node. For head node it could be ```null``` or your *fake node*
- - To *arrange* the list's nodes in a *particular order* use two (*or mode* brand new lists), so then you can combine it for a single result
+ - To *arrange* the list's nodes in a *particular order* use two (*or more*) brand new lists, so then you can combine it for a single list
  - Use *two pointers* if you need to find a cycle or count from the end (like a *middle* one)
  - To reverse a list you just need to *re-map* links to the *next* node pointing it to the *previous* one
 
@@ -69,9 +69,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
  ```
  public void inOrderTraversal(TreeNode node) {
     if (node == null) return;
-    inorderTraversal(node.left);
+    inOrderTraversal(node.left);
     visit(node);
-    inorderTraversal(node.right);
+    inOrderTraversal(node.right);
  }
  ```
   If we have *BST*, its elements will be visited in *ascending* order
@@ -436,6 +436,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 255 | 3-Jul-2018 | [860. Lemonade Change][255] | Easy | |
 | 256 | 6-Jul-2018 | [List of Depths][256] | Easy | |
 | 257 | 8-Jul-2018 | [Check Balanced][257] | Easy | |
+| 258 | 8-Jul-2018 | [Validate BST][258] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -694,6 +695,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [255]: https://leetcode.com/problems/lemonade-change/
 [256]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs
 [257]: http://www.growingwiththeweb.com/2015/11/check-if-a-binary-tree-is-balanced.html
+[258]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_05_Validate_BST/Question.java
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
