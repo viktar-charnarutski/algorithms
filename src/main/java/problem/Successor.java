@@ -8,7 +8,23 @@ package problem;
  */
 public class Successor {
 
-    public TreeNode successor(TreeNode node) {
-        return null;
+    public TreeNode successor(TreeNode root, TreeNode node) {
+        if (root == null) return null;
+
+        TreeNode prev = null;
+        TreeNode curr = root;
+        while (curr != null) {
+            if (curr.val > node.val) {
+                prev = curr;
+                curr = curr.left;
+            } else if (curr.val < node.val) {
+                prev = curr;
+                curr = curr.right;
+            } else {
+                break;
+            }
+        }
+
+        return prev;
     }
 }
