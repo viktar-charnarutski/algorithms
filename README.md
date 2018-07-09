@@ -437,6 +437,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 256 | 6-Jul-2018 | [List of Depths][256] | Easy | |
 | 257 | 8-Jul-2018 | [Check Balanced][257] | Easy | |
 | 258 | 8-Jul-2018 | [Validate BST][258] | Easy | |
+| 259 | 8-Jul-2018 | [Successor][259] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -696,6 +697,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [256]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs
 [257]: http://www.growingwiththeweb.com/2015/11/check-if-a-binary-tree-is-balanced.html
 [258]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_05_Validate_BST/Question.java
+[259]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_06_Successor/Question.java
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
