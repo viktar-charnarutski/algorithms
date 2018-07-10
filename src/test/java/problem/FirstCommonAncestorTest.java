@@ -30,6 +30,6 @@ public class FirstCommonAncestorTest {
         n15.right = n11;
         n9.left = n12;
 
-        assertEquals(n10, new FirstCommonAncestor().firstCommonAncestor(n11, n12));
+        assertEquals(n10, new FirstCommonAncestor().firstCommonAncestor(n4, n11, n12));
     }
 }
