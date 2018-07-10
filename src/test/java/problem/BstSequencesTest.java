@@ -30,6 +30,6 @@ public class BstSequencesTest {
         list1.add(1);
         expected.add(list2);
 
-        assertEquals(expected, new BstSequences().bstSequences(n1));
+        assertEquals(expected, new BstSequences().bstSequences(n2));
     }
 }
