@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class BstSequences {
 
-    public List<List<Integer>> bstSequences() {
+    public List<List<Integer>> bstSequences(TreeNode root) {
         return Collections.emptyList();
     }
 }
