@@ -25,9 +25,9 @@ public class BstSequencesTest {
         list1.add(3);
         expected.add(list1);
         List<Integer> list2 = new ArrayList<>();
-        list1.add(2);
-        list1.add(3);
-        list1.add(1);
+        list2.add(2);
+        list2.add(3);
+        list2.add(1);
         expected.add(list2);
 
         assertEquals(expected, new BstSequences().bstSequences(n2));
