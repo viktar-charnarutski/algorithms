@@ -9,7 +9,7 @@ package problem;
  */
 public class FirstCommonAncestor {
 
-    public TreeNode firstCommonAncestor(TreeNode node1, TreeNode node2) {
+    public TreeNode firstCommonAncestor(TreeNode root, TreeNode node1, TreeNode node2) {
         return null;
     }
 }
