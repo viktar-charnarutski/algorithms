@@ -439,7 +439,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 258 | 8-Jul-2018 | [Validate BST][258] | Easy | |
 | 259 | 8-Jul-2018 | [Successor][259] | Easy | |
 | 260 | 9-Jul-2018 | [Build Order][260] | Medium | |
-| 261 | 9-Jul-2018 | [First Common Ancestor][261] | Medium | |
+| 261 | 9-Jul-2018 | [First Common Ancestor][261] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
