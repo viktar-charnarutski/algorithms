@@ -442,6 +442,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 261 | 9-Jul-2018 | [First Common Ancestor][261] | Medium | Y |
 | 262 | 10-Jul-2018 | [BST Sequences][262] | Medium | |
 | 263 | 10-Jul-2018 | [144. Binary Tree Preorder Traversal][263] | Medium | |
+| 264 | 10-Jul-2018 | [Minimum Difference of Two Arrays][264] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -706,6 +707,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [261]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_08_First_Common_Ancestor
 [262]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_09_BST_Sequences/Question.java
 [263]: https://leetcode.com/problems/binary-tree-preorder-traversal/
+[264]: https://www.geeksforgeeks.org/smallest-difference-pair-values-two-unsorted-arrays/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
