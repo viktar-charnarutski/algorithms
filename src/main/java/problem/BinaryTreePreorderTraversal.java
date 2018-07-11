@@ -2,6 +2,7 @@ package problem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 144. Binary Tree Preorder Traversal
@@ -10,6 +11,27 @@ import java.util.List;
  */
 public class BinaryTreePreorderTraversal {
     public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> rightNodes = new Stack<>();
+
+        TreeNode curr = root;
+
+        while (curr != null || !rightNodes.isEmpty()) {
+            if (curr == null) {
+                curr = rightNodes.pop();
+            }
+            result.add(curr.val);
+
+            if (curr.right != null) {
+                rightNodes.push(curr.right);
+            }
+            curr = curr.left;
+        }
+
+        return result;
+    }
+
+    public List<Integer> preorderTraversal1(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         preorderTraversal(root, result);
         return result;
