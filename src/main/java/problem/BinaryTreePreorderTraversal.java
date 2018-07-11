@@ -1,6 +1,6 @@
 package problem;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,6 +10,16 @@ import java.util.List;
  */
 public class BinaryTreePreorderTraversal {
     public List<Integer> preorderTraversal(TreeNode root) {
-        return Collections.emptyList();
+        List<Integer> result = new ArrayList<>();
+        preorderTraversal(root, result);
+        return result;
+    }
+
+    private void preorderTraversal(TreeNode root, List<Integer> result) {
+        if (root == null) return;
+        result.add(root.val);
+        preorderTraversal(root.left, result);
+        preorderTraversal(root.right, result);
+
     }
 }
