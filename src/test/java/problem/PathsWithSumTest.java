@@ -30,6 +30,6 @@ public class PathsWithSumTest {
         n4.left = n8;
         n4.right = n9;
 
-        assertEquals(3, new PathsWithSum().countPathsWithSum(n1, 5));
+        assertEquals(2, new PathsWithSum().countPathsWithSum(n1, 5));
     }
 }
