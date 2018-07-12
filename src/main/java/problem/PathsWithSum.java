@@ -9,7 +9,23 @@ package problem;
  * (traveling only from parent nodes to child nodes).
  */
 public class PathsWithSum {
-    public int countPathsWithSum(TreeNode target) {
-        return 0;
+
+    private int count = 0;
+
+    public int countPathsWithSum(TreeNode root, int target) {
+        dfs(root, target, 0);
+        return count;
+    }
+
+    private void dfs(TreeNode root, int target, int current) {
+        if (root == null) return;
+        int sum = current + root.val;
+        if (sum == target) {
+            count++;
+        }
+        dfs(root.left, target, current);
+        dfs(root.right, target, current);
+        dfs(root.left, target, sum);
+        dfs(root.right, target, sum);
     }
 }
