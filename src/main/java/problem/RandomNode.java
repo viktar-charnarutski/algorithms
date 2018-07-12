@@ -64,6 +64,36 @@ public class RandomNode<T> {
         return nodesList.get(randomIndex);
     }
 
+    public boolean delete(RandomNode<T> node) {
+        if (node == null) return true;
+
+        if (this.equals(node)) {
+            throw new IllegalArgumentException("Head node could not be deleted.");
+        }
+
+        Queue<RandomNode<T>> nodes = new LinkedList<>();
+        nodes.offer(this);
+        while (!nodes.isEmpty()) {
+            RandomNode<T> curr = nodes.poll();
+            if (curr == null) continue;
+
+            if (curr.left().equals(node)) {
+                curr.setLeft(null);
+                break;
+            } else {
+                nodes.offer(curr.left());
+            }
+
+            if (curr.right().equals(node)) {
+                curr.setRight(null);
+                break;
+            } else {
+                nodes.offer(curr.right());
+            }
+        }
+        return false;
+    }
+
     ArrayList<RandomNode<T>> getAllNodesAsList() {
         ArrayList<RandomNode<T>> nodesList = new ArrayList<>();
 
