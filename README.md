@@ -446,6 +446,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 265 | 11-Jul-2018 | [Check Subtree][265] | Easy | |
 | 266 | 11-Jul-2018 | [Random Node][266] | Medium | |
 | 267 | 12-Jul-2018 | [Paths with Sum][267] | Medium | |
+| 268 | 12-Jul-2018 | [Determine If Two Rectangles Overlap][268] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -713,7 +714,8 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [264]: https://www.geeksforgeeks.org/smallest-difference-pair-values-two-unsorted-arrays/
 [265]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_10_Check_Subtree
 [266]: https://github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_11_Random_Node
-[266]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_12_Paths_with_Sum/QuestionB.java
+[267]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_12_Paths_with_Sum/QuestionB.java
+[268]: https://articles.leetcode.com/determine-if-two-rectangles-overlap/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
