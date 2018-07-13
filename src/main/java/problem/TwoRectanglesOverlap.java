@@ -37,7 +37,10 @@ public class TwoRectanglesOverlap {
         }
 
         public boolean isOverlaps(Rectangle rectangle) {
-            return false;
+            return !(this.botRight().getY() > rectangle.topLeft().getY()
+                    || this.topLeft().getY() < rectangle.botRight().getY()
+                    || this.botRight().getX() < rectangle.topLeft().getX()
+                    || this.topLeft().getX() > rectangle.botRight().getX());
         }
     }
 
