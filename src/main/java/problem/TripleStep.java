@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Arrays;
+
 /**
  * Triple Step
  * <p>
@@ -10,12 +12,19 @@ package problem;
 public class TripleStep {
 
     public int tripleStep(int n) {
-        return count(n);
+        int[] memo = new int[n + 1];
+        Arrays.fill(memo, -1);
+        return count(n, memo);
     }
 
-    private int count(int n) {
+    private int count(int n, int[] memo) {
         if (n < 0) return 0;
         if (n == 0) return 1;
-        return count(n - 1) + count(n - 2) + count(n - 3);
+        if (memo[n] != -1) {
+            System.out.println(memo[n]);
+            return memo[n];
+        }
+        memo[n] = count(n - 1, memo) + count(n - 2, memo) + count(n - 3, memo);
+        return memo[n];
     }
 }
