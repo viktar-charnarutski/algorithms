@@ -12,6 +12,16 @@ package problem;
  */
 public class RobotInGrid {
     public boolean hasPath(int[][] grid) {
-        return false;
+        return check(grid, 0, 1) || check(grid, 1, 0);
+    }
+
+    private boolean check(int[][] grid, int row, int col) {
+        if (col == grid[0].length || row == grid.length || grid[row][col] == 1) {
+            return false;
+        }
+        if (col == grid[0].length - 1 && row == grid.length - 1 && grid[row][col] == 0) {
+            return true;
+        }
+        return check(grid, row + 1, col) || check(grid, row, col + 1);
     }
 }
