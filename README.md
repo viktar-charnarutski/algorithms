@@ -448,6 +448,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 267 | 12-Jul-2018 | [Paths with Sum][267] | Medium | |
 | 268 | 12-Jul-2018 | [Determine If Two Rectangles Overlap][268] | Medium | |
 | 269 | 13-Jul-2018 | [Triple Step][269] | Easy | |
+| 270 | 14-Jul-2018 | [Robot in a Grid][270] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -718,6 +719,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [267]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2004.%20Trees%20and%20Graphs/Q4_12_Paths_with_Sum/QuestionB.java
 [268]: https://articles.leetcode.com/determine-if-two-rectangles-overlap/
 [269]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2008.%20Recursion%20and%20Dynamic%20Programming/Q8_01_Triple_Step/QuestionA.java
+[270]: https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2008.%20Recursion%20and%20Dynamic%20Programming/Q8_02_Robot_in_a_Grid/QuestionA.java
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/

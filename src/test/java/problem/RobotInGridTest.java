@@ -15,7 +15,6 @@ public class RobotInGridTest {
         grid[2][1] = 1;
         grid[2][3] = 1;
         grid[3][1] = 1;
-
         assertTrue(new RobotInGrid().hasPath(grid));
     }
 
