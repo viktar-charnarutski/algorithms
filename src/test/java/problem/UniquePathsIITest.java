@@ -26,6 +26,13 @@ public class UniquePathsIITest {
 
     @Test
     public void hasPath3() {
+        int[][] grid = new int[1][1];
+        grid[0][0] = 0;
+        assertEquals(1, new UniquePathsII().uniquePathsWithObstacles(grid));
+    }
+
+    @Test
+    public void hasPath4() {
         int[][] grid = new int[4][5];
         grid[0][3] = 1;
         grid[1][4] = 1;
