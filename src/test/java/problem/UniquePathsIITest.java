@@ -43,4 +43,12 @@ public class UniquePathsIITest {
         grid[3][1] = 1;
         assertEquals(0, new UniquePathsII().uniquePathsWithObstacles(grid));
     }
+
+    @Test
+    public void hasPath5() {
+        int[][] grid = new int[1][2];
+        grid[0][0] = 1;
+        grid[0][1] = 0;
+        assertEquals(0, new UniquePathsII().uniquePathsWithObstacles(grid));
+    }
 }
