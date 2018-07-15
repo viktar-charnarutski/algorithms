@@ -23,7 +23,11 @@ public class UniquePathsII {
         int colsAmount = obstacleGrid[0].length;
 
         int[][] paths = new int[rowsAmount][colsAmount];
-        if (obstacleGrid[0][0] == 0) paths[0][0] = 1;
+        if (obstacleGrid[0][0] == 0) {
+            paths[0][0] = 1;
+        } else {
+            return 0;
+        }
 
         fillFirstRow(obstacleGrid, paths);
         fillFirstCol(obstacleGrid, paths);
