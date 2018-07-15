@@ -15,48 +15,40 @@ import java.util.Set;
  */
 public class RobotInGrid {
     public boolean hasPath(int[][] grid) {
-        Set<Point> blockedPoints = new HashSet<>();
-        return check(grid, 0, 1, blockedPoints) || check(grid, 1, 0, blockedPoints);
+        Set<Cell> blockedCells = new HashSet<>();
+        return check(grid, 0, 1, blockedCells) || check(grid, 1, 0, blockedCells);
     }
 
-    private boolean check(int[][] grid, int row, int col, Set<Point> blockedPoints) {
-        Point point = new Point(row, col);
-        if (blockedPoints.contains(point) || col == grid[0].length || row == grid.length || grid[row][col] == 1) {
-            blockedPoints.add(point);
+    private boolean check(int[][] grid, int row, int col, Set<Cell> blockedCells) {
+        Cell cell = new Cell(row, col);
+        if (blockedCells.contains(cell) || col == grid[0].length || row == grid.length || grid[row][col] == 1) {
+            blockedCells.add(cell);
             return false;
         }
         if (col == grid[0].length - 1 && row == grid.length - 1 && grid[row][col] == 0) {
             return true;
         }
-        return check(grid, row + 1, col, blockedPoints) || check(grid, row, col + 1, blockedPoints);
+        return check(grid, row + 1, col, blockedCells) || check(grid, row, col + 1, blockedCells);
     }
 
-    static class Point {
+    private class Cell {
         private final int rowNum;
         private final int colNum;
 
-        public Point(int rowNum, int colNum) {
+        Cell(int rowNum, int colNum) {
             this.rowNum = rowNum;
             this.colNum = colNum;
-        }
-
-        public int getRowNum() {
-            return rowNum;
-        }
-
-        public int getColNum() {
-            return colNum;
         }
 
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
-            if (!(o instanceof Point)) return false;
+            if (!(o instanceof Cell)) return false;
 
-            Point point = (Point) o;
+            Cell cell = (Cell) o;
 
-            if (rowNum != point.rowNum) return false;
-            return colNum == point.colNum;
+            if (rowNum != cell.rowNum) return false;
+            return colNum == cell.colNum;
         }
 
         @Override
