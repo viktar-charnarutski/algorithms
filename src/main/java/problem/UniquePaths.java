@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Arrays;
+
 /**
  * 62. Unique Paths
  * <p>
@@ -11,14 +13,27 @@ package problem;
  */
 public class UniquePaths {
     public int uniquePaths(int m, int n) {
+        int[][] paths = new int[m][n];
+        Arrays.fill(paths[0], 1);
+        for (int i = 0; i < m; i++) {
+            paths[i][0] = 1;
+        }
+        for (int col = 1; col < m; col++) {
+            for (int row = 1; row < n; row++) {
+                paths[col][row] = paths[col - 1][row] + paths[col][row - 1];
+            }
+        }
+
+        return paths[m - 1][n - 1];
+    }
+
+    public int uniquePathsReqursion(int m, int n) {
         if (m == 0 || n == 0) {
             return 0;
         }
-
         if (m == 1 && n == 1) {
             return 1;
         }
-
-        return uniquePaths(m, n - 1) + uniquePaths(m - 1, n);
+        return uniquePathsReqursion(m, n - 1) + uniquePaths(m - 1, n);
     }
 }
