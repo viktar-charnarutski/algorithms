@@ -15,6 +15,47 @@ package problem;
  */
 public class UniquePathsII {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        return 0;
+        if (obstacleGrid == null || obstacleGrid.length == 0) {
+            return 0;
+        }
+
+        int rowsAmount = obstacleGrid.length;
+        int colsAmount = obstacleGrid[0].length;
+
+        int[][] paths = new int[rowsAmount][colsAmount];
+        paths[0][0] = 1;
+
+        fillFirstRow(obstacleGrid, paths);
+        fillFirstCol(obstacleGrid, paths);
+
+        for (int row = 1; row < rowsAmount; row++) {
+            for (int col = 1; col < colsAmount; col++) {
+                if (obstacleGrid[row][col] == 1) {
+                    paths[row][col] = 0;
+                } else {
+                    paths[row][col] = paths[row - 1][col] + paths[row][col - 1];
+                }
+            }
+        }
+
+        return paths[rowsAmount - 1][colsAmount - 1];
+    }
+
+    private void fillFirstCol(int[][] grid, int[][] paths) {
+        for (int row = 1; row < grid.length; row++) {
+            if (grid[row][0] == 1) {
+                break;
+            }
+            paths[row][0] = 1;
+        }
+    }
+
+    private void fillFirstRow(int[][] grid, int[][] paths) {
+        for (int col = 1; col < grid[0].length; col++) {
+            if (grid[0][col] == 1) {
+                break;
+            }
+            paths[0][col] = 1;
+        }
     }
 }
