@@ -8,6 +8,6 @@ public class UniquePathsTest {
 
     @Test
     public void uniquePathsTest() {
-        assertEquals(3, new UniquePaths().uniquePaths(3, 2));
+        assertEquals(10, new UniquePaths().uniquePaths(3, 4));
     }
 }
