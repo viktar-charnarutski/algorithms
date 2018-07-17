@@ -30,4 +30,9 @@ public class RecursiveMultiplyTest {
     public void multiply5() {
         assertEquals(12, new RecursiveMultiply().multiply(4, 3));
     }
+
+    @Test
+    public void multiply6() {
+        assertEquals(-12, new RecursiveMultiply().multiply(4, -3));
+    }
 }
