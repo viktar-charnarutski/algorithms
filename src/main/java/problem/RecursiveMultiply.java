@@ -9,13 +9,10 @@ package problem;
 public class RecursiveMultiply {
     public int multiply(int num, int mult) {
         if (num == 0 || mult == 0) return 0;
-        return multiply(num, mult, 0);
-    }
-
-    private int multiply(int num, int mult, int sum) {
-        if (mult == 0) return sum;
-        sum += num;
-        mult--;
-        return multiply(num, mult, sum);
+        if (mult > 0) {
+            return num + multiply(num, mult - 1);
+        } else {
+            return -multiply(num, -mult);
+        }
     }
 }
