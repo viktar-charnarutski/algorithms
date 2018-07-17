@@ -16,4 +16,9 @@ public class PredictTheWinnerTest {
     public void predictTheWinner2() {
         assertTrue(new PredictTheWinner().predictTheWinner(new int[]{1, 5, 233, 2}));
     }
+
+    @Test
+    public void predictTheWinner3() {
+        assertTrue(new PredictTheWinner().predictTheWinner(new int[]{1, 5, 233}));
+    }
 }
