@@ -18,14 +18,18 @@ package problem;
  */
 public class PredictTheWinner {
     public boolean predictTheWinner(int[] nums) {
-        return predictTheWinner(nums, 0, nums.length - 1) >= 0;
+        return predictTheWinner(nums, 0, nums.length - 1, new Integer[nums.length][nums.length]) >= 0;
     }
 
-    private int predictTheWinner(int[] nums, int left, int right) {
-        if (left == right) {
-            return nums[left];
+    private int predictTheWinner(int[] nums, int left, int right, Integer[][] memo) {
+        if (memo[left][right] == null) {
+            if (left == right) {
+                memo[left][right] = nums[left];
+            } else {
+                memo[left][right] = Math.max(nums[left] - predictTheWinner(nums, left + 1, right, memo),
+                        nums[right] - predictTheWinner(nums, left, right - 1, memo));
+            }
         }
-        return Math.max(nums[left] - predictTheWinner(nums, left + 1, right),
-                nums[right] - predictTheWinner(nums, left, right - 1));
+        return memo[left][right];
     }
 }
