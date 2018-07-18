@@ -13,16 +13,16 @@ public class LongestIncreasingSubsequenceITest {
 
     @Test
     public void longestIncreasingSubsequence2() {
-        assertEquals(0, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{100, 22, 9, 8, 1}));
+        assertEquals(1, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{100, 22, 9, 8, 1}));
     }
 
     @Test
     public void longestIncreasingSubsequence3() {
-        assertEquals(0, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{1, 1, 1, 1, 1, 1}));
+        assertEquals(1, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{1, 1, 1, 1, 1, 1}));
     }
 
     @Test
-    public void longestIncreasingSubsequence3() {
-        assertEquals(0, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{1, 2, 3, 4, 5, 6}));
+    public void longestIncreasingSubsequence4() {
+        assertEquals(6, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{1, 2, 3, 4, 5, 6}));
     }
 }
