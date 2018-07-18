@@ -12,6 +12,14 @@ package problem;
  */
 public class LongestCommonSubsequence {
     public int longestCommonSubsequence(String strA, String strB) {
-        return 0;
+        return check(strA, strB, strA.length() - 1, strB.length() - 1);
+    }
+
+    private static int check(String strA, String strB, int indA, int indB) {
+        if (indA < 0 || indB < 0) return 0;
+        if (strA.charAt(indA) == strB.charAt(indB)) {
+            return 1 + check(strA, strB, indA - 1, indB - 1);
+        }
+        return Math.max(check(strA, strB, indA, indB - 1), check(strA, strB, indA - 1, indB));
     }
 }
