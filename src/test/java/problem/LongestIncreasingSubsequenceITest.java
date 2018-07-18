@@ -7,6 +7,11 @@ import static org.junit.Assert.assertEquals;
 public class LongestIncreasingSubsequenceITest {
 
     @Test
+    public void longestIncreasingSubsequence0() {
+        assertEquals(5, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{10, 1, 2, 3, 4, 5}));
+    }
+
+    @Test
     public void longestIncreasingSubsequence1() {
         assertEquals(6, new LongestIncreasingSubsequenceI().longestIncreasingSubsequence(new int[]{10, 22, 9, 33, 21, 50, 41, 60, 80}));
     }
