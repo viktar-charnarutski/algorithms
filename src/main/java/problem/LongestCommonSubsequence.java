@@ -12,7 +12,20 @@ package problem;
  */
 public class LongestCommonSubsequence {
     public int longestCommonSubsequence(String strA, String strB) {
-        return check(strA, strB, strA.length() - 1, strB.length() - 1);
+        return check(strA, strB, strA.length() - 1, strB.length() - 1, new Integer[strA.length()][strB.length()]);
+    }
+
+    private static int check(String strA, String strB, int indA, int indB, Integer[][] memo) {
+        if (indA < 0 || indB < 0) return 0;
+        if (memo[indA][indB] == null) {
+            if (strA.charAt(indA) == strB.charAt(indB)) {
+                memo[indA][indB] = 1 + check(strA, strB, indA - 1, indB - 1, memo);
+            } else {
+                memo[indA][indB] = Math.max(check(strA, strB, indA, indB - 1, memo),
+                        check(strA, strB, indA - 1, indB, memo));
+            }
+        }
+        return memo[indA][indB];
     }
 
     private static int check(String strA, String strB, int indA, int indB) {
