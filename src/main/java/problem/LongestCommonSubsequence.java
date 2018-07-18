@@ -11,7 +11,7 @@ package problem;
  * So a string of length n has 2^n different possible subsequences.
  */
 public class LongestCommonSubsequence {
-    public String longestCommonSubsequence(String strA, String strB) {
-        return "";
+    public int longestCommonSubsequence(String strA, String strB) {
+        return 0;
     }
 }

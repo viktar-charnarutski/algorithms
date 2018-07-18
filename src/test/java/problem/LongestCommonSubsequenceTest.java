@@ -8,10 +8,10 @@ public class LongestCommonSubsequenceTest {
 
     @Test
     public void longestCommonSubsequence1() {
-        assertEquals("ADH", new LongestCommonSubsequence().longestCommonSubsequence("ABCDGH", "AEDFHR"));
+        assertEquals(3, new LongestCommonSubsequence().longestCommonSubsequence("ABCDGH", "AEDFHR"));
     }
     @Test
     public void longestCommonSubsequence2() {
-        assertEquals("GTAB", new LongestCommonSubsequence().longestCommonSubsequence("AGGTAB", "GXTXAYB"));
+        assertEquals(4, new LongestCommonSubsequence().longestCommonSubsequence("AGGTAB", "GXTXAYB"));
     }
 }
