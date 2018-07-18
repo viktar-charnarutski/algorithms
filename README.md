@@ -453,6 +453,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 272 | 15-Jul-2018 | [63. Unique Paths II][272] | Medium | |
 | 273 | 16-Jul-2018 | [486. Predict the Winner][273] | Medium | Y |
 | 274 | 17-Jul-2018 | [Recursive Multiply][274] | Easy | |
+| 275 | 17-Jul-2018 | [Longest Common Subsequence][275] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -728,6 +729,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [272]: https://leetcode.com/problems/unique-paths-ii/
 [273]: https://leetcode.com/problems/predict-the-winner/
 [274]: https://www.geeksforgeeks.org/multiply-two-numbers-without-using-multiply-division-bitwise-operators-and-no-loops/
+[275]: https://www.geeksforgeeks.org/multiply-two-numbers-without-using-multiply-division-bitwise-operators-and-no-loops/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
