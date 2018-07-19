@@ -18,6 +18,6 @@ public class EditDistanceTest {
 
     @Test
     public void editDistance3() {
-        assertEquals(1, new EditDistance().editDistance("sunday", "saturday"));
+        assertEquals(3, new EditDistance().editDistance("sunday", "saturday"));
     }
 }
