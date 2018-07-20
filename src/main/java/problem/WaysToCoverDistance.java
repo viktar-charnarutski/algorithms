@@ -9,8 +9,19 @@ public class WaysToCoverDistance {
     public int countWaysToCoverDistance(int n) {
         if (n < 0) return 0;
         if (n == 0) return 1;
-        return countWaysToCoverDistance(n - 1) +
-                countWaysToCoverDistance(n - 2) +
-                countWaysToCoverDistance(n - 3);
+        Integer[] memo = new Integer[n];
+        return countWaysToCoverDistance(n - 1, memo) +
+                countWaysToCoverDistance(n - 2, memo) +
+                countWaysToCoverDistance(n - 3, memo);
+    }
+
+    public int countWaysToCoverDistance(int n, Integer[] memo) {
+        if (n < 0) return 0;
+        if (n == 0) return 1;
+        if (memo[n] != null) return memo[n];
+        memo[n] = countWaysToCoverDistance(n - 1, memo) +
+                countWaysToCoverDistance(n - 2, memo) +
+                countWaysToCoverDistance(n - 3, memo);
+        return memo[n];
     }
 }
