@@ -457,6 +457,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 276 | 18-Jul-2018 | [Longest Increasing Subsequence I][276] | Medium | Y |
 | 277 | 18-Jul-2018 | [Edit Distance][277] | Medium | Y |
 | 278 | 19-Jul-2018 | [76. Minimum Window Substring][278] | Hard | Y |
+| 279 | 19-Jul-2018 | [Two Subsets Minimum Sum Difference][279] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -735,7 +736,8 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [275]: https://www.geeksforgeeks.org/multiply-two-numbers-without-using-multiply-division-bitwise-operators-and-no-loops/
 [276]: https://www.geeksforgeeks.org/longest-increasing-subsequence/
 [277]: https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
-[278]: https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+[278]: https://leetcode.com/problems/minimum-window-substring/
+[279]: https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
