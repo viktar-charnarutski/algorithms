@@ -8,7 +8,9 @@ public class WaysToCoverDistanceTest {
 
     @Test
     public void countWaysToCoverDistance() {
-        assertEquals(4, new WaysToCoverDistance().countWaysToCoverDistance(3));
-        assertEquals(7, new WaysToCoverDistance().countWaysToCoverDistance(4));
+        WaysToCoverDistance ins = new WaysToCoverDistance();
+        assertEquals(4, ins.countWaysToCoverDistance(3));
+        assertEquals(7, ins.countWaysToCoverDistance(4));
+        assertEquals(44, ins.countWaysToCoverDistance(7));
     }
 }
