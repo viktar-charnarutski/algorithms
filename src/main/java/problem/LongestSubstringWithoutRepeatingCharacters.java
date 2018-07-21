@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 3. Longest Substring Without Repeating Characters
  * <p>
@@ -16,6 +19,19 @@ package problem;
  */
 public class LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
-        return 0;
+        if (s == null || s.isEmpty()) return 0;
+        int maxLength = 0;
+        for (int i = 0; i < s.length(); i++) {
+            Set<Character> uniqCharsSet = new HashSet<>();
+            int currLength = 0;
+            for (int j = i; j < s.length(); j++) {
+                if (!uniqCharsSet.add(s.charAt(j))) {
+                    break;
+                }
+                currLength++;
+            }
+            maxLength = Math.max(currLength, maxLength);
+        }
+        return maxLength;
     }
 }
