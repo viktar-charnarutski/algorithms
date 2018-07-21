@@ -11,6 +11,85 @@ package problem;
  */
 public class LongestPathInMatrix {
     public int longestPathInMatrix(int[][] grid) {
-        return 0;
+        if (grid == null) return 0;
+        int rowsCount = grid.length;
+        int colsCount = grid[0].length;
+        int maxPath = 0;
+        for (int row = 0; row < rowsCount; row++) {
+            for (int col = 0; col < colsCount; col++) {
+                Cell currCell = new Cell(row, col);
+                int moveLeftPath = 1 + getPathFor(new Cell(row, col - 1), currCell, grid);
+                int moveRightPath = 1 + getPathFor(new Cell(row, col + 1), currCell, grid);
+                int moveUpPath = 1 + getPathFor(new Cell(row - 1, col), currCell, grid);
+                int moveDownPath = 1 + getPathFor(new Cell(row + 1, col), currCell, grid);
+                int currPath = Math.max(Math.max(moveLeftPath, moveRightPath), Math.max(moveUpPath, moveDownPath));
+                maxPath = Math.max(currPath, maxPath);
+            }
+        }
+        return maxPath;
+    }
+
+    private int getPathFor(Cell curr, Cell prev, int[][] grid) {
+
+        if (!isMoveValid(curr, prev, grid)) {
+            return 0;
+        }
+
+        int moveLeftPath = 1 + getPathFor(new Cell(curr.getRow(), curr.getColl() - 1), curr, grid);
+        int moveRightPath = 1 + getPathFor(new Cell(curr.getRow(), curr.getColl() + 1), curr, grid);
+        int moveUpPath = 1 + getPathFor(new Cell(curr.getRow() - 1, curr.getColl()), curr, grid);
+        int moveDownPath = 1 + getPathFor(new Cell(curr.getRow() + 1, curr.getColl()), curr, grid);
+
+        return Math.max(Math.max(moveLeftPath, moveRightPath), Math.max(moveUpPath, moveDownPath));
+
+    }
+
+    private boolean isMoveValid(Cell curr, Cell prev, int[][] grid) {
+        if (curr.equals(prev)) {
+            return false;
+        }
+        if (curr.getRow() < 0 || curr.getRow() == grid.length) {
+            return false;
+        }
+        if (curr.getColl() < 0 || curr.getColl() == grid[0].length) {
+            return false;
+        }
+        return grid[curr.getRow()][curr.getColl()] - grid[prev.getRow()][prev.getColl()] == 1;
+    }
+
+    private class Cell {
+        private final int row;
+        private final int coll;
+
+        Cell(int row, int coll) {
+            this.row = row;
+            this.coll = coll;
+        }
+
+        int getRow() {
+            return row;
+        }
+
+        int getColl() {
+            return coll;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof Cell)) return false;
+
+            Cell cell = (Cell) o;
+
+            if (row != cell.row) return false;
+            return coll == cell.coll;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = row;
+            result = 31 * result + coll;
+            return result;
+        }
     }
 }
