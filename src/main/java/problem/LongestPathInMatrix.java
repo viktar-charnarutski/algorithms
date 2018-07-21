@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.HashMap;
+
 /**
  * Find the longest path in a matrix with given constraints
  * <p>
@@ -15,13 +17,14 @@ public class LongestPathInMatrix {
         int rowsCount = grid.length;
         int colsCount = grid[0].length;
         int maxPath = 0;
+        HashMap<Cell, Integer> memo = new HashMap<>();
         for (int row = 0; row < rowsCount; row++) {
             for (int col = 0; col < colsCount; col++) {
                 Cell currCell = new Cell(row, col);
-                int moveLeftPath = 1 + getPathFor(new Cell(row, col - 1), currCell, grid);
-                int moveRightPath = 1 + getPathFor(new Cell(row, col + 1), currCell, grid);
-                int moveUpPath = 1 + getPathFor(new Cell(row - 1, col), currCell, grid);
-                int moveDownPath = 1 + getPathFor(new Cell(row + 1, col), currCell, grid);
+                int moveLeftPath = 1 + getPathFor(new Cell(row, col - 1), currCell, grid, memo);
+                int moveRightPath = 1 + getPathFor(new Cell(row, col + 1), currCell, grid, memo);
+                int moveUpPath = 1 + getPathFor(new Cell(row - 1, col), currCell, grid, memo);
+                int moveDownPath = 1 + getPathFor(new Cell(row + 1, col), currCell, grid, memo);
                 int currPath = Math.max(Math.max(moveLeftPath, moveRightPath), Math.max(moveUpPath, moveDownPath));
                 maxPath = Math.max(currPath, maxPath);
             }
@@ -29,19 +32,23 @@ public class LongestPathInMatrix {
         return maxPath;
     }
 
-    private int getPathFor(Cell curr, Cell prev, int[][] grid) {
-
+    private int getPathFor(Cell curr, Cell prev, int[][] grid, HashMap<Cell, Integer> memo) {
         if (!isMoveValid(curr, prev, grid)) {
             return 0;
         }
 
-        int moveLeftPath = 1 + getPathFor(new Cell(curr.getRow(), curr.getColl() - 1), curr, grid);
-        int moveRightPath = 1 + getPathFor(new Cell(curr.getRow(), curr.getColl() + 1), curr, grid);
-        int moveUpPath = 1 + getPathFor(new Cell(curr.getRow() - 1, curr.getColl()), curr, grid);
-        int moveDownPath = 1 + getPathFor(new Cell(curr.getRow() + 1, curr.getColl()), curr, grid);
+        if (memo.containsKey(curr)) {
+            return memo.get(curr);
+        }
 
-        return Math.max(Math.max(moveLeftPath, moveRightPath), Math.max(moveUpPath, moveDownPath));
+        int moveLeftPath = 1 + getPathFor(new Cell(curr.getRow(), curr.getColl() - 1), curr, grid, memo);
+        int moveRightPath = 1 + getPathFor(new Cell(curr.getRow(), curr.getColl() + 1), curr, grid, memo);
+        int moveUpPath = 1 + getPathFor(new Cell(curr.getRow() - 1, curr.getColl()), curr, grid, memo);
+        int moveDownPath = 1 + getPathFor(new Cell(curr.getRow() + 1, curr.getColl()), curr, grid, memo);
 
+        memo.put(curr, Math.max(Math.max(moveLeftPath, moveRightPath), Math.max(moveUpPath, moveDownPath)));
+
+        return memo.get(curr);
     }
 
     private boolean isMoveValid(Cell curr, Cell prev, int[][] grid) {
