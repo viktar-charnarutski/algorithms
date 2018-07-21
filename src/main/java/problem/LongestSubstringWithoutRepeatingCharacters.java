@@ -20,6 +20,25 @@ import java.util.Set;
 public class LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.isEmpty()) return 0;
+        if (s.length() == 1) return 1;
+        int maxLength = 0, start = 0, end = 0;
+
+        HashSet<Character> uniqChars = new HashSet<>();
+        while (end < s.length()) {
+            if (!uniqChars.contains(s.charAt(end))) {
+                uniqChars.add(s.charAt(end));
+                end++;
+                maxLength = Math.max(uniqChars.size(), maxLength);
+            } else {
+                uniqChars.remove(s.charAt(start++));
+            }
+        }
+
+        return maxLength;
+    }
+
+    public int lengthOfLongestSubstringBruteForce(String s) {
+        if (s == null || s.isEmpty()) return 0;
         int maxLength = 0;
         for (int i = 0; i < s.length(); i++) {
             Set<Character> uniqCharsSet = new HashSet<>();
