@@ -9,6 +9,12 @@ package problem;
 public class SubsetSum {
 
     public boolean subsetSum(int[] nums, int sum) {
-        return false;
+        return subsetSum(nums, sum, 0);
+    }
+
+    private boolean subsetSum(int[] nums, int sum, int i) {
+        if (sum == 0) return true;
+        if (i == nums.length) return false;
+        return subsetSum(nums, sum, i + 1) || subsetSum(nums, sum - nums[i], i + 1);
     }
 }
