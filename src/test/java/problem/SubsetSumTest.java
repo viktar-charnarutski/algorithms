@@ -14,6 +14,6 @@ public class SubsetSumTest {
 
     @Test
     public void subsetSum_false() {
-        assertFalse(new SubsetSum().subsetSum(new int[]{3, 34, 4, 12, 5, 2}, 10));
+        assertFalse(new SubsetSum().subsetSum(new int[]{3, 34, 4, 12, 5, 2}, 13));
     }
 }
