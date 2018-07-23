@@ -11,17 +11,22 @@ package problem;
  */
 public class OptimalStrategy {
     public int maxPossibleAmount(int[] nums) {
-        return maxPossibleAmount(nums, 0, nums.length - 1);
+        return maxPossibleAmount(nums, 0, nums.length - 1, new Integer[nums.length][nums.length]);
     }
 
-    private int maxPossibleAmount(int[] nums, int left, int right) {
+    private int maxPossibleAmount(int[] nums, int left, int right, Integer[][] memo) {
         if (left >= right) return 0;
-        return Math.max(
-                nums[left] + Math.min(maxPossibleAmount(nums, left + 1, right - 1),
-                        maxPossibleAmount(nums, left + 2, right)),
+        if (memo[left][right] != null) {
+            return memo[left][right];
+        }
+        memo[left][right] = Math.max(
+                nums[left] + Math.min(maxPossibleAmount(nums, left + 1, right - 1, memo),
+                        maxPossibleAmount(nums, left + 2, right, memo)),
 
-                nums[right] + Math.min(maxPossibleAmount(nums, left + 1, right - 1),
-                        maxPossibleAmount(nums, left, right - 2))
+                nums[right] + Math.min(maxPossibleAmount(nums, left + 1, right - 1, memo),
+                        maxPossibleAmount(nums, left, right - 2, memo))
         );
+
+        return memo[left][right];
     }
 }
