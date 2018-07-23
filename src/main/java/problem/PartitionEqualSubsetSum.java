@@ -1,7 +1,5 @@
 package problem;
 
-import java.util.Arrays;
-
 /**
  * 416. Partition Equal Subset Sum
  * <p>
@@ -24,13 +22,12 @@ public class PartitionEqualSubsetSum {
         boolean[] dp = new boolean[totalSum + 1];
         dp[0] = true;
         for (int num : nums) {
-            for (int i = totalSum; i > 0; i--) {
-                if (i >= num) {
-                    dp[i] = dp[i] || dp[i - num];
+            for (int sum = totalSum; sum > 0; sum--) {
+                if (num <= sum) {
+                    dp[sum] = dp[sum] || dp[sum - num];
                 }
             }
         }
-        System.out.println(Arrays.toString(dp));
         return dp[totalSum];
     }
 
