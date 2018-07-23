@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Arrays;
+
 /**
  * 416. Partition Equal Subset Sum
  * <p>
@@ -13,16 +15,30 @@ package problem;
 public class PartitionEqualSubsetSum {
     public boolean canPartition(int[] nums) {
         if (nums == null || nums.length < 2) return false;
-        int totalSum = 0, currentSum = 0;
+        int totalSum = 0;
         for (int n : nums) totalSum += n;
-        return canPartition(nums, 0, currentSum, totalSum);
+
+        if ((totalSum & 1) == 1) return false;
+
+        totalSum /= 2;
+        boolean[] dp = new boolean[totalSum + 1];
+        dp[0] = true;
+        for (int num : nums) {
+            for (int i = totalSum; i > 0; i--) {
+                if (i >= num) {
+                    dp[i] = dp[i] || dp[i - num];
+                }
+            }
+        }
+        System.out.println(Arrays.toString(dp));
+        return dp[totalSum];
     }
 
-    private boolean canPartition(int[] nums, int index, int currentSum, int remainedSum) {
-        if (currentSum == remainedSum) return true;
-        if (remainedSum < currentSum || index == nums.length) return false;
+    private boolean canPartition(int[] nums, int index, int remained) {
+        if (remained == 0) return true;
+        if (remained < 0 || index == nums.length) return false;
 
-        return canPartition(nums, index + 1, currentSum + nums[index], remainedSum - nums[index])
-                || canPartition(nums, index + 1, currentSum, remainedSum);
+        return canPartition(nums, index + 1, remained - nums[index])
+                || canPartition(nums, index + 1, remained);
     }
 }
