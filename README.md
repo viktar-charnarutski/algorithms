@@ -462,6 +462,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 282 | 21-Jul-2018 | [Longest Path In Matrix][282] | Medium | |
 | 283 | 22-Jul-2018 | [Subset Sum][283] | Medium | |
 | 284 | 22-Jul-2018 | [416. Partition Equal Subset Sum][284] | Medium | Y |
+| 285 | 23-Jul-2018 | [Optimal Strategy for a Game][285] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -747,6 +748,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [282]: https://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/
 [283]: https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/
 [284]: https://leetcode.com/problems/partition-equal-subset-sum/
+[285]: https://www.geeksforgeeks.org/dynamic-programming-set-31-optimal-strategy-for-a-game/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
