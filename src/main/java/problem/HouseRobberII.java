@@ -13,6 +13,19 @@ package problem;
  */
 public class HouseRobberII {
     public int rob(int[] nums) {
-        return 0;
+        if (nums == null || nums.length == 0) return 0;
+        if (nums.length == 1) return nums[0];
+        return Math.max(rob(nums, 0, nums.length - 1), rob(nums, 1, nums.length));
+    }
+
+    public int rob(int[] nums, int lo, int hi) {
+        int prev = 0, preprev = 0;
+        for (int i = lo; i < hi; i++) {
+
+            int curr = preprev + nums[i];
+            preprev = prev;
+            prev = Math.max(prev, curr);
+        }
+        return preprev > prev ? preprev : prev;
     }
 }
