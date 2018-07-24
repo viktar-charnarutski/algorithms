@@ -12,19 +12,18 @@ package problem;
  * You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
  */
 public class KnapsackProblem {
-    private int sum;
 
-    public int maxValue(int[] vals, int[] weights, int capacity) {
-        maxValue(vals, weights, capacity, 0, 0, 0);
-        return sum;
-    }
-
-    private void maxValue(int[] vals, int[] weights, int capacity, int i, int currCapacity, int currSum) {
-        if (currCapacity > capacity) return;
-        sum = Math.max(currSum, sum);
-
-        if (i == vals.length) return;
-        maxValue(vals, weights, capacity, i + 1, currCapacity + weights[i], currSum + vals[i]);
-        maxValue(vals, weights, capacity, i + 1, currCapacity, currSum);
+    public int maxValue(int values[], int weights[], int capacity) {
+        int dp[][] = new int[values.length + 1][capacity + 1];
+        for (int val = 1; val <= values.length; val++) {
+            for (int weight = 1; weight <= capacity; weight++) {
+                if (weights[val - 1] <= weight) {
+                    dp[val][weight] = Math.max(values[val - 1] + dp[val - 1][weight - weights[val - 1]], dp[val - 1][weight]);
+                } else {
+                    dp[val][weight] = dp[val - 1][weight];
+                }
+            }
+        }
+        return dp[values.length][capacity];
     }
 }
