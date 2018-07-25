@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class KeysAndRoomsTest {
@@ -43,6 +44,6 @@ public class KeysAndRoomsTest {
         ArrayList<Integer> keys4 = new ArrayList<>();
         keys4.add(0);
         rooms.add(keys4);
-        assertTrue(new KeysAndRooms().canVisitAllRooms(rooms));
+        assertFalse(new KeysAndRooms().canVisitAllRooms(rooms));
     }
 }
