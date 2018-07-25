@@ -17,7 +17,7 @@ public class HouseRobberIIITest {
         n3.left = n4;
         n3.right = n5;
         n4.left = n1;
-        n4.right = n3;
+        n4.right = n2;
         n5.right = n11;
         n5.left = n2;
 
