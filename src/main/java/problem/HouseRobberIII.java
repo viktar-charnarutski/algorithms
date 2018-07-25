@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.HashMap;
+
 /**
  * 337. House Robber III
  * <p>
@@ -12,7 +14,13 @@ package problem;
  */
 public class HouseRobberIII {
     public int rob(TreeNode root) {
+        return rob(root, new HashMap<TreeNode, Integer>());
+    }
+
+    public int rob(TreeNode root, HashMap<TreeNode, Integer> memo) {
         if (root == null) return 0;
+
+        if (memo.containsKey(root)) return memo.get(root);
 
         int sum = root.val;
 
@@ -24,6 +32,9 @@ public class HouseRobberIII {
             sum += rob(root.right.left) + rob(root.right.right);
         }
 
-        return Math.max(sum, rob(root.right) + rob(root.left));
+        sum = Math.max(sum, rob(root.right) + rob(root.left));
+        memo.put(root, sum);
+
+        return sum;
     }
 }
