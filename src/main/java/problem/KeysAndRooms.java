@@ -1,6 +1,6 @@
 package problem;
 
-import java.util.List;
+import java.util.*;
 
 /**
  * 841. Keys and Rooms
@@ -19,6 +19,25 @@ import java.util.List;
  */
 public class KeysAndRooms {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-        return false;
+        if (rooms == null || rooms.size() == 0) return true;
+
+        Set<Integer> openedRooms = new HashSet<>();
+        Queue<Integer> keysToCheck = new LinkedList<>();
+        keysToCheck.offer(0);
+
+        while (!keysToCheck.isEmpty()) {
+            Integer keyToCheck = keysToCheck.poll();
+            if (keyToCheck == null) {
+                continue;
+            }
+            openedRooms.add(keyToCheck);
+            List<Integer> foundKeys = rooms.get(keyToCheck);
+            for (Integer key : foundKeys) {
+                if (key != null && !openedRooms.contains(key)) {
+                    keysToCheck.offer(key);
+                }
+            }
+        }
+        return openedRooms.size() == rooms.size();
     }
 }
