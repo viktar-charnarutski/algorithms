@@ -3,7 +3,7 @@ package problem;
 /**
  * 832. Flipping an Image
  *
- * iven a binary matrix A, we want to flip the image horizontally, then invert it, and return the resulting image.
+ * Given a binary matrix A, we want to flip the image horizontally, then invert it, and return the resulting image.
  *
  * To flip an image horizontally means that each row of the image is reversed.  For example, flipping [1, 1, 0]
  * horizontally results in [0, 1, 1].
@@ -13,6 +13,27 @@ package problem;
  */
 public class FlippingAnImage {
     public int[][] flipAndInvertImage(int[][] A) {
-        return new int[0][0];
+        if (A == null || A.length == 0) return A;
+        flipHorizontally(A);
+        invert(A);
+        return A;
+    }
+
+    void invert(int[][] grid) {
+        for (int[] row : grid) {
+            for (int i = 0; i < row.length; i++) {
+                row[i] = row[i] == 0 ? 1 : 0;
+            }
+        }
+    }
+
+    void flipHorizontally(int[][] grid) {
+        for (int[] row : grid) {
+            for (int i = 0; i < row.length / 2; i++) {
+                int tmp = row[i];
+                row[i] = row[row.length - 1 - i];
+                row[row.length - 1 - i] = tmp;
+            }
+        }
     }
 }
