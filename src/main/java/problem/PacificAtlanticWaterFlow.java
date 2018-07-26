@@ -31,27 +31,33 @@ public class PacificAtlanticWaterFlow {
     }
 
     private boolean couldFlow(int row, int col, int[][] matrix) {
-        return couldFlowToPacific(row, col, matrix, Integer.MAX_VALUE)
-                && couldFlowToAtlantic(row, col, matrix, Integer.MAX_VALUE);
+        return couldFlowToPacific(row, col, matrix, Integer.MAX_VALUE, new Boolean[matrix.length][matrix[0].length])
+                && couldFlowToAtlantic(row, col, matrix, Integer.MAX_VALUE, new Boolean[matrix.length][matrix[0].length]);
     }
 
-    private boolean couldFlowToPacific(int row, int col, int[][] matrix, int flowingFromValue) {
-        if (!isCoordinatesValid(row, col, matrix)
+    private boolean couldFlowToPacific(int row, int col, int[][] matrix, int flowingFromValue, Boolean[][] memo) {
+        if (isCoordinatesNotValid(row, col, matrix)
                 || matrix[row][col] > flowingFromValue) return false;
+
+        if (memo[row][col] != null) return memo[row][col];
+
         if (row == 0 || col == 0) return true;
-        return couldFlowToPacific(row - 1, col, matrix, matrix[row][col])
-                || couldFlowToPacific(row, col - 1, matrix, matrix[row][col]);
+        return memo[row][col] = couldFlowToPacific(row - 1, col, matrix, matrix[row][col], memo)
+                || couldFlowToPacific(row, col - 1, matrix, matrix[row][col], memo);
     }
 
-    private boolean couldFlowToAtlantic(int row, int col, int[][] matrix, int flowingFromValue) {
-        if (!isCoordinatesValid(row, col, matrix)
+    private boolean couldFlowToAtlantic(int row, int col, int[][] matrix, int flowingFromValue, Boolean[][] memo) {
+        if (isCoordinatesNotValid(row, col, matrix)
                 || matrix[row][col] > flowingFromValue) return false;
+
+        if (memo[row][col] != null) return memo[row][col];
+
         if (row == matrix.length - 1 || col == matrix[0].length - 1) return true;
-        return couldFlowToAtlantic(row + 1, col, matrix, matrix[row][col])
-                || couldFlowToAtlantic(row, col + 1, matrix, matrix[row][col]);
+        return memo[row][col] = couldFlowToAtlantic(row + 1, col, matrix, matrix[row][col], memo)
+                || couldFlowToAtlantic(row, col + 1, matrix, matrix[row][col], memo);
     }
 
-    private boolean isCoordinatesValid(int row, int col, int[][] matrix) {
-        return row >= 0 && col >= 0 && row < matrix.length && col < matrix[0].length;
+    private boolean isCoordinatesNotValid(int row, int col, int[][] matrix) {
+        return row < 0 || col < 0 || row >= matrix.length || col >= matrix[0].length;
     }
 }
