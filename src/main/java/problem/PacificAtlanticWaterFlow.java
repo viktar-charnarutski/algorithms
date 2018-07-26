@@ -1,5 +1,6 @@
 package problem;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,6 +18,40 @@ import java.util.List;
  */
 public class PacificAtlanticWaterFlow {
     public List<int[]> pacificAtlantic(int[][] matrix) {
-        return Collections.emptyList();
+        if (matrix == null || matrix.length == 0) return Collections.emptyList();
+        List<int[]> res = new ArrayList<>();
+        for (int row = 0; row < matrix.length; row++) {
+            for (int col = 0; col < matrix[0].length; col++) {
+                if (couldFlow(row, col, matrix)) {
+                    res.add(new int[]{row, col});
+                }
+            }
+        }
+        return res;
+    }
+
+    private boolean couldFlow(int row, int col, int[][] matrix) {
+        return couldFlowToPacific(row, col, matrix, Integer.MAX_VALUE)
+                && couldFlowToAtlantic(row, col, matrix, Integer.MAX_VALUE);
+    }
+
+    private boolean couldFlowToPacific(int row, int col, int[][] matrix, int flowingFromValue) {
+        if (!isCoordinatesValid(row, col, matrix)
+                || matrix[row][col] > flowingFromValue) return false;
+        if (row == 0 || col == 0) return true;
+        return couldFlowToPacific(row - 1, col, matrix, matrix[row][col])
+                || couldFlowToPacific(row, col - 1, matrix, matrix[row][col]);
+    }
+
+    private boolean couldFlowToAtlantic(int row, int col, int[][] matrix, int flowingFromValue) {
+        if (!isCoordinatesValid(row, col, matrix)
+                || matrix[row][col] > flowingFromValue) return false;
+        if (row == matrix.length - 1 || col == matrix[0].length - 1) return true;
+        return couldFlowToAtlantic(row + 1, col, matrix, matrix[row][col])
+                || couldFlowToAtlantic(row, col + 1, matrix, matrix[row][col]);
+    }
+
+    private boolean isCoordinatesValid(int row, int col, int[][] matrix) {
+        return row >= 0 && col >= 0 && row < matrix.length && col < matrix[0].length;
     }
 }
