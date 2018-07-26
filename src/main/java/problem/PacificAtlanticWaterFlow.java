@@ -42,7 +42,9 @@ public class PacificAtlanticWaterFlow {
         if (memo[row][col] != null) return memo[row][col];
 
         if (row == 0 || col == 0) return true;
-        return memo[row][col] = couldFlowToPacific(row - 1, col, matrix, matrix[row][col], memo)
+        return memo[row][col] = couldFlowToPacific(row + 1, col, matrix, matrix[row][col], memo)
+                || couldFlowToPacific(row, col + 1, matrix, matrix[row][col], memo)
+                || couldFlowToPacific(row - 1, col, matrix, matrix[row][col], memo)
                 || couldFlowToPacific(row, col - 1, matrix, matrix[row][col], memo);
     }
 
@@ -54,7 +56,9 @@ public class PacificAtlanticWaterFlow {
 
         if (row == matrix.length - 1 || col == matrix[0].length - 1) return true;
         return memo[row][col] = couldFlowToAtlantic(row + 1, col, matrix, matrix[row][col], memo)
-                || couldFlowToAtlantic(row, col + 1, matrix, matrix[row][col], memo);
+                || couldFlowToAtlantic(row, col + 1, matrix, matrix[row][col], memo)
+                || couldFlowToAtlantic(row - 1, col, matrix, matrix[row][col], memo)
+                || couldFlowToAtlantic(row, col - 1, matrix, matrix[row][col], memo);
     }
 
     private boolean isCoordinatesNotValid(int row, int col, int[][] matrix) {
