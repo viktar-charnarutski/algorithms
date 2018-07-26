@@ -10,7 +10,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class PacificAtlanticWaterFlowTest {
 
     @Test
-    public void pacificAtlantic() {
+    public void pacificAtlantic1() {
         int[][] grid = new int[5][5];
         grid[0][0] = 1;
         grid[0][1] = 2;
@@ -46,6 +46,35 @@ public class PacificAtlanticWaterFlowTest {
         expected.add(new int[]{3, 0});
         expected.add(new int[]{3, 1});
         expected.add(new int[]{4, 0});
+
+        List<int[]> output = new PacificAtlanticWaterFlow().pacificAtlantic(grid);
+        for (int i = 0; i < expected.size(); i++) {
+            assertArrayEquals(expected.get(i), output.get(i));
+        }
+        // output.forEach(x -> System.out.println(Arrays.toString(x)));
+    }
+
+    @Test
+    public void pacificAtlantic2() {
+        int[][] grid = new int[3][3];
+        grid[0][0] = 1;
+        grid[0][1] = 2;
+        grid[0][2] = 3;
+        grid[1][0] = 8;
+        grid[1][1] = 9;
+        grid[1][2] = 4;
+        grid[2][0] = 7;
+        grid[2][1] = 6;
+        grid[2][2] = 5;
+
+        List<int[]> expected = new ArrayList<>();
+        expected.add(new int[]{0, 2});
+        expected.add(new int[]{1, 0});
+        expected.add(new int[]{1, 1});
+        expected.add(new int[]{1, 2});
+        expected.add(new int[]{2, 0});
+        expected.add(new int[]{2, 1});
+        expected.add(new int[]{2, 2});
 
         List<int[]> output = new PacificAtlanticWaterFlow().pacificAtlantic(grid);
         for (int i = 0; i < expected.size(); i++) {
