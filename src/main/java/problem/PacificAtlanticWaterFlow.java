@@ -1,8 +1,8 @@
 package problem;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 417. Pacific Atlantic Water Flow
@@ -17,51 +17,59 @@ import java.util.List;
  * Find the list of grid coordinates where water can flow to both the Pacific and Atlantic ocean.
  */
 public class PacificAtlanticWaterFlow {
+    private int[][] dir = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
     public List<int[]> pacificAtlantic(int[][] matrix) {
-        if (matrix == null || matrix.length == 0) return Collections.emptyList();
-        List<int[]> res = new ArrayList<>();
-        for (int row = 0; row < matrix.length; row++) {
-            for (int col = 0; col < matrix[0].length; col++) {
-                if (couldFlow(row, col, matrix)) {
-                    res.add(new int[]{row, col});
-                }
+        List<int[]> res = new LinkedList<>();
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return res;
+        }
+        int n = matrix.length, m = matrix[0].length;
+
+        boolean[][] pacific = new boolean[n][m];
+        boolean[][] atlantic = new boolean[n][m];
+
+        Queue<int[]> pQueue = new LinkedList<>();
+        Queue<int[]> aQueue = new LinkedList<>();
+
+        for (int row = 0; row < n; row++) {
+            pQueue.offer(new int[]{row, 0});
+            aQueue.offer(new int[]{row, m - 1});
+            pacific[row][0] = true;
+            atlantic[row][m - 1] = true;
+        }
+        for (int col = 0; col < m; col++) {
+            pQueue.offer(new int[]{0, col});
+            aQueue.offer(new int[]{n - 1, col});
+            pacific[0][col] = true;
+            atlantic[n - 1][col] = true;
+        }
+
+        bfs(matrix, pQueue, pacific);
+        bfs(matrix, aQueue, atlantic);
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (pacific[i][j] && atlantic[i][j])
+                    res.add(new int[]{i, j});
             }
         }
         return res;
     }
 
-    private boolean couldFlow(int row, int col, int[][] matrix) {
-        return couldFlowToPacific(row, col, matrix, Integer.MAX_VALUE, new Boolean[matrix.length][matrix[0].length])
-                && couldFlowToAtlantic(row, col, matrix, Integer.MAX_VALUE, new Boolean[matrix.length][matrix[0].length]);
-    }
-
-    private boolean couldFlowToPacific(int row, int col, int[][] matrix, int flowingFromValue, Boolean[][] memo) {
-        if (isCoordinatesNotValid(row, col, matrix)
-                || matrix[row][col] > flowingFromValue) return false;
-
-        if (memo[row][col] != null) return memo[row][col];
-
-        if (row == 0 || col == 0) return true;
-        return memo[row][col] = couldFlowToPacific(row + 1, col, matrix, matrix[row][col], memo)
-                || couldFlowToPacific(row, col + 1, matrix, matrix[row][col], memo)
-                || couldFlowToPacific(row - 1, col, matrix, matrix[row][col], memo)
-                || couldFlowToPacific(row, col - 1, matrix, matrix[row][col], memo);
-    }
-
-    private boolean couldFlowToAtlantic(int row, int col, int[][] matrix, int flowingFromValue, Boolean[][] memo) {
-        if (isCoordinatesNotValid(row, col, matrix)
-                || matrix[row][col] > flowingFromValue) return false;
-
-        if (memo[row][col] != null) return memo[row][col];
-
-        if (row == matrix.length - 1 || col == matrix[0].length - 1) return true;
-        return memo[row][col] = couldFlowToAtlantic(row + 1, col, matrix, matrix[row][col], memo)
-                || couldFlowToAtlantic(row, col + 1, matrix, matrix[row][col], memo)
-                || couldFlowToAtlantic(row - 1, col, matrix, matrix[row][col], memo)
-                || couldFlowToAtlantic(row, col - 1, matrix, matrix[row][col], memo);
-    }
-
-    private boolean isCoordinatesNotValid(int row, int col, int[][] matrix) {
-        return row < 0 || col < 0 || row >= matrix.length || col >= matrix[0].length;
+    private void bfs(int[][] matrix, Queue<int[]> queue, boolean[][] visited) {
+        int n = matrix.length, m = matrix[0].length;
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            for (int[] d : dir) {
+                int x = cur[0] + d[0];
+                int y = cur[1] + d[1];
+                if (x < 0 || x >= n || y < 0 || y >= m || visited[x][y] || matrix[x][y] < matrix[cur[0]][cur[1]]) {
+                    continue;
+                }
+                visited[x][y] = true;
+                queue.offer(new int[]{x, y});
+            }
+        }
     }
 }
