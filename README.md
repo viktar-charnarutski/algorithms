@@ -17,6 +17,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - [x] HakerRank: [Algorithms: Solve 'Coin Change' Using Memoization and DP](https://www.youtube.com/watch?v=sn0DWI-JdNA)
  - [ ] MIT OpenCourseWare: [19. Dynamic Programming I: Fibonacci, Shortest Paths](https://www.youtube.com/watch?v=OQ5jsbhAv_M&t=605s)
  - [x] CS Dojo: [Dynamic Programming Interview Question #1 - Find Sets Of Numbers That Add Up To 16](https://www.youtube.com/watch?v=nqlNzOcnCfs&t=9s)
+ - [x] [Jump Game Solution](https://leetcode.com/problems/jump-game/solution/)
 
 ### Reading
  - [ ] [Dynamic Programming - *In Russian*](http://awpris.blogspot.com/2012/02/blog-post.html)
@@ -145,6 +146,13 @@ Solutions for algorithm questions which could be asked on a technical interview.
  }
  ```
 *DFS* is often preferred if we want to visit *every node* in the graph
+
+### Dynamic Programming
+Solving and fully understanding a dynamic programming problem is a 4 step process:
+1. Start with the recursive backtracking solution
+2. Optimize by using a memoization table (_top-down dynamic programming_)
+3. Remove the need for recursion (_bottom-up dynamic programming_)
+4. Apply final tricks to reduce the time / memory complexity
 
 # My Statistics
 
