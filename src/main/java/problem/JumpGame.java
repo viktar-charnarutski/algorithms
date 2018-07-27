@@ -1,7 +1,5 @@
 package problem;
 
-import java.util.HashSet;
-
 /**
  * 55. Jump Game
  * <p>
@@ -14,25 +12,20 @@ import java.util.HashSet;
 public class JumpGame {
     public boolean canJump(int[] nums) {
         if (nums == null || nums.length < 2) return true;
-        return canJump(nums, 0, new HashSet<>());
-    }
 
-    private boolean canJump(int[] nums, int i, HashSet<String> memo) {
-        if (i >= nums.length) {
-            return false;
-        }
-        if (i == nums.length - 1) return true;
-        if (nums[i] == 0) return false;
+        boolean[] memo = new boolean[nums.length];
+        memo[nums.length - 1] = true;
 
-        String key = "" + nums[i] + i;
-        if (memo.contains(key)) return false;
-
-        for (int j = i + nums[i]; j > i; j--) {
-            if (canJump(nums, j, memo)) {
-                return true;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            int maxStep = Math.min(i + nums[i], nums.length - 1);
+            for (int j = maxStep; j >= i; j--) {
+                if (memo[j]) {
+                    memo[i] = true;
+                    break;
+                }
             }
         }
-        memo.add(key);
-        return false;
+
+        return memo[0];
     }
 }
