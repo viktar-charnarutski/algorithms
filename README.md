@@ -469,6 +469,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 | 289 | 25-Jul-2018 | [841. Keys and Rooms][289] | Medium | |
 | 290 | 26-Jul-2018 | [417. Pacific Atlantic Water Flow][290] | Medium | |
 | 291 | 26-Jul-2018 | [832. Flipping an Image][291] | Easy | |
+| 292 | 26-Jul-2018 | [55. Jump Game][292] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -761,6 +762,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 [289]: https://leetcode.com/problems/keys-and-rooms/
 [290]: https://leetcode.com/problems/pacific-atlantic-water-flow/
 [291]: https://leetcode.com/problems/flipping-an-image/
+[292]: https://leetcode.com/problems/jump-game/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
