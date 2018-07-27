@@ -12,6 +12,17 @@ package problem;
 public class JumpGame {
     public boolean canJump(int[] nums) {
         if (nums == null || nums.length < 2) return true;
+        int lastPos = nums.length - 1;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            if (i + nums[i] >= lastPos) {
+                lastPos = i;
+            }
+        }
+        return lastPos == 0;
+    }
+
+    public boolean canJumpDP(int[] nums) {
+        if (nums == null || nums.length < 2) return true;
 
         boolean[] memo = new boolean[nums.length];
         memo[nums.length - 1] = true;
