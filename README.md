@@ -478,6 +478,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 290 | 26-Jul-2018 | [417. Pacific Atlantic Water Flow][290] | Medium | |
 | 291 | 26-Jul-2018 | [832. Flipping an Image][291] | Easy | |
 | 292 | 26-Jul-2018 | [55. Jump Game][292] | Medium | Y |
+| 293 | 27-Jul-2018 | [139. Word Break][293] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -771,6 +772,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [290]: https://leetcode.com/problems/pacific-atlantic-water-flow/
 [291]: https://leetcode.com/problems/flipping-an-image/
 [292]: https://leetcode.com/problems/jump-game/
+[293]: https://leetcode.com/problems/word-break/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
