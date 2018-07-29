@@ -480,6 +480,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 292 | 26-Jul-2018 | [55. Jump Game][292] | Medium | Y |
 | 293 | 27-Jul-2018 | [139. Word Break][293] | Medium | Y |
 | 294 | 27-Jul-2018 | [315. Count of Smaller Numbers After Self][294] | Hard | Y |
+| 295 | 28-Jul-2018 | [96. Unique Binary Search Trees][295] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -775,6 +776,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [292]: https://leetcode.com/problems/jump-game/
 [293]: https://leetcode.com/problems/word-break/
 [294]: https://leetcode.com/problems/count-of-smaller-numbers-after-self/
+[295]: https://leetcode.com/problems/unique-binary-search-trees/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
