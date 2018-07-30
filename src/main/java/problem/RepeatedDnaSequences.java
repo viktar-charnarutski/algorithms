@@ -12,25 +12,16 @@ import java.util.*;
  */
 public class RepeatedDnaSequences {
     public List<String> findRepeatedDnaSequences(String s) {
-        if (s == null || s.isEmpty()) return Collections.emptyList();
+        if (s == null || s.length() <= 10) return Collections.emptyList();
 
+        Set<String> allSequences = new HashSet<>();
         Set<String> res = new HashSet<>();
-        for (int i = 0; i < s.length() - 10; i++) {
+        for (int i = 0; i <= s.length() - 10; i++) {
             String pattern = s.substring(i, i + 10);
-            if (!res.contains(pattern)) {
-                findRepeatedDnaSequences(s, pattern, res, i + 10);
+            if (!allSequences.add(pattern)) {
+                res.add(pattern);
             }
         }
         return new ArrayList<>(res);
-    }
-
-    private void findRepeatedDnaSequences(String s, String pattern, Set<String> res, int start) {
-        for (int i = start; i < s.length() - 10; i++) {
-            String potential = s.substring(i, i + 10);
-            if (potential.equals(pattern)) {
-                res.add(pattern);
-                break;
-            }
-        }
     }
 }
