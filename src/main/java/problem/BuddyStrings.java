@@ -10,12 +10,16 @@ public class BuddyStrings {
     public boolean buddyStrings(String A, String B) {
         if (A.length() != B.length()) return false;
 
-        // edge case handling: A == B
+        // edge case handling: A == B:
+        // if 2 input strings are equal,
+        // char sequence of such string
+        // should has at least one repeated
+        // char
         if (A.equals(B)) {
-            for (int i = 1; i < A.length(); i++) {
-                if (A.charAt(i) == A.charAt(i - 1)) {
-                    return true;
-                }
+            int[] dict = new int[26];
+            for (int i = 0; i < A.length(); i++) {
+                int ind = A.charAt(i) - 'a';
+                if (dict[ind]++ > 0) return true;
             }
             return false;
         }
