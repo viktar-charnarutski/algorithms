@@ -40,6 +40,6 @@ public class BuddyStringsTest {
 
     @Test
     public void buddyStrings7() {
-        assertFalse(new BuddyStrings().buddyStrings("abab", "abab"));
+        assertTrue(new BuddyStrings().buddyStrings("abab", "abab"));
     }
 }
