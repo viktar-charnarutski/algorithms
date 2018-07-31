@@ -484,6 +484,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 296 | 30-Jul-2018 | [187. Repeated DNA Sequences][296] | Medium | |
 | 297 | 30-Jul-2018 | [34. Find First and Last Position of Element in Sorted Array][297] | Medium | |
 | 298 | 31-Jul-2018 | [691. Stickers to Spell Word][298] | Hard | |
+| 299 | 31-Jul-2018 | [859. Buddy Strings][299] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -783,6 +784,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [296]: https://leetcode.com/problems/repeated-dna-sequences/
 [297]: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 [298]: https://leetcode.com/problems/stickers-to-spell-word/
+[299]: https://leetcode.com/problems/buddy-strings/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
