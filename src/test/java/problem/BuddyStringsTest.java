@@ -37,4 +37,9 @@ public class BuddyStringsTest {
     public void buddyStrings6() {
         assertFalse(new BuddyStrings().buddyStrings("ab", "ca"));
     }
+
+    @Test
+    public void buddyStrings7() {
+        assertFalse(new BuddyStrings().buddyStrings("abab", "abab"));
+    }
 }
