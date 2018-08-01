@@ -485,6 +485,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 297 | 30-Jul-2018 | [34. Find First and Last Position of Element in Sorted Array][297] | Medium | |
 | 298 | 31-Jul-2018 | [691. Stickers to Spell Word][298] | Hard | |
 | 299 | 31-Jul-2018 | [859. Buddy Strings][299] | Easy | |
+| 300 | 1-Aug-2018 | [701. Insert into a Binary Search Tree][300] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -785,6 +786,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [297]: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 [298]: https://leetcode.com/problems/stickers-to-spell-word/
 [299]: https://leetcode.com/problems/buddy-strings/
+[300]: https://leetcode.com/problems/insert-into-a-binary-search-tree/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
