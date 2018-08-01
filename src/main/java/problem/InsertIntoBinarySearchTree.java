@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 701. Insert into a Binary Search Tree
  * <p>
@@ -11,7 +14,37 @@ package problem;
  * You can return any of them.
  */
 public class InsertIntoBinarySearchTree {
+    // iterative solution
     public TreeNode insertIntoBST(TreeNode root, int val) {
+        if (root == null) return new TreeNode(val);
+        Queue<TreeNode> nodes = new LinkedList<>();
+        nodes.offer(root);
+        while (!nodes.isEmpty()) {
+            TreeNode curr = nodes.remove();
+            if (curr == null) {
+                continue;
+            }
+            if (curr.val > val) {
+                if (curr.left != null) {
+                    nodes.offer(curr.left);
+                } else {
+                    curr.left = new TreeNode(val);
+                    break;
+                }
+            } else {
+                if (curr.right != null) {
+                    nodes.offer(curr.right);
+                } else {
+                    curr.right = new TreeNode(val);
+                    break;
+                }
+            }
+        }
+        return root;
+    }
+
+    // recursive solution
+    public TreeNode insertIntoBSTReq(TreeNode root, int val) {
         if (root == null) return new TreeNode(val);
         if (root.val > val) {
             root.left = insertIntoBST(root.left, val);
