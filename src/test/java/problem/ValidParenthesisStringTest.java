@@ -41,4 +41,29 @@ public class ValidParenthesisStringTest {
     public void checkValidString7() {
         assertFalse(new ValidParenthesisString().checkValidString("((())"));
     }
+
+    @Test
+    public void checkValidString8() {
+        assertTrue(new ValidParenthesisString().checkValidString("((((()()))))"));
+    }
+
+    @Test
+    public void checkValidString9() {
+        assertFalse(new ValidParenthesisString().checkValidString("((((()())))"));
+    }
+
+    @Test
+    public void checkValidString10() {
+        assertFalse(new ValidParenthesisString().checkValidString("((((()())))"));
+    }
+
+    @Test
+    public void checkValidString11() {
+        assertFalse(new ValidParenthesisString().checkValidString("(*)))"));
+    }
+
+    @Test
+    public void checkValidString12() {
+        assertTrue(new ValidParenthesisString().checkValidString("(((******))"));
+    }
 }
