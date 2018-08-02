@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Stack;
+
 /**
  * 678. Valid Parenthesis String
  * <p>
@@ -14,6 +16,31 @@ package problem;
  */
 public class ValidParenthesisString {
     public boolean checkValidString(String s) {
-        return false;
+        if (s == null || s.length() == 0) return true;
+        Stack<Character> stack = new Stack<>();
+        int starsCount = 0;
+        for (char c : s.toCharArray()) {
+            switch (c) {
+                case '(': {
+                    stack.push(')');
+                    break;
+                }
+                case ')': {
+                    if (!stack.isEmpty()) {
+                        stack.pop();
+                    } else {
+                        if (starsCount-- == 0) {
+                            return false;
+                        }
+                    }
+                    break;
+                }
+                case '*': {
+                    starsCount++;
+                    break;
+                }
+            }
+        }
+        return stack.isEmpty() || starsCount >= stack.size();
     }
 }
