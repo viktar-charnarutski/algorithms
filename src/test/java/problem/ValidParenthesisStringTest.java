@@ -66,4 +66,10 @@ public class ValidParenthesisStringTest {
     public void checkValidString12() {
         assertTrue(new ValidParenthesisString().checkValidString("(((******))"));
     }
+
+    @Test
+    public void checkValidString13() {
+        assertFalse(new ValidParenthesisString().checkValidString("((*)(*)((*"));
+    }
+    // ))
 }
