@@ -486,6 +486,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 298 | 31-Jul-2018 | [691. Stickers to Spell Word][298] | Hard | |
 | 299 | 31-Jul-2018 | [859. Buddy Strings][299] | Easy | |
 | 300 | 1-Aug-2018 | [701. Insert into a Binary Search Tree][300] | Medium | Y |
+| 301 | 1-Aug-2018 | [700. Search in a Binary Search Tree][301] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -787,6 +788,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [298]: https://leetcode.com/problems/stickers-to-spell-word/
 [299]: https://leetcode.com/problems/buddy-strings/
 [300]: https://leetcode.com/problems/insert-into-a-binary-search-tree/
+[301]: https://leetcode.com/problems/search-in-a-binary-search-tree/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
