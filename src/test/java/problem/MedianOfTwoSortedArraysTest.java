@@ -19,6 +19,12 @@ public class MedianOfTwoSortedArraysTest {
     }
 
     @Test
+    public void findMedianSortedArrays3() {
+        assertEquals(3.0, new MedianOfTwoSortedArrays().findMedianSortedArrays(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 4},
+                new int[]{1, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4}), 0.0);
+    }
+
+    @Test
     public void mergeArrays() {
         assertEquals(Arrays.asList(-3, 1, 2, 3, 4, 5, 6, 7, 8),
                 new MedianOfTwoSortedArrays().mergeArrays(new int[]{1, 2, 3, 4}, new int[]{-3, 3, 4, 5, 6, 7, 8}));
