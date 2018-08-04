@@ -489,6 +489,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 301 | 1-Aug-2018 | [700. Search in a Binary Search Tree][301] | Easy | |
 | 302 | 2-Aug-2018 | [678. Valid Parenthesis String][302] | Medium | Y |
 | 303 | 2-Aug-2018 | [4. Median of Two Sorted Arrays][303] | Hard | |
+| 304 | 3-Aug-2018 | [152. Maximum Product Subarray][304] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -793,6 +794,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [301]: https://leetcode.com/problems/search-in-a-binary-search-tree/
 [302]: https://leetcode.com/problems/valid-parenthesis-string/
 [303]: https://leetcode.com/problems/median-of-two-sorted-arrays/
+[304]: https://leetcode.com/problems/maximum-product-subarray/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
