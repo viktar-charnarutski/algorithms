@@ -17,7 +17,10 @@ public class MaximumProductSubarray {
                 max = curr;
             } else {
                 while (lo != hi) {
-                    curr /= nums[lo++];
+                    if (nums[lo] != 0) {
+                        curr /= nums[lo];
+                    }
+                    lo++;
                 }
             }
         }
