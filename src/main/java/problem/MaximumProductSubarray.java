@@ -12,6 +12,9 @@ public class MaximumProductSubarray {
         int max = Integer.MIN_VALUE, curr = 1;
         int hi = 0, lo = 0;
         while (hi < nums.length) {
+            if (curr == 0) {
+                curr = 1;
+            }
             curr *= nums[hi++];
             if (curr >= max) {
                 max = curr;
