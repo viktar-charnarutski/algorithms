@@ -25,4 +25,11 @@ public class MaximumProductSubarrayTest {
     public void maxProduct4() {
         assertEquals(2, new MaximumProductSubarray().maxProduct(new int[]{0, 2}));
     }
+
+    @Test
+    public void maxProduct5() {
+        assertEquals(24, new MaximumProductSubarray().maxProduct(new int[]{-2, 3, -4}));
+    }
+
+
 }
