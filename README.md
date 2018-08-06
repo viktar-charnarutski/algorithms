@@ -490,6 +490,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 302 | 2-Aug-2018 | [678. Valid Parenthesis String][302] | Medium | Y |
 | 303 | 2-Aug-2018 | [4. Median of Two Sorted Arrays][303] | Hard | |
 | 304 | 3-Aug-2018 | [152. Maximum Product Subarray][304] | Medium | |
+| 305 | 6-Aug-2018 | [819. Most Common Word][305] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -795,6 +796,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [302]: https://leetcode.com/problems/valid-parenthesis-string/
 [303]: https://leetcode.com/problems/median-of-two-sorted-arrays/
 [304]: https://leetcode.com/problems/maximum-product-subarray/
+[305]: https://leetcode.com/problems/most-common-word/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
