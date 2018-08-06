@@ -9,23 +9,16 @@ package problem;
 public class MaximumProductSubarray {
     public int maxProduct(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
-        int max = Integer.MIN_VALUE, curr = 1;
-        int hi = 0, lo = 0;
-        while (hi < nums.length) {
-            if (curr == 0) {
-                curr = 1;
+        int max = nums[0], currMax = nums[0], currMin = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < 0) {
+                int tmp = currMax;
+                currMax = currMin;
+                currMin = tmp;
             }
-            curr *= nums[hi++];
-            if (curr >= max) {
-                max = curr;
-            } else {
-                while (lo != hi) {
-                    if (nums[lo] != 0) {
-                        curr /= nums[lo];
-                    }
-                    lo++;
-                }
-            }
+            currMax = Math.max(nums[i], currMax * nums[i]);
+            currMin = Math.min(nums[i], currMin * nums[i]);
+            max = Math.max(currMax, max);
         }
         return max;
     }
