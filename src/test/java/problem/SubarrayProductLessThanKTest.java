@@ -23,4 +23,10 @@ public class SubarrayProductLessThanKTest {
         assertEquals(0,
                 new SubarrayProductLessThanK().numSubarrayProductLessThanK(new int[]{1,2,3}, 0));
     }
+
+    @Test
+    public void numSubarrayProductLessThanK4() {
+        assertEquals(0,
+                new SubarrayProductLessThanK().numSubarrayProductLessThanK(new int[]{1,2,3}, 0));
+    }
 }
