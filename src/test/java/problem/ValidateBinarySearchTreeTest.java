@@ -15,4 +15,18 @@ public class ValidateBinarySearchTreeTest {
         n2.right = n3;
         assertTrue(new ValidateBinarySearchTree().isValidBST(n2));
     }
+
+    @Test
+    public void isValidBST2() {
+        TreeNode n1 = new TreeNode(1);
+        TreeNode n3 = new TreeNode(3);
+        TreeNode n4 = new TreeNode(4);
+        TreeNode n5 = new TreeNode(5);
+        TreeNode n6 = new TreeNode(6);
+        n5.left = n1;
+        n5.right = n4;
+        n4.left = n3;
+        n4.right = n6;
+        assertTrue(new ValidateBinarySearchTree().isValidBST(n5));
+    }
 }
