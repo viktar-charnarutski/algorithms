@@ -13,6 +13,6 @@ public class ValidateBinarySearchTreeTest {
         TreeNode n3 = new TreeNode(3);
         n2.left = n1;
         n2.right = n3;
-        assertTrue(n2);
+        assertTrue(new ValidateBinarySearchTree().isValidBST(n2));
     }
 }
