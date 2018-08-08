@@ -3,6 +3,7 @@ package problem;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -34,11 +35,16 @@ public class MinimumTimeDifferenceTest {
 
     @Test
     public void minDiff() {
-        assertEquals(2, new MinimumTimeDifference().minDiff(new int[]{1, 6, 4, 10}));
+        List<Integer> input = new ArrayList<>();
+        input.add(1);
+        input.add(6);
+        input.add(4);
+        input.add(10);
+        assertEquals(2, MinimumTimeDifference.minDiff(input));
     }
 
     @Test
     public void timeToMin() {
-        assertEquals(100, new MinimumTimeDifference().timeToMin("01:40"));
+        assertEquals(100, MinimumTimeDifference.toMinutes("01:40"));
     }
 }
