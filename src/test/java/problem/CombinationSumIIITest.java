@@ -40,4 +40,10 @@ public class CombinationSumIIITest {
         input.add(res3);
         assertEquals(input, new CombinationSumIII().combinationSum3(3, 9));
     }
+
+    @Test
+    public void combinationSum3_3() {
+        List<List<Integer>> input = new ArrayList<>();
+        assertEquals(input, new CombinationSumIII().combinationSum3(2, 18));
+    }
 }
