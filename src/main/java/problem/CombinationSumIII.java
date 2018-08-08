@@ -27,7 +27,7 @@ public class CombinationSumIII {
             }
             return;
         }
-        if (currNum > remained) {
+        if (currNum > remained || currNum > 9) {
             return;
         }
 
