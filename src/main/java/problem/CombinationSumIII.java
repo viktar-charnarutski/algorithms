@@ -30,11 +30,11 @@ public class CombinationSumIII {
         if (currNum > remained) {
             return;
         }
-        List<Integer> currSetNoCCurrItem = new ArrayList<>(currSet);
 
         currSet.add(currNum);
         combinationSum3(currNum + 1, remained - currNum, currSet);
 
-        combinationSum3(currNum + 1, remained, currSetNoCCurrItem);
+        currSet.remove(currSet.size() - 1);
+        combinationSum3(currNum + 1, remained, currSet);
     }
 }
