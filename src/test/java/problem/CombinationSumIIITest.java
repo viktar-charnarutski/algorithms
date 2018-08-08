@@ -46,4 +46,19 @@ public class CombinationSumIIITest {
         List<List<Integer>> input = new ArrayList<>();
         assertEquals(input, new CombinationSumIII().combinationSum3(2, 18));
     }
+
+
+    @Test
+    public void combinationSum3_4() {
+        List<List<Integer>> input = new ArrayList<>();
+        List<Integer> res1 = new ArrayList<>();
+        res1.add(1);
+        res1.add(5);
+        input.add(res1);
+        List<Integer> res2 = new ArrayList<>();
+        res2.add(2);
+        res2.add(4);
+        input.add(res2);
+        assertEquals(input, new CombinationSumIII().combinationSum3(2, 6));
+    }
 }
