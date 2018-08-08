@@ -2,6 +2,7 @@ package problem;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class ValidateBinarySearchTreeTest {
@@ -27,6 +28,6 @@ public class ValidateBinarySearchTreeTest {
         n5.right = n4;
         n4.left = n3;
         n4.right = n6;
-        assertTrue(new ValidateBinarySearchTree().isValidBST(n5));
+        assertFalse(new ValidateBinarySearchTree().isValidBST(n5));
     }
 }
