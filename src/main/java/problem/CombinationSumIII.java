@@ -18,16 +18,13 @@ public class CombinationSumIII {
     }
 
     private void combinationSum3(int currNum, int remained, List<Integer> currSet) {
-        if (currNum >= n) {
-            return;
-        }
         if (currSet.size() == k) {
             if (remained == 0) {
                 res.add(new ArrayList<>(currSet));
             }
             return;
         }
-        if (currNum > remained || currNum > 9) {
+        if (currNum >= n || currNum > remained || currNum > 9) {
             return;
         }
 
