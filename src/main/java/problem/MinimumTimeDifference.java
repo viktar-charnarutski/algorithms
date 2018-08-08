@@ -1,6 +1,7 @@
 package problem;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -11,27 +12,29 @@ import java.util.List;
  */
 public class MinimumTimeDifference {
     public int findMinDifference(List<String> timePoints) {
-        int[] minutes = new int[timePoints.size()];
-        for (int i = 0; i < timePoints.size(); i++) {
-            minutes[i] = timeToMin(timePoints.get(i));
+        List<Integer> timePointsList = new ArrayList<>();
+        for (String time : timePoints) {
+            timePointsList.add(toMinutes(time));
         }
-        return minDiff(minutes);
+        return minDiff(timePointsList);
     }
 
-    public int minDiff(int[] arr) {
-        Arrays.sort(arr);
+    static int minDiff(List<Integer> timePointsList) {
+        Collections.sort(timePointsList);
         int minDiff = Integer.MAX_VALUE;
-        for (int i = 1; i < arr.length; i++) {
-            minDiff = Math.min(arr[i] - arr[i - 1], minDiff);
+        for (int i = 1; i < timePointsList.size(); i++) {
+            int currDiff = timePointsList.get(i) - timePointsList.get(i - 1);
+            minDiff = Math.min(minDiff, currDiff);
         }
-        minDiff = Math.min((arr[0] + 1440) - arr[arr.length - 1], minDiff);
-        return minDiff;
+        return Math.min(minDiff, minDiffFirstLast(timePointsList.get(0), timePointsList.get(timePointsList.size() - 1)));
     }
 
-    public int timeToMin(String time) {
+    static int minDiffFirstLast(int first, int last) {
+        return (1440 - last) + first;
+    }
+
+    static int toMinutes(String time) {
         String[] hhmm = time.split(":");
-        int hh = Integer.valueOf(hhmm[0]);
-        int mm = Integer.valueOf(hhmm[1]);
-        return (hh * 60) + mm;
+        return Integer.parseInt(hhmm[0]) * 60 + Integer.parseInt(hhmm[1]);
     }
 }
