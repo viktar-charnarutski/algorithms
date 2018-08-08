@@ -30,4 +30,12 @@ public class ValidateBinarySearchTreeTest {
         n4.right = n6;
         assertFalse(new ValidateBinarySearchTree().isValidBST(n5));
     }
+
+    @Test
+    public void isValidBST3() {
+        TreeNode n1 = new TreeNode(1);
+        TreeNode n1_1 = new TreeNode(1);
+        n1.left = n1_1;
+        assertFalse(new ValidateBinarySearchTree().isValidBST(n1));
+    }
 }
