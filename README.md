@@ -493,6 +493,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 | 305 | 6-Aug-2018 | [819. Most Common Word][305] | Easy | |
 | 306 | 7-Aug-2018 | [713. Subarray Product Less Than K][306] | Medium | |
 | 307 | 8-Aug-2018 | [216. Combination Sum III][307] | Medium | |
+| 308 | 9-Aug-2018 | [98. Validate Binary Search Tree][308] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -801,6 +802,7 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 [305]: https://leetcode.com/problems/most-common-word/
 [306]: https://leetcode.com/problems/subarray-product-less-than-k/
 [307]: https://leetcode.com/problems/combination-sum-iii/
+[308]: https://leetcode.com/problems/validate-binary-search-tree/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
