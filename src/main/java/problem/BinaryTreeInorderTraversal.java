@@ -1,7 +1,6 @@
 package problem;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
@@ -13,23 +12,21 @@ import java.util.Stack;
 public class BinaryTreeInorderTraversal {
 
     public List<Integer> inorderTraversal(TreeNode root) {
-        LinkedList<Integer> list = new LinkedList<>();
-
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode curr = root;
-
-        while (curr != null || !stack.isEmpty()) {
-            while (curr != null) {
-                stack.push(curr);
-                curr = curr.left;
-            }
-
-            curr = stack.pop();
-            list.add(curr.val);
-            curr = curr.right;
+        List<Integer> res = new ArrayList<>();
+        if (root == null) {
+            return res;
         }
-
-        return list;
+        Stack<TreeNode> stack = new Stack<>();
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            TreeNode curr = stack.pop();
+            res.add(curr.val);
+            root = curr.right;
+        }
+        return res;
     }
 
     public List<Integer> inorderTraversalRecursive(TreeNode root) {
