@@ -9,7 +9,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - [x] Sergey Sema [How to get in Google: Preparation Instruction *In Russian*](https://dou.ua/lenta/articles/google-interview/)
 
 ## Books
- - [ ] Gayle McDowell [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1528866608&sr=8-1&keywords=CRACKING+the+CODING+INTERVIEW)
+ - [x] Gayle McDowell [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1528866608&sr=8-1&keywords=CRACKING+the+CODING+INTERVIEW)
  - [ ] Mongan J., Kindler N., Giguere E. [Programming Interviews Exposed](https://www.amazon.com/Programming-Interviews-Exposed-Through-Interview/dp/111941847X/ref=sr_1_1?s=books&ie=UTF8&qid=1528866738&sr=1-1&keywords=Programming+Interviews+Exposed)
 
 ## Dynamic Programming
@@ -75,7 +75,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
     inOrderTraversal(node.right);
  }
  ```
-  If we have *BST*, its elements will be visited in *ascending* order
+  If we have *BST*, its elements will be visited in *ascending* order.
+  So, **In-Order tarversal** is good for manipulations with *BST*.
+  See this [post][1002].
 
  - **Pre-Order Traversal** means to *visit* a head first and then its children:
  ```
@@ -158,22 +160,20 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 
 ## Data Structures
 - [x] [Linked Lists][1000]
-- [ ] Trees
-- [ ] *Tries* - in progress
-- [ ] *Graphs* - in progress
+- [x] Trees
+- [x] Tries
+- [x] Graphs
 - [x] Stacks
 - [ ] Queues
-- [ ] Heaps
-- [ ] Vectors / Arraylists
+- [x] Vectors / ArrayLists
 - [ ] Heaps
 - [ ] Hash Tables
 
 ## Algorithms
-- [ ] Breadth-First Search
-- [ ] Depth-First Search
+- [x] Breadth-First Search
+- [x] Depth-First Search
 - [x] Quick Sort
 - [ ] Merge Sort
-- [ ] Quick Sort
 
 ## Concepts
 - [ ] Bit Manipulation
@@ -807,3 +807,4 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
+[1002]: https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
