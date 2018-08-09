@@ -121,7 +121,12 @@ Solutions for algorithm questions which could be asked on a technical interview.
     return isFound;
  }
  ```
- If we want to find the shortest path between two nodes, *BFS* is generally better
+ <p>
+ Depth-first search is like walking through a corn maze.
+ You explore one path, hit a dead end, and go back and try a different one.
+ <p>
+ If we want to find the shortest path between two nodes, *BFS* is generally better.
+
  - In **Breadth-First Search** (BFS) we exploring all the heighbors before moving to its children. Iterative implementation based on ```Queue```:
  ```
  public boolean bfs(Node node, int valueToFind) {
