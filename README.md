@@ -156,6 +156,15 @@ Solving and fully understanding a dynamic programming problem is a 4 step proces
 3. Remove the need for recursion (_bottom-up dynamic programming_)
 4. Apply final tricks to reduce the time / memory complexity
 
+### Bottom-Up Algorithm
+Going **bottom-up** is a way to avoid *recursion*, saving the memory cost that
+recursion incurs when it builds up the call stack.
+<br>
+Put simply, a **bottom-up algorithm** *starts from the beginning*, while a
+recursive algorithm often *starts from the end and works backwards.*
+<br/>
+Going **bottom-up** is a common strategy for dynamic programming problems.
+
 # My Statistics
 
 ## Data Structures
