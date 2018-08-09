@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Stack;
+
 /**
  * 98. Validate Binary Search Tree
  * <p>
@@ -13,6 +15,23 @@ package problem;
  */
 public class ValidateBinarySearchTree {
     public boolean isValidBST(TreeNode root) {
-        return false;
+        if (root == null) return true;
+
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode prev = null;
+
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if (prev != null && prev.val >= root.val) {
+                return false;
+            }
+            prev = root;
+            root = root.right;
+        }
+        return true;
     }
 }
