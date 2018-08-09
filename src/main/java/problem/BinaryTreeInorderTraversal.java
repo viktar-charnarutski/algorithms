@@ -22,9 +22,9 @@ public class BinaryTreeInorderTraversal {
                 stack.push(root);
                 root = root.left;
             }
-            TreeNode curr = stack.pop();
-            res.add(curr.val);
-            root = curr.right;
+            root = stack.pop();
+            res.add(root.val);
+            root = root.right;
         }
         return res;
     }
