@@ -7,6 +7,17 @@ package problem;
  */
 public class ToLowerCase {
     public String toLowerCase(String str) {
-        return null;
+        if (str == null || str.trim().length() == 0) {
+            return "";
+        }
+        StringBuilder sb = new StringBuilder();
+        for (char c : str.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                sb.append(Character.toLowerCase(c));
+            } else {
+                sb.append(c);
+            }
+        }
+        return sb.toString();
     }
 }
