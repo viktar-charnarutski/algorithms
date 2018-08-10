@@ -30,13 +30,10 @@ public class PathSumII {
 
         if (root.left == null && root.right == null && sum == 0) {
             res.add(new ArrayList<>(currPath));
-            currPath.remove(currPath.size() - 1);
-            return;
+        } else {
+            pathSum(root.left, sum, res, currPath);
+            pathSum(root.right, sum, res, currPath);
         }
-
-        pathSum(root.left, sum, res, currPath);
-        pathSum(root.right, sum, res, currPath);
-
         currPath.remove(currPath.size() - 1);
     }
 }
