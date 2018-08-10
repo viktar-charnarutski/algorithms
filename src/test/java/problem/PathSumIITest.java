@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class PathSumIITest {
 
     @Test
-    public void pathSum() {
+    public void pathSum1() {
         TreeNode n5 = new TreeNode(5);
         TreeNode n4 = new TreeNode(4);
         TreeNode n8 = new TreeNode(8);
@@ -25,14 +25,15 @@ public class PathSumIITest {
         n5.right = n8;
 
         n4.left = n11;
-        n8.left = n13;
-        n8.right = n4_1;
 
         n11.left = n7;
         n11.right = n2;
 
-        n4.left = n5_1;
-        n4.right = n1;
+        n8.left = n13;
+        n8.right = n4_1;
+
+        n4_1.left = n5_1;
+        n4_1.right = n1;
 
         List<List<Integer>> expected = new ArrayList<>();
         List<Integer> list1 = new ArrayList<>();
@@ -48,7 +49,20 @@ public class PathSumIITest {
         expected.add(list1);
         expected.add(list2);
         assertEquals(expected, new PathSumII().pathSum(n5, 22));
+    }
 
+    @Test
+    public void pathSum2() {
+        List<List<Integer>> expected = new ArrayList<>();
+        assertEquals(expected, new PathSumII().pathSum(new TreeNode(5), 22));
+    }
 
+    @Test
+    public void pathSum3() {
+        List<List<Integer>> expected = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(5);
+        expected.add(list1);
+        assertEquals(expected, new PathSumII().pathSum(new TreeNode(5), 5));
     }
 }
