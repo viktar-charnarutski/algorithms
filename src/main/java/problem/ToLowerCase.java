@@ -10,6 +10,19 @@ public class ToLowerCase {
         if (str == null || str.trim().length() == 0) {
             return "";
         }
+        char[] strArr = str.toCharArray();
+        for (int i = 0; i < strArr.length; i++) {
+            if (strArr[i] >= 'A' && strArr[i] <= 'Z') {
+                strArr[i] = (char) (strArr[i] - 'A' + 'a');
+            }
+        }
+        return new String(strArr);
+    }
+
+    public String toLowerCaseLib(String str) {
+        if (str == null || str.trim().length() == 0) {
+            return "";
+        }
         StringBuilder sb = new StringBuilder();
         for (char c : str.toCharArray()) {
             if (Character.isUpperCase(c)) {
