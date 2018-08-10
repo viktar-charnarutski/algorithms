@@ -12,25 +12,28 @@ package problem;
  * remove(value): Remove a value in the HashSet. If the value does not exist in the HashSet, do nothing.
  */
 public class DesignHashSet {
+
+    private Integer[] arr;
+
     /**
      * Initialize your data structure here.
      */
     public DesignHashSet() {
-
+         arr = new Integer[1000000];
     }
 
     public void add(int key) {
-
+        arr[key] = key;
     }
 
     public void remove(int key) {
-
+        arr[key] = null;
     }
 
     /**
      * Returns true if this set contains the specified element
      */
     public boolean contains(int key) {
-        return false;
+        return arr[key] != null;
     }
 }
