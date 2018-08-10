@@ -514,6 +514,7 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 | 306 | 7-Aug-2018 | [713. Subarray Product Less Than K][306] | Medium | |
 | 307 | 8-Aug-2018 | [216. Combination Sum III][307] | Medium | |
 | 308 | 9-Aug-2018 | [98. Validate Binary Search Tree][308] | Medium | Y |
+| 309 | 10-Aug-2018 | [113. Path Sum II][309] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -823,6 +824,7 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 [306]: https://leetcode.com/problems/subarray-product-less-than-k/
 [307]: https://leetcode.com/problems/combination-sum-iii/
 [308]: https://leetcode.com/problems/validate-binary-search-tree/
+[309]: https://leetcode.com/problems/path-sum-ii/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
