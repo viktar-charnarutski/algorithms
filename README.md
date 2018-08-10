@@ -516,7 +516,8 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 | 308 | 9-Aug-2018 | [98. Validate Binary Search Tree][308] | Medium | Y |
 | 309 | 10-Aug-2018 | [113. Path Sum II][309] | Medium | |
 | 310 | 10-Aug-2018 | [709. To Lower Case][310] | Easy | |
-| 311 | 11-Aug-2018 | [561. Array Partition I][311] | Easy | |
+| 311 | 10-Aug-2018 | [561. Array Partition I][311] | Easy | |
+| 312 | 10-Aug-2018 | [705. Design HashSet][312] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -829,6 +830,7 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 [309]: https://leetcode.com/problems/path-sum-ii/
 [310]: https://leetcode.com/problems/to-lower-case/
 [311]: https://leetcode.com/problems/array-partition-i/
+[312]: https://leetcode.com/problems/design-hashset/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
