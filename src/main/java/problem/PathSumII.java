@@ -21,7 +21,7 @@ public class PathSumII {
     }
 
     private void pathSum(TreeNode root, int sum, List<List<Integer>> res, ArrayList<Integer> currPath) {
-        if (root == null || sum < 0) {
+        if (root == null) {
             return;
         }
 
