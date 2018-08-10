@@ -72,4 +72,17 @@ public class PathSumIITest {
         n1.left = n2;
         assertEquals(new ArrayList<>(), new PathSumII().pathSum(n1, 1));
     }
+
+    @Test
+    public void pathSum5() {
+        List<List<Integer>> expected = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(-2);
+        list1.add(-3);
+        expected.add(list1);
+        TreeNode n1 = new TreeNode(-2);
+        TreeNode n2 = new TreeNode(-3);
+        n1.right = n2;
+        assertEquals(expected, new PathSumII().pathSum(n1, -5));
+    }
 }
