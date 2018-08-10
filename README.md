@@ -48,6 +48,10 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - To *arrange* the list's nodes in a *particular order* use two (*or more*) brand new lists, so then you can combine it for a single list
  - Use *two pointers* if you need to find a cycle or count from the end (like a *middle* one)
  - To reverse a list you just need to *re-map* links to the *next* node pointing it to the *previous* one
+ - So iterating through a linked list is usually quite a bit slower than
+ iterating through the items in an array, even though they're both theoretically O(n)O(n) time.
+ That's because linked list's items are being located all over the memory,
+ not next to each other like array's items.
 
 ### Stack
  - **FILO** First In, Last Out (*like a stack of plates*)
