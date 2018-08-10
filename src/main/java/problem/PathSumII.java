@@ -1,6 +1,6 @@
 package problem;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,6 +12,31 @@ import java.util.List;
  */
 public class PathSumII {
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
-        return Collections.emptyList();
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null || sum == 0) {
+            return res;
+        }
+        pathSum(root, sum, res, new ArrayList<>());
+        return res;
+    }
+
+    private void pathSum(TreeNode root, int sum, List<List<Integer>> res, ArrayList<Integer> currPath) {
+        if (root == null || sum < 0) {
+            return;
+        }
+
+        currPath.add(root.val);
+        sum -= root.val;
+
+        if (root.left == null && root.right == null && sum == 0) {
+            res.add(new ArrayList<>(currPath));
+            currPath.remove(currPath.size() - 1);
+            return;
+        }
+
+        pathSum(root.left, sum, res, currPath);
+        pathSum(root.right, sum, res, currPath);
+
+        currPath.remove(currPath.size() - 1);
     }
 }
