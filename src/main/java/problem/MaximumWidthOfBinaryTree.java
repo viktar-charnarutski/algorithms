@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 662. Maximum Width of Binary Tree
  * <p>
@@ -11,6 +14,40 @@ package problem;
  */
 public class MaximumWidthOfBinaryTree {
     public int widthOfBinaryTree(TreeNode root) {
-        return 0;
+        int maxWidth = 0;
+        if (root == null) {
+            return maxWidth;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            int currWidth = 0;
+            int rowSize = queue.size();
+            int fakeCnt = 0;
+            for (int i = rowSize; i > 0; i--) {
+                currWidth++;
+                TreeNode curr = queue.remove();
+                if (curr instanceof FakeNode) {
+                    queue.offer(new FakeNode(0));
+                    queue.offer(new FakeNode(0));
+                    if (++fakeCnt == rowSize) {
+                        return maxWidth;
+                    }
+                    continue;
+                } else {
+                    maxWidth = Math.max(currWidth, maxWidth);
+                }
+                queue.offer(curr.left != null ? curr.left : new FakeNode(0));
+                queue.offer(curr.right != null ? curr.right : new FakeNode(0));
+            }
+        }
+        return maxWidth;
+    }
+
+    class FakeNode extends TreeNode {
+        FakeNode(int x) {
+            super(x);
+        }
     }
 }
