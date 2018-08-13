@@ -74,7 +74,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
 
 ### Trees' Search
  - **In-Order tarversal** means to *visit* left node, then head, then - right one:
- <p>*DFS*:
+ *DFS*:
  ```
  public void inOrderTraversal(TreeNode node) {
     if (node == null) return;
@@ -83,8 +83,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
     inOrderTraversal(node.right);
  }
  ```
- </p>
- <p>*BFS*:
+*BFS*:
  ```
  public void inOrderTraversal(TreeNode node) {
     if (node == null) return;
@@ -101,11 +100,10 @@ Solutions for algorithm questions which could be asked on a technical interview.
     }
  }
  ```
- </p>
 
-  If we have *BST*, its elements will be visited in *ascending* order.
-  So, **In-Order tarversal** is good for manipulations with *BST*.
-  See this [post][1002].
+If we have *BST*, its elements will be visited in *ascending* order.
+So, **In-Order tarversal** is good for manipulations with *BST*.
+See this [post][1002].
 
  - **Pre-Order Traversal** means to *visit* a head first and then its children:
  ```
