@@ -49,7 +49,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - Use *two pointers* if you need to find a cycle or count from the end (like a *middle* one)
  - To reverse a list you just need to *re-map* links to the *next* node pointing it to the *previous* one
  - So iterating through a linked list is usually quite a bit slower than
- iterating through the items in an array, even though they're both theoretically O(n)O(n) time.
+ iterating through the items in an array, even though they're both theoretically O(n) time.
  That's because linked list's items are being located all over the memory,
  not next to each other like array's items.
 
@@ -57,6 +57,9 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - **FILO** First In, Last Out (*like a stack of plates*)
  - For *FIFO* functionality (*queue*) you can just revert the stack with help of an additional one: ```stack2.push(stack1.pop());```
  - For tracking a min or max value of the stack you can store your min/max value right before you got a new min/max.
+ - Two common uses for stacks are:
+   1. parsing (_like parentheses' order validation_)
+   2. tree or graph traversal (_like depth-first traversal_)
 
 ### Trees
  - Trees (*not binary thees*) could be used for storing, for example, a bunch of phone numbers with each node having up to 10 children - one for each digit
