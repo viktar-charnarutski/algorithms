@@ -1,7 +1,7 @@
 package problem;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 662. Maximum Width of Binary Tree
@@ -13,41 +13,22 @@ import java.util.Queue;
  * the level, where the null nodes between the end-nodes are also counted into the length calculation.
  */
 public class MaximumWidthOfBinaryTree {
-    public int widthOfBinaryTree(TreeNode root) {
-        int maxWidth = 0;
-        if (root == null) {
-            return maxWidth;
-        }
+    private int maxWidth = 0;
+    private Map<Integer /* depth */, Integer /* pos if the left most node */> leftPositions = new HashMap<>();
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        while (!queue.isEmpty()) {
-            int currWidth = 0;
-            int rowSize = queue.size();
-            int fakeCnt = 0;
-            for (int i = rowSize; i > 0; i--) {
-                currWidth++;
-                TreeNode curr = queue.remove();
-                if (curr instanceof FakeNode) {
-                    queue.offer(new FakeNode(0));
-                    queue.offer(new FakeNode(0));
-                    if (++fakeCnt == rowSize) {
-                        return maxWidth;
-                    }
-                    continue;
-                } else {
-                    maxWidth = Math.max(currWidth, maxWidth);
-                }
-                queue.offer(curr.left != null ? curr.left : new FakeNode(0));
-                queue.offer(curr.right != null ? curr.right : new FakeNode(0));
-            }
-        }
+    public int widthOfBinaryTree(TreeNode root) {
+        widthOfBinaryTree(root, 0, 1);
         return maxWidth;
     }
 
-    class FakeNode extends TreeNode {
-        FakeNode(int x) {
-            super(x);
+    private void widthOfBinaryTree(TreeNode node, int depth, int position) {
+        if (node == null) {
+            return;
         }
+
+        leftPositions.putIfAbsent(depth, position);
+        maxWidth = Math.max(position - leftPositions.get(depth) + 1, maxWidth);
+        widthOfBinaryTree(node.left, depth + 1, position * 2);
+        widthOfBinaryTree(node.right, depth + 1, position * 2 + 1);
     }
 }
