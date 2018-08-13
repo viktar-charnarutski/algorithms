@@ -73,7 +73,7 @@ Solutions for algorithm questions which could be asked on a technical interview.
  - A **perfect binary tree** is one that is both *full* and *complete* with ```2^k - 1``` nodes (where ```k``` is the number of levels)
 
 ### Trees' Search
- - **In-Order tarversal** means to *visit* left node, then head, then - right one:
+ - **In-Order tarversal** means to *visit* left node, then head, then - right one:<br/>
  *DFS*:
  ```
  public void inOrderTraversal(TreeNode node) {
@@ -147,10 +147,8 @@ See this [post][1002].
     return isFound;
  }
  ```
- <p>
  Depth-first search is like walking through a corn maze.
- You explore one path, hit a dead end, and go back and try a different one.
- <p>
+ You explore one path, hit a dead end, and go back and try a different one.<br/>
  **Depth-first search** on a binary tree *generally* requires *less memory* than breadth-first.<br/>
  **Depth-first search** can be easily implemented with recursion.<br/>
  If we want to find the shortest path between two nodes, *BFS* is generally better.
