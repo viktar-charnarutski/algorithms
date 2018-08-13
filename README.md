@@ -62,18 +62,19 @@ Solutions for algorithm questions which could be asked on a technical interview.
    2. tree or graph traversal (_like depth-first traversal_)
 
 ### Trees
- - Trees (*not binary thees*) could be used for storing, for example, a bunch of phone numbers with each node having up to 10 children - one for each digit
+ - Trees (*not binary trees*) could be used for storing, for example, a bunch of phone numbers with each node having up to 10 children - one for each digit
  - A node is called a *leaf node* if it has no children
  - A *Binary Search Tree* is a binary tree in which every node fits a specific ordering property: *all left descendents <= n < all right descendents*
- - Clarify with your interviewer if your *BST* could have duplicates. If so, clarify on what side should they go
+ - Clarify with your interviewer if your *BST* could have duplicates. If so, clarify *on what side should they go*
  - Do not assume that your tree is *BST*, it should be clarified
- - If the binary tree is balanced, you could expect ```O(log n)``` times for *insert* and *find* operations
+ - If the binary tree is **balanced**, you could expect ```O(log n)``` times for *insert* and *find* operations
  - A **complete binary tree** is a binary tree in which every level of the tree is *fully filled*, except for perhaps the last level
  - A **full binary tree** is a binary tree in which every node has either *zero or two* children
  - A **perfect binary tree** is one that is both *full* and *complete* with ```2^k - 1``` nodes (where ```k``` is the number of levels)
 
 ### Trees' Search
  - **In-Order tarversal** means to *visit* left node, then head, then - right one:
+ <p>*DFS*:
  ```
  public void inOrderTraversal(TreeNode node) {
     if (node == null) return;
@@ -82,6 +83,26 @@ Solutions for algorithm questions which could be asked on a technical interview.
     inOrderTraversal(node.right);
  }
  ```
+ </p>
+ <p>*BFS*:
+ ```
+ public void inOrderTraversal(TreeNode node) {
+    if (node == null) return;
+    Stack<TreeNode> stack = new Stack<>();
+    stack.push(node);
+    while(!stack.isEmpty() || node == null) {
+        while(node != null) {
+            stack.push(node);
+            node = node.left;
+        }
+        node = stack.pop();
+        visit(node);
+        node = node.right;
+    }
+ }
+ ```
+ </p>
+
   If we have *BST*, its elements will be visited in *ascending* order.
   So, **In-Order tarversal** is good for manipulations with *BST*.
   See this [post][1002].
