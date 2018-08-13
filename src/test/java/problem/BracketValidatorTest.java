@@ -19,6 +19,6 @@ public class BracketValidatorTest {
 
     @Test
     public void isValid3() {
-        assertTrue(new BracketValidator().isValid("{[}"));
+        assertFalse(new BracketValidator().isValid("{[}"));
     }
 }
