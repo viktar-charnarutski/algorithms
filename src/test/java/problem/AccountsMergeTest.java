@@ -90,4 +90,47 @@ public class AccountsMergeTest {
 
         assertEquals(expected, new AccountsMerge().accountsMerge(accounts));
     }
+
+    @Test
+    public void accountsMerge3() {
+        List<List<String>> accounts = new ArrayList<>();
+        List<String> account1 = new ArrayList<>();
+        account1.add("David");
+        account1.add("David0@m.co");
+        account1.add("David1@m.co");
+        accounts.add(account1);
+        List<String> account2 = new ArrayList<>();
+        account2.add("David");
+        account2.add("David3@m.co");
+        account2.add("David4@m.co");
+        accounts.add(account2);
+        List<String> account3 = new ArrayList<>();
+        account3.add("David");
+        account3.add("David4@m.co");
+        account3.add("David5@m.co");
+        accounts.add(account3);
+        List<String> account4 = new ArrayList<>();
+        account4.add("David");
+        account4.add("David2@m.co");
+        account4.add("David3@m.co");
+        accounts.add(account4);
+        List<String> account5 = new ArrayList<>();
+        account5.add("David");
+        account5.add("David1@m.co");
+        account5.add("David2@m.co");
+        accounts.add(account5);
+
+        List<List<String>> expected = new ArrayList<>();
+        List<String> expected1 = new ArrayList<>();
+        expected1.add("David");
+        expected1.add("David0@m.co");
+        expected1.add("David1@m.co");
+        expected1.add("David2@m.co");
+        expected1.add("David3@m.co");
+        expected1.add("David4@m.co");
+        expected1.add("David5@m.co");
+        expected.add(expected1);
+
+        assertEquals(expected, new AccountsMerge().accountsMerge(accounts));
+    }
 }
