@@ -73,6 +73,7 @@ public class AccountsMerge {
                 accountList.add(name);
                 accountList.addAll(emails);
 
+                Collections.sort(accountList);
                 accountsList.add(accountList);
             }
         }
