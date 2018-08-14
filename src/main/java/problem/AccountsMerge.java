@@ -46,7 +46,6 @@ public class AccountsMerge {
                }
             }
         }
-        // didn't find emails' match
         mapAccountToExistedName(account, accountsMap);
     }
 
