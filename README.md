@@ -541,6 +541,7 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 | 313 | 12-Aug-2018 | [662. Maximum Width of Binary Tree][313] | Medium | Y |
 | 314 | 12-Aug-2018 | [Bracket Validator][314] | Easy | |
 | 315 | 14-Aug-2018 | [721. Accounts Merge][315] | Medium | Y |
+| 316 | 14-Aug-2018 | [Rotation Point][316] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -857,6 +858,7 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 [313]: https://leetcode.com/problems/maximum-width-of-binary-tree/
 [314]: https://www.interviewcake.com/question/java/bracket-validator/
 [315]: https://www.interviewcake.com/question/java/bracket-validator/
+[316]: https://www.interviewcake.com/question/python/find-rotation-point
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
