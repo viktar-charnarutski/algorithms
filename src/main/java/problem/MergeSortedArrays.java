@@ -14,6 +14,30 @@ package problem;
  */
 public class MergeSortedArrays {
     public int[] merge(int[] arrLeft, int[] arrRight) {
-        return new int[0];
+        if (arrLeft == null || arrLeft.length == 0) {
+            return arrRight;
+        }
+        if (arrRight == null || arrRight.length == 0) {
+            return arrLeft;
+        }
+        int[] res = new int[arrLeft.length + arrRight.length];
+        int il = 0, ir = 0, ires = 0;
+        while (ires < res.length) {
+            if ((il >= arrLeft.length) || (ir < arrRight.length && arrRight[ir] < arrLeft[il])) {
+                res[ires] = arrRight[ir];
+                ires++;
+                ir++;
+            } else if ((ir >= arrRight.length) || (il < arrLeft.length && arrLeft[il] < arrRight[ir])) {
+                res[ires] = arrLeft[il];
+                ires++;
+                il++;
+            } else {
+                res[ires++] = arrLeft[il];
+                res[ires++] = arrRight[ir];
+                il++;
+                ir++;
+            }
+        }
+        return res;
     }
 }
