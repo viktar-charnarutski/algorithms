@@ -543,6 +543,7 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 | 315 | 14-Aug-2018 | [721. Accounts Merge][315] | Medium | Y |
 | 316 | 14-Aug-2018 | [Rotation Point][316] | Medium | |
 | 317 | 15-Aug-2018 | [33. Search in Rotated Sorted Array][317] | Medium | Y |
+| 318 | 15-Aug-2018 | [1. Two Sum][318] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -861,6 +862,7 @@ Going **bottom-up** is a common strategy for dynamic programming problems.
 [315]: https://www.interviewcake.com/question/java/bracket-validator/
 [316]: https://www.interviewcake.com/question/python/find-rotation-point
 [317]: https://leetcode.com/problems/search-in-rotated-sorted-array/
+[318]: https://leetcode.com/articles/two-sum/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
