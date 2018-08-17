@@ -17,4 +17,8 @@ public class IsomorphicStringsTest {
         assertFalse(new IsomorphicStrings().isIsomorphic("foo", "bar"));
     }
 
+    @Test
+    public void isIsomorphic3() {
+        assertTrue(new IsomorphicStrings().isIsomorphic("paper", "title"));
+    }
 }
