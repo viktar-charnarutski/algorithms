@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 205. Isomorphic Strings
  * <p>
@@ -12,6 +15,18 @@ package problem;
  */
 public class IsomorphicStrings {
     public boolean isIsomorphic(String s, String t) {
-        return false;
+        if (s == null || t == null || s.length() != t.length()) {
+            return false;
+        }
+        Map<Character, Integer> sMap = new HashMap<>();
+        Map<Character, Integer> tMap = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            sMap.put(s.charAt(i), sMap.getOrDefault(s.charAt(i), 0) + 1);
+            tMap.put(t.charAt(i), tMap.getOrDefault(t.charAt(i), 0) + 1);
+            if (!sMap.get(s.charAt(i)).equals(tMap.get(t.charAt(i)))) {
+                return false;
+            }
+        }
+        return true;
     }
 }
