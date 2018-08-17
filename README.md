@@ -548,6 +548,7 @@ See this [post][1003].
 | 317 | 15-Aug-2018 | [33. Search in Rotated Sorted Array][317] | Medium | Y |
 | 318 | 15-Aug-2018 | [1. Two Sum][318] | Easy | Y |
 | 319 | 16-Aug-2018 | [Merge Sorted Arrays][319] | Easy | |
+| 320 | 16-Aug-2018 | [223. Rectangle Area][320] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -868,6 +869,7 @@ See this [post][1003].
 [317]: https://leetcode.com/problems/search-in-rotated-sorted-array/
 [318]: https://leetcode.com/articles/two-sum/
 [319]: https://www.firecode.io/
+[320]: https://leetcode.com/problems/rectangle-area/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
