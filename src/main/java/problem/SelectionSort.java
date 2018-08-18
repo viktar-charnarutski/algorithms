@@ -12,5 +12,28 @@ package problem;
  */
 public class SelectionSort {
     public void sort(int[] arr) {
+        if (arr == null || arr.length <= 1) {
+            return;
+        }
+
+        int startOfUnsortedInd = 0;
+        while (startOfUnsortedInd < arr.length) {
+            int currMinInd = startOfUnsortedInd;
+            for (int i = currMinInd + 1; i < arr.length; i++) {
+                if (arr[i] < arr[currMinInd]) {
+                    currMinInd = i;
+                }
+            }
+            if (currMinInd > startOfUnsortedInd) {
+                swap(arr, startOfUnsortedInd, currMinInd);
+            }
+            startOfUnsortedInd++;
+        }
+    }
+
+    private void swap(int[] arr, int i, int j) {
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
     }
 }
