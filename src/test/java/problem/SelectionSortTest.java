@@ -30,4 +30,11 @@ public class SelectionSortTest {
         assertArrayEquals(expected, input);
     }
 
+    @Test
+    public void sort4() {
+        int[] input = new int[]{};
+        int[] expected = new int[]{};
+        new SelectionSort().sort(input);
+        assertArrayEquals(expected, input);
+    }
 }
