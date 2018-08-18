@@ -22,4 +22,12 @@ public class SelectionSortTest {
         assertArrayEquals(expected, input);
     }
 
+    @Test
+    public void sort3() {
+        int[] input = new int[]{4};
+        int[] expected = new int[]{4};
+        new SelectionSort().sort(input);
+        assertArrayEquals(expected, input);
+    }
+
 }
