@@ -13,4 +13,13 @@ public class SelectionSortTest {
         new SelectionSort().sort(input);
         assertArrayEquals(expected, input);
     }
+
+    @Test
+    public void sort2() {
+        int[] input = new int[]{52, 3, 2};
+        int[] expected = new int[]{2, 3, 52};
+        new SelectionSort().sort(input);
+        assertArrayEquals(expected, input);
+    }
+
 }
