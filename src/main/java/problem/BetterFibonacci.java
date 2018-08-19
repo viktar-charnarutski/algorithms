@@ -13,6 +13,18 @@ package problem;
  */
 public class BetterFibonacci {
     public int betterFibonacci(int n) {
-        return 0;
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        int res1 = 2, res2 = 1, r = 3;
+        while (r++ < n) {
+            int tmp = res1;
+            res1 = res1 + res2;
+            res2 = tmp;
+        }
+        return res1;
     }
 }
