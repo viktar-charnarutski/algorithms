@@ -20,4 +20,9 @@ public class InsertStarsTest {
     public void insertPairStar3() {
         assertEquals("ab", new InsertStars().insertPairStar("ab"));
     }
+
+    @Test
+    public void insertPairStar4() {
+        assertEquals("ab*b*ba", new InsertStars().insertPairStar("abbba"));
+    }
 }
