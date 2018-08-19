@@ -549,6 +549,7 @@ See this [post][1003].
 | 318 | 15-Aug-2018 | [1. Two Sum][318] | Easy | Y |
 | 319 | 16-Aug-2018 | [Merge Sorted Arrays][319] | Easy | |
 | 320 | 16-Aug-2018 | [223. Rectangle Area][320] | Medium | |
+| 321 | 17-Aug-2018 | [205. Isomorphic Strings][321] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -870,6 +871,7 @@ See this [post][1003].
 [318]: https://leetcode.com/articles/two-sum/
 [319]: https://www.firecode.io/
 [320]: https://leetcode.com/problems/rectangle-area/
+[321]: https://leetcode.com/problems/isomorphic-strings/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
