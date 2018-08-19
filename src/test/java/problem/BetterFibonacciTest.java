@@ -15,4 +15,9 @@ public class BetterFibonacciTest {
     public void betterFibonacci_1() {
         assertEquals(1, new BetterFibonacci().betterFibonacci(1));
     }
+
+    @Test
+    public void betterFibonacci_2() {
+        assertEquals(1, new BetterFibonacci().betterFibonacci(2));
+    }
 }
