@@ -30,4 +30,9 @@ public class BetterFibonacciTest {
     public void betterFibonacci_35() {
         assertEquals(9227465, new BetterFibonacci().betterFibonacci(35));
     }
+
+    @Test
+    public void betterFibonacci_40() {
+        assertEquals(102334155, new BetterFibonacci().betterFibonacci(40));
+    }
 }
