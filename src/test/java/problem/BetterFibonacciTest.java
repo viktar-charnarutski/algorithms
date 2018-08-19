@@ -20,4 +20,9 @@ public class BetterFibonacciTest {
     public void betterFibonacci_2() {
         assertEquals(1, new BetterFibonacci().betterFibonacci(2));
     }
+
+    @Test
+    public void betterFibonacci_3() {
+        assertEquals(2, new BetterFibonacci().betterFibonacci(3));
+    }
 }
