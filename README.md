@@ -550,6 +550,7 @@ See this [post][1003].
 | 319 | 16-Aug-2018 | [Merge Sorted Arrays][319] | Easy | |
 | 320 | 16-Aug-2018 | [223. Rectangle Area][320] | Medium | |
 | 321 | 17-Aug-2018 | [205. Isomorphic Strings][321] | Easy | |
+| 322 | 18-Aug-2018 | [Selection Sort][322] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -872,7 +873,7 @@ See this [post][1003].
 [319]: https://www.firecode.io/
 [320]: https://leetcode.com/problems/rectangle-area/
 [321]: https://leetcode.com/problems/isomorphic-strings/
-
+[322]: https://www.firecode.io/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
