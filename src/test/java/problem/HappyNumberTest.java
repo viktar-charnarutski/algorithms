@@ -10,4 +10,9 @@ public class HappyNumberTest {
     public void isHappy_19() {
         assertTrue(new HappyNumber().isHappy(19));
     }
+
+    @Test
+    public void isHappy_28() {
+        assertTrue(new HappyNumber().isHappy(28));
+    }
 }
