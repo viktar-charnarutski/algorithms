@@ -33,7 +33,7 @@ public class Combinations {
             return;
         }
         for (int j = i; j <= n; j++) {
-            curr.add(i);
+            curr.add(j);
             combine(n, k - 1, j + 1, res, curr);
             curr.remove(curr.size() - 1);
         }
