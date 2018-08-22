@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 202. Happy Number
  *
@@ -12,6 +15,24 @@ package problem;
  */
 public class HappyNumbers {
     public boolean isHappyNumber(int n) {
-        return false;
+        if (n == 0 || n == 1) {
+            return true;
+        }
+        Set<Integer> seen = new HashSet<>();
+        while (true) {
+            if (!seen.add(n)) {
+                return false;
+            }
+            int sum = 0;
+            while (n != 0) {
+                int r = n % 10;
+                sum += r * r;
+                n /= 10;
+            }
+            if (sum == 1) {
+                return true;
+            }
+            n = sum;
+        }
     }
 }
