@@ -12,6 +12,11 @@ public class HappyNumbersTest {
     }
 
     @Test
+    public void isHappyNumber_28() {
+        assertTrue(new HappyNumbers().isHappyNumber(28));
+    }
+
+    @Test
     public void isHappyNumber_68() {
         assertTrue(new HappyNumbers().isHappyNumber(68));
     }
