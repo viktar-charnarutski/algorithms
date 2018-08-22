@@ -2,6 +2,7 @@ package problem;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class HappyNumberTest {
@@ -24,5 +25,10 @@ public class HappyNumberTest {
     @Test
     public void isHappy_100() {
         assertTrue(new HappyNumber().isHappy(100));
+    }
+
+    @Test
+    public void isHappy_12() {
+        assertFalse(new HappyNumber().isHappy(12));
     }
 }
