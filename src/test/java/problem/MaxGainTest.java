@@ -20,4 +20,9 @@ public class MaxGainTest {
     public void maxGain3() {
         assertEquals(0, MaxGain.maxGain(new int[]{1, 1}));
     }
+
+    @Test
+    public void maxGain4() {
+        assertEquals(100, MaxGain.maxGain(new int[]{0, 100, 0, 100, 0, 100}));
+    }
 }
