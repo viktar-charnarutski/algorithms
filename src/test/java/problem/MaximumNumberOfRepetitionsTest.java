@@ -18,6 +18,6 @@ public class MaximumNumberOfRepetitionsTest {
 
     @Test
     public void getMaxRepetition3() {
-        assertEquals(6, MaximumNumberOfRepetitions.getMaxRepetition(new int[]{3, 6, 1, 2, 5, 7, 4, 6, 2, 6}));
+        assertEquals(3, MaximumNumberOfRepetitions.getMaxRepetition(new int[]{0, 1, 2, 2, 3, 3, 3, 4}));
     }
 }
