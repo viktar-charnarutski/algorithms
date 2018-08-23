@@ -35,4 +35,9 @@ public class MaximumNumberOfRepetitionsTest {
     public void getMaxRepetition6() {
         assertEquals(-1, MaximumNumberOfRepetitions.getMaxRepetition(new int[]{}));
     }
+
+    @Test
+    public void getMaxRepetition7() {
+        assertEquals(-1, MaximumNumberOfRepetitions.getMaxRepetition(null));
+    }
 }
