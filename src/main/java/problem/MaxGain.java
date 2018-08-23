@@ -12,6 +12,18 @@ public class MaxGain {
         if (a == null || a.length < 2) {
             return 0;
         }
+        int min = a[0], gain = 0;
+        for (int i = 1; i < a.length; i++) {
+            min = Math.min(a[i], min);
+            gain = Math.max(a[i] - min, gain);
+        }
+        return gain;
+    }
+
+    public static int maxGain1(int[] a) {
+        if (a == null || a.length < 2) {
+            return 0;
+        }
         int min = a[0], max = a[1], gain = min < max ? max - min : 0;
         for (int i = 2; i < a.length; i++) {
             if (a[i] > max) {
