@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Distance of a node from the root
  * <p>
@@ -10,6 +13,28 @@ package problem;
  */
 public class DistanceToTheNode {
     public int pathLengthFromRoot(TreeNode root, int n1) {
-        return 0;
+        if (root == null) {
+            return 0;
+        }
+        Queue<TreeNode> nodes = new LinkedList<>();
+        nodes.add(root);
+        int cnt = 0;
+        while (!nodes.isEmpty()) {
+            cnt++;
+            int size = nodes.size();
+            while (size-- > 0) {
+                root = nodes.remove();
+                if (root.val == n1) {
+                    return cnt;
+                }
+                if (root.left != null) {
+                    nodes.add(root.left);
+                }
+                if (root.right != null) {
+                    nodes.add(root.right);
+                }
+            }
+        }
+        return cnt;
     }
 }
