@@ -556,6 +556,7 @@ See this [post][1003].
 | 325 | 23-Aug-2018 | [Maximum Number of Repetitions][325] | Medium | Y |
 | 326 | 23-Aug-2018 | [Rotate a Square Image Clockwise][326] | Easy | |
 | 327 | 23-Aug-2018 | [Distance of a node from the root][327] | Easy | |
+| 328 | 26-Aug-2018 | [54. Spiral Matrix][328] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -884,6 +885,7 @@ See this [post][1003].
 [325]: https://www.firecode.io/
 [326]: https://www.firecode.io/
 [327]: https://www.firecode.io/
+[328]: https://www.firecode.io/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
