@@ -25,4 +25,9 @@ public class RotateLinearArrayTest {
     public void rotateLeft4() {
         assertArrayEquals(new int[]{6, 7, 8, 9, 1, 2, 3, 4, 5}, RotateLinearArray.rotateLeft(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, 14));
     }
+
+    @Test
+    public void rotateLeft5() {
+        assertArrayEquals(new int[]{1}, RotateLinearArray.rotateLeft(new int[]{1}, 7));
+    }
 }
