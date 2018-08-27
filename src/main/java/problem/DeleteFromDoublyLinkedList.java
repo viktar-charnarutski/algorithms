@@ -11,6 +11,25 @@ import datastructure.DoublyLinkedNode;
  */
 public class DeleteFromDoublyLinkedList {
     public DoublyLinkedNode deleteAtPos(DoublyLinkedNode head, int pos) {
-        return null;
+        if (head == null) {
+            return null;
+        }
+        if (pos == 1) {
+            head.prev = null;
+            return head.next;
+        }
+        DoublyLinkedNode curr = head, prev = null;
+        while (--pos > 0 && curr != null) {
+            prev = curr;
+            curr = curr.next;
+        }
+
+        if (curr != null) {
+            prev.next = curr.next;
+            if (curr.next != null) {
+                curr.next.prev = prev;
+            }
+        }
+        return head;
     }
 }
