@@ -17,15 +17,21 @@ public class DoublyLinkedNode {
         DoublyLinkedNode that = (DoublyLinkedNode) o;
 
         if (data != that.data) return false;
-        if (next != null ? !next.equals(that.next) : that.next != null) return false;
-        return prev != null ? prev.equals(that.prev) : that.prev == null;
+        return next != null ? next.equals(that.next) : that.next == null;
     }
 
     @Override
     public int hashCode() {
         int result = data;
         result = 31 * result + (next != null ? next.hashCode() : 0);
-        result = 31 * result + (prev != null ? prev.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "DoublyLinkedNode{" +
+                "data=" + data +
+                ", next=" + next +
+                '}';
     }
 }
