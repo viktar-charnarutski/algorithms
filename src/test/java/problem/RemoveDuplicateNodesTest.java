@@ -34,4 +34,11 @@ public class RemoveDuplicateNodesTest {
 
         assertEquals(m1, new RemoveDuplicateNodes().removeDuplicates(n1));
     }
+
+    @Test
+    public void removeDuplicates2() {
+        ListNode n1 = new ListNode(1);
+        ListNode m1 = new ListNode(1);
+        assertEquals(m1, new RemoveDuplicateNodes().removeDuplicates(n1));
+    }
 }
