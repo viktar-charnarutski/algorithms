@@ -25,4 +25,12 @@ public class FindKPairsWithSmallestSumsTest {
         expected.add(new int[]{1, 1});
         assertEquals(expected, new FindKPairsWithSmallestSums().kSmallestPairs(new int[]{1, 1, 2}, new int[]{1, 2, 3}, 2));
     }
+
+    @Test
+    public void kSmallestPairs3() {
+        List<int[]> expected = new ArrayList<>();
+        expected.add(new int[]{1, 3});
+        expected.add(new int[]{2, 3});
+        assertEquals(expected, new FindKPairsWithSmallestSums().kSmallestPairs(new int[]{1, 2}, new int[]{3}, 3));
+    }
 }
