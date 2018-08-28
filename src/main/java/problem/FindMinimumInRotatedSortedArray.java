@@ -19,7 +19,7 @@ public class FindMinimumInRotatedSortedArray {
             int mid = l + (r - l) / 2;
             if (nums[r] < nums[mid]) {
                 l = mid + 1;
-            } else if (nums[r] < nums[mid]){
+            } else if (nums[l] < nums[mid]){
                 r = mid;
             } else {
                 r--;
