@@ -3,6 +3,7 @@ package problem;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class RemoveDuplicateNodesTest {
 
@@ -40,5 +41,10 @@ public class RemoveDuplicateNodesTest {
         ListNode n1 = new ListNode(1);
         ListNode m1 = new ListNode(1);
         assertEquals(m1, new RemoveDuplicateNodes().removeDuplicates(n1));
+    }
+
+    @Test
+    public void removeDuplicates3() {
+        assertNull(new RemoveDuplicateNodes().removeDuplicates(null));
     }
 }
