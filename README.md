@@ -559,6 +559,7 @@ See this [post][1003].
 | 328 | 26-Aug-2018 | [54. Spiral Matrix][328] | Medium | Y |
 | 329 | 26-Aug-2018 | [Rotate Linear Array][329] | Medium | Y |
 | 330 | 27-Aug-2018 | [Delete the Node at the Specific Position in a Doubly Linked List][330] | Easy | |
+| 331 | 27-Aug-2018 | [Remove Duplicate Nodes][331] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -890,6 +891,7 @@ See this [post][1003].
 [328]: https://www.firecode.io/
 [329]: https://www.firecode.io/
 [330]: https://github.com/viktar-charnarutski/algorithms/blob/566cfa86c39a2885b0abecb5e2fe2ae4a995f6eb/src/main/java/problem/DeleteFromDoublyLinkedList.java
+[331]: https://www.firecode.io/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
