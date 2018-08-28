@@ -1,5 +1,6 @@
 package problem;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -14,6 +15,26 @@ import java.util.List;
  */
 public class FindKPairsWithSmallestSums {
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
-        return Collections.emptyList();
+        if (nums1 == null || nums1.length == 0 || nums2 == null || nums2.length == 0 || k <= 0) {
+            return Collections.emptyList();
+        }
+        List<int[]> res = new ArrayList<>();
+        int i1 = 0, i2 = 0;
+        while (i1 != nums1.length && i2 != nums2.length) {
+            res.add(new int[]{nums1[i1], nums2[i2]});
+            if (res.size() == k) {
+                return res;
+            }
+            if (i1 + 1 == nums1.length) {
+                i2++;
+            } else if (i2 + 1 == nums2.length) {
+                i1++;
+            } else if (nums1[i1] + nums2[i2 + 1] < nums1[i1 + 1] + nums2[i2]) {
+                i2++;
+            } else {
+                i1++;
+            }
+        }
+        return res;
     }
 }
