@@ -8,7 +8,7 @@ public class BinaryTreeSerializationTest {
 
     @Test
     public void serializeTree1() {
-        String expected = "1,2,3,null,null,4,5,null,null,null,null,";
+        String expected = "1,2,null,null,3,4,null,null,5,null,null,";
         TreeNode n1 = new TreeNode(1);
         TreeNode n2 = new TreeNode(2);
         TreeNode n3 = new TreeNode(3);
@@ -32,7 +32,7 @@ public class BinaryTreeSerializationTest {
         n1.right = n3;
         n3.left = n4;
         n3.right = n5;
-        assertEquals(n1, new BinaryTreeSerialization().restoreTree("1,2,3,null,null,4,5,null,null,null,null,"));
+        assertEquals(n1, new BinaryTreeSerialization().restoreTree("1,2,null,null,3,4,null,null,5,null,null,"));
     }
 
     @Test
@@ -50,12 +50,12 @@ public class BinaryTreeSerializationTest {
         n2.right = n5;
         n3.left = n6;
         n3.right = n7;
-        assertEquals(n1, new BinaryTreeSerialization().restoreTree("1,2,3,4,5,6,7,null,null,null,null,null,null,null,null,"));
+        assertEquals(n1, new BinaryTreeSerialization().restoreTree("1,2,4,null,null,5,null,null,3,6,null,null,7,null,null,"));
     }
 
     @Test
     public void serializeTree2() {
-        String expected = "1,2,3,4,5,6,7,null,null,null,null,null,null,null,null,";
+        String expected = "1,2,4,null,null,5,null,null,3,6,null,null,7,null,null,";
         TreeNode n1 = new TreeNode(1);
         TreeNode n2 = new TreeNode(2);
         TreeNode n3 = new TreeNode(3);
