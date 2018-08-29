@@ -18,7 +18,7 @@ public class BinaryTreeSerializationTest {
         n1.right = n3;
         n3.left = n4;
         n3.right = n5;
-        assertEquals(expected, new BinaryTreeSerialization().serializeTree(n1));
+        assertEquals(expected, new BinaryTreeSerialization().serialize(n1));
     }
 
     @Test
@@ -32,7 +32,7 @@ public class BinaryTreeSerializationTest {
         n1.right = n3;
         n3.left = n4;
         n3.right = n5;
-        assertEquals(n1, new BinaryTreeSerialization().restoreTree("1,2,null,null,3,4,null,null,5,null,null,"));
+        assertEquals(n1, new BinaryTreeSerialization().deserialize("1,2,null,null,3,4,null,null,5,null,null,"));
     }
 
     @Test
@@ -50,7 +50,7 @@ public class BinaryTreeSerializationTest {
         n2.right = n5;
         n3.left = n6;
         n3.right = n7;
-        assertEquals(n1, new BinaryTreeSerialization().restoreTree("1,2,4,null,null,5,null,null,3,6,null,null,7,null,null,"));
+        assertEquals(n1, new BinaryTreeSerialization().deserialize("1,2,4,null,null,5,null,null,3,6,null,null,7,null,null,"));
     }
 
     @Test
@@ -69,6 +69,6 @@ public class BinaryTreeSerializationTest {
         n2.right = n5;
         n3.left = n6;
         n3.right = n7;
-        assertEquals(expected, new BinaryTreeSerialization().serializeTree(n1));
+        assertEquals(expected, new BinaryTreeSerialization().serialize(n1));
     }
 }
