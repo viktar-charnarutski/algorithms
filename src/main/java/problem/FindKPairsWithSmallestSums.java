@@ -3,6 +3,7 @@ package problem;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.PriorityQueue;
 
 /**
  * 373. Find K Pairs with Smallest Sums
@@ -15,6 +16,25 @@ import java.util.List;
  */
 public class FindKPairsWithSmallestSums {
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+        if (nums1 == null || nums1.length == 0 || nums2 == null || nums2.length == 0 || k <= 0) {
+            return Collections.emptyList();
+        }
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> ((a[0] + a[1]) - (b[0] + b[1])));
+        for (int i = 0; i < nums1.length && i < k; i++) {
+            queue.offer(new int[]{nums1[i], nums2[0], 0});
+        }
+        List<int[]> res = new ArrayList<>();
+        while (k-- > 0 && !queue.isEmpty()) {
+            int[] curr = queue.remove();
+            res.add(new int[]{curr[0], curr[1]});
+            if (curr[2] < nums2.length - 1) {
+                queue.offer(new int[]{curr[0], nums2[curr[2] + 1], curr[2] + 1});
+            }
+        }
+        return res;
+    }
+
+    public List<int[]> kSmallestPairs1(int[] nums1, int[] nums2, int k) {
         if (nums1 == null || nums1.length == 0 || nums2 == null || nums2.length == 0 || k <= 0) {
             return Collections.emptyList();
         }
