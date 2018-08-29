@@ -561,6 +561,7 @@ See this [post][1003].
 | 330 | 27-Aug-2018 | [Delete the Node at the Specific Position in a Doubly Linked List][330] | Easy | |
 | 331 | 27-Aug-2018 | [Remove Duplicate Nodes][331] | Easy | |
 | 332 | 28-Aug-2018 | [373. Find K Pairs with Smallest Sums][332] | Medium | Y |
+| 333 | 29-Aug-2018 | [297. Serialize and Deserialize Binary Tree][333] | Hard | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -894,6 +895,7 @@ See this [post][1003].
 [330]: https://github.com/viktar-charnarutski/algorithms/blob/566cfa86c39a2885b0abecb5e2fe2ae4a995f6eb/src/main/java/problem/DeleteFromDoublyLinkedList.java
 [331]: https://www.firecode.io/
 [332]: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
+[333]: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
