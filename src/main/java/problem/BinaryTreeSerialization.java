@@ -1,7 +1,7 @@
 package problem;
 
+import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * 297. Serialize and Deserialize Binary Tree
@@ -21,73 +21,33 @@ import java.util.Queue;
 public class BinaryTreeSerialization {
     private static final String DELIMITER = ",";
     private static final String NULL_STR_VALUE = "null";
+
     public String serializeTree(TreeNode root) {
-        if (root == null) {
-            return null;
-        }
         StringBuilder sb = new StringBuilder();
-        Queue<TreeNode> nodes = new LinkedList<>();
-        nodes.offer(root);
-        while (!nodes.isEmpty()) {
-            TreeNode curr = nodes.remove();
-            if (curr != null) {
-                sb.append(curr.val).append(DELIMITER);
-                nodes.offer(curr.left);
-                nodes.offer(curr.right);
-            } else {
-                sb.append(NULL_STR_VALUE).append(DELIMITER);
-            }
-        }
+        serialize(root, sb);
         return sb.toString();
     }
 
+    private void serialize(TreeNode root, StringBuilder sb) {
+        if (root == null) {
+            sb.append(NULL_STR_VALUE).append(DELIMITER);
+        } else {
+            sb.append(root.val).append(DELIMITER);
+            serialize(root.left, sb);
+            serialize(root.right, sb);
+        }
+    }
+
     public TreeNode restoreTree(String str) {
-        if (str == null || str.length() == 0) {
+        LinkedList<String> vals = new LinkedList<>(Arrays.asList(str.split(",")));
+        return deserialize(vals);
+    }
+
+    private TreeNode deserialize(LinkedList<String> vals) {
+        String val = vals.remove();
+        if (val.equals(NULL_STR_VALUE)) {
             return null;
         }
-        String[] vals = str.split(DELIMITER);
-
-        TreeNode head = new TreeNode(Integer.parseInt(vals[0]));
-
-        Queue<TreeNode> nodes = new LinkedList<>();
-        nodes.offer(head);
-
-        int i = 1;
-        while (!nodes.isEmpty()) {
-            TreeNode curr = nodes.remove();
-
-            appendLeft(vals[i++], curr);
-            appendRight(vals[i++], curr);
-
-            if (curr.left != null) {
-                nodes.offer(curr.left);
-            }
-            if (curr.right != null) {
-                nodes.offer(curr.right);
-            }
-        }
-        return head;
-    }
-
-    private void appendRight(String val, TreeNode curr) {
-        try {
-            if (!val.equals(NULL_STR_VALUE)) {
-                int data = Integer.parseInt(val);
-                curr.right = new TreeNode(data);
-            }
-        } catch (NumberFormatException e) {
-            // do nothing
-        }
-    }
-
-    private void appendLeft(String val, TreeNode curr) {
-        try {
-            if (!val.equals(NULL_STR_VALUE)) {
-                int data = Integer.parseInt(val);
-                curr.left = new TreeNode(data);
-            }
-        } catch (NumberFormatException e) {
-            // do nothing
-        }
+        return new TreeNode(Integer.parseInt(val), deserialize(vals), deserialize(vals));
     }
 }
