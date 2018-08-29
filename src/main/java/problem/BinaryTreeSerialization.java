@@ -48,6 +48,9 @@ public class BinaryTreeSerialization {
         if (val.equals(NULL_STR_VALUE)) {
             return null;
         }
-        return new TreeNode(Integer.parseInt(val), deserialize(vals), deserialize(vals));
+        TreeNode node = new TreeNode(Integer.parseInt(val));
+        node.left = deserialize(vals);
+        node.right = deserialize(vals);
+        return node;
     }
 }
