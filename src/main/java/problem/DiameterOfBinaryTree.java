@@ -7,22 +7,20 @@ package problem;
  * the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
  */
 public class DiameterOfBinaryTree {
-    private int max = 0;
-
     public int diameterOfBinaryTree(TreeNode root) {
-        lengthOfBranch(root);
-        return max;
-    }
-
-    private int lengthOfBranch(TreeNode node) {
-        if (node == null) {
+        if (root == null) {
             return 0;
         }
-        int rightLength = lengthOfBranch(node.right);
-        int leftLength = lengthOfBranch(node.left);
+        int left = maxLength(root.left);
+        int right = maxLength(root.right);
+        int curr = left + right;
+        return Math.max(curr, Math.max(diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.right)));
+    }
 
-        max = Math.max(leftLength + rightLength, max);
-
-        return Math.max(leftLength, rightLength) + 1;
+    private int maxLength(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return 1 + Math.max(maxLength(root.left), maxLength(root.right));
     }
 }
