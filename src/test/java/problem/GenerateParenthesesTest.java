@@ -17,6 +17,6 @@ public class GenerateParenthesesTest {
         res.add("(())()");
         res.add("()(())");
         res.add("()()()");
-        assertEquals(res, GenerateParentheses.combParenthesis(3));
+        assertEquals(res, new GenerateParentheses().generateParenthesis(3));
     }
 }
