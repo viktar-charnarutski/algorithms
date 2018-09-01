@@ -3,7 +3,7 @@ package problem;
 import java.util.HashMap;
 
 /**
- * Introduction to Tries.
+ * 208. Implement Trie (Prefix Tree)
  * <p>
  * A Trie or Prefix Tree an efficient data lookup structure - often used to store large collections of words or
  * dictionaries. With a Trie, search complexities can be reduced to O(k) where k is the key or word length.

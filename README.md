@@ -563,6 +563,7 @@ See this [post][1003].
 | 332 | 28-Aug-2018 | [373. Find K Pairs with Smallest Sums][332] | Medium | Y |
 | 333 | 29-Aug-2018 | [297. Serialize and Deserialize Binary Tree][333] | Hard | Y |
 | 334 | 30-Aug-2018 | [22. Generate Parentheses][334] | Medium | Y |
+| 335 | 1-Sep-2018 | [208. Implement Trie (Prefix Tree)][335] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -898,6 +899,7 @@ See this [post][1003].
 [332]: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
 [333]: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 [334]: https://leetcode.com/problems/generate-parentheses/
+[335]: https://leetcode.com/problems/implement-trie-prefix-tree/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
