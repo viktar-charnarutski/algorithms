@@ -20,7 +20,7 @@ public class Trie {
         private final Map<Character, TrieNode> children;
         private boolean isWord;
 
-        public TrieNode(char c) {
+        TrieNode(char c) {
             this.c = c;
             this.children = new HashMap<>();
         }
@@ -29,19 +29,19 @@ public class Trie {
             return isWord;
         }
 
-        public void markAsWord() {
+        void markAsWord() {
             isWord = true;
         }
 
-        public void addChild(TrieNode node) {
+        void addChild(TrieNode node) {
             children.put(node.c, node);
         }
 
-        public boolean hasChild(char c) {
+        boolean hasChild(char c) {
             return children.containsKey(c);
         }
 
-        public TrieNode child(char c) {
+        TrieNode child(char c) {
             return children.get(c);
         }
     }
