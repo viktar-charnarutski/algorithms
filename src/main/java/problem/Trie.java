@@ -1,8 +1,5 @@
 package problem;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 208. Implement Trie (Prefix Tree)
  * <p>
@@ -17,12 +14,12 @@ import java.util.Map;
 public class Trie {
     private class TrieNode {
         private final char c;
-        private final Map<Character, TrieNode> children;
+        private final TrieNode[] children;
         private boolean isWord;
 
         TrieNode(char c) {
             this.c = c;
-            this.children = new HashMap<>();
+            this.children = new TrieNode[256];
         }
 
         public boolean isWord() {
@@ -34,15 +31,15 @@ public class Trie {
         }
 
         void addChild(TrieNode node) {
-            children.put(node.c, node);
+            children[node.c] = node;
         }
 
         boolean hasChild(char c) {
-            return children.containsKey(c);
+            return children[c] != null;
         }
 
         TrieNode child(char c) {
-            return children.get(c);
+            return children[c];
         }
     }
 
@@ -67,7 +64,7 @@ public class Trie {
             if (curr.hasChild(c)) {
                 curr = curr.child(c);
             } else {
-                TrieNode newNode = new TrieNode(c);
+                TrieNode newNode = new TrieNode(Character.toLowerCase(c));
                 curr.addChild(newNode);
                 curr = newNode;
             }
@@ -84,10 +81,10 @@ public class Trie {
         }
         TrieNode curr = root;
         for (char c : word.toCharArray()) {
-            if (!curr.hasChild(c)) {
+            if (!curr.hasChild(Character.toLowerCase(c))) {
                 return false;
             }
-            curr = curr.child(c);
+            curr = curr.child(Character.toLowerCase(c));
         }
         return curr.isWord();
     }
@@ -101,10 +98,10 @@ public class Trie {
         }
         TrieNode curr = root;
         for (char c : prefix.toCharArray()) {
-            if (!curr.hasChild(c)) {
+            if (!curr.hasChild(Character.toLowerCase(c))) {
                 return false;
             }
-            curr = curr.child(c);
+            curr = curr.child(Character.toLowerCase(c));
         }
         return true;
     }
