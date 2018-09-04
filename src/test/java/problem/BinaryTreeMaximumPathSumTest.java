@@ -59,4 +59,10 @@ public class BinaryTreeMaximumPathSumTest {
         n3.right = n7;
         assertEquals(16, new BinaryTreeMaximumPathSum().maxPathSum(n1));
     }
+
+    @Test
+    public void maxPathSum4() {
+        TreeNode n1 = new TreeNode(-10);
+        assertEquals(-10, new BinaryTreeMaximumPathSum().maxPathSum(n1));
+    }
 }
