@@ -9,32 +9,21 @@ package problem;
  * the parent-child connections. The path must contain at least one node and does not need to go through the root.
  */
 public class BinaryTreeMaximumPathSum {
+
+    private int max = Integer.MIN_VALUE;
+
     public int maxPathSum(TreeNode root) {
-        if (root == null) {
-            return Integer.MIN_VALUE;
-        }
-        Integer maxLeft = maxSum(root.left);
-        Integer maxRight = maxSum(root.right);
-        int currSum = root.val + (maxLeft != null && maxLeft > 0 ? maxLeft : 0) +
-                (maxRight != null && maxRight > 0 ? maxRight : 0);
-        return Math.max(currSum, Math.max(maxPathSum(root.left), maxPathSum(root.right)));
+        maxSum(root);
+        return max;
     }
 
-    private Integer maxSum(TreeNode root) {
+    private int maxSum(TreeNode root) {
         if (root == null) {
-            return null;
+            return 0;
         }
-        int res = root.val;
-        Integer maxLeft = maxSum(root.left);
-        Integer maxRight = maxSum(root.right);
-        if (maxLeft != null && maxRight != null) {
-            int max = Math.max(maxLeft, maxRight);
-            res += max > 0 ? max : 0;
-        } else if (maxLeft != null && maxLeft > 0) {
-            res += maxLeft;
-        } else if (maxRight != null && maxRight > 0) {
-            res += maxRight;
-        }
-        return res;
+        int left = Math.max(maxSum(root.left), 0);
+        int right = Math.max(maxSum(root.right), 0);
+        max = Math.max(max, left + right + root.val);
+        return root.val + Math.max(left, right);
     }
 }
