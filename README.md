@@ -564,6 +564,7 @@ See this [post][1003].
 | 333 | 29-Aug-2018 | [297. Serialize and Deserialize Binary Tree][333] | Hard | Y |
 | 334 | 30-Aug-2018 | [22. Generate Parentheses][334] | Medium | Y |
 | 335 | 1-Sep-2018 | [208. Implement Trie (Prefix Tree)][335] | Medium | Y |
+| 336 | 3-Sep-2018 | [124. Binary Tree Maximum Path Sum][336] | Hard | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -900,6 +901,7 @@ See this [post][1003].
 [333]: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 [334]: https://leetcode.com/problems/generate-parentheses/
 [335]: https://leetcode.com/problems/implement-trie-prefix-tree/
+[336]: https://leetcode.com/problems/binary-tree-maximum-path-sum/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
