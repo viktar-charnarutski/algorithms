@@ -3,6 +3,7 @@ package problem;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class FullTreeDecompressionTest {
 
@@ -38,5 +39,10 @@ public class FullTreeDecompressionTest {
         n3.left = n6;
         n3.right = n7;
         assertEquals(n1, new FullTreeDecompression().decompressTree("1,2,3,4,*,6,7"));
+    }
+
+    @Test
+    public void decompressTree3() {
+        assertNull(new FullTreeDecompression().decompressTree("*"));
     }
 }
