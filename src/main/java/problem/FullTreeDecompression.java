@@ -15,7 +15,22 @@ package problem;
  * numbers or *.
  */
 public class FullTreeDecompression {
-    public TreeNode decompressTree(String str){
-        return null;
+    public TreeNode decompressTree(String str) {
+        if (str == null
+                || str.length() == 0
+                || (str.length() == 1 && str.charAt(0) == '*')) {
+            return null;
+        }
+        return decompressTree(0, str.split(","));
+    }
+
+    private TreeNode decompressTree(int index, String[] vals) {
+        if (index >= vals.length || vals[index].equals("*")) {
+            return null;
+        }
+        TreeNode root = new TreeNode(Integer.parseInt(vals[index]));
+        root.left = decompressTree(2 * index + 1, vals);
+        root.right = decompressTree(2 * index + 2, vals);
+        return root;
     }
 }
