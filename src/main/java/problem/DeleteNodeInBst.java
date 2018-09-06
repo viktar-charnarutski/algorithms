@@ -1,8 +1,5 @@
 package problem;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * 450. Delete Node in a BST
  * <p>
@@ -15,89 +12,29 @@ import java.util.Queue;
  */
 public class DeleteNodeInBst {
     public TreeNode deleteNode(TreeNode root, int key) {
-        if (root == null || (root.left == null && root.right == null && root.val == key)) {
+        if (root == null) {
             return null;
         }
-        TreeNode fake = new TreeNode(0);
-        fake.right = root;
-
-        // find the target node and it's parent
-        TreeNode target = null, parent = fake;
-        Queue<TreeNode> nodes = new LinkedList<>();
-        nodes.offer(fake);
-        while (!nodes.isEmpty()) {
-            parent = nodes.remove();
-            if (parent.left != null) {
-                if (parent.left.val == key) {
-                    target = parent.left;
-                    break;
-                } else {
-                    nodes.offer(parent.left);
-                }
-            }
-            if (parent.right != null) {
-                if (parent.right.val == key) {
-                    target = parent.right;
-                    break;
-                } else {
-                    nodes.offer(parent.right);
-                }
-            }
-        }
-
-        // no target node found
-        if (target == null) {
-            return root;
-        }
-
-        // remove the target node which is a leaf
-        if (target.right == null && target.left == null) {
-            if (parent.val < key) {
-                parent.right = null;
-            } else {
-                parent.left = null;
-            }
-        } else if (target.left == null) {
-            // remove the target node with just right branch
-            if (parent.val < key) {
-                parent.right = target.right;
-            } else {
-                parent.left = target.right;
-            }
-        } else if (target.right == null){
-            // remove the target node with just left branch
-            if (parent.val < key) {
-                parent.right = target.left;
-            } else {
-                parent.left = target.left;
-            }
+        if (root.val > key) {
+            root.left = deleteNode(root.left, key);
+        } else if (root.val < key) {
+            root.right = deleteNode(root.right, key);
         } else {
-            // remove the target node with left and right branches
-            // get a value of the smallest element of the right branch
-            target.val = valueOfMinimalNode(target.right);
-            deleteMinimalNode(target.right, target);
+            if (root.left == null) {
+                return root.right;
+            }
+            if (root.right == null) {
+                return root.left;
+            }
+            TreeNode minNode = minNode(root.right);
+            root.val = minNode.val;
+            root.right = deleteNode(root.right, minNode.val);
         }
-
-        return fake.right;
+        return root;
     }
 
-    private void deleteMinimalNode(TreeNode root, TreeNode prev) {
-        TreeNode tmp = prev;
-        while (root.left != null) {
-            tmp = root;
-            root = root.left;
-        }
-        if (!tmp.equals(prev)) {
-            prev.left = null;
-        } else {
-            prev.right = root.right;
-        }
-    }
-
-    private int valueOfMinimalNode(TreeNode root) {
-        while (root.left != null) {
-            root = root.left;
-        }
-        return root.val;
+    private TreeNode minNode(TreeNode root) {
+        if (root.left == null) return root;
+        return minNode(root.left);
     }
 }
