@@ -49,11 +49,13 @@ public class DeleteNodeInBstTest {
 
         TreeNode m5 = new TreeNode(5);
         TreeNode m6 = new TreeNode(6);
+        TreeNode m3 = new TreeNode(3);
         TreeNode m2 = new TreeNode(2);
         TreeNode m4 = new TreeNode(4);
-        m5.left = m4;
+        m5.left = m3;
         m5.right = m6;
-        m4.left = m2;
+        m3.left = m2;
+        m3.right = m4;
 
         assertEquals(m5, new DeleteNodeInBst().deleteNode(n5, 7));
     }
