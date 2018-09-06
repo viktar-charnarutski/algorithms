@@ -3,6 +3,7 @@ package problem;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class DeleteNodeInBstTest {
 
@@ -191,5 +192,10 @@ public class DeleteNodeInBstTest {
         m6.right = m7;
 
         assertEquals(m5, new DeleteNodeInBst().deleteNode(n5, 0));
+    }
+
+    @Test
+    public void deleteNode8() {
+        assertNull(new DeleteNodeInBst().deleteNode(new TreeNode(0), 0));
     }
 }
