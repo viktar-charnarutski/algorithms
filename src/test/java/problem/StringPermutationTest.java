@@ -18,8 +18,8 @@ public class StringPermutationTest {
         expected.add("cra");
         expected.add("acr");
         expected.add("arc");
-        expected.add("rac");
         expected.add("rca");
+        expected.add("rac");
         assertEquals(expected, new StringPermutation().getPermutations("car"));
     }
 
