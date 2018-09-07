@@ -1,5 +1,6 @@
 package problem;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -19,6 +20,27 @@ import java.util.List;
  */
 public class StringPermutation {
     public List<String> getPermutations(String s) {
-        return Collections.emptyList();
+        if (s == null) {
+            return null;
+        }
+        if (s.length() == 0) {
+            return Collections.emptyList();
+        }
+        List<String> res = new ArrayList<>();
+        getPermutations("", s, res);
+        return res;
+    }
+
+    private void getPermutations(String curr, String s, List<String> res) {
+        if (curr.length() == s.length()) {
+            res.add(curr);
+            return;
+        }
+        for (char c : s.toCharArray()) {
+            if (curr.indexOf(c) != -1) {
+                continue;
+            }
+            getPermutations(curr + c, s, res);
+        }
     }
 }
