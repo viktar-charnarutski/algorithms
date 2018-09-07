@@ -11,21 +11,21 @@ public class CombinationsAndPermutationsTest {
     @Test
     public void getCombPerms() {
         ArrayList<String> expected = new ArrayList<>();
-        expected.add("car");
-        expected.add("cra");
-        expected.add("rca");
-        expected.add("rac");
-        expected.add("acr");
-        expected.add("arc");
         expected.add("c");
-        expected.add("a");
-        expected.add("r");
         expected.add("ca");
-        expected.add("ac");
-        expected.add("ar");
-        expected.add("ra");
+        expected.add("car");
         expected.add("cr");
+        expected.add("cra");
+        expected.add("a");
+        expected.add("ac");
+        expected.add("acr");
+        expected.add("ar");
+        expected.add("arc");
+        expected.add("r");
         expected.add("rc");
+        expected.add("rca");
+        expected.add("ra");
+        expected.add("rac");
         assertEquals(expected, CombinationsAndPermutations.getCombPerms("car"));
     }
 }
