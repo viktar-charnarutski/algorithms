@@ -567,6 +567,7 @@ See this [post][1003].
 | 336 | 3-Sep-2018 | [124. Binary Tree Maximum Path Sum][336] | Hard | Y |
 | 337 | 4-Sep-2018 | [Full Tree Decompression][337] | Medium | Y |
 | 338 | 5-Sep-2018 | [450. Delete Node in a BST][338] | Medium | Y |
+| 339 | 6-Sep-2018 | [String Permutation][339] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -906,6 +907,7 @@ See this [post][1003].
 [336]: https://leetcode.com/problems/binary-tree-maximum-path-sum/
 [337]: https://www.firecode.io/
 [338]: https://leetcode.com/problems/delete-node-in-a-bst/
+[339]: https://www.firecode.io/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
