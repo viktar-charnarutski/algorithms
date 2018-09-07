@@ -18,7 +18,7 @@ import java.util.List;
  * unique.
  */
 public class StringPermutation {
-    public static List<String> getPermutations(String s) {
+    public List<String> getPermutations(String s) {
         return Collections.emptyList();
     }
 }
