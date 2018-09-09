@@ -3,6 +3,7 @@ package problem;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class LowestCommonAncestorOfBinaryTreeTest {
 
@@ -92,5 +93,10 @@ public class LowestCommonAncestorOfBinaryTreeTest {
         n6.left = n8;
         n7.right = n9;
         assertEquals(n1, new LowestCommonAncestorOfBinaryTree().lowestCommonAncestor(n2, n4, n5));
+    }
+
+    @Test
+    public void lowestCommonAncestor5() {
+        assertNull(new LowestCommonAncestorOfBinaryTree().lowestCommonAncestor(null, null, null));
     }
 }
