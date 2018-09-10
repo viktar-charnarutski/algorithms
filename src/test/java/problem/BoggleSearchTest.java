@@ -97,6 +97,6 @@ public class BoggleSearchTest {
         board[4][2] = 'a';
         board[4][3] = 'a';
         board[4][4] = 'a';
-        assertTrue(BoggleSearch.boggleSearch(board, "helo"));
+        assertTrue(BoggleSearch.boggleSearch(board, "hello"));
     }
 }
