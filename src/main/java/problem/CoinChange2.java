@@ -15,6 +15,18 @@ package problem;
  */
 public class CoinChange2 {
     public int change(int amount, int[] coins) {
-        return 0;
+        if (amount <= 0 || coins.length == 0) {
+            return 0;
+        }
+        int[] dp = new int[amount + 1];
+        dp[0] = 1;
+        for (int coin : coins) {
+            for (int sum = 1; sum <= amount; sum++) {
+                if (sum - coin >= 0) {
+                    dp[sum] += dp[sum - coin];
+                }
+            }
+        }
+        return dp[amount];
     }
 }
