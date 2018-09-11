@@ -15,4 +15,9 @@ public class CoinChange2Test {
     public void change2() {
         assertEquals(0, new CoinChange2().change(3, new int[]{2}));
     }
+
+    @Test
+    public void change3() {
+        assertEquals(1, new CoinChange2().change(10, new int[]{10}));
+    }
 }
