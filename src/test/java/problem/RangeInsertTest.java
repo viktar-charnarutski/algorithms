@@ -92,4 +92,9 @@ public class RangeInsertTest {
     public void insertRange_merge1() {
         assertEquals(new Interval(-2, 2), RangeInsert.merge(new Interval(-2, 0), new Interval(-1, 2)));
     }
+
+    @Test
+    public void insertRange_merge2() {
+        assertEquals(new Interval(-2, 2), RangeInsert.merge(new Interval(-2, 2), new Interval(-1, 1)));
+    }
 }
