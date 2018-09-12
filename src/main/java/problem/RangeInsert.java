@@ -22,6 +22,12 @@ public class RangeInsert {
     }
 
     static Interval merge(Interval a, Interval b) {
-        return new Interval(a.start < b.start ? a.start : b.start, a.end > b.end ? a.end : b.end);
+        return new Interval(a.start < b.start ? a.start : b.start,
+                a.end > b.end ? a.end : b.end);
+    }
+
+    static boolean isOverlaping(Interval a, Interval b) {
+        return a.end > b.start && a.end < b.end
+                || a.start > b.start && a.start < b.end;
     }
 }
