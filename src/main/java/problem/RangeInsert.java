@@ -21,8 +21,7 @@ public class RangeInsert {
         return new ArrayList<>();
     }
 
-    static void merge(Interval interval, Interval target) {
-        target.start = interval.start < target.start ? interval.start : target.start;
-        target.end = interval.end > target.end ? interval.end : target.end;
+    static Interval merge(Interval a, Interval b) {
+        return new Interval(a.start < b.start ? a.start : b.start, a.end > b.end ? a.end : b.end);
     }
 }
