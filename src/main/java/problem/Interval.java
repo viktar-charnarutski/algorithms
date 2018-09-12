@@ -31,4 +31,12 @@ public class Interval {
         result = 31 * result + end;
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Interval{" +
+                "start=" + start +
+                ", end=" + end +
+                '}';
+    }
 }
