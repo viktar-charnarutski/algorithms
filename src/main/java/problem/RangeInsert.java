@@ -22,11 +22,15 @@ public class RangeInsert {
     }
 
     static void insertInterval(ArrayList<Interval> intervalsList, Interval insert) {
-        for (int i = 0; i < intervalsList.size(); i++) {
+        int initialSize = intervalsList.size();
+        for (int i = 0; i < initialSize; i++) {
             if (insert.start < intervalsList.get(i).start) {
                 intervalsList.add(i, insert);
                 break;
             }
+        }
+        if (intervalsList.size() == initialSize) {
+            intervalsList.add(insert);
         }
     }
 
