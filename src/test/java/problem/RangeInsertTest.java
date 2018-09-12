@@ -102,4 +102,9 @@ public class RangeInsertTest {
     public void insertRange_isOverlapping1() {
         assertTrue(RangeInsert.isOverlapping(new Interval(-2, 0), new Interval(-1, 2)));
     }
+
+    @Test
+    public void insertRange_isOverlapping2() {
+        assertTrue(RangeInsert.isOverlapping(new Interval(-2, 2), new Interval(-1, 1)));
+    }
 }
