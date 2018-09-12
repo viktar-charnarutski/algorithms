@@ -17,6 +17,9 @@ import java.util.ArrayList;
  * c) The words Range and Interval are used interchangeably
  */
 public class RangeInsert {
+    public static ArrayList<Interval> insertRange(ArrayList<Interval> intervalsList, Interval insert) {
+        return new ArrayList<>();
+    }
 
     static void insertInterval(ArrayList<Interval> intervalsList, Interval insert) {
         for (int i = 0; i < intervalsList.size(); i++) {
