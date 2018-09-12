@@ -122,4 +122,19 @@ public class RangeInsertTest {
 
         assertEquals(expected, input);
     }
+
+    @Test
+    public void insertInterval2() {
+        ArrayList<Interval> input = new ArrayList<>();
+        input.add(new Interval(0, 1));
+        input.add(new Interval(3, 4));
+
+        ArrayList<Interval> expected = new ArrayList<>();
+        expected.add(new Interval(-1, 0));
+        expected.add(new Interval(0, 1));
+        expected.add(new Interval(3, 4));
+        RangeInsert.insertInterval(input, new Interval(-1, 0));
+
+        assertEquals(expected, input);
+    }
 }
