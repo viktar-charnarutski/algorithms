@@ -107,4 +107,19 @@ public class RangeInsertTest {
     public void insertRange_isOverlapping2() {
         assertTrue(RangeInsert.isOverlapping(new Interval(-2, 2), new Interval(-1, 1)));
     }
+
+    @Test
+    public void insertInterval1() {
+        ArrayList<Interval> input = new ArrayList<>();
+        input.add(new Interval(0, 1));
+        input.add(new Interval(3, 4));
+
+        ArrayList<Interval> expected = new ArrayList<>();
+        expected.add(new Interval(0, 1));
+        expected.add(new Interval(2, 10));
+        expected.add(new Interval(3, 4));
+        RangeInsert.insertInterval(input, new Interval(2, 10));
+
+        assertEquals(expected, input);
+    }
 }
