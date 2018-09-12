@@ -20,4 +20,9 @@ public class RangeInsert {
     public static ArrayList<Interval> insertRange(ArrayList<Interval> intervalsList, Interval insert) {
         return new ArrayList<>();
     }
+
+    static void merge(Interval interval, Interval target) {
+        target.start = interval.start < target.start ? interval.start : target.start;
+        target.end = interval.end > target.end ? interval.end : target.end;
+    }
 }
