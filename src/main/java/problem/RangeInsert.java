@@ -28,6 +28,8 @@ public class RangeInsert {
 
     static boolean isOverlapping(Interval a, Interval b) {
         return a.end > b.start && a.end < b.end
-                || a.start > b.start && a.start < b.end;
+                || a.start > b.start && a.start < b.end
+                || a.start < b.start && a.end > b.end
+                || b.start < a.start && b.end > a.end;
     }
 }
