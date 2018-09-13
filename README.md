@@ -573,6 +573,7 @@ See this [post][1003].
 | 342 | 9-Sep-2018 | [Boggle Search][342] | Medium | Y |
 | 343 | 10-Sep-2018 | [93. Restore IP Addresses][343] | Medium | Y |
 | 344 | 11-Sep-2018 | [518. Coin Change 2][344] | Medium | Y |
+| 345 | 12-Sep-2018 | [Mobile Game Range Module - Inserting Ranges][345] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -918,6 +919,7 @@ See this [post][1003].
 [342]: https://www.firecode.io/
 [343]: https://leetcode.com/problems/restore-ip-addresses/
 [344]: https://leetcode.com/problems/coin-change-2/
+[345]: https://www.firecode.io/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
