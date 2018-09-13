@@ -18,7 +18,24 @@ import java.util.ArrayList;
  */
 public class RangeInsert {
     public static ArrayList<Interval> insertRange(ArrayList<Interval> intervalsList, Interval insert) {
-        return new ArrayList<>();
+        ArrayList<Interval> res = new ArrayList<>();
+        if (intervalsList.size() == 0) {
+            res.add(insert);
+            return res;
+        }
+        insertInterval(intervalsList, insert);
+        res.add(intervalsList.get(0));
+        for (int i = 1; i < intervalsList.size(); i++) {
+            Interval target = res.get(res.size() - 1);
+            Interval curr = intervalsList.get(i);
+            if (isOverlapping(target, curr)) {
+                Interval merged = merge(target, curr);
+                res.set(res.size() - 1, merged);
+            } else {
+                res.add(curr);
+            }
+        }
+        return res;
     }
 
     static void insertInterval(ArrayList<Interval> intervalsList, Interval insert) {
@@ -40,9 +57,9 @@ public class RangeInsert {
     }
 
     static boolean isOverlapping(Interval a, Interval b) {
-        return a.end > b.start && a.end < b.end
-                || a.start > b.start && a.start < b.end
-                || a.start < b.start && a.end > b.end
-                || b.start < a.start && b.end > a.end;
+        return a.end >= b.start && a.end <= b.end
+                || a.start >= b.start && a.start <= b.end
+                || a.start <= b.start && a.end >= b.end
+                || b.start <= a.start && b.end >= a.end;
     }
 }
