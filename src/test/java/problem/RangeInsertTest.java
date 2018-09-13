@@ -61,7 +61,6 @@ public class RangeInsertTest {
         ArrayList<Interval> input = new ArrayList<>();
         input.add(new Interval(1, 2));
         input.add(new Interval(3, 5));
-        input.add(new Interval(6, 9));
         input.add(new Interval(6, 7));
         input.add(new Interval(8, 10));
         input.add(new Interval(12, 14));
