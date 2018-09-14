@@ -1,6 +1,7 @@
 package problem;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -11,25 +12,18 @@ import java.util.List;
  * Note: The solution set must not contain duplicate subsets.
  */
 public class Subsets {
-    List<List<Integer>> list = new ArrayList<>();
-
     public List<List<Integer>> subsets(int[] nums) {
-        subsets(nums, new Integer[nums.length], 0);
-        return list;
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(res, new ArrayList<>(), nums, 0);
+        return res;
     }
 
-    private void subsets(int[] nums, Integer[] subset, int i) {
-        if (i == subset.length) {
-            ArrayList<Integer> subsetList = new ArrayList<>();
-            for (Integer num : subset) {
-                if (num != null) subsetList.add(num);
-            }
-            list.add(subsetList);
-            return;
+    private void backtrack(List<List<Integer>> list, ArrayList<Integer> curr, int[] nums, int ind) {
+        list.add(new ArrayList<>(curr));
+        for (int i = ind; i < nums.length; i++) {
+            curr.add(nums[i]);
+            backtrack(list, curr, nums, i + 1);
+            curr.remove(curr.size() - 1);
         }
-        subset[i] = nums[i];
-        subsets(nums, subset, i + 1);
-        subset[i] = null;
-        subsets(nums, subset, i + 1);
     }
 }
