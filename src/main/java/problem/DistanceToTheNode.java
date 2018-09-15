@@ -16,6 +16,15 @@ public class DistanceToTheNode {
         if (root == null) {
             return 0;
         }
+        if (root.val == n1) {
+            return 1;
+        }
+        return 1 + Math.max(pathLengthFromRoot(root.left, n1), pathLengthFromRoot(root.right, n1));
+    }
+    public int pathLengthFromRoot1(TreeNode root, int n1) {
+        if (root == null) {
+            return 0;
+        }
         Queue<TreeNode> nodes = new LinkedList<>();
         nodes.add(root);
         int cnt = 0;
