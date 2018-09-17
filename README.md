@@ -577,6 +577,7 @@ See this [post][1003].
 | 346 | 13-Sep-2018 | [79. Word Search][346] | Medium | Y |
 | 347 | 14-Sep-2018 | [90. Subsets II][347] | Medium | Y |
 | 348 | 15-Sep-2018 | [Distance between two nodes in a Binary Tree][348] | Medium | Y |
+| 349 | 16-Sep-2018 | [224. Basic Calculator][349] | Hard | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -926,6 +927,7 @@ See this [post][1003].
 [346]: https://leetcode.com/problems/word-search/
 [347]: https://leetcode.com/problems/subsets-ii/
 [348]: https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/
+[349]: https://leetcode.com/problems/basic-calculator/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
