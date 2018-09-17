@@ -23,6 +23,6 @@ public class BasicCalculatorTest {
 
     @Test
     public void calculate4() {
-        assertEquals(23, new BasicCalculator().calculate("2-(5-6)"));
+        assertEquals(-9, new BasicCalculator().calculate("2-(5-6)"));
     }
 }
