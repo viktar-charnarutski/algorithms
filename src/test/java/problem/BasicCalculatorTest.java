@@ -15,4 +15,9 @@ public class BasicCalculatorTest {
     public void calculate2() {
         assertEquals(3, new BasicCalculator().calculate("2-1 + 2 "));
     }
+
+    @Test
+    public void calculate3() {
+        assertEquals(23, new BasicCalculator().calculate("(1+(4+5+2)-3)+(6+8)"));
+    }
 }
