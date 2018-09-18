@@ -13,7 +13,7 @@ public class SqrtxTest {
 
     @Test
     public void mySqrt2() {
-        assertEquals(8, new Sqrtx().mySqrt(2));
+        assertEquals(2, new Sqrtx().mySqrt(8));
     }
 
     @Test
