@@ -20,4 +20,9 @@ public class SqrtxTest {
     public void mySqrt3() {
         assertEquals(1, new Sqrtx().mySqrt(1));
     }
+
+    @Test
+    public void mySqrt4() {
+        assertEquals(46339, new Sqrtx().mySqrt(2147395599));
+    }
 }
