@@ -16,7 +16,7 @@ public class Sqrtx {
         int left = 1, right = x, ans = 0;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            if (mid * mid <= x) {
+            if (mid <= x / mid) {
                 ans = mid;
                 left = mid + 1;
             } else {
