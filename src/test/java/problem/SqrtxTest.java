@@ -10,4 +10,9 @@ public class SqrtxTest {
     public void mySqrt1() {
         assertEquals(3, new Sqrtx().mySqrt(9));
     }
+
+    @Test
+    public void mySqrt2() {
+        assertEquals(8, new Sqrtx().mySqrt(2));
+    }
 }
