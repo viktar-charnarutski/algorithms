@@ -15,4 +15,9 @@ public class SqrtxTest {
     public void mySqrt2() {
         assertEquals(8, new Sqrtx().mySqrt(2));
     }
+
+    @Test
+    public void mySqrt3() {
+        assertEquals(1, new Sqrtx().mySqrt(1));
+    }
 }
