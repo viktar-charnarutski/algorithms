@@ -12,6 +12,21 @@ import java.util.List;
  * Note: The solution set must not contain duplicate subsets.
  */
 public class Subsets {
+    public List<List<Integer>> subsetsItr(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        res.add(new ArrayList<>());
+        for (int num : nums) {
+            List<List<Integer>> snapshot = new ArrayList<>();
+            for (List<Integer> curr : res) {
+                List<Integer> tmp = new ArrayList<>(curr);
+                tmp.add(num);
+                snapshot.add(tmp);
+            }
+            res.addAll(snapshot);
+        }
+        return res;
+    }
+
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         backtrack(res, new ArrayList<>(), nums, 0);
