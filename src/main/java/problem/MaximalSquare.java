@@ -11,7 +11,7 @@ public class MaximalSquare {
         if (matrix == null || matrix.length == 0) return 0;
 
         int max = 0;
-        int[][] dp = new int[matrix.length + 1][matrix.length + 1];
+        int[][] dp = new int[matrix.length + 1][matrix[0].length + 1];;
         for (int row = 1; row <= matrix.length; row++) {
             for (int col = 1; col <= matrix[0].length; col++) {
                 if (matrix[row - 1][col - 1] == '1') {
