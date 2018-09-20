@@ -580,6 +580,7 @@ See this [post][1003].
 | 349 | 16-Sep-2018 | [224. Basic Calculator][349] | Hard | Y |
 | 350 | 18-Sep-2018 | [69. Sqrt(x)][350] | Easy | Y |
 | 351 | 20-Sep-2018 | [221. Maximal Square][351] | Medium | Y |
+| 352 | 20-Sep-2018 | [150. Evaluate Reverse Polish Notation][352] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -932,6 +933,7 @@ See this [post][1003].
 [349]: https://leetcode.com/problems/basic-calculator/
 [350]: https://leetcode.com/problems/sqrtx/
 [351]: https://leetcode.com/problems/maximal-square/
+[352]: https://leetcode.com/problems/evaluate-reverse-polish-notation/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
