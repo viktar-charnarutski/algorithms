@@ -11,6 +11,23 @@ public class MaximalSquare {
         if (matrix == null || matrix.length == 0) return 0;
 
         int max = 0;
+        int[][] dp = new int[matrix.length + 1][matrix.length + 1];
+        for (int row = 1; row <= matrix.length; row++) {
+            for (int col = 1; col <= matrix[0].length; col++) {
+                if (matrix[row - 1][col - 1] == '1') {
+                    dp[row][col] = 1 + Math.min(dp[row - 1][col - 1], Math.min(dp[row - 1][col], dp[row][col - 1]));
+                    max = Math.max(dp[row][col], max);
+                }
+            }
+        }
+
+        return max * max;
+    }
+
+    public int maximalSquareItr(char[][] matrix) {
+        if (matrix == null || matrix.length == 0) return 0;
+
+        int max = 0;
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[0].length; col++) {
                 if (matrix[row][col] == '1') {
