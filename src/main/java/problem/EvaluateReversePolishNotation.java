@@ -1,5 +1,6 @@
 package problem;
 
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -49,5 +50,39 @@ public class EvaluateReversePolishNotation {
             }
         }
         return nums.pop();
+    }
+
+    public double rpn (List<String> ops) {
+        if (ops == null || ops.size() == 0) {
+            throw new IllegalArgumentException("Argument is empty.");
+        }
+        Stack<Double> nums = new Stack<>();
+        for (String op : ops) {
+            try {
+                nums.push(Double.parseDouble(op));
+            } catch (NumberFormatException e) {
+                calculate(nums, op);
+            }
+        }
+        return nums.pop();
+    }
+
+    private void calculate (Stack<Double> nums, String op) {
+        double a = nums.pop();
+        double b = nums.pop();
+        switch (op) { // +
+            case "+":
+                nums.push(a + b); // 1 + 4
+                break;
+            case "-":
+                nums.push(b - a);
+                break;
+            case "*":
+                nums.push(a * b);
+                break;
+            case "/":
+                nums.push(a / b);
+                break;
+        }
     }
 }
