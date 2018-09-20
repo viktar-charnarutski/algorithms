@@ -41,12 +41,12 @@ public class MaximalSquare {
         if (row == matrix.length || col == matrix[0].length) {
             return true;
         }
-        for (int i = col; i >= startRow; i--) {
+        for (int i = col; i >= startCol; i--) {
             if (matrix[row][i] == '0') {
                 return true;
             }
         }
-        for (int i = row; i >= startCol; i--) {
+        for (int i = row; i >= startRow; i--) {
             if (matrix[i][col] == '0') {
                 return true;
             }
