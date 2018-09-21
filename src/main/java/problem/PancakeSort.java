@@ -24,7 +24,7 @@ public class PancakeSort {
 
     int maxIndex(int[] arr, int end) {
         int i = 0, max = arr[0];
-        for (int j = 0; j <= end; j++) {
+        for (int j = 1; j <= end; j++) {
             if (arr[j] > max) {
                 max = arr[j];
                 i = j;
