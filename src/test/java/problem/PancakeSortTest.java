@@ -49,5 +49,12 @@ public class PancakeSortTest {
         assertArrayEquals(expected, input);
     }
 
+    @Test
+    public void flip2() {
+        int[] input = new int[]{6, 5, 4, 3, 2, 1, 0};
+        int[] expected = new int[]{0, 1, 2, 3, 4, 5, 6};
+        new PancakeSort().flip(input, 6);
+        assertArrayEquals(expected, input);
+    }
 
 }
