@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Arrays;
+
 /**
  * Pancake Sort
  * <p>
@@ -11,10 +13,31 @@ package problem;
  */
 public class PancakeSort {
     public int[] pancakeSort(int[] arr) {
-        return null;
+        if (arr == null || arr.length <= 1) return arr;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            int maxi = maxIndex(arr, i);
+            flip(arr, maxi + 1);
+            flip(arr, i + 1);
+        }
+        return arr;
+    }
+
+    int maxIndex(int[] arr, int end) {
+        int i = 0, max = arr[0];
+        for (int j = 0; j <= end; j++) {
+            if (arr[j] > max) {
+                max = arr[j];
+                i = j;
+            }
+        }
+        return i;
     }
 
     public void flip(int[] arr, int k) {
-
+        for (int i = 0; i < k / 2; i++) {
+            int tmp = arr[i];
+            arr[i] = arr[k - i - 1];
+            arr[k - i - 1] = tmp;
+        }
     }
 }
