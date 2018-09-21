@@ -26,4 +26,11 @@ public class PancakeSortTest {
         int[] expected = new int[]{0, 1, 2, 3, 4, 5, 6};
         assertArrayEquals(expected, new PancakeSort().pancakeSort(input));
     }
+
+    @Test
+    public void pancakeSort4() {
+        int[] input = new int[]{0};
+        int[] expected = new int[]{0};
+        assertArrayEquals(expected, new PancakeSort().pancakeSort(input));
+    }
 }
