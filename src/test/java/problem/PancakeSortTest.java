@@ -57,4 +57,9 @@ public class PancakeSortTest {
         assertArrayEquals(expected, input);
     }
 
+    @Test
+    public void maxIndex1() {
+        int[] input = new int[]{3, 2, 1, 0, 4, 5, 6};
+        assertEquals(6, new PancakeSort().maxIndex(input, 6));
+    }
 }
