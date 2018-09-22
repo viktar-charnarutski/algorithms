@@ -582,6 +582,7 @@ See this [post][1003].
 | 351 | 20-Sep-2018 | [221. Maximal Square][351] | Medium | Y |
 | 352 | 20-Sep-2018 | [150. Evaluate Reverse Polish Notation][352] | Medium | Y |
 | 353 | 21-Sep-2018 | [Pancake Sort][353] | Medium | Y |
+| 354 | 21-Sep-2018 | [118. Pascal's Triangle][354] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -936,6 +937,7 @@ See this [post][1003].
 [351]: https://leetcode.com/problems/maximal-square/
 [352]: https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
 [353]: https://github.com/viktar-charnarutski/algorithms/blob/dba08c991cfde71283167a5adf56ea38c9e4e793/src/main/java/problem/PancakeSort.java
+[354]: https://leetcode.com/problems/pascals-triangle/
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
