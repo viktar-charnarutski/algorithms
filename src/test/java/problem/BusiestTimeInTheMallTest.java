@@ -19,6 +19,6 @@ public class BusiestTimeInTheMallTest {
                 {1487901211, 7, 1},
                 {1487901211, 7, 0}
         };
-        assertEquals(1487801478, new BusiestTimeInTheMall().findBusiestPeriod(data));
+        assertEquals(1487800378, new BusiestTimeInTheMall().findBusiestPeriod(data));
     }
 }
