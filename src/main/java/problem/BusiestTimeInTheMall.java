@@ -20,7 +20,30 @@ package problem;
  * time and space complexities.
  */
 public class BusiestTimeInTheMall {
+
     public int findBusiestPeriod(int[][] data) {
-        return 0;
+        int peakTime = 0;
+        int peakCount = 0, currCount = 0;
+
+        int i = 0;
+        while (i < data.length) {
+            int currTime = data[i][0];
+            currCount = count(data[i++], currCount);
+
+            while (i < data.length && data[i][0] == data[i - 1][0]) {
+                currCount = count(data[i++], currCount);
+            }
+
+            if (currCount > peakCount) {
+                peakCount = currCount;
+                peakTime = currTime;
+            }
+        }
+
+        return peakTime;
+    }
+
+    private int count(int[] data, int currCount) {
+        return data[2] == 1 ? currCount + data[1] : currCount - data[1];
     }
 }
