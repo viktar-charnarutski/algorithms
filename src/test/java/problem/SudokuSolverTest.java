@@ -98,5 +98,96 @@ public class SudokuSolverTest {
         board[8][6] = '.';
         board[8][7] = '7';
         board[8][8] = '9';
+
+        char[][] expected = new char[9][9];
+        expected[0][0] = '5';
+        expected[0][1] = '3';
+        expected[0][2] = '4';
+        expected[0][3] = '6';
+        expected[0][4] = '7';
+        expected[0][5] = '8';
+        expected[0][6] = '9';
+        expected[0][7] = '1';
+        expected[0][8] = '2';
+
+        expected[1][0] = '6';
+        expected[1][1] = '7';
+        expected[1][2] = '2';
+        expected[1][3] = '1';
+        expected[1][4] = '9';
+        expected[1][5] = '5';
+        expected[1][6] = '3';
+        expected[1][7] = '4';
+        expected[1][8] = '8';
+
+        expected[2][0] = '1';
+        expected[2][1] = '9';
+        expected[2][2] = '8';
+        expected[2][3] = '3';
+        expected[2][4] = '4';
+        expected[2][5] = '2';
+        expected[2][6] = '5';
+        expected[2][7] = '6';
+        expected[2][8] = '7';
+
+        expected[3][0] = '8';
+        expected[3][1] = '5';
+        expected[3][2] = '9';
+        expected[3][3] = '7';
+        expected[3][4] = '6';
+        expected[3][5] = '1';
+        expected[3][6] = '4';
+        expected[3][7] = '2';
+        expected[3][8] = '3';
+
+        expected[4][0] = '4';
+        expected[4][1] = '2';
+        expected[4][2] = '6';
+        expected[4][3] = '8';
+        expected[4][4] = '5';
+        expected[4][5] = '3';
+        expected[4][6] = '7';
+        expected[4][7] = '9';
+        expected[4][8] = '1';
+
+        expected[5][0] = '7';
+        expected[5][1] = '1';
+        expected[5][2] = '3';
+        expected[5][3] = '9';
+        expected[5][4] = '2';
+        expected[5][5] = '4';
+        expected[5][6] = '8';
+        expected[5][7] = '5';
+        expected[5][8] = '6';
+
+        expected[6][0] = '9';
+        expected[6][1] = '6';
+        expected[6][2] = '1';
+        expected[6][3] = '5';
+        expected[6][4] = '3';
+        expected[6][5] = '7';
+        expected[6][6] = '2';
+        expected[6][7] = '8';
+        expected[6][8] = '4';
+
+        expected[7][0] = '2';
+        expected[7][1] = '8';
+        expected[7][2] = '7';
+        expected[7][3] = '4';
+        expected[7][4] = '1';
+        expected[7][5] = '9';
+        expected[7][6] = '6';
+        expected[7][7] = '3';
+        expected[7][8] = '5';
+
+        expected[8][0] = '3';
+        expected[8][1] = '4';
+        expected[8][2] = '5';
+        expected[8][3] = '2';
+        expected[8][4] = '8';
+        expected[8][5] = '6';
+        expected[8][6] = '1';
+        expected[8][7] = '7';
+        expected[8][8] = '9';
     }
 }
