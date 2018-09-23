@@ -189,5 +189,11 @@ public class SudokuSolverTest {
         expected[8][6] = '1';
         expected[8][7] = '7';
         expected[8][8] = '9';
+
+        new SudokuSolver().solveSudoku(board);
+
+        for (int i = 0; i < board.length; i++) {
+            assertArrayEquals(expected[i], expected[i]);
+        }
     }
 }
