@@ -25,4 +25,10 @@ public class WordCountEngineTest {
             assertArrayEquals(ectual[i], expected[i]);
         }
     }
+
+    @Test
+    public void normalize() {
+        assertEquals("practice makes perfect youll only get perfect by practice just practice",
+                WordCountEngine.normalize("Practice makes perfect. you'll only get Perfect by practice. just practice!"));
+    }
 }
