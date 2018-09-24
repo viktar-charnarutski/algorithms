@@ -584,6 +584,7 @@ See this [post][1003].
 | 353 | 21-Sep-2018 | [Pancake Sort][353] | Medium | Y |
 | 354 | 21-Sep-2018 | [118. Pascal's Triangle][354] | Easy | |
 | 355 | 23-Sep-2018 | [Busiest Time in The Mall][355] | Medium | Y |
+| 356 | 24-Sep-2018 | [Word Count Engine][356] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -940,6 +941,7 @@ See this [post][1003].
 [353]: https://github.com/viktar-charnarutski/algorithms/blob/dba08c991cfde71283167a5adf56ea38c9e4e793/src/main/java/problem/PancakeSort.java
 [354]: https://leetcode.com/problems/pascals-triangle/
 [355]: https://github.com/viktar-charnarutski/algorithms/blob/18f48c6cf257da3dce75d29edd7fe28e53e6c64a/src/main/java/problem/BusiestTimeInTheMall.java
+[356]: https://github.com/viktar-charnarutski/algorithms/blob/master/src/main/java/problem/WordCountEngine.java
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
