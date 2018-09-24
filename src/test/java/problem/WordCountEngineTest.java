@@ -2,6 +2,8 @@ package problem;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class WordCountEngineTest {
@@ -18,11 +20,13 @@ public class WordCountEngineTest {
                 {"by", "1"},
                 {"just", "1"}};
 
-        String[][] ectual = WordCountEngine.wordCountEngine(
+        String[][] actual = WordCountEngine.wordCountEngine(
                 "Practice makes perfect. you'll only get Perfect by practice. just practice!");
 
+        assertEquals(expected.length, actual.length);
+
         for (int i = 0; i < expected.length; i++) {
-            assertArrayEquals(ectual[i], expected[i]);
+            assertArrayEquals(actual[i], expected[i]);
         }
     }
 
@@ -48,11 +52,14 @@ public class WordCountEngineTest {
                 {"his", "1"},
                 {"ancestors", "1"}};
 
-        String[][] ectual = WordCountEngine.wordCountEngine(
+        String[][] actual = WordCountEngine.wordCountEngine(
                 "Every book is a quotation; and every house is a quotation out of all forests, and mines, and stone quarries; and every man is a quotation from all his ancestors. ");
 
+        assertEquals(expected.length, actual.length);
+        System.out.println(Arrays.deepToString(actual));
+
         for (int i = 0; i < expected.length; i++) {
-            assertArrayEquals(ectual[i], expected[i]);
+            assertArrayEquals(actual[i], expected[i]);
         }
     }
 
