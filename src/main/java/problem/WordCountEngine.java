@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.*;
+
 /**
  * Word Count Engine
  * <p>
@@ -16,6 +18,44 @@ package problem;
  */
 public class WordCountEngine {
     static String[][] wordCountEngine(String document) {
-        return null;
+        String normDoc = normalize(document);
+        String[] wordsArray = normDoc.split(" ");
+        Map<String, Integer> count = count(wordsArray);
+        Map<String, Integer> indexes = index(wordsArray);
+
+        List<String> result = new ArrayList<>(count.keySet());
+        result.sort((a, b) -> count.get(a) == count.get(b) ?
+                indexes.get(a) - indexes.get(b) : count.get(b) - count.get(a));
+
+        return toArray(result, count);
+    }
+
+    private static Map<String, Integer> index(String[] words) {
+        Map<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            map.put(words[i], i);
+        }
+        return map;
+    }
+
+    private static String[][] toArray(List<String> list, Map<String, Integer> counts) {
+        String[][] results = new String[list.size()][2];
+        for (int i = 0; i < list.size(); i++) {
+            results[i][0] = list.get(i);
+            results[i][1] = "" + counts.get(list.get(i));
+        }
+        return results;
+    }
+
+    private static Map<String, Integer> count(String[] words) {
+        Map<String, Integer> map = new HashMap<>();
+        for (String word : words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+        return map;
+    }
+
+    static String normalize(String str) {
+        return str.replaceAll("[^a-zA-Z\\s]", "").toLowerCase();
     }
 }
