@@ -1,6 +1,7 @@
 package problem;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * 513. Find Bottom Left Tree Value
@@ -9,29 +10,20 @@ import java.util.LinkedList;
  */
 public class FindBottomLeftTreeValue {
 
-        public int findBottomLeftValue(TreeNode root) {
-            int res = root.val;
-
-            LinkedList<TreeNode> nodes = new LinkedList<>();
-            nodes.add(root);
-
-            while (!nodes.isEmpty()) {
-                TreeNode node = nodes.remove();
-
-                TreeNode left = node.left;
-                TreeNode right = node.right;
-
-                if (right != null) {
-                    nodes.add(right);
-                    res = right.val;
-                }
-                if (left != null) {
-                    nodes.add(left);
-                    res = left.val;
-                }
+    public int findBottomLeftValue(TreeNode root) {
+        Queue<TreeNode> nodes = new LinkedList<>();
+        nodes.offer(root);
+        while (!nodes.isEmpty()) {
+            root = nodes.remove();
+            if (root.right != null) {
+                nodes.offer(root.right);
             }
-            return res;
+            if (root.left != null) {
+                nodes.offer(root.left);
+            }
         }
+        return root.val;
+    }
 
     private int depth = 0;
     private int leftLvl = 0;
