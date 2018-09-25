@@ -506,7 +506,7 @@ See this [post][1003].
 | 274 | 17-Jul-2018 | [Recursive Multiply][274] | Easy | |
 | 275 | 17-Jul-2018 | [Longest Common Subsequence][275] | Medium | Y |
 | 276 | 18-Jul-2018 | [Longest Increasing Subsequence I][276] | Medium | Y |
-| 277 | 18-Jul-2018 | [Edit Distance][277] | Medium | Y |
+| 277 | 18-Jul-2018 | [72. Edit Distance][277] | Hard | Y |
 | 278 | 19-Jul-2018 | [76. Minimum Window Substring][278] | Hard | Y |
 | 280 | 20-Jul-2018 | [Ways to Cover a Distance][280] | Easy | |
 | 281 | 20-Jul-2018 | [3. Longest Substring Without Repeating Characters][281] | Medium | |
@@ -862,7 +862,7 @@ See this [post][1003].
 [274]: https://www.geeksforgeeks.org/multiply-two-numbers-without-using-multiply-division-bitwise-operators-and-no-loops/
 [275]: https://www.geeksforgeeks.org/multiply-two-numbers-without-using-multiply-division-bitwise-operators-and-no-loops/
 [276]: https://www.geeksforgeeks.org/longest-increasing-subsequence/
-[277]: https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+[277]: https://leetcode.com/problems/edit-distance/
 [278]: https://leetcode.com/problems/minimum-window-substring/
 [279]: https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
 [280]: https://www.geeksforgeeks.org/count-number-of-ways-to-cover-a-distance/

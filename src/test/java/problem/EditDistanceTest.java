@@ -8,16 +8,16 @@ public class EditDistanceTest {
 
     @Test
     public void editDistance1() {
-        assertEquals(1, new EditDistance().editDistance("geek", "gesek"));
+        assertEquals(1, new EditDistance().minDistance("geek", "gesek"));
     }
 
     @Test
     public void editDistance2() {
-        assertEquals(1, new EditDistance().editDistance("cat", "cart"));
+        assertEquals(1, new EditDistance().minDistance("cat", "cart"));
     }
 
     @Test
     public void editDistance3() {
-        assertEquals(3, new EditDistance().editDistance("sunday", "saturday"));
+        assertEquals(3, new EditDistance().minDistance("sunday", "saturday"));
     }
 }
