@@ -22,8 +22,8 @@ public class NaryTreePostorderTraversalTest {
         NaryTreePostorderTraversal.Node n3 = new NaryTreePostorderTraversal.Node(3, n3Children);
         NaryTreePostorderTraversal.Node n2 = new NaryTreePostorderTraversal.Node(2, Collections.emptyList());
         List<NaryTreePostorderTraversal.Node> n1Children = new ArrayList<>();
-        n1Children.add(n2);
         n1Children.add(n3);
+        n1Children.add(n2);
         n1Children.add(n4);
         NaryTreePostorderTraversal.Node n1 = new NaryTreePostorderTraversal.Node(1, n1Children);
 
