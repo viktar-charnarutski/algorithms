@@ -1,6 +1,6 @@
 package problem;
 
-import java.util.List;
+import java.util.*;
 
 /**
  * 590. N-ary Tree Postorder Traversal
@@ -9,7 +9,18 @@ import java.util.List;
  */
 public class NaryTreePostorderTraversal {
     public List<Integer> postorder(Node root) {
-        return null;
+        List<Integer> res = new ArrayList<>();
+        Stack<Node> nodes = new Stack<>();
+        nodes.push(root);
+        while (!nodes.isEmpty()) {
+            root = nodes.pop();
+            res.add(root.val);
+            for (Node child : root.children) {
+                nodes.push(child);
+            }
+        }
+        Collections.reverse(res);
+        return res;
     }
 
     static class Node {
