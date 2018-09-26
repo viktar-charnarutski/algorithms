@@ -3,6 +3,7 @@ package problem;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -17,17 +18,15 @@ public class SimpleMinesweeperTest {
                 {0, 0, 0, 0},
                 {0, 1, 0, 0}
         };
-        List<List<int[]>> expected = new ArrayList<>();
-        List<int[]> cluster1 = new ArrayList<>();
-        cluster1.add(new int[]{0, 1});
-        cluster1.add(new int[]{0, 3});
-        cluster1.add(new int[]{1, 1});
-        cluster1.add(new int[]{1, 2});
-        cluster1.add(new int[]{1, 3});
-        expected.add(cluster1);
-        List<int[]> cluster2 = new ArrayList<>();
-        cluster2.add(new int[]{3, 1});
-        expected.add(cluster2);
-        assertEquals(expected, new SimpleMinesweeper().findBombClusters(grid));
+        List<List<int[]>> result = new SimpleMinesweeper().findBombClusters(grid);
+        assertEquals(2, result.size());
+        assertEquals(5, result.get(0).size());
+        assertEquals(1, result.get(1).size());
+        assertArrayEquals(new int[]{0, 1}, result.get(0).get(0));
+        assertArrayEquals(new int[]{0, 3}, result.get(0).get(4));
+        assertArrayEquals(new int[]{1, 1}, result.get(0).get(1));
+        assertArrayEquals(new int[]{1, 2}, result.get(0).get(2));
+        assertArrayEquals(new int[]{1, 3}, result.get(0).get(3));
+        assertArrayEquals(new int[]{3, 1}, result.get(1).get(0));
     }
 }
