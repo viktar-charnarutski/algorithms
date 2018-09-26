@@ -23,24 +23,26 @@ public class FourSum {
         }
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 3; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
             for (int j = i + 1; j < nums.length - 2; j++) {
-                int currSum = nums[i] + nums[j];
-                int remSum = target - currSum;
+                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                    continue;
+                }
                 int start = j + 1, end = nums.length - 1;
                 while (start < end) {
-                    if (nums[start] + nums[end] == remSum) {
-                        List<Integer> currRes = new ArrayList<>();
-                        currRes.add(nums[i]);
-                        currRes.add(nums[j]);
-                        currRes.add(nums[start]);
-                        currRes.add(nums[end]);
-                        res.add(currRes);
-                        break;
-                    }
-                    if (nums[start] + nums[end] > remSum) {
-                        end--;
-                    } else {
+                    int sum = nums[i] + nums[j] + nums[start] + nums[end];
+                    if (sum == target) {
+                        res.add(Arrays.asList(nums[i], nums[j], nums[start], nums[end]));
+                        while (start < end && nums[start] == nums[start + 1]) start++;
+                        while (start < end && nums[end] == nums[end - 1]) end--;
                         start++;
+                        end--;
+                    } else if (sum < target) {
+                        start++;
+                    } else {
+                        end--;
                     }
                 }
             }
