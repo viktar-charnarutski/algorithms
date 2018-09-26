@@ -1,8 +1,6 @@
 package problem;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -41,11 +39,7 @@ public class SimpleMinesweeper {
     }
 
     private void findBombClusters(int row, int col, int[][] grid, List<int[]> curr) {
-        // TODO: move the check to a separate function
-        if (row >= grid.length || row < 0
-                || col >= grid[0].length || col < 0
-                || grid[row][col] == 0
-                || grid[row][col] == VISITED) {
+        if (isCellNotValid(row, col, grid)) {
             return;
         }
         int[] cell = new int[]{row, col};
@@ -56,5 +50,12 @@ public class SimpleMinesweeper {
         findBombClusters(row - 1, col, grid, curr);
         findBombClusters(row, col + 1, grid, curr);
         findBombClusters(row, col - 1, grid, curr);
+    }
+
+    private static boolean isCellNotValid(int row, int col, int[][] grid) {
+        return row >= grid.length || row < 0
+                || col >= grid[0].length || col < 0
+                || grid[row][col] == 0
+                || grid[row][col] == VISITED;
     }
 }
