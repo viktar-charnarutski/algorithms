@@ -8,7 +8,19 @@ import java.util.*;
  * Given an n-ary tree, return the postorder traversal of its nodes' values.
  */
 public class NaryTreePostorderTraversal {
+
+    List<Integer> result = new ArrayList<>();
+
     public List<Integer> postorder(Node root) {
+        if (root == null) return result;
+        for (Node node : root.children) {
+            postorder(node);
+        }
+        result.add(root.val);
+        return result;
+    }
+
+    public List<Integer> postorder1(Node root) {
         List<Integer> res = new ArrayList<>();
         Stack<Node> nodes = new Stack<>();
         nodes.push(root);
@@ -27,11 +39,14 @@ public class NaryTreePostorderTraversal {
         public int val;
         public List<Node> children;
 
-        public Node() {}
+        public Node() {
+        }
 
-        public Node(int _val,List<Node> _children) {
+        public Node(int _val, List<Node> _children) {
             val = _val;
             children = _children;
         }
-    };
+    }
+
+    ;
 }
