@@ -587,6 +587,7 @@ See this [post][1003].
 | 356 | 24-Sep-2018 | [Word Count Engine][356] | Medium | Y |
 | 357 | 25-Sep-2018 | [590. N-ary Tree Postorder Traversal][357] | Easy | |
 | 358 | 26-Sep-2018 | [18. 4Sum][358] | Medium | Y |
+| 359 | 26-Sep-2018 | [Simple Minesweeper][359] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -946,6 +947,8 @@ See this [post][1003].
 [356]: https://github.com/viktar-charnarutski/algorithms/blob/master/src/main/java/problem/WordCountEngine.java
 [357]: https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 [358]: https://leetcode.com/problems/4sum/
+[359]: https://github.com/viktar-charnarutski/algorithms/blob/master/src/main/java/problem/SimpleMinesweeper.java
+
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
