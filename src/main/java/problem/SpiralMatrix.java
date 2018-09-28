@@ -9,7 +9,7 @@ import java.util.List;
  * Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
  */
 public class SpiralMatrix {
-    public List<Integer> spiralOrder(int[][] matrix) {
+    public List<Integer> spiralOrder1(int[][] matrix) {
         List<Integer> res = new ArrayList<>();
         if (matrix.length == 0)
             return res;
@@ -27,6 +27,41 @@ public class SpiralMatrix {
             c1++;
             c2--;
         }
+        return res;
+    }
+
+    public List<Integer> spiralOrder(int[][] inputMatrix) {
+        int rows = inputMatrix.length;
+        int cols = inputMatrix[0].length;
+
+        List<Integer> res = new ArrayList<>();
+
+        Integer left = 0, right = cols - 1;
+        Integer top = 0, bottom = rows - 1;
+
+        while (left <= right && top <= bottom) {
+            // go from left to right
+            for (int i = left; i <= right; i++) {
+                res.add(inputMatrix[top][i]);
+            }
+            top++;
+            // go from top to bottom
+            for (int i = top; i <= bottom; i++) {
+                res.add(inputMatrix[i][right]);
+            }
+            right--;
+            // go from right to left
+            for (int i = right; i >= left; i--) {
+                res.add(inputMatrix[bottom][i]);
+            }
+            bottom--;
+            // go from bottom to top
+            for (int i = bottom; i >= top; i--) {
+                res.add(inputMatrix[i][left]);
+            }
+            left++;
+        }
+
         return res;
     }
 }
