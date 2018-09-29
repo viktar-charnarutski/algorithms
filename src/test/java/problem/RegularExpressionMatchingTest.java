@@ -20,4 +20,9 @@ public class RegularExpressionMatchingTest {
     public void isMatch3() {
         assertTrue(new RegularExpressionMatching().isMatch("aa", ".*"));
     }
+
+    @Test
+    public void isMatch4() {
+        assertTrue(new RegularExpressionMatching().isMatch("aab", "c*a*b"));
+    }
 }
