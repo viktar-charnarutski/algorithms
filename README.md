@@ -588,6 +588,7 @@ See this [post][1003].
 | 357 | 25-Sep-2018 | [590. N-ary Tree Postorder Traversal][357] | Easy | |
 | 358 | 26-Sep-2018 | [18. 4Sum][358] | Medium | Y |
 | 359 | 26-Sep-2018 | [Simple Minesweeper][359] | Medium | |
+| 360 | 28-Sep-2018 | [905. Sort Array By Parity][360] | Easy | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -948,6 +949,7 @@ See this [post][1003].
 [357]: https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 [358]: https://leetcode.com/problems/4sum/
 [359]: https://github.com/viktar-charnarutski/algorithms/blob/master/src/main/java/problem/SimpleMinesweeper.java
+[360]: https://leetcode.com/contest/weekly-contest-102/problems/sort-array-by-parity/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
