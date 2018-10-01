@@ -8,7 +8,7 @@ public class RegularExpressionMatchingTest {
 
     @Test
     public void isMatch1() {
-        assertTrue(new RegularExpressionMatching().isMatch("aa", "a"));
+        assertFalse(new RegularExpressionMatching().isMatch("aa", "a"));
     }
 
     @Test
@@ -29,5 +29,10 @@ public class RegularExpressionMatchingTest {
     @Test
     public void isMatch5() {
         assertFalse(new RegularExpressionMatching().isMatch("mississippi", "mis*is*p*."));
+    }
+
+    @Test
+    public void isMatch6() {
+        assertTrue(new RegularExpressionMatching().isMatch("aaab", "c*a*b"));
     }
 }
