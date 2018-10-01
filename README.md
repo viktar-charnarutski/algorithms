@@ -590,6 +590,7 @@ See this [post][1003].
 | 359 | 26-Sep-2018 | [Simple Minesweeper][359] | Medium | |
 | 360 | 28-Sep-2018 | [905. Sort Array By Parity][360] | Easy | |
 | 361 | 30-Sep-2018 | [10. Regular Expression Matching][361] | Hard | Y |
+| 362 | 1-Oct-2018 | [904. Fruit Into Baskets][362] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -952,6 +953,7 @@ See this [post][1003].
 [359]: https://github.com/viktar-charnarutski/algorithms/blob/master/src/main/java/problem/SimpleMinesweeper.java
 [360]: https://leetcode.com/contest/weekly-contest-102/problems/sort-array-by-parity/
 [361]: https://leetcode.com/problems/regular-expression-matching/
+[362]: https://leetcode.com/contest/weekly-contest-102/problems/fruit-into-baskets/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
