@@ -589,6 +589,7 @@ See this [post][1003].
 | 358 | 26-Sep-2018 | [18. 4Sum][358] | Medium | Y |
 | 359 | 26-Sep-2018 | [Simple Minesweeper][359] | Medium | |
 | 360 | 28-Sep-2018 | [905. Sort Array By Parity][360] | Easy | |
+| 361 | 30-Sep-2018 | [10. Regular Expression Matching][361] | Hard | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -950,6 +951,7 @@ See this [post][1003].
 [358]: https://leetcode.com/problems/4sum/
 [359]: https://github.com/viktar-charnarutski/algorithms/blob/master/src/main/java/problem/SimpleMinesweeper.java
 [360]: https://leetcode.com/contest/weekly-contest-102/problems/sort-array-by-parity/
+[361]: https://leetcode.com/problems/regular-expression-matching/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
