@@ -20,4 +20,9 @@ public class FruitIntoBasketsTest {
     public void totalFruit3() {
         assertEquals(4, new FruitIntoBaskets().totalFruit(new int[]{1, 2, 3, 2, 2}));
     }
+
+    @Test
+    public void totalFruit4() {
+        assertEquals(5, new FruitIntoBaskets().totalFruit(new int[]{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4}));
+    }
 }
