@@ -591,6 +591,7 @@ See this [post][1003].
 | 360 | 28-Sep-2018 | [905. Sort Array By Parity][360] | Easy | |
 | 361 | 30-Sep-2018 | [10. Regular Expression Matching][361] | Hard | Y |
 | 362 | 1-Oct-2018 | [904. Fruit Into Baskets][362] | Medium | Y |
+| 363 | 2-Oct-2018 | [907. Sum of Subarray Minimums][363] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -954,6 +955,7 @@ See this [post][1003].
 [360]: https://leetcode.com/contest/weekly-contest-102/problems/sort-array-by-parity/
 [361]: https://leetcode.com/problems/regular-expression-matching/
 [362]: https://leetcode.com/contest/weekly-contest-102/problems/fruit-into-baskets/
+[363]: https://leetcode.com/contest/weekly-contest-102/problems/sum-of-subarray-minimums/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
