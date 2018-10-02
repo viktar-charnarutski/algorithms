@@ -592,6 +592,7 @@ See this [post][1003].
 | 361 | 30-Sep-2018 | [10. Regular Expression Matching][361] | Hard | Y |
 | 362 | 1-Oct-2018 | [904. Fruit Into Baskets][362] | Medium | Y |
 | 363 | 2-Oct-2018 | [907. Sum of Subarray Minimums][363] | Medium | Y |
+| 364 | 2-Oct-2018 | [906. Super Palindromes][364] | Hard | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -956,6 +957,7 @@ See this [post][1003].
 [361]: https://leetcode.com/problems/regular-expression-matching/
 [362]: https://leetcode.com/contest/weekly-contest-102/problems/fruit-into-baskets/
 [363]: https://leetcode.com/contest/weekly-contest-102/problems/sum-of-subarray-minimums/
+[364]: https://leetcode.com/problems/super-palindromes/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
