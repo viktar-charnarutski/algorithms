@@ -46,15 +46,19 @@ public class CakeThief {
     }
 
     public static long maxDuffelBagValue(CakeType[] cakeTypes, int weightCapacity) {
-        Arrays.sort(cakeTypes, (a, b) -> (b.value / b.weight) - (a.value / a.weight));
-        long res = 0L;
-        for (CakeType cake : cakeTypes) {
-            while (weightCapacity - cake.weight >= 0) {
-                weightCapacity -= cake.weight;
-                res += cake.value;
+        long[] res = new long[weightCapacity + 1];
+
+        for (int currCapacity = 0; currCapacity <= weightCapacity; currCapacity++) {
+            long currMax = 0;
+            for (CakeType cake : cakeTypes) {
+                if (cake.weight <= currCapacity) {
+                    long currVal = cake.value + res[currCapacity - cake.weight];
+                    currMax = Math.max(currVal, currMax);
+                }
             }
+            res[currCapacity] = currMax;
         }
-        return res;
+        return res[weightCapacity];
     }
 
 }
