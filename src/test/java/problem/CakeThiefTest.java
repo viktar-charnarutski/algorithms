@@ -28,4 +28,14 @@ public class CakeThiefTest {
         long actual = CakeThief.maxDuffelBagValue(cakes, 8);
         assertEquals(110, actual);
     }
+
+    @Test
+    public void maxDuffelBagValue3() {
+        CakeThief.CakeType[] cakes = {
+                new CakeThief.CakeType(3, 40),
+                new CakeThief.CakeType(5, 70)
+        };
+        long actual = CakeThief.maxDuffelBagValue(cakes, 9);
+        assertEquals(120, actual);
+    }
 }
