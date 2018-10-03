@@ -35,13 +35,26 @@ public class CakeThief {
             this.weight = weight;
             this.value = value;
         }
+
+        @Override
+        public String toString() {
+            return "CakeType{" +
+                    "weight=" + weight +
+                    ", value=" + value +
+                    '}';
+        }
     }
 
     public static long maxDuffelBagValue(CakeType[] cakeTypes, int weightCapacity) {
-
-        // calculate the maximum value that we can carry
-
-        return 0;
+        Arrays.sort(cakeTypes, (a, b) -> (b.value / b.weight) - (a.value / a.weight));
+        long res = 0L;
+        for (CakeType cake : cakeTypes) {
+            while (weightCapacity - cake.weight >= 0) {
+                weightCapacity -= cake.weight;
+                res += cake.value;
+            }
+        }
+        return res;
     }
 
 }
