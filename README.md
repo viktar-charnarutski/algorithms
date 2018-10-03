@@ -593,6 +593,7 @@ See this [post][1003].
 | 362 | 1-Oct-2018 | [904. Fruit Into Baskets][362] | Medium | Y |
 | 363 | 2-Oct-2018 | [907. Sum of Subarray Minimums][363] | Medium | Y |
 | 364 | 2-Oct-2018 | [906. Super Palindromes][364] | Hard | |
+| 365 | 2-Oct-2018 | [Cake Thief][365] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -958,6 +959,7 @@ See this [post][1003].
 [362]: https://leetcode.com/contest/weekly-contest-102/problems/fruit-into-baskets/
 [363]: https://leetcode.com/contest/weekly-contest-102/problems/sum-of-subarray-minimums/
 [364]: https://leetcode.com/problems/super-palindromes/
+[365]: https://www.interviewcake.com/question/java/cake-thief?utm_source=weekly_email&utm_source=drip&utm_campaign=weekly_email&utm_campaign=Interview%20Cake%20Weekly%20Problem%20%23211:%20The%20Cake%20Thief&utm_medium=email&utm_medium=email
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
