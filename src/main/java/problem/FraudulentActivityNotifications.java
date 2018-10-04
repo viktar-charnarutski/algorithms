@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Arrays;
+
 /**
  * Fraudulent Activity Notifications
  * <p>
@@ -13,6 +15,26 @@ package problem;
  */
 public class FraudulentActivityNotifications {
     static int activityNotifications(int[] expenditure, int d) {
-        return -1;
+        if (expenditure.length < d) return 0;
+        int currMedian, notificationsCount = 0;
+        for (int i = d; i < expenditure.length; i++) {
+            currMedian = median(expenditure, i - d, d);
+            if (expenditure[i] >= currMedian * 2) {
+                notificationsCount++;
+            }
+        }
+        return notificationsCount;
+    }
+
+    static int median(int[] arr, int start, int d) {
+        int[] range = new int[d];
+        System.arraycopy(arr, start, range, 0, d);
+        Arrays.sort(range);
+        int midIndex = d / 2;
+        if (d % 2 == 0) {
+            return ((range[midIndex] + range[midIndex + 1])) / 2 ;
+        } else {
+            return range[midIndex];
+        }
     }
 }
