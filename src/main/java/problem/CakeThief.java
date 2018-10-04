@@ -1,5 +1,6 @@
 package problem;
 
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 /**
@@ -45,6 +46,12 @@ public class CakeThief {
         }
     }
 
+    public static class InfiniteWeightException extends RuntimeException {
+        public InfiniteWeightException(String message) {
+            super(message);
+        }
+    }
+
     public static long maxDuffelBagValue(CakeType[] cakeTypes, int weightCapacity) {
         long[] res = new long[weightCapacity + 1];
 
@@ -60,5 +67,4 @@ public class CakeThief {
         }
         return res[weightCapacity];
     }
-
 }
