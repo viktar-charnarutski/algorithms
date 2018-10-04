@@ -7,8 +7,13 @@ import static org.junit.Assert.*;
 public class FraudulentActivityNotificationsTest {
 
     @Test
-    public void activityNotifications() {
+    public void activityNotifications1() {
         assertEquals(2, FraudulentActivityNotifications.activityNotifications(new int[]{2, 3, 4, 2, 3, 6, 8, 4, 5}, 5));
+    }
+
+    @Test
+    public void activityNotifications2() {
+        assertEquals(1, FraudulentActivityNotifications.activityNotifications(new int[]{10, 20, 30, 40, 50}, 3));
     }
 
     @Test
