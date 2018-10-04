@@ -20,4 +20,9 @@ public class UglyNumberTest {
     public void isUgly3() {
         assertFalse(new UglyNumber().isUgly(14));
     }
+
+    @Test
+    public void isUgly4() {
+        assertFalse(new UglyNumber().isUgly(0));
+    }
 }
