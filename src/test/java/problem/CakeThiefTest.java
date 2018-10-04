@@ -38,4 +38,13 @@ public class CakeThiefTest {
         long actual = CakeThief.maxDuffelBagValue(cakes, 9);
         assertEquals(120, actual);
     }
+
+    @Test(expected = CakeThief.InfiniteWeightException.class)
+    public void maxDuffelBagValue4() {
+        CakeThief.CakeType[] cakes = {
+                new CakeThief.CakeType(0, 40),
+                new CakeThief.CakeType(5, 70)
+        };
+        CakeThief.maxDuffelBagValue(cakes, 9);
+    }
 }
