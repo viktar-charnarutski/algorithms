@@ -59,6 +59,9 @@ public class CakeThief {
             long currMax = 0;
             for (CakeType cake : cakeTypes) {
                 if (cake.weight <= currCapacity) {
+                    if (cake.weight == 0) {
+                        throw new InfiniteWeightException(String.format("Zero weight for %s is found.", cake));
+                    }
                     long currVal = cake.value + res[currCapacity - cake.weight];
                     currMax = Math.max(currVal, currMax);
                 }
