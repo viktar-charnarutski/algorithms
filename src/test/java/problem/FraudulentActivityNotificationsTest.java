@@ -12,7 +12,12 @@ public class FraudulentActivityNotificationsTest {
     }
 
     @Test
-    public void median() {
+    public void median1() {
         assertEquals(3, FraudulentActivityNotifications.median(new int[]{2, 3, 4, 2, 3, 6, 8, 4, 5}, 0, 5));
+    }
+
+    @Test
+    public void median2() {
+        assertEquals(4, FraudulentActivityNotifications.median(new int[]{2, 3, 4, 2, 3, 6, 8, 4, 5}, 3, 5));
     }
 }
