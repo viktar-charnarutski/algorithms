@@ -15,4 +15,9 @@ public class UglyNumberTest {
     public void isUgly2() {
         assertTrue(new UglyNumber().isUgly(8));
     }
+
+    @Test
+    public void isUgly3() {
+        assertFalse(new UglyNumber().isUgly(14));
+    }
 }
