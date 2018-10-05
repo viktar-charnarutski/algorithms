@@ -1,6 +1,7 @@
 package problem;
 
-import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Fraudulent Activity Notifications
@@ -14,27 +15,70 @@ import java.util.Arrays;
  * number of times the client will receive a notification over all n days.
  */
 public class FraudulentActivityNotifications {
+
+    // 2 3 4 2 3 6 8 4 5
+    // 2 2 3 3 4 4 5 6 8
+    // 0 0 2 2 2 1 1 0 1
+    /*
+
+    0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+    -------------------------------------------
+    0 | 0 | 2 | 2 | 2 | 1 | 1 | 0 | 1 | 0 | 0 |
+
+     */
+
     static int activityNotifications(int[] expenditure, int d) {
         if (expenditure.length < d) return 0;
-        int currMedian, notificationsCount = 0;
-        for (int i = d; i < expenditure.length; i++) {
-            currMedian = median(expenditure, i - d, d);
-            if (expenditure[i] >= currMedian * 2) {
-                notificationsCount++;
+        int notificationsCount = 0;
+
+        Queue<Integer> queue = new LinkedList<>();
+        int[] counts = new int[200];
+
+        for (int currElement : expenditure) {
+            // if have enough data
+            if (queue.size() >= d) {
+                int median = median(counts, d);
+                if (currElement >= median * 2) {
+                    notificationsCount++;
+                }
+                // 'removing' the 'i - d'-th element from the counting array
+                int oldestElement = queue.poll();
+                counts[oldestElement]--;
             }
+
+            // 'adding' the current element into the counting array
+            counts[currElement]++;
+            queue.offer(currElement);
         }
         return notificationsCount;
     }
 
-    static int median(int[] arr, int start, int d) {
-        int[] range = new int[d];
-        System.arraycopy(arr, start, range, 0, d);
-        Arrays.sort(range);
-        int midIndex = d / 2;
-        if (d % 2 == 0) {
-            return ((range[midIndex] + range[midIndex + 1])) / 2 ;
+    static int median(int[] counts, int d) {
+        int mid = d / 2 + 1;
+        if (d % 2 == 0) { // even: get avg of the two middle elements
+            int midFirst = 0, midSecond = 0;
+            int currIndex = 0, count = 0;
+            while (currIndex < counts.length) {
+                for (int i = 0; i < counts[currIndex]; i++) {
+                    count++;
+                    if (count == mid - 1) {
+                        midFirst = currIndex;
+                    } else if (count == mid) {
+                        midSecond = currIndex;
+                        return (midFirst + midSecond) / 2;
+                    }
+                }
+                currIndex++;
+            }
         } else {
-            return range[midIndex];
+            int currIndex = 0, count = 0;
+            while (currIndex < counts.length) {
+                for (int i = 0; i < counts[currIndex]; i++) {
+                    if (++count == mid) return currIndex;
+                }
+                currIndex++;
+            }
         }
+        return -1;
     }
 }
