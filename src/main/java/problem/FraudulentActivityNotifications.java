@@ -2,6 +2,7 @@ package problem;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.TreeMap;
 
 /**
  * Fraudulent Activity Notifications
@@ -32,51 +33,52 @@ public class FraudulentActivityNotifications {
         int notificationsCount = 0;
 
         Queue<Integer> queue = new LinkedList<>();
-        int[] counts = new int[200];
+        TreeMap<Integer, Integer> countMap = new TreeMap<>();
 
         for (int currElement : expenditure) {
             // if have enough data
             if (queue.size() >= d) {
-                int median = median(counts, d);
+                double median = median(countMap, d);
                 if (currElement >= median * 2) {
                     notificationsCount++;
                 }
-                // 'removing' the 'i - d'-th element from the counting array
-                int oldestElement = queue.poll();
-                counts[oldestElement]--;
+                // 'removing' the 'i - d'-th element from the counting tree map
+                Integer oldestElement = queue.poll();
+                if (countMap.get(oldestElement) - 1 == 0) {
+                    countMap.remove(oldestElement);
+                } else {
+                    countMap.put(oldestElement, countMap.get(oldestElement) - 1);
+                }
             }
 
-            // 'adding' the current element into the counting array
-            counts[currElement]++;
+            // 'adding' the current element into the counting tree map
+            countMap.put(currElement, countMap.getOrDefault(currElement, 0) + 1);
             queue.offer(currElement);
         }
         return notificationsCount;
     }
 
-    static int median(int[] counts, int d) {
+    static double median(TreeMap<Integer, Integer> countMap, int d) {
         int mid = d / 2 + 1;
-        if (d % 2 == 0) { // even: get avg of the two middle elements
-            int midFirst = 0, midSecond = 0;
-            int currIndex = 0, count = 0;
-            while (currIndex < counts.length) {
-                for (int i = 0; i < counts[currIndex]; i++) {
+        int count = 0;
+        if ((d & 1) == 0) { // even: get avg of the two middle elements
+            int first = 0, second = 0;
+            for (Integer num : countMap.keySet()) {
+                for (int i = 0; i < countMap.get(num); i++) {
                     count++;
                     if (count == mid - 1) {
-                        midFirst = currIndex;
-                    } else if (count == mid) {
-                        midSecond = currIndex;
-                        return (midFirst + midSecond) / 2;
+                        first = num;
+                    } else if (count == mid){
+                        second = num;
+                        return (double) (first + second) / 2;
                     }
                 }
-                currIndex++;
             }
         } else {
-            int currIndex = 0, count = 0;
-            while (currIndex < counts.length) {
-                for (int i = 0; i < counts[currIndex]; i++) {
-                    if (++count == mid) return currIndex;
+            for (Integer num : countMap.keySet()) {
+                for (int i = 0; i < countMap.get(num); i++) {
+                    if (++count == mid) return num;
                 }
-                currIndex++;
             }
         }
         return -1;
