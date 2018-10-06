@@ -28,7 +28,7 @@ public class FraudulentActivityNotifications {
 
      */
 
-    static int activityNotifications(int[] expenditure, int d) {
+    static int activityNotificationsWithTreeMap(int[] expenditure, int d) {
         if (expenditure.length < d) return 0;
         int notificationsCount = 0;
 
@@ -58,6 +58,106 @@ public class FraudulentActivityNotifications {
         return notificationsCount;
     }
 
+    static int activityNotifications(int[] expenditure, int d) {
+        if (expenditure.length < d) return 0;
+        int notificationsCount = 0;
+
+        int[] counts = new int[200];
+        int first = 0;
+
+        for (int last = 0; last < expenditure.length; last++) {
+            // if have enough data: range is > d
+            boolean isRangeFormed = last - first >= d;
+            if (isRangeFormed) {
+                double median = median(counts, d);
+                if (expenditure[last] >= median * 2) { // check if the current spending is exceeding the calculated threshold
+                    notificationsCount++;
+                }
+                // 'removing' the 'last - d'-th element from the counting array
+                counts[expenditure[first]]--;
+            }
+
+            // 'adding' the current element into the counting array
+            counts[expenditure[last]]++;
+
+            if (isRangeFormed) {
+                first++;
+            }
+        }
+        return notificationsCount;
+    }
+
+    static double median(int[] counts, int d) {
+        int mid = d / 2 + 1;
+        int midFirst = 0, midSecond = 0;
+        if ((d & 1) == 0) { // even: get avg of the two middle elements
+            int count = 0;
+            for (int i = 0; i < counts.length; i++) {
+                count += counts[i];
+                if (count >= mid - 1) {
+                    midFirst = i;
+                    break;
+                }
+            }
+            count = 0;
+            for (int i = 0; i < counts.length; i++) {
+                count += counts[i];
+                if (count >= mid) {
+                    midSecond = i;
+                    break;
+                }
+            }
+            return (double) (midFirst + midSecond) / 2;
+        } else { // odd: get the middle element
+            int count = 0;
+            for (int i = 0; i < counts.length; i++) {
+                count += counts[i];
+                if (count >= mid) return i;
+            }
+        }
+        return -1.0;
+    }
+
+    public int getMedian(int freq[], int d) {
+        int prefix_sum[] = new int[201];
+        prefix_sum[0] = freq[0];
+        for (int i = 1; i < 201; i++) {
+            prefix_sum[i] = prefix_sum[i - 1] + freq[i];
+        }
+        int median;
+        int a = 0;
+        int b = 0;
+        if (d % 2 == 0) {
+            int first = d / 2;
+            int second = first + 1;
+            int i = 0;
+            for (; i < 201; i++) {
+                if (first <= prefix_sum[i]) {
+                    a = i;
+                    break;
+                }
+            }
+            for (; i < 201; i++) {
+                if (second <= prefix_sum[i]) {
+                    b = i;
+                    break;
+                }
+            }
+
+        } else {
+            int first = d / 2 + 1;
+            for (int i = 0; i < 201; i++) {
+                if (first <= prefix_sum[i]) {
+                    a = i;
+                    break;
+                }
+            }
+        }
+        median = a + b;
+        return median;
+    }
+
+
     static double median(TreeMap<Integer, Integer> countMap, int d) {
         int mid = d / 2 + 1;
         int count = 0;
@@ -68,7 +168,7 @@ public class FraudulentActivityNotifications {
                     count++;
                     if (count == mid - 1) {
                         first = num;
-                    } else if (count == mid){
+                    } else if (count == mid) {
                         second = num;
                         return (double) (first + second) / 2;
                     }
