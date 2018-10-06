@@ -55,4 +55,19 @@ public class FraudulentActivityNotificationsTest {
         map.put(30, 1);
         assertEquals(20, FraudulentActivityNotifications.median(map, 3), 0);
     }
+
+    @Test
+    public void median4() {
+        assertEquals(4, FraudulentActivityNotifications.median(new int[]{0, 0, 2, 2, 2, 1, 1, 0, 1, 0}, 10), 0);
+    }
+
+    @Test
+    public void median5() {
+        assertEquals(3, FraudulentActivityNotifications.median(new int[]{0, 0, 2, 2, 2, 1, 1, 0, 1, 0}, 5), 0);
+    }
+
+    @Test
+    public void median6() {
+        assertEquals(2, FraudulentActivityNotifications.median(new int[]{0, 1, 1, 1}, 3), 0);
+    }
 }
