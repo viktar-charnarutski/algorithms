@@ -596,6 +596,7 @@ See this [post][1003].
 | 365 | 2-Oct-2018 | [Cake Thief][365] | Medium | Y |
 | 366 | 4-Oct-2018 | [263. Ugly Number][366] | Easy | |
 | 367 | 4-Oct-2018 | [Fraudulent Activity Notifications][367] | Medium | Y |
+| 368 | 8-Oct-2018 | [Lily's Homework][368] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -962,8 +963,18 @@ See this [post][1003].
 [363]: https://leetcode.com/contest/weekly-contest-102/problems/sum-of-subarray-minimums/
 [364]: https://leetcode.com/problems/super-palindromes/
 [365]: https://www.interviewcake.com/question/java/cake-thief?utm_source=weekly_email&utm_source=drip&utm_campaign=weekly_email&utm_campaign=Interview%20Cake%20Weekly%20Problem%20%23211:%20The%20Cake%20Thief&utm_medium=email&utm_medium=email
-[366]: https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+[366]: https://leetcode.com/problems/ugly-number/
+[367]: https://www.hackerrank.com/challenges/fraudulent-activity-notifications/
+[368]: https://www.hackerrank.com/challenges/lilys-homework/
 
+| 361 | 30-Sep-2018 | [10. Regular Expression Matching][361] | Hard | Y |
+| 362 | 1-Oct-2018 | [904. Fruit Into Baskets][362] | Medium | Y |
+| 363 | 2-Oct-2018 | [907. Sum of Subarray Minimums][363] | Medium | Y |
+| 364 | 2-Oct-2018 | [906. Super Palindromes][364] | Hard | |
+| 365 | 2-Oct-2018 | [Cake Thief][365] | Medium | Y |
+| 366 | 4-Oct-2018 | [263. Ugly Number][366] | Easy | |
+| 367 | 4-Oct-2018 | [Fraudulent Activity Notifications][367] | Medium | Y |
+| 368 | 8-Oct-2018 | [Lily's Homework][368] | Medium | Y |
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
