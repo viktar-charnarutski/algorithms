@@ -595,7 +595,7 @@ See this [post][1003].
 | 364 | 2-Oct-2018 | [906. Super Palindromes][364] | Hard | |
 | 365 | 2-Oct-2018 | [Cake Thief][365] | Medium | Y |
 | 366 | 4-Oct-2018 | [263. Ugly Number][366] | Easy | |
-| 367 | 4-Oct-2018 | [Fraudulent Activity Notifications][367] | Medium | |
+| 367 | 4-Oct-2018 | [Fraudulent Activity Notifications][367] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
