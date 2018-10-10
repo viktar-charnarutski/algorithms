@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.*;
+
 /**
  * Pseudo-Isomorphic Substrings
  * <p>
@@ -28,10 +30,75 @@ package problem;
  * <p>
  * Output N lines. On the ith line, output the size of the largest possible set for the first i alphabetical characters
  * of S such that no two strings in the set are pseudo-isomorphic to each other.
+ * <p>
+ * abc ->
+ * a
+ * ab
+ * b
+ * abc
+ * bc
+ * c
  */
 public class PseudoIsomorphicSubstrings {
-    static int[] pseudoIsomorphicSubstrings(String s) {
-        return new int[0];
 
+    static int[] pseudoIsomorphicSubstrings(String s) {
+        Set<String> uniqPatterns = new HashSet<>();
+        List<Integer> result = new ArrayList<>();
+
+        StringBuilder curr = new StringBuilder();
+        Map<String, String> hashes = new HashMap<>();
+
+        for (int i = 0; i < s.length(); i++) {
+            curr.append(s.charAt(i));
+            isomorphicSubstringsCount(curr.toString(), uniqPatterns, hashes);
+            result.add(uniqPatterns.size());
+        }
+        return listToArray(result);
+    }
+
+    private static void isomorphicSubstringsCount(String s, Set<String> uniqPatterns,
+                                                  Map<String, String> hashes) {
+        for (int i = 0; i < s.length(); i++) {
+            StringBuilder sb = new StringBuilder();
+            for (int j = i; j < s.length(); j++) {
+
+                sb.append(s.charAt(j));
+
+                if (hashes.containsKey(sb.toString())) {
+                    continue;
+                }
+                String hash = hash(sb.toString());
+                hashes.put(sb.toString(), hash);
+
+                uniqPatterns.add(hash);
+            }
+        }
+    }
+
+    private static int[] listToArray(List<Integer> list) {
+        int[] res = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            res[i] = list.get(i);
+        }
+        return res;
+    }
+
+    static String hash(String s) {
+        Map<Character, StringBuilder> hashes = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (hashes.containsKey(c)) {
+                StringBuilder hash = hashes.get(c);
+                hash.append(":").append(i);
+            } else {
+                hashes.put(c, new StringBuilder().append(i));
+            }
+        }
+        // composing a final hash
+        StringBuilder sb = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            sb.append(hashes.get(c)).append("-");
+        }
+        return sb.toString();
     }
 }
