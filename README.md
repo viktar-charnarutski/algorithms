@@ -597,7 +597,8 @@ See this [post][1003].
 | 366 | 4-Oct-2018 | [263. Ugly Number][366] | Easy | |
 | 367 | 4-Oct-2018 | [Fraudulent Activity Notifications][367] | Medium | Y |
 | 368 | 8-Oct-2018 | [Lily's Homework][368] | Medium | Y |
-| 369 | 10-Oct-2018 | [Forming a Magic Square][369] | Medium | Y |
+| 369 | 9-Oct-2018 | [Pseudo-Isomorphic Substrings][369] | Hard | Y |
+| 370 | 10-Oct-2018 | [Forming a Magic Square][370] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -967,15 +968,9 @@ See this [post][1003].
 [366]: https://leetcode.com/problems/ugly-number/
 [367]: https://www.hackerrank.com/challenges/fraudulent-activity-notifications/
 [368]: https://www.hackerrank.com/challenges/lilys-homework/
+[369]: https://www.hackerrank.com/challenges/pseudo-isomorphic-substrings/problem
+[370]: https://www.hackerrank.com/challenges/magic-square-forming/problem
 
-| 361 | 30-Sep-2018 | [10. Regular Expression Matching][361] | Hard | Y |
-| 362 | 1-Oct-2018 | [904. Fruit Into Baskets][362] | Medium | Y |
-| 363 | 2-Oct-2018 | [907. Sum of Subarray Minimums][363] | Medium | Y |
-| 364 | 2-Oct-2018 | [906. Super Palindromes][364] | Hard | |
-| 365 | 2-Oct-2018 | [Cake Thief][365] | Medium | Y |
-| 366 | 4-Oct-2018 | [263. Ugly Number][366] | Easy | |
-| 367 | 4-Oct-2018 | [Fraudulent Activity Notifications][367] | Medium | Y |
-| 368 | 8-Oct-2018 | [Lily's Homework][368] | Medium | Y |
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
 [1001]: http://bigocheatsheet.com/
