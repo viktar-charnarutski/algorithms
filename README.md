@@ -599,6 +599,7 @@ See this [post][1003].
 | 368 | 8-Oct-2018 | [Lily's Homework][368] | Medium | Y |
 | 369 | 9-Oct-2018 | [Pseudo-Isomorphic Substrings][369] | Hard | Y |
 | 370 | 10-Oct-2018 | [Forming a Magic Square][370] | Medium | Y |
+| 371 | 11-Oct-2018 | [Climbing the Leaderboard][371] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -970,6 +971,7 @@ See this [post][1003].
 [368]: https://www.hackerrank.com/challenges/lilys-homework/
 [369]: https://www.hackerrank.com/challenges/pseudo-isomorphic-substrings/problem
 [370]: https://www.hackerrank.com/challenges/magic-square-forming/problem
+[371]: https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
