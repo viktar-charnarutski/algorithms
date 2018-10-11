@@ -13,6 +13,6 @@ public class FormingMagicSquareTest {
 
     @Test
     public void formingMagicSquare2() {
-        assertEquals(7, FormingMagicSquare.formingMagicSquare(new int[][]{{4, 9, 2}, {3, 5, 7}, {8, 1, 5}}));
+        assertEquals(1, FormingMagicSquare.formingMagicSquare(new int[][]{{4, 9, 2}, {3, 5, 7}, {8, 1, 5}}));
     }
 }
