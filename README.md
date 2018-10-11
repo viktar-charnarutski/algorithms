@@ -597,6 +597,7 @@ See this [post][1003].
 | 366 | 4-Oct-2018 | [263. Ugly Number][366] | Easy | |
 | 367 | 4-Oct-2018 | [Fraudulent Activity Notifications][367] | Medium | Y |
 | 368 | 8-Oct-2018 | [Lily's Homework][368] | Medium | Y |
+| 369 | 10-Oct-2018 | [Forming a Magic Square][369] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
