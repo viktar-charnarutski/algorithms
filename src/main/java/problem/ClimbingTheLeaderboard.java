@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Climbing the Leaderboard
  * <p>
@@ -12,6 +15,29 @@ package problem;
  */
 public class ClimbingTheLeaderboard {
     static int[] climbingLeaderboard(int[] scores, int[] alice) {
-        return new int[0];
+        List<Integer> ranks = new ArrayList<>();
+        ranks.add(scores[0]);
+        for (int i = 1; i < scores.length; i++) {
+            if (scores[i] == ranks.get(ranks.size() - 1)) {
+                continue;
+            }
+            ranks.add(scores[i]);
+        }
+
+        int[] res = new int[alice.length];
+        for (int i = 0; i < alice.length; i++) {
+            int aRank = 1;
+            for (int rank : ranks) {
+                if (alice[i] >= rank) {
+                    res[i] = aRank;
+                    break;
+                }
+                aRank++;
+            }
+            if (res[i] == 0) {
+                res[i] = aRank;
+            }
+        }
+        return res;
     }
 }
