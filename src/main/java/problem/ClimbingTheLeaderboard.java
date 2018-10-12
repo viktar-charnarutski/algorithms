@@ -1,6 +1,7 @@
 package problem;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -15,6 +16,32 @@ import java.util.List;
  */
 public class ClimbingTheLeaderboard {
     static int[] climbingLeaderboard(int[] scores, int[] alice) {
+        List<Integer> ranks = new ArrayList<>();
+        ranks.add(scores[0]);
+        for (int i = 1; i < scores.length; i++) {
+            if (scores[i] == ranks.get(ranks.size() - 1)) {
+                continue;
+            }
+            ranks.add(scores[i]);
+        }
+
+        int[] res = new int[alice.length];
+        int ranksIndex = ranks.size() - 1; // 4
+
+        for (int i = 0; i < alice.length; i++) {
+            while (ranksIndex >= 0 && alice[i] > ranks.get(ranksIndex)) {
+                ranksIndex--;
+            }
+            if (ranksIndex >= 0 && alice[i] == ranks.get(ranksIndex)) {
+                res[i] = ranksIndex + 1;
+            } else {
+                res[i] = ranksIndex + 2;
+            }
+        }
+        return res;
+    }
+
+    static int[] climbingLeaderboardBruteforce(int[] scores, int[] alice) {
         List<Integer> ranks = new ArrayList<>();
         ranks.add(scores[0]);
         for (int i = 1; i < scores.length; i++) {
