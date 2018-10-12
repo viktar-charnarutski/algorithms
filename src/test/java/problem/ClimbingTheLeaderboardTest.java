@@ -13,7 +13,7 @@ public class ClimbingTheLeaderboardTest {
     }
     @Test
     public void climbingLeaderboard2() {
-        assertArrayEquals(new int[]{1},
+        assertArrayEquals(new int[]{1, 1, 1, 1},
                 ClimbingTheLeaderboard.climbingLeaderboard(new int[0], new int[]{5, 25, 50, 120}));
     }
 }
