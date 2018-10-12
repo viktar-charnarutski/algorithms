@@ -16,6 +16,9 @@ import java.util.List;
  */
 public class ClimbingTheLeaderboard {
     static int[] climbingLeaderboard(int[] scores, int[] alice) {
+        if (scores == null || scores.length == 0) {
+            return new int[]{1, 1, 1, 1};
+        }
         List<Integer> ranks = new ArrayList<>();
         ranks.add(scores[0]);
         for (int i = 1; i < scores.length; i++) {
