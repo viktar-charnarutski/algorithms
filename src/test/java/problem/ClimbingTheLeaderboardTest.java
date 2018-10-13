@@ -16,4 +16,9 @@ public class ClimbingTheLeaderboardTest {
         assertArrayEquals(new int[]{1, 1, 1, 1},
                 ClimbingTheLeaderboard.climbingLeaderboard(new int[0], new int[]{5, 25, 50, 120}));
     }
+    @Test
+    public void climbingLeaderboard3() {
+        assertArrayEquals(new int[]{1},
+                ClimbingTheLeaderboard.climbingLeaderboard(new int[]{100}, new int[]{100}));
+    }
 }
