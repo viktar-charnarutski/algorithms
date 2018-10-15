@@ -8,6 +8,17 @@ package problem;
  */
 public class NonDivisibleSubset {
     static int nonDivisibleSubset(int k, int[] S) {
-        return 0;
+        int maxLength = 0;
+        for (int i = 0; i < S.length; i++) {
+            int currSum = S[i], currLength = 0;
+            for (int j = i + 1; j < S.length; j++) {
+                if (currSum + S[j] % k != 0) {
+                    currSum += S[j];
+                    currLength++;
+                }
+            }
+            maxLength = Math.max(currLength, maxLength);
+        }
+        return maxLength;
     }
 }
