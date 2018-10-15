@@ -11,14 +11,22 @@ public class ClimbingTheLeaderboardTest {
         assertArrayEquals(new int[]{6, 4, 2, 1},
                 ClimbingTheLeaderboard.climbingLeaderboard(new int[]{100, 100, 50, 40, 40, 20, 10}, new int[]{5, 25, 50, 120}));
     }
+
     @Test
     public void climbingLeaderboard2() {
         assertArrayEquals(new int[]{1, 1, 1, 1},
                 ClimbingTheLeaderboard.climbingLeaderboard(new int[0], new int[]{5, 25, 50, 120}));
     }
+
     @Test
     public void climbingLeaderboard3() {
         assertArrayEquals(new int[]{1},
                 ClimbingTheLeaderboard.climbingLeaderboard(new int[]{100}, new int[]{100}));
+    }
+
+    @Test
+    public void climbingLeaderboard4() {
+        assertArrayEquals(new int[]{1, 1},
+                ClimbingTheLeaderboard.climbingLeaderboard(new int[]{100}, new int[]{100, 100}));
     }
 }
