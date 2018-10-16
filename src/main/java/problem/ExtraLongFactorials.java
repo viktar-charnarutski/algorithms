@@ -1,5 +1,7 @@
 package problem;
 
+import java.math.BigInteger;
+
 /**
  * Extra Long Factorials
  * <p>
@@ -11,6 +13,13 @@ package problem;
  */
 public class ExtraLongFactorials {
     static String extraLongFactorials(int n) {
-        return null;
+        return factorial(n).toString();
+    }
+
+    static BigInteger factorial(int n) {
+        if (n == 0) {
+            return new BigInteger("1");
+        }
+        return factorial(n - 1).multiply(BigInteger.valueOf(n));
     }
 }
