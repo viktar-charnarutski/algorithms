@@ -10,4 +10,9 @@ public class BiggerIsGreaterTest {
     public void biggerIsGreater1() {
         assertEquals("abdc", BiggerIsGreater.biggerIsGreater("abcd"));
     }
+
+    @Test
+    public void biggerIsGreater2() {
+        assertEquals("ab", BiggerIsGreater.biggerIsGreater("ba"));
+    }
 }
