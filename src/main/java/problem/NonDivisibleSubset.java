@@ -12,8 +12,8 @@ public class NonDivisibleSubset {
         for (int value : S) {
             rems[value % k]++;
         }
-        int maxLength = 0;
-        for (int i = 0; i < rems.length / 2; i++) {
+        int maxLength = 1;
+        for (int i = 1; i < rems.length / 2; i++) {
             maxLength += Math.max(rems[i], rems[k - i]);
         }
         return maxLength;
