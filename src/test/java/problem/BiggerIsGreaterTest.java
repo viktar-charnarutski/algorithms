@@ -20,4 +20,19 @@ public class BiggerIsGreaterTest {
     public void biggerIsGreater3() {
         assertEquals("No answer", BiggerIsGreater.biggerIsGreater("bb"));
     }
+
+    @Test
+    public void biggerIsGreater4() {
+        assertEquals("hegf", BiggerIsGreater.biggerIsGreater("hefg"));
+    }
+
+    @Test
+    public void biggerIsGreater5() {
+        assertEquals("dhkc", BiggerIsGreater.biggerIsGreater("dhck"));
+    }
+
+    @Test
+    public void biggerIsGreater6() {
+        assertEquals("hcdk", BiggerIsGreater.biggerIsGreater("dkhc"));
+    }
 }
