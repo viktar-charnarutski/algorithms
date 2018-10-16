@@ -10,7 +10,7 @@ package problem;
  * Calculate and print the factorial of a given integer.
  */
 public class ExtraLongFactorials {
-    static void extraLongFactorials(int n) {
-
+    static String extraLongFactorials(int n) {
+        return null;
     }
 }
