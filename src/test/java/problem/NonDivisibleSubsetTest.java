@@ -20,4 +20,9 @@ public class NonDivisibleSubsetTest {
     public void nonDivisibleSubset3() {
         assertEquals(3, NonDivisibleSubset.nonDivisibleSubset(4, new int[]{19, 10, 12, 10, 24, 25, 22}));
     }
+
+    @Test
+    public void nonDivisibleSubset4() {
+        assertEquals(2, NonDivisibleSubset.nonDivisibleSubset(4, new int[]{4, 8, 12, 16, 20, 24, 25}));
+    }
 }
