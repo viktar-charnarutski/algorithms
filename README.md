@@ -601,6 +601,7 @@ See this [post][1003].
 | 370 | 10-Oct-2018 | [Forming a Magic Square][370] | Medium | Y |
 | 371 | 11-Oct-2018 | [Climbing the Leaderboard][371] | Medium | Y |
 | 372 | 15-Oct-2018 | [Non-Divisible Subset][372] | Medium | Y |
+| 373 | 16-Oct-2018 | [Extra Long Factorials][373] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -970,10 +971,11 @@ See this [post][1003].
 [366]: https://leetcode.com/problems/ugly-number/
 [367]: https://www.hackerrank.com/challenges/fraudulent-activity-notifications/
 [368]: https://www.hackerrank.com/challenges/lilys-homework/
-[369]: https://www.hackerrank.com/challenges/pseudo-isomorphic-substrings/problem
-[370]: https://www.hackerrank.com/challenges/magic-square-forming/problem
-[371]: https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
+[369]: https://www.hackerrank.com/challenges/pseudo-isomorphic-substrings/
+[370]: https://www.hackerrank.com/challenges/magic-square-forming/
+[371]: https://www.hackerrank.com/challenges/climbing-the-leaderboard/
 [372]: https://www.hackerrank.com/challenges/non-divisible-subset/
+[373]: https://www.hackerrank.com/challenges/extra-long-factorials/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
