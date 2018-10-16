@@ -600,6 +600,7 @@ See this [post][1003].
 | 369 | 9-Oct-2018 | [Pseudo-Isomorphic Substrings][369] | Hard | Y |
 | 370 | 10-Oct-2018 | [Forming a Magic Square][370] | Medium | Y |
 | 371 | 11-Oct-2018 | [Climbing the Leaderboard][371] | Medium | Y |
+| 372 | 15-Oct-2018 | [Non-Divisible Subset][372] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -972,6 +973,7 @@ See this [post][1003].
 [369]: https://www.hackerrank.com/challenges/pseudo-isomorphic-substrings/problem
 [370]: https://www.hackerrank.com/challenges/magic-square-forming/problem
 [371]: https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
+[372]: https://www.hackerrank.com/challenges/non-divisible-subset/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
