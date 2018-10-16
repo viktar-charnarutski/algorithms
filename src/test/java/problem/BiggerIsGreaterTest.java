@@ -13,6 +13,11 @@ public class BiggerIsGreaterTest {
 
     @Test
     public void biggerIsGreater2() {
-        assertEquals("ab", BiggerIsGreater.biggerIsGreater("ba"));
+        assertEquals("ba", BiggerIsGreater.biggerIsGreater("ab"));
+    }
+
+    @Test
+    public void biggerIsGreater3() {
+        assertEquals("No answer", BiggerIsGreater.biggerIsGreater("bb"));
     }
 }
