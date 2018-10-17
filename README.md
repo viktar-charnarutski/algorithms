@@ -602,6 +602,7 @@ See this [post][1003].
 | 371 | 11-Oct-2018 | [Climbing the Leaderboard][371] | Medium | Y |
 | 372 | 15-Oct-2018 | [Non-Divisible Subset][372] | Medium | Y |
 | 373 | 16-Oct-2018 | [Extra Long Factorials][373] | Medium | |
+| 374 | 16-Oct-2018 | [Bigger is Greater][374] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -976,6 +977,7 @@ See this [post][1003].
 [371]: https://www.hackerrank.com/challenges/climbing-the-leaderboard/
 [372]: https://www.hackerrank.com/challenges/non-divisible-subset/
 [373]: https://www.hackerrank.com/challenges/extra-long-factorials/
+[374]: https://www.hackerrank.com/challenges/bigger-is-greater/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
