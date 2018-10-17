@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 264. Ugly Number II
  * <p>
@@ -9,6 +12,22 @@ package problem;
  */
 public class UglyNumberII {
     public int nthUglyNumber(int n) {
-        return -1;
+        List<Integer> uglyNums = new ArrayList<>();
+        uglyNums.add(1);
+        int u2 = 2, u3 = 3, u5 = 5;
+        for (int i = 1; i < n; i++) {
+            int uMin = Math.min(u2, Math.min(u3, u5));
+            uglyNums.add(uMin);
+            if (u2 == uMin) {
+                u2 += 2;
+            }
+            if (u3 == uMin) {
+                u3 += 3;
+            }
+            if (u5 == uMin) {
+                u5 += 5;
+            }
+        }
+        return uglyNums.get(n - 1);
     }
 }
