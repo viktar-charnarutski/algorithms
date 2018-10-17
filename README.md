@@ -604,6 +604,7 @@ See this [post][1003].
 | 373 | 16-Oct-2018 | [Extra Long Factorials][373] | Medium | |
 | 374 | 16-Oct-2018 | [Bigger is Greater][374] | Medium | Y |
 | 375 | 17-Oct-2018 | [The Grid Search][375] | Medium | |
+| 376 | 17-Oct-2018 | [264. Ugly Number II][376] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -980,6 +981,7 @@ See this [post][1003].
 [373]: https://www.hackerrank.com/challenges/extra-long-factorials/
 [374]: https://www.hackerrank.com/challenges/bigger-is-greater/
 [375]: https://www.hackerrank.com/challenges/the-grid-search/
+[376]: https://leetcode.com/problems/ugly-number-ii/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
