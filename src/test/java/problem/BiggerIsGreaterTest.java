@@ -18,7 +18,7 @@ public class BiggerIsGreaterTest {
 
     @Test
     public void biggerIsGreater3() {
-        assertEquals("No answer", BiggerIsGreater.biggerIsGreater("bb"));
+        assertEquals("no answer", BiggerIsGreater.biggerIsGreater("bb"));
     }
 
     @Test
@@ -34,5 +34,10 @@ public class BiggerIsGreaterTest {
     @Test
     public void biggerIsGreater6() {
         assertEquals("hcdk", BiggerIsGreater.biggerIsGreater("dkhc"));
+    }
+
+    @Test
+    public void biggerIsGreater7() {
+        assertEquals("no answer", BiggerIsGreater.biggerIsGreater("a"));
     }
 }
