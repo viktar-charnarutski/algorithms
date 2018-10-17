@@ -25,20 +25,15 @@ public class BiggerIsGreater {
         }
 
         // it's already the last permutation
-        if (start == 0) {
+        if (start <= 0) {
             return "no answer";
         }
         int pivot = start - 1;
 
         // 2. find a min element in respect to the pivot
-        int min = start;
-        int diff = chars[start] - chars[pivot];
-
-        while (++start < chars.length) {
-            if (chars[start] - chars[pivot] < diff) {
-                min = start;
-            }
-            start++;
+        int min = chars.length - 1;
+        while (chars[min] <= chars[pivot]) {
+            min--;
         }
 
         // 3. swap min and pivot
