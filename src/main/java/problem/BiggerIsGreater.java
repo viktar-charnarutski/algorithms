@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Arrays;
+
 /**
  * Bigger is Greater
  * <p>
@@ -12,7 +14,48 @@ package problem;
  * 2. It must be the smallest word that meets the first condition
  */
 public class BiggerIsGreater {
+    // abcd --> abdc
     static String biggerIsGreater(String w) {
-        return "";
+        char[] chars = w.toCharArray();
+
+        // 1. find pivot
+        int start = chars.length - 1;
+        while (start > 0 && chars[start - 1] >= chars[start]) {
+            start--;
+        }
+
+        // it's already the last permutation
+        if (start == 0) {
+            return "no answer";
+        }
+        int pivot = start - 1;
+
+        // 2. find a min element in respect to the pivot
+        int min = start;
+        int diff = chars[start] - chars[pivot];
+
+        while (++start < chars.length) {
+            if (chars[start] - chars[pivot] < diff) {
+                min = start;
+            }
+            start++;
+        }
+
+        // 3. swap min and pivot
+        swap(chars, pivot, min);
+
+        // 4. reverse the suffix part of the array
+        int lo = pivot + 1, hi = chars.length - 1;
+        while (lo < hi) {
+            swap(chars, lo++, hi--);
+        }
+
+        return String.valueOf(chars);
+    }
+
+    private static void swap(char[] chars, int lo, int hi) {
+        char tmp1 = chars[lo];
+        chars[lo] = chars[hi];
+        chars[hi] = tmp1;
     }
 }

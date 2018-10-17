@@ -40,4 +40,14 @@ public class BiggerIsGreaterTest {
     public void biggerIsGreater7() {
         assertEquals("no answer", BiggerIsGreater.biggerIsGreater("a"));
     }
+
+    @Test
+    public void biggerIsGreater8() {
+        assertEquals("no answer", BiggerIsGreater.biggerIsGreater("dcbb"));
+    }
+
+    @Test
+    public void biggerIsGreater9() {
+        assertEquals("fedcbabdc", BiggerIsGreater.biggerIsGreater("fedcbabcd"));
+    }
 }
