@@ -23,6 +23,25 @@ package problem;
  */
 public class TheGridSearch {
     static String gridSearch(String[] G, String[] P) {
-        return "";
+        for (int row = 0; row < G.length; row++) {
+            for (int charIndex = 0; charIndex < G[0].length(); charIndex++) {
+                if (isPattern(row, charIndex, G, P)) {
+                    return "YES";
+                }
+            }
+        }
+        return "NO";
+    }
+
+    private static boolean isPattern(int row, int charIndexStart, String[] G, String[] P) {
+        if (G[row].length() - charIndexStart < P[0].length()) {
+            return false;
+        }
+        for (int i = 0; i < P.length; i++) {
+            if (!P[i].equals(G[row + i].substring(charIndexStart, charIndexStart + P[0].length()))) {
+                return false;
+            }
+        }
+        return true;
     }
 }
