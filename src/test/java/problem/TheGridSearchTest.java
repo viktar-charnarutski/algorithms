@@ -41,4 +41,27 @@ public class TheGridSearchTest {
         assertEquals("YES", TheGridSearch.gridSearch(grid, pattern));
     }
 
+    @Test
+    public void gridSearch3() {
+        String[] grid = {"400453592126560",
+                "114213133098692",
+                "474386082879648",
+                "522356951189169",
+                "887109450487496",
+                "252802633388782",
+                "502771484966748",
+                "075975207693780",
+                "511799789562806",
+                "404007454272504",
+                "549043809916080",
+                "962410809534811",
+                "445893523733475",
+                "768705303214174",
+                "650629270887160" };
+
+        String[] pattern = {"99",
+                "99" };
+
+        assertEquals("NO", TheGridSearch.gridSearch(grid, pattern));
+    }
 }
