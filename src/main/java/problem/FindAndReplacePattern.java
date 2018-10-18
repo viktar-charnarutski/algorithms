@@ -1,7 +1,6 @@
 package problem;
 
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * 890. Find and Replace Pattern
@@ -20,6 +19,31 @@ import java.util.List;
  */
 public class FindAndReplacePattern {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
-        return Collections.emptyList();
+        List<String> res = new ArrayList<>();
+        for (String word : words) {
+            if (isPattern(word, pattern)) {
+                res.add(word);
+            }
+        }
+        return res;
+    }
+
+    private boolean isPattern(String word, String pattern) {
+        Map<Character, Character> mapWord = new HashMap<>();
+        Map<Character, Character> mapPattern = new HashMap<>();
+        for (int i = 0; i < word.length(); i++) {
+            char w = word.charAt(i);
+            char p = pattern.charAt(i);
+            if (!mapWord.containsKey(w)) {
+                mapWord.put(w, p);
+            }
+            if (!mapPattern.containsKey(p)) {
+                mapPattern.put(p, w);
+            }
+            if (mapWord.get(w) != p || mapPattern.get(p) != w) {
+                return false;
+            }
+        }
+        return true;
     }
 }
