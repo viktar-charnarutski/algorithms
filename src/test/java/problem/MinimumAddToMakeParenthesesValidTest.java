@@ -8,6 +8,11 @@ public class MinimumAddToMakeParenthesesValidTest {
 
     @Test
     public void minAddToMakeValid1() {
-        assertEquals(3, new MinimumAddToMakeParenthesesValid().minAddToMakeValid("())"));
+        assertEquals(1, new MinimumAddToMakeParenthesesValid().minAddToMakeValid("())"));
+    }
+
+    @Test
+    public void minAddToMakeValid2() {
+        assertEquals(3, new MinimumAddToMakeParenthesesValid().minAddToMakeValid("((("));
     }
 }
