@@ -606,6 +606,7 @@ See this [post][1003].
 | 375 | 17-Oct-2018 | [The Grid Search][375] | Medium | |
 | 376 | 17-Oct-2018 | [264. Ugly Number II][376] | Medium | Y |
 | 377 | 17-Oct-2018 | [921. Minimum Add to Make Parentheses Valid][377] | Medium | |
+| 378 | 18-Oct-2018 | [890. Find and Replace Pattern][378] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -984,6 +985,7 @@ See this [post][1003].
 [375]: https://www.hackerrank.com/challenges/the-grid-search/
 [376]: https://leetcode.com/problems/ugly-number-ii/
 [377]: https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
+[378]: https://leetcode.com/problems/find-and-replace-pattern/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
