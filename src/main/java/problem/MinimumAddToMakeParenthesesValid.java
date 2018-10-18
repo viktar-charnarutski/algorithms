@@ -15,6 +15,18 @@ package problem;
  */
 public class MinimumAddToMakeParenthesesValid {
     public int minAddToMakeValid(String S) {
-        return 0;
+        int open = 0, closed = 0;
+        for (char c : S.toCharArray()) {
+            if (c == '(') {
+                open++;
+            } else {
+                if (open > 0) {
+                    open--;
+                } else {
+                    closed++;
+                }
+            }
+        }
+        return open + closed;
     }
 }
