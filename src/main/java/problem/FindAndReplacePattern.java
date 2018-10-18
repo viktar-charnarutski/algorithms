@@ -19,6 +19,28 @@ import java.util.*;
  */
 public class FindAndReplacePattern {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
+        int[] patternMask = mask(pattern);
+        List<String> res = new ArrayList<>();
+        for (String word : words) {
+            if (Arrays.equals(mask(word), patternMask)) {
+                res.add(word);
+            }
+        }
+        return res;
+    }
+
+    private static int[] mask(String word) {
+        int[] mask = new int[word.length()];
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < word.length(); i++) {
+            char c = word.charAt(i);
+            map.putIfAbsent(c, i);
+            mask[i] = map.get(c);
+        }
+        return mask;
+    }
+
+    public List<String> findAndReplacePattern1(String[] words, String pattern) {
         List<String> res = new ArrayList<>();
         for (String word : words) {
             if (isPattern(word, pattern)) {
