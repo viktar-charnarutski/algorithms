@@ -21,4 +21,8 @@ public class MinimumAddToMakeParenthesesValidTest {
         assertEquals(0, new MinimumAddToMakeParenthesesValid().minAddToMakeValid("()"));
     }
 
+    @Test
+    public void minAddToMakeValid4() {
+        assertEquals(4, new MinimumAddToMakeParenthesesValid().minAddToMakeValid("()))(("));
+    }
 }
