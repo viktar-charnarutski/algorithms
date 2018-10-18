@@ -20,4 +20,5 @@ public class MinimumAddToMakeParenthesesValidTest {
     public void minAddToMakeValid3() {
         assertEquals(0, new MinimumAddToMakeParenthesesValid().minAddToMakeValid("()"));
     }
+
 }
