@@ -12,22 +12,15 @@ import java.util.List;
  */
 public class UglyNumberII {
     public int nthUglyNumber(int n) {
-        List<Integer> uglyNums = new ArrayList<>();
-        uglyNums.add(1);
-        int u2 = 2, u3 = 3, u5 = 5;
-        for (int i = 1; i < n; i++) {
-            int uMin = Math.min(u2, Math.min(u3, u5));
-            uglyNums.add(uMin);
-            if (u2 == uMin) {
-                u2 += 2;
-            }
-            if (u3 == uMin) {
-                u3 += 3;
-            }
-            if (u5 == uMin) {
-                u5 += 5;
-            }
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        int i2 = 0, i3 = 0, i5 = 0;
+        for (int i = 1; i <= n; i++) {
+            dp[i] = Math.min(dp[i2] * 2, Math.min(dp[i3] * 3, dp[i5] * 5));
+            if (dp[i] == dp[i2] * 2) i2++;
+            if (dp[i] == dp[i3] * 3) i3++;
+            if (dp[i] == dp[i5] * 5) i5++;
         }
-        return uglyNums.get(n - 1);
+        return dp[n - 1];
     }
 }
