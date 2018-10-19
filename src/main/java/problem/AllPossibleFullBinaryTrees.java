@@ -1,5 +1,6 @@
 package problem;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,6 +18,24 @@ import java.util.List;
  */
 public class AllPossibleFullBinaryTrees {
     public List<TreeNode> allPossibleFBT(int N) {
-        return Collections.emptyList();
+        List<TreeNode> trees = new ArrayList<>();
+        if (N == 1) {
+            trees.add(new TreeNode(0));
+            return trees;
+        }
+        N--;
+        for (int i = 1; i < N; i += 2) {
+            List<TreeNode> leftNodes = allPossibleFBT(i);
+            List<TreeNode> rightNodes = allPossibleFBT(N - i);
+            for (TreeNode left : leftNodes) {
+                for (TreeNode right : rightNodes) {
+                    TreeNode node = new TreeNode(0);
+                    node.left = left;
+                    node.right = right;
+                    trees.add(node);
+                }
+            }
+        }
+        return trees;
     }
 }
