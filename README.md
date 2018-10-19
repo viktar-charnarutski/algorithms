@@ -607,6 +607,7 @@ See this [post][1003].
 | 376 | 17-Oct-2018 | [264. Ugly Number II][376] | Medium | Y |
 | 377 | 17-Oct-2018 | [921. Minimum Add to Make Parentheses Valid][377] | Medium | |
 | 378 | 18-Oct-2018 | [890. Find and Replace Pattern][378] | Medium | Y |
+| 379 | 19-Oct-2018 | [894. All Possible Full Binary Trees][379] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -986,6 +987,7 @@ See this [post][1003].
 [376]: https://leetcode.com/problems/ugly-number-ii/
 [377]: https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
 [378]: https://leetcode.com/problems/find-and-replace-pattern/
+[379]: https://leetcode.com/problems/all-possible-full-binary-trees/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
