@@ -20,6 +20,15 @@ import java.util.List;
  */
 public class CountingBits {
     public int[] countBits(int num) {
+        int[] res = new int[num + 1];
+        for (int i = 1; i <= num; i++) {
+            // res[i] = res[i / 2] + i % 2
+            res[i] = res[i >> 1] + (i & 1);
+        }
+        return res;
+    }
+
+    public int[] countBits1(int num) {
         List<Integer> bits = new ArrayList<>();
         for (int i = 0; i <= num; i++) {
             bits.add(countOnes(i));
