@@ -1,7 +1,6 @@
 package problem;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -23,10 +22,10 @@ public class AllPossibleFullBinaryTrees {
             trees.add(new TreeNode(0));
             return trees;
         }
-        N--;
-        for (int i = 1; i < N; i += 2) {
-            List<TreeNode> leftNodes = allPossibleFBT(i);
-            List<TreeNode> rightNodes = allPossibleFBT(N - i);
+        N--; // count the current node
+        for (int i = 1; i < N; i += 2) { // go over 1 node which is gonna be created later
+            List<TreeNode> leftNodes = allPossibleFBT(i); // generate all possible variations of left nodes
+            List<TreeNode> rightNodes = allPossibleFBT(N - i); // generate all possible variations of right nodes
             for (TreeNode left : leftNodes) {
                 for (TreeNode right : rightNodes) {
                     TreeNode node = new TreeNode(0);
