@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 338. Counting Bits
  * <p>
@@ -17,6 +20,19 @@ package problem;
  */
 public class CountingBits {
     public int[] countBits(int num) {
-        return new int[0];
+        List<Integer> bits = new ArrayList<>();
+        for (int i = 0; i <= num; i++) {
+            bits.add(countOnes(i));
+        }
+        int[] res = new int[bits.size()];
+        for (int i = 0; i < bits.size(); i++) {
+            res[i] = bits.get(i);
+        }
+        return res;
+    }
+
+    private int countOnes(int n) {
+        if (n <= 1) return n;
+        return countOnes(n / 2) + (n % 2);
     }
 }
