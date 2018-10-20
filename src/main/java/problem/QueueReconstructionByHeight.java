@@ -1,5 +1,9 @@
 package problem;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * 406. Queue Reconstruction by Height
  * <p>
@@ -12,6 +16,11 @@ package problem;
  */
 public class QueueReconstructionByHeight {
     public int[][] reconstructQueue(int[][] people) {
-        return new int[0][0];
+        Arrays.sort(people, (a, b) -> a[0] != b[0] ? b[0] - a[0] : a[1] - b[1]);
+        List<int[]> order = new LinkedList<>();
+        for (int[] person : people) {
+            order.add(person[1], person);
+        }
+        return order.toArray(new int[people.length][]);
     }
 }
