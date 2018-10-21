@@ -11,6 +11,17 @@ package problem;
  */
 public class ScoreOfParentheses {
     public int scoreOfParentheses(String S) {
-        return 0;
+        int balance = 0, answer = 0;
+        for (int i = 0; i < S.length(); i++) {
+            if (S.charAt(i) == '(') {
+                balance++;
+            } else {
+                balance--;
+                if (S.charAt(i - 1) == '(') {
+                    answer += 1 << balance;
+                }
+            }
+        }
+        return answer;
     }
 }
