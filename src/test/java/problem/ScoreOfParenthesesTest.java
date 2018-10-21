@@ -10,4 +10,9 @@ public class ScoreOfParenthesesTest {
     public void scoreOfParentheses1() {
         assertEquals(1, new ScoreOfParentheses().scoreOfParentheses("()"));
     }
+
+    @Test
+    public void scoreOfParentheses2() {
+        assertEquals(2, new ScoreOfParentheses().scoreOfParentheses("()()"));
+    }
 }
