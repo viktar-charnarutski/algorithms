@@ -20,4 +20,9 @@ public class ScoreOfParenthesesTest {
     public void scoreOfParentheses3() {
         assertEquals(4, new ScoreOfParentheses().scoreOfParentheses("(()())"));
     }
+
+    @Test
+    public void scoreOfParentheses4() {
+        assertEquals(6, new ScoreOfParentheses().scoreOfParentheses("(()(()))"));
+    }
 }
