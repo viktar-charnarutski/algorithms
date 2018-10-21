@@ -609,6 +609,7 @@ See this [post][1003].
 | 378 | 18-Oct-2018 | [890. Find and Replace Pattern][378] | Medium | Y |
 | 379 | 19-Oct-2018 | [894. All Possible Full Binary Trees][379] | Medium | Y |
 | 380 | 20-Oct-2018 | [338. Counting Bits][380] | Medium | Y |
+| 381 | 20-Oct-2018 | [406. Queue Reconstruction by Height][381] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -990,6 +991,7 @@ See this [post][1003].
 [378]: https://leetcode.com/problems/find-and-replace-pattern/
 [379]: https://leetcode.com/problems/all-possible-full-binary-trees/
 [380]: https://leetcode.com/problems/counting-bits/
+[381]: https://leetcode.com/problems/queue-reconstruction-by-height/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
