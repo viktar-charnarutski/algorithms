@@ -612,6 +612,7 @@ See this [post][1003].
 | 381 | 20-Oct-2018 | [406. Queue Reconstruction by Height][381] | Medium | Y |
 | 382 | 21-Oct-2018 | [856. Score of Parentheses][382] | Medium | Y |
 | 383 | 22-Oct-2018 | [Binary Tree Vertical Order Traversal][383] | Medium | Y |
+| 384 | 23-Oct-2018 | [Single Riffle Shuffle][384] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -996,6 +997,7 @@ See this [post][1003].
 [381]: https://leetcode.com/problems/queue-reconstruction-by-height/
 [382]: https://leetcode.com/problems/score-of-parentheses/
 [383]: https://www.programcreek.com/2014/04/leetcode-binary-tree-vertical-order-traversal-java/
+[384]: https://www.interviewcake.com/question/java/single-riffle-check
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
