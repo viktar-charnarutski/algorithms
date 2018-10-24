@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class BinaryTreeVerticalOrderTraversalTest {
 
     @Test
-    public void verticalOrder() {
+    public void verticalOrder1() {
         TreeNode n1 = new TreeNode(1);
         TreeNode n2 = new TreeNode(2);
         TreeNode n3 = new TreeNode(3);
@@ -50,6 +50,18 @@ public class BinaryTreeVerticalOrderTraversalTest {
         res.add(res3);
         res.add(res4);
         res.add(res5);
+
+        assertEquals(res, new BinaryTreeVerticalOrderTraversal().verticalOrder(n1));
+    }
+
+    @Test
+    public void verticalOrder2() {
+        TreeNode n1 = new TreeNode(1);
+
+        List<Integer> res1 = new ArrayList<>();
+        res1.add(1);
+        List<List<Integer>> res = new ArrayList<>();
+        res.add(res1);
 
         assertEquals(res, new BinaryTreeVerticalOrderTraversal().verticalOrder(n1));
     }
