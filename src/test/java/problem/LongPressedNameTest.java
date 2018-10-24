@@ -15,4 +15,9 @@ public class LongPressedNameTest {
     public void isLongPressedName2() {
         assertFalse(new LongPressedName().isLongPressedName("saeed", "ssaaedd"));
     }
+
+    @Test
+    public void isLongPressedName3() {
+        assertTrue(new LongPressedName().isLongPressedName("leelee", "lleeelee"));
+    }
 }
