@@ -20,4 +20,9 @@ public class LongPressedNameTest {
     public void isLongPressedName3() {
         assertTrue(new LongPressedName().isLongPressedName("leelee", "lleeelee"));
     }
+
+    @Test
+    public void isLongPressedName4() {
+        assertTrue(new LongPressedName().isLongPressedName("laiden", "laiden"));
+    }
 }
