@@ -196,7 +196,10 @@ recursive algorithm often *starts from the end and works backwards.*
 <br/>
 Going **bottom-up** is a common strategy for dynamic programming problems.
 
-### Offer Negotiation
+## System Design
+[Grokking the System Design Interview][104]
+
+## Offer Negotiation
 See this [post][1003].
 
 # My Statistics
@@ -1004,3 +1007,4 @@ See this [post][1003].
 [1001]: http://bigocheatsheet.com/
 [1002]: https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
 [1003]: http://blog.interviewing.io/exactly-what-to-say-when-recruiters-ask-you-to-name-the-first-number/
+[1004]: https://www.educative.io/collection/5668639101419520/5649050225344512?authorName=Design%20Gurus
