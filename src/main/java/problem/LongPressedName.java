@@ -11,6 +11,19 @@ package problem;
  */
 public class LongPressedName {
     public boolean isLongPressedName(String name, String typed) {
-        return false;
+        // Input: name = "alex", typed = "aaleex"
+        int typedInd = 0;
+        for (int nameInd = 0; nameInd < name.length(); nameInd++){
+            if (typedInd >= typed.length() || name.charAt(nameInd) != typed.charAt(typedInd)) {
+                return false;
+            }
+            typedInd++;
+            if (nameInd + 1 < name.length() && name.charAt(nameInd + 1) != typed.charAt(typedInd)) {
+                while (typedInd < typed.length() && typed.charAt(typedInd) == name.charAt(nameInd)) {
+                    typedInd++;
+                }
+            }
+        }
+        return typedInd == typed.length();
     }
 }
