@@ -8,7 +8,22 @@ import java.util.Arrays;
  * I figured out how to get rich: online poker.
  */
 public class SingleRiffleShuffle {
+
     public static boolean isSingleRiffle(int[] half1, int[] half2, int[] shuffledDeck) {
+        int half1Ind = 0, half2Ind = 0;
+        for (int shuffledCard : shuffledDeck) {
+            if (half1Ind < half1.length && half1[half1Ind] == shuffledCard) {
+                half1Ind++;
+            } else if (half2Ind < half2.length && half2[half2Ind] == shuffledCard) {
+                half2Ind++;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean isSingleRiffle1(int[] half1, int[] half2, int[] shuffledDeck) {
         if (shuffledDeck.length == 0) return true;
         if (half1.length > 0 && half1[0] == shuffledDeck[0]) {
             return isSingleRiffle(slicedArray(half1), half2, slicedArray(shuffledDeck));
