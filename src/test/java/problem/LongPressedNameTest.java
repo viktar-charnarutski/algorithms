@@ -30,4 +30,9 @@ public class LongPressedNameTest {
     public void isLongPressedName5() {
         assertFalse(new LongPressedName().isLongPressedName("pyplrz", "ppyypllr"));
     }
+
+    @Test
+    public void isLongPressedName6() {
+        assertTrue(new LongPressedName().isLongPressedName("vtkgn", "vttkgnn"));
+    }
 }
