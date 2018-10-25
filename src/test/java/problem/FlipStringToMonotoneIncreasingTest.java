@@ -15,4 +15,9 @@ public class FlipStringToMonotoneIncreasingTest {
     public void minFlipsMonoIncr2() {
         assertEquals(2, new FlipStringToMonotoneIncreasing().minFlipsMonoIncr("00001010"));
     }
+
+    @Test
+    public void minFlipsMonoIncr3() {
+        assertEquals(3, new FlipStringToMonotoneIncreasing().minFlipsMonoIncr("10101110"));
+    }
 }
