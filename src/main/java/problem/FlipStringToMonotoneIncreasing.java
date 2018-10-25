@@ -22,7 +22,9 @@ public class FlipStringToMonotoneIncreasing {
                 onesCount++;
             }
 
-            flipsCount = flipsCount > onesCount ? onesCount : flipsCount;
+            if (flipsCount > onesCount) {
+                flipsCount = onesCount;
+            }
         }
         return flipsCount;
     }
