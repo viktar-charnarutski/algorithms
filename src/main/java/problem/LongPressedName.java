@@ -25,6 +25,6 @@ public class LongPressedName {
                 }
             }
         }
-        return typedInd == typed.length();
+        return true;
     }
 }
