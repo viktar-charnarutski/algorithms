@@ -12,6 +12,18 @@ package problem;
  */
 public class FlipStringToMonotoneIncreasing {
     public int minFlipsMonoIncr(String S) {
-        return 0;
+        int flipsCount = 0, onesCount = 0;
+        for (int i = 0; i < S.length(); i++) {
+            if (S.charAt(i) == '0') {
+                if (onesCount > 0) {
+                    flipsCount++;
+                }
+            } else {
+                onesCount++;
+            }
+
+            flipsCount = flipsCount > onesCount ? onesCount : flipsCount;
+        }
+        return flipsCount;
     }
 }
