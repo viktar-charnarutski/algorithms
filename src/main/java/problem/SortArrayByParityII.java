@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Arrays;
+
 /**
  * 922. Sort Array By Parity II
  * <p>
@@ -11,6 +13,20 @@ package problem;
  */
 public class SortArrayByParityII {
     public int[] sortArrayByParityII(int[] A) {
+        for (int evenIndex = 0, oddIndex = 1; evenIndex < A.length; evenIndex += 2) {
+            if (A[evenIndex] % 2 != 0) {
+                while (A[oddIndex] % 2 == 1) {
+                    oddIndex += 2;
+                }
+                int tmp = A[evenIndex];
+                A[evenIndex] = A[oddIndex];
+                A[oddIndex] = tmp;
+            }
+        }
+        return A;
+    }
+
+    public int[] sortArrayByParityII1(int[] A) {
         int[] res = new int[A.length];
         int evenIndex = 0, oddIndex = 1;
         for (int i = 0; i < A.length; i++) {
