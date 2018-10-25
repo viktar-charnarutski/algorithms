@@ -30,4 +30,9 @@ public class FlipStringToMonotoneIncreasingTest {
     public void minFlipsMonoIncr5() {
         assertEquals(0, new FlipStringToMonotoneIncreasing().minFlipsMonoIncr("000000000"));
     }
+
+    @Test
+    public void minFlipsMonoIncr6() {
+        assertEquals(0, new FlipStringToMonotoneIncreasing().minFlipsMonoIncr("000000001"));
+    }
 }
