@@ -14,17 +14,17 @@ public class ThreeSumWithMultiplicity {
     public int threeSumMulti(int[] A, int target) {
         int modulo = 1000000007;
         Arrays.sort(A);
-        long res = count(A, target, 0);
+        long res = count(A, target, 0, 3);
         return (int) (res % modulo);
     }
 
-    private long count(int[] A, int target, int i) {
-        if (target == 0) {
+    private long count(int[] A, int target, int i, int amount) {
+        if (target == 0 && amount == 0) {
             return 1;
         }
-        if (target < 0 || i >= A.length) {
+        if (target < 0 || i >= A.length || amount <= 0) {
             return 0;
         }
-        return count(A, target - A[i], i + 1) + count(A, target, i + 1);
+        return count(A, target - A[i], i + 1, amount - 1) + count(A, target, i + 1, amount);
     }
 }
