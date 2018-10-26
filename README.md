@@ -619,6 +619,7 @@ See this [post][1003].
 | 385 | 24-Oct-2018 | [925. Long Pressed Name][385] | Easy | |
 | 386 | 24-Oct-2018 | [926. Flip String to Monotone Increasing][386] | Medium | Y |
 | 387 | 25-Oct-2018 | [922. Sort Array By Parity II][387] | Easy | |
+| 388 | 26-Oct-2018 | [923. 3Sum With Multiplicity][388] | Medium | |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -1006,7 +1007,8 @@ See this [post][1003].
 [384]: https://www.interviewcake.com/question/java/single-riffle-check
 [385]: https://leetcode.com/problems/long-pressed-name/
 [386]: https://leetcode.com/problems/flip-string-to-monotone-increasing/
-[387]:
+[387]: https://leetcode.com/problems/sort-array-by-parity/
+[388]: https://leetcode.com/problems/3sum-with-multiplicity/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
