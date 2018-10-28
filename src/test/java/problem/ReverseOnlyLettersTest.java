@@ -15,4 +15,9 @@ public class ReverseOnlyLettersTest {
     public void reverseOnlyLetters2() {
         assertEquals("j-Ih-gfE-dCba", new ReverseOnlyLetters().reverseOnlyLetters("a-bC-dEf-ghIj"));
     }
+
+    @Test
+    public void reverseOnlyLetters3() {
+        assertEquals("Qedo1ct-eeLg=ntse-T!", new ReverseOnlyLetters().reverseOnlyLetters("Test1ng-Leet=code-Q!"));
+    }
 }
