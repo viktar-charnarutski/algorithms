@@ -1,5 +1,6 @@
 package problem;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +13,22 @@ import java.util.Map;
  */
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
+        Arrays.sort(nums);
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int sum = nums[left] + nums[right];
+            if (sum == target) {
+                return new int[] {left, right};
+            }
+            if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        return new int[0];
+    }
+    public int[] twoSum1(int[] nums, int target) {
         int[] res = new int[2];
         if (nums == null || nums.length == 0) {
             return res;
