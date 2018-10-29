@@ -621,6 +621,7 @@ See this [post][1003].
 | 387 | 25-Oct-2018 | [922. Sort Array By Parity II][387] | Easy | |
 | 388 | 26-Oct-2018 | [923. 3Sum With Multiplicity][388] | Medium | |
 | 389 | 28-Oct-2018 | [917. Reverse Only Letters][389] | Easy | |
+| 390 | 29-Oct-2018 | [914. X of a Kind in a Deck of Cards][390] | Easy | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -1011,6 +1012,7 @@ See this [post][1003].
 [387]: https://leetcode.com/problems/sort-array-by-parity/
 [388]: https://leetcode.com/problems/3sum-with-multiplicity/
 [389]: https://leetcode.com/problems/reverse-only-letters/
+[390]: https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
