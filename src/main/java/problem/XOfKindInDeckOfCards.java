@@ -1,5 +1,8 @@
 package problem;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 914. X of a Kind in a Deck of Cards
  *
@@ -13,6 +16,18 @@ package problem;
  */
 public class XOfKindInDeckOfCards {
     public boolean hasGroupsSizeX(int[] deck) {
-        return false;
+        Map<Integer, Integer> count = new HashMap<>();
+        for (int num : deck) {
+            count.put(num, count.getOrDefault(num, 0) + 1);
+        }
+        int res = 0;
+        for (int num : count.values()) {
+            res = greatestCommonDivider(num, res);
+        }
+        return res > 1;
+    }
+
+    private static int greatestCommonDivider(int a, int b) {
+        return b > 0 ? greatestCommonDivider(b, a % b) : a;
     }
 }
