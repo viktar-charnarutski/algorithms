@@ -26,4 +26,10 @@ public class XOfKindInDeckOfCardsTest {
     public void hasGroupsSize4() {
         assertTrue(new XOfKindInDeckOfCards().hasGroupsSizeX(new int[]{1, 1}));
     }
+
+
+    @Test
+    public void hasGroupsSize5() {
+        assertTrue(new XOfKindInDeckOfCards().hasGroupsSizeX(new int[]{1, 1, 2, 2, 2, 2}));
+    }
 }
