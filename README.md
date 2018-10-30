@@ -88,7 +88,6 @@ Solutions for algorithm questions which could be asked on a technical interview.
  public void inOrderTraversal(TreeNode node) {
     if (node == null) return;
     Stack<TreeNode> stack = new Stack<>();
-    stack.push(node);
     while(!stack.isEmpty() || node == null) {
         while(node != null) {
             stack.push(node);
