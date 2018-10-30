@@ -623,6 +623,7 @@ See this [post][1003].
 | 390 | 29-Oct-2018 | [914. X of a Kind in a Deck of Cards][390] | Easy | Y |
 | 391 | 29-Oct-2018 | [43. Multiply Strings][391] | Medium | Y |
 | 392 | 30-Oct-2018 | [538. Convert BST to Greater Tree][392] | Easy | |
+| 393 | 30-Oct-2018 | [240. Search a 2D Matrix II][393] | Medium | Y |
 
 [1]: https://leetcode.com/problems/judge-route-circle/
 [2]: https://leetcode.com/problems/reverse-string/
@@ -1016,6 +1017,7 @@ See this [post][1003].
 [390]: https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/
 [391]: https://leetcode.com/problems/multiply-strings/
 [392]: https://leetcode.com/problems/convert-bst-to-greater-tree/
+[393]: https://leetcode.com/problems/search-a-2d-matrix-ii/
 
 
 [1000]: https://www.geeksforgeeks.org/data-structures/linked-list/
