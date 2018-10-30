@@ -35,4 +35,10 @@ public class Search2DMatrixIITest {
         int[][] matrix = {};
         assertFalse(new Search2DMatrixII().searchMatrix(matrix, 20));
     }
+
+    @Test
+    public void searchMatrix4() {
+        int[][] matrix = {{1, 1}};
+        assertFalse(new Search2DMatrixII().searchMatrix(matrix, 2));
+    }
 }
