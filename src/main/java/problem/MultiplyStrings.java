@@ -29,25 +29,20 @@ public class MultiplyStrings {
             int n1 = num1.charAt(i) - '0';
             for (int j = num2.length() - 1; j >= 0; j--) {
                 int n2 = num2.charAt(j) - '0';
-                prods[i + j + 1] += n1 * n2;
+                int pos1 = i + j;
+                int pos2 = i + j + 1;
+                int prod = n1 * n2 + prods[pos2];
+                prods[pos2] = prod % 10;
+                prods[pos1] += prod / 10;
             }
         }
 
-        int carry = 0;
-        for (int i = prods.length - 1; i >= 0 ; i--) {
-            int tmp = (prods[i] + carry) % 10;
-            carry = (prods[i] + carry) / 10;
-            prods[i] = tmp;
-        }
-
-        StringBuilder res = new StringBuilder(carry);
+        StringBuilder res = new StringBuilder();
         for(int n : prods) {
+            if (res.length() == 0 && n == 0) continue;
             res.append(n);
         }
 
-        while (res.length() > 0 && res.charAt(0) == '0') {
-            res.deleteCharAt(0);
-        }
         return res.length() > 0 ? res.toString() : "0";
     }
 }
