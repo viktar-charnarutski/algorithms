@@ -15,4 +15,9 @@ public class MultiplyStringsTest {
     public void multiply2() {
         assertEquals("56088", new MultiplyStrings().multiply("123", "456"));
     }
+
+    @Test
+    public void multiply3() {
+        assertEquals("0", new MultiplyStrings().multiply("123", "0"));
+    }
 }
