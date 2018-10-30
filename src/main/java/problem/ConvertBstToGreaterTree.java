@@ -1,5 +1,7 @@
 package problem;
 
+import java.util.Stack;
+
 /**
  * 538. Convert BST to Greater Tree
  *
@@ -8,6 +10,20 @@ package problem;
  */
 public class ConvertBstToGreaterTree {
     public TreeNode convertBST(TreeNode root) {
+        TreeNode curr = root;
+        Stack<TreeNode> stack = new Stack<>();
+        int sum = 0;
+        while (!stack.isEmpty() || curr != null) {
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.right;
+            }
+            curr = stack.pop();
+            sum += curr.val;
+            curr.val = sum;
+
+            curr = curr.left;
+        }
         return root;
     }
 }
