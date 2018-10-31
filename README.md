@@ -22,6 +22,10 @@ Solutions for algorithm questions which could be asked on a technical interview.
 ### Reading
  - [ ] [Dynamic Programming - *In Russian*](http://awpris.blogspot.com/2012/02/blog-post.html)
 
+### Practice
+ - [Codding Challenges][1006]
+ - [Coderust 3.0: Faster Coding Interview Preparation with Interactive Challenges & Visualizations][1007]
+
 ## Notices
 
 ### Big O
@@ -1030,3 +1034,5 @@ See this [post][1003].
 [1003]: http://blog.interviewing.io/exactly-what-to-say-when-recruiters-ask-you-to-name-the-first-number/
 [1004]: https://www.educative.io/collection/5668639101419520/5649050225344512?authorName=Design%20Gurus
 [1005]: https://github.com/donnemartin/system-design-primer#index-of-system-design-topics
+[1006]: https://github.com/donnemartin/interactive-coding-challenges
+[1007]: https://www.educative.io/collection/5642554087309312/5679846214598656?authorName=Coderust
