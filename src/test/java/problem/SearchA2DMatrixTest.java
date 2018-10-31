@@ -53,4 +53,10 @@ public class SearchA2DMatrixTest {
         };
         assertFalse(new SearchA2DMatrix().searchMatrix(matrix, 26));
     }
+
+    @Test
+    public void searchMatrix5() {
+        int[][] matrix = {};
+        assertFalse(new SearchA2DMatrix().searchMatrix(matrix, 26));
+    }
 }
