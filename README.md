@@ -196,7 +196,9 @@ recursive algorithm often *starts from the end and works backwards.*
 Going **bottom-up** is a common strategy for dynamic programming problems.
 
 ## System Design
-[Grokking the System Design Interview][104]
+ - [Grokking the System Design Interview][1004]
+ - [The System Design Primer][1005]
+
 
 ## Offer Negotiation
 See this [post][1003].
@@ -209,23 +211,23 @@ See this [post][1003].
 - [x] Tries
 - [x] Graphs
 - [x] Stacks
-- [ ] Queues
+- [x] Queues
 - [x] Vectors / ArrayLists
-- [ ] Heaps
-- [ ] Hash Tables
+- [x] Heaps
+- [x] Hash Tables
 
 ## Algorithms
 - [x] Breadth-First Search
 - [x] Depth-First Search
 - [x] Quick Sort
-- [ ] Merge Sort
+- [x] Merge Sort
 
 ## Concepts
-- [ ] Bit Manipulation
-- [ ] Memory (Stack vs. Heap)
+- [x] Bit Manipulation
+- [x] Memory (Stack vs. Heap)
 - [x] Recursion
-- [ ] Merge Sort
-- [ ] Dynamic Programming
+- [x] Merge Sort
+- [x] Dynamic Programming
 - [x] [Big O Time and Space][1001]
 
 ## Problems
@@ -1025,3 +1027,4 @@ See this [post][1003].
 [1002]: https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
 [1003]: http://blog.interviewing.io/exactly-what-to-say-when-recruiters-ask-you-to-name-the-first-number/
 [1004]: https://www.educative.io/collection/5668639101419520/5649050225344512?authorName=Design%20Gurus
+[1005]: https://github.com/donnemartin/system-design-primer#index-of-system-design-topics
